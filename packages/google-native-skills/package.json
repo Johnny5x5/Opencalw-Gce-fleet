@@ -1,0 +1,11 @@
+{
+  "name": "google-native-skills",
+  "version": "1.0.0",
+  "description": "OpenClaw Skills for Google Cloud & Android",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/firestore": "^7.1.0",
+    "@google-cloud/pubsub": "^4.1.0",
+    "@google-cloud/storage": "^7.7.0"
+  }
+}

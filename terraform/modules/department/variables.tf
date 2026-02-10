@@ -38,7 +38,7 @@ variable "max_replicas" {
 variable "machine_type" {
   description = "The machine type for the instances."
   type        = string
-  default     = "e2-standard-2"
+  default     = "n2-standard-4" # Upgraded for Android Emulator (Nested Virtualization)
 }
 
 variable "startup_script" {

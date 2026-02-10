@@ -89,6 +89,11 @@ resource "google_compute_instance_template" "template" {
     enable_integrity_monitoring = true
   }
 
+  # Nested Virtualization (Required for Android Emulator)
+  advanced_machine_features {
+    enable_nested_virtualization = true
+  }
+
   metadata = {
     startup-script = var.startup_script
     department     = var.department_name
