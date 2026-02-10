@@ -51,3 +51,15 @@ variable "enable_nested_virt" {
   type        = bool
   default     = false
 }
+
+variable "skills_gcs_url" {
+  description = "GCS URL (gs://bucket/skills.zip) to download the agent skills from."
+  type        = string
+  default     = "" # Optional, if empty, uses placeholder
+}
+
+variable "skills_bucket_name" {
+  description = "Name of the GCS bucket hosting the skills. Used for IAM bindings."
+  type        = string
+  default     = "" # Optional
+}

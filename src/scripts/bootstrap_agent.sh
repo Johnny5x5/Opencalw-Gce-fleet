@@ -93,12 +93,29 @@ fi
 # ------------------------------------------------------------------------------
 # 5. Skill Injection
 # ------------------------------------------------------------------------------
-# In a real deployment, we would pull from GCS:
-# gsutil cp gs://${project_id}-skills/${department}/skills.zip /opt/openclaw/skills.zip
-# unzip /opt/openclaw/skills.zip -d /opt/openclaw/skills
+SKILLS_GCS_URL=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/skills-gcs-url || echo "")
+SKILLS_DIR="/opt/openclaw/skills"
 
-mkdir -p /opt/openclaw/skills
-echo "Placeholder: Skills would be injected here from GCS."
+mkdir -p ${SKILLS_DIR}
+
+if [ -n "$SKILLS_GCS_URL" ]; then
+  echo "Downloading skills from ${SKILLS_GCS_URL}..."
+  gsutil cp "${SKILLS_GCS_URL}" /opt/openclaw/skills.zip
+
+  if [ $? -eq 0 ]; then
+    echo "Unzipping skills..."
+    unzip -o /opt/openclaw/skills.zip -d ${SKILLS_DIR}
+    # Install dependencies for skills (if package.json exists)
+    if [ -f "${SKILLS_DIR}/package.json" ]; then
+      cd ${SKILLS_DIR}
+      npm install --production
+    fi
+  else
+    echo "ERROR: Failed to download skills from GCS."
+  fi
+else
+  echo "No skills GCS URL provided. Using empty skills directory."
+fi
 
 # ------------------------------------------------------------------------------
 # 6. Device Lab: Android Emulator Startup
@@ -174,7 +191,7 @@ autostart=true
 autorestart=true
 stderr_logfile=/var/log/openclaw.err.log
 stdout_logfile=/var/log/openclaw.out.log
-environment=NODE_ENV="production",PORT="3000"
+environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin"
 EOF
 
 # Reload Supervisor to start services

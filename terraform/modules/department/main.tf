@@ -38,6 +38,14 @@ resource "google_project_iam_member" "sa_datastore_user" {
   member  = "serviceAccount:${google_service_account.sa.email}"
 }
 
+# Grant SA access to Skills Bucket (if provided)
+resource "google_storage_bucket_iam_member" "sa_skills_viewer" {
+  count  = var.skills_bucket_name != "" ? 1 : 0
+  bucket = var.skills_bucket_name
+  role   = "roles/storage.objectViewer"
+  member = "serviceAccount:${google_service_account.sa.email}"
+}
+
 # 4. Compute (Instance Template & MIG)
 
 # Health Check for Auto-Healing
@@ -99,6 +107,7 @@ resource "google_compute_instance_template" "template" {
   metadata = {
     startup-script = var.startup_script
     department     = var.department_name
+    skills-gcs-url = var.skills_gcs_url
     enable-oslogin = "TRUE"
   }
 
