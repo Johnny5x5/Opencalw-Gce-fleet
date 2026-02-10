@@ -101,7 +101,40 @@ mkdir -p /opt/openclaw/skills
 echo "Placeholder: Skills would be injected here from GCS."
 
 # ------------------------------------------------------------------------------
-# 6. Service Startup (Supervisor)
+# 6. Device Lab: Android Emulator Startup
+# ------------------------------------------------------------------------------
+# We check the instance metadata to see if we are in the 'device-lab' department.
+DEPARTMENT=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/department || echo "unknown")
+
+if [ "$DEPARTMENT" = "device-lab" ]; then
+  echo "Detected Device Lab Environment. Initializing Android Emulator..."
+
+  # Create AVD (Android Virtual Device)
+  # Requires a system image. We need to install one first.
+  # Note: This is resource intensive and takes time.
+  echo "y" | sdkmanager "system-images;android-34;google_apis;x86_64"
+
+  echo "no" | avdmanager create avd -n "pixel_6" -k "system-images;android-34;google_apis;x86_64" --device "pixel_6"
+
+  # Start Emulator in Background (Headless)
+  # We use Supervisor to manage it so it restarts on crash.
+  cat <<EOF > /etc/supervisor/conf.d/emulator.conf
+[program:android-emulator]
+command=${ANDROID_HOME}/emulator/emulator -avd pixel_6 -no-audio -no-window -gpu swiftshader_indirect -no-snapshot
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/emulator.err.log
+stdout_logfile=/var/log/emulator.out.log
+environment=ANDROID_HOME="${ANDROID_HOME}",PATH="${PATH}:${ANDROID_HOME}/emulator:${ANDROID_HOME}/platform-tools"
+EOF
+
+  echo "Android Emulator configured for Supervisor."
+else
+  echo "Not a Device Lab instance. Skipping Emulator startup."
+fi
+
+# ------------------------------------------------------------------------------
+# 7. Service Startup (Supervisor)
 # ------------------------------------------------------------------------------
 # We run OpenClaw and a simple health check server.
 # The Health Check Server (Port 8080) is needed for the Load Balancer.
@@ -135,12 +168,13 @@ stdout_logfile=/var/log/health-check.out.log
 [program:openclaw-agent]
 # This command is a placeholder. Real OpenClaw needs config/auth.
 # In production, we'd inject the config.json with API keys from Secret Manager.
-command=/usr/bin/openclaw agent --headless
+# We ensure it listens on port 3000 to match the Load Balancer configuration.
+command=/usr/bin/openclaw agent --headless --port 3000
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/openclaw.err.log
 stdout_logfile=/var/log/openclaw.out.log
-environment=NODE_ENV="production"
+environment=NODE_ENV="production",PORT="3000"
 EOF
 
 # Reload Supervisor to start services

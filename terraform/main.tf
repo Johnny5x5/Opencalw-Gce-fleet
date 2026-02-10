@@ -13,6 +13,8 @@ module "hq" {
   subnet_id       = google_compute_subnetwork.subnet.id
   min_replicas    = 2
   max_replicas    = 5
+  machine_type    = "e2-standard-2" # Standard compute
+  enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
 }
 
@@ -25,7 +27,9 @@ module "engineering" {
   vpc_network_id  = google_compute_network.vpc.id
   subnet_id       = google_compute_subnetwork.subnet.id
   min_replicas    = 3
-  max_replicas    = 10 # Engineering scales higher
+  max_replicas    = 10
+  machine_type    = "e2-standard-2" # Standard compute
+  enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
 }
 
@@ -39,5 +43,27 @@ module "hr" {
   subnet_id       = google_compute_subnetwork.subnet.id
   min_replicas    = 1
   max_replicas    = 3
+  machine_type    = "e2-standard-2" # Standard compute
+  enable_nested_virt = false
+  startup_script  = data.local_file.bootstrap_script.content
+}
+
+# 4. Device Lab Department (The Shared Android Resource)
+module "device_lab" {
+  source          = "./modules/department"
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "device-lab"
+  vpc_network_id  = google_compute_network.vpc.id
+  subnet_id       = google_compute_subnetwork.subnet.id
+
+  # Strict limit: Exactly 3 emulators
+  min_replicas    = 3
+  max_replicas    = 3
+
+  # Special configuration for Android Emulation
+  machine_type       = "n2-standard-4" # Required for Nested Virt
+  enable_nested_virt = true
+
   startup_script  = data.local_file.bootstrap_script.content
 }
