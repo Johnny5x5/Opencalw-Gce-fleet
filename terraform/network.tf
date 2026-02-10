@@ -50,12 +50,10 @@ resource "google_compute_firewall" "allow_internal" {
 
   allow {
     protocol = "tcp"
-    ports    = ["0-65535"]
-  }
-
-  allow {
-    protocol = "udp"
-    ports    = ["0-65535"]
+    # Port 8080: Internal Load Balancer / Health Check
+    # Port 3000: OpenClaw Agent API
+    # Port 5555: ADB (Android Debug Bridge) for remote device access
+    ports    = ["8080", "3000", "5555"]
   }
 
   source_ranges = [var.subnet_cidr]

@@ -41,8 +41,9 @@ resource "google_project_iam_member" "sa_datastore_user" {
 # 4. Compute (Instance Template & MIG)
 
 # Health Check for Auto-Healing
-resource "google_compute_health_check" "http_health_check" {
+resource "google_compute_region_health_check" "http_health_check" {
   name                = "${var.department_name}-hc"
+  region              = var.region
   check_interval_sec  = 10
   timeout_sec         = 5
   healthy_threshold   = 2
@@ -90,8 +91,9 @@ resource "google_compute_instance_template" "template" {
   }
 
   # Nested Virtualization (Required for Android Emulator)
+  # Only enabled if the variable is set (for Device Lab)
   advanced_machine_features {
-    enable_nested_virtualization = true
+    enable_nested_virtualization = var.enable_nested_virt
   }
 
   metadata = {
@@ -123,8 +125,13 @@ resource "google_compute_region_instance_group_manager" "mig" {
     port = 8080
   }
 
+  named_port {
+    name = "agent"
+    port = 3000
+  }
+
   auto_healing_policies {
-    health_check      = google_compute_health_check.http_health_check.id
+    health_check      = google_compute_region_health_check.http_health_check.id
     initial_delay_sec = 300
   }
 }
@@ -154,7 +161,7 @@ resource "google_compute_region_backend_service" "ilb_backend" {
   region                = var.region
   protocol              = "TCP"
   load_balancing_scheme = "INTERNAL"
-  health_checks         = [google_compute_health_check.http_health_check.id]
+  health_checks         = [google_compute_region_health_check.http_health_check.id]
   backend {
     group = google_compute_region_instance_group_manager.mig.instance_group
   }
@@ -167,6 +174,6 @@ resource "google_compute_forwarding_rule" "ilb_forwarding_rule" {
   network               = var.vpc_network_id
   subnetwork            = var.subnet_id
   backend_service       = google_compute_region_backend_service.ilb_backend.id
-  ports                 = ["8080"]
+  ports                 = ["8080", "3000"] # 8080=HealthCheck, 3000=Agent
   # Internal IP is automatically allocated
 }
