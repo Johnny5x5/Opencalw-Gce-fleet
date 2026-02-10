@@ -14,11 +14,12 @@ set -e
 echo "Starting OpenClaw Agent Bootstrap..."
 
 # ------------------------------------------------------------------------------
-# 1. System Hardening
+# 1. System Hardening & Core Dependencies
 # ------------------------------------------------------------------------------
 export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get upgrade -y
-apt-get install -y curl gnupg git unzip supervisor
+# Install OpenJDK 17 (Required for Android tools) and unzip/zip
+apt-get install -y curl gnupg git unzip zip supervisor openjdk-17-jdk
 
 # ------------------------------------------------------------------------------
 # 2. Blacklist Enforcement
@@ -43,7 +44,39 @@ cat <<EOF >> /etc/hosts
 EOF
 
 # ------------------------------------------------------------------------------
-# 3. Runtime Installation
+# 3. Google SDK Installation (Cloud & Android)
+# ------------------------------------------------------------------------------
+
+# 3a. Google Cloud SDK (gcloud CLI)
+echo "Installing Google Cloud SDK..."
+# Add the gcloud distribution URI as a package source
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+# Import the Google Cloud public key
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+apt-get update && apt-get install -y google-cloud-cli
+
+# 3b. Android Command Line Tools
+echo "Installing Android SDK Command Line Tools..."
+ANDROID_HOME=/opt/android-sdk
+mkdir -p ${ANDROID_HOME}/cmdline-tools
+cd ${ANDROID_HOME}/cmdline-tools
+# Download Command Line Tools (latest stable)
+curl -o commandlinetools-linux.zip https://dl.google.com/android/repository/commandlinetools-linux-10406996_latest.zip
+unzip commandlinetools-linux.zip
+mv cmdline-tools latest
+rm commandlinetools-linux.zip
+
+# Set Environment Variables for all users
+echo "export ANDROID_HOME=${ANDROID_HOME}" >> /etc/profile.d/android.sh
+echo "export PATH=\$PATH:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools" >> /etc/profile.d/android.sh
+source /etc/profile.d/android.sh
+
+# Accept Licenses and Install Platform Tools
+yes | sdkmanager --licenses
+sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+
+# ------------------------------------------------------------------------------
+# 4. Runtime Installation
 # ------------------------------------------------------------------------------
 echo "Installing Node.js..."
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
@@ -58,7 +91,7 @@ if ! npm install -g openclaw@latest; then
 fi
 
 # ------------------------------------------------------------------------------
-# 4. Skill Injection
+# 5. Skill Injection
 # ------------------------------------------------------------------------------
 # In a real deployment, we would pull from GCS:
 # gsutil cp gs://${project_id}-skills/${department}/skills.zip /opt/openclaw/skills.zip
@@ -68,7 +101,7 @@ mkdir -p /opt/openclaw/skills
 echo "Placeholder: Skills would be injected here from GCS."
 
 # ------------------------------------------------------------------------------
-# 5. Service Startup (Supervisor)
+# 6. Service Startup (Supervisor)
 # ------------------------------------------------------------------------------
 # We run OpenClaw and a simple health check server.
 # The Health Check Server (Port 8080) is needed for the Load Balancer.
