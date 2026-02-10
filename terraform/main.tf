@@ -13,9 +13,11 @@ module "hq" {
   subnet_id       = google_compute_subnetwork.subnet.id
   min_replicas    = 2
   max_replicas    = 5
-  machine_type    = "e2-standard-2" # Standard compute
+  machine_type    = "e2-standard-2"
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
 }
 
 # 2. Engineering Department
@@ -28,9 +30,11 @@ module "engineering" {
   subnet_id       = google_compute_subnetwork.subnet.id
   min_replicas    = 3
   max_replicas    = 10
-  machine_type    = "e2-standard-2" # Standard compute
+  machine_type    = "e2-standard-2"
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
 }
 
 # 3. Human Resources (HR) Department
@@ -43,9 +47,11 @@ module "hr" {
   subnet_id       = google_compute_subnetwork.subnet.id
   min_replicas    = 1
   max_replicas    = 3
-  machine_type    = "e2-standard-2" # Standard compute
+  machine_type    = "e2-standard-2"
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
 }
 
 # 4. Device Lab Department (The Shared Android Resource)
@@ -66,4 +72,24 @@ module "device_lab" {
   enable_nested_virt = true
 
   startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+}
+
+# 5. Call Center Department (The Voice Agents)
+module "call_center" {
+  source          = "./modules/department"
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "call-center"
+  vpc_network_id  = google_compute_network.vpc.id
+  subnet_id       = google_compute_subnetwork.subnet.id
+
+  min_replicas    = 1
+  max_replicas    = 10
+  machine_type    = "e2-standard-2"
+  enable_nested_virt = false
+  startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
 }
