@@ -1,0 +1,12 @@
+{
+  "department": "Engineering",
+  "kpis": [
+    { "metric": "deployment_frequency", "target": "daily" },
+    { "metric": "change_failure_rate", "target": "< 1%" },
+    { "metric": "uptime", "target": "99.9%" }
+  ],
+  "objectives": [
+    "Scale the platform to support 1M agents.",
+    "Automate the 'Device Lab' testing pipeline."
+  ]
+}

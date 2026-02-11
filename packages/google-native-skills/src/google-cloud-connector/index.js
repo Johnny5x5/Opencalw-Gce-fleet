@@ -2,15 +2,13 @@ const { Firestore } = require('@google-cloud/firestore');
 const { PubSub } = require('@google-cloud/pubsub');
 const { Storage } = require('@google-cloud/storage');
 const { BigQuery } = require('@google-cloud/bigquery');
+const { KeyManagementServiceClient } = require('@google-cloud/kms');
 
 /**
  * OpenClaw Skill: Google Cloud Connector
  *
  * Provides native access to Firestore (Memory), Pub/Sub (Communication),
- * and Cloud Storage (Filing) using the official Google Cloud Node.js SDKs.
- *
- * The agent environment must have Application Default Credentials (ADC)
- * configured (via the attached Service Account).
+ * Cloud Storage (Filing), BigQuery (Data), and KMS (Signing) using official SDKs.
  */
 
 // Initialize Clients
@@ -18,6 +16,7 @@ const firestore = new Firestore();
 const pubsub = new PubSub();
 const storage = new Storage();
 const bigquery = new BigQuery();
+const kms = new KeyManagementServiceClient();
 
 module.exports = {
   name: 'google-cloud-connector',
@@ -77,6 +76,20 @@ module.exports = {
       } catch (error) {
         // In production, we might want to fail silently or log to stderr
         throw new Error(`BigQuery Insert Failed: ${JSON.stringify(error)}`);
+      }
+    },
+
+    // --- Finance / Security (KMS Signing) ---
+    sign_data: async ({ key_resource_id, data_base64 }) => {
+      // key_resource_id: projects/.../locations/.../keyRings/.../cryptoKeys/.../cryptoKeyVersions/1
+      try {
+        const [response] = await kms.asymmetricSign({
+          name: key_resource_id,
+          data: Buffer.from(data_base64, 'base64'),
+        });
+        return response.signature.toString('base64');
+      } catch (error) {
+        throw new Error(`KMS Signing Failed: ${error.message}`);
       }
     }
   }

@@ -118,6 +118,28 @@ else
 fi
 
 # ------------------------------------------------------------------------------
+# 5b. Knowledge Injection (Personas/Missions)
+# ------------------------------------------------------------------------------
+KNOWLEDGE_GCS_URL=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/knowledge-gcs-url || echo "")
+KNOWLEDGE_DIR="/opt/openclaw/knowledge"
+
+mkdir -p ${KNOWLEDGE_DIR}
+
+if [ -n "$KNOWLEDGE_GCS_URL" ]; then
+  echo "Downloading knowledge from ${KNOWLEDGE_GCS_URL}..."
+  gsutil cp "${KNOWLEDGE_GCS_URL}" /opt/openclaw/knowledge.zip
+
+  if [ $? -eq 0 ]; then
+    echo "Unzipping knowledge base..."
+    unzip -o /opt/openclaw/knowledge.zip -d ${KNOWLEDGE_DIR}
+  else
+    echo "ERROR: Failed to download knowledge from GCS."
+  fi
+else
+  echo "No knowledge GCS URL provided."
+fi
+
+# ------------------------------------------------------------------------------
 # 6. Secret Injection (from Secret Manager)
 # ------------------------------------------------------------------------------
 echo "Fetching secrets..."
@@ -223,7 +245,7 @@ autostart=true
 autorestart=true
 stderr_logfile=/var/log/openclaw.err.log
 stdout_logfile=/var/log/openclaw.out.log
-environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="%(ENV_DISCORD_TOKEN)s",TWILIO_ACCOUNT_SID="%(ENV_TWILIO_ACCOUNT_SID)s",TWILIO_AUTH_TOKEN="%(ENV_TWILIO_AUTH_TOKEN)s",TWILIO_PHONE_NUMBER="%(ENV_TWILIO_PHONE_NUMBER)s"
+environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="${DISCORD_TOKEN}",TWILIO_ACCOUNT_SID="${TWILIO_ACCOUNT_SID}",TWILIO_AUTH_TOKEN="${TWILIO_AUTH_TOKEN}",TWILIO_PHONE_NUMBER="${TWILIO_PHONE_NUMBER}"
 EOF
 
 # Reload Supervisor to start services

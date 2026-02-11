@@ -19,6 +19,16 @@ functions.http('dialogflowFulfillment', async (req, res) => {
     const languageCode = body.languageCode || 'en';
     const callerId = body.payload?.telephony?.caller_id || 'anonymous'; // If using Telephony Gateway
 
+    // Security Check
+    const authHeader = req.get('X-OpenClaw-Auth');
+    // In a real app, fetch this from Secret Manager at runtime
+    const expectedToken = process.env.WEBHOOK_SECRET || 'secret-token-change-me-in-prod';
+
+    if (authHeader !== expectedToken) {
+      console.warn('Unauthorized Webhook Attempt');
+      return res.status(403).send('Unauthorized');
+    }
+
     console.log(`Received call from ${callerId} (Lang: ${languageCode}, Intent: ${intent})`);
 
     // Prepare message for OpenClaw Agent

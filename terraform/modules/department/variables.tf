@@ -70,6 +70,12 @@ variable "skills_bucket_name" {
   default     = "" # Optional
 }
 
+variable "knowledge_gcs_url" {
+  description = "GCS URL (gs://bucket/knowledge.zip) for the AI Knowledge Base (Personas/Missions)."
+  type        = string
+  default     = ""
+}
+
 variable "kms_key_id" {
   description = "The ID of the Cloud KMS Crypto Key for encryption."
   type        = string
