@@ -10,6 +10,14 @@ resource "google_storage_bucket" "files" {
   location      = var.region
   force_destroy = true # Allow destruction for this demo/prototype
   uniform_bucket_level_access = true
+
+  # Encryption (NIST 800-53 SC-28)
+  dynamic "encryption" {
+    for_each = var.kms_key_id != "" ? [1] : []
+    content {
+      default_kms_key_name = var.kms_key_id
+    }
+  }
 }
 
 # Grant SA access to its own bucket
@@ -90,6 +98,12 @@ resource "google_compute_instance_template" "template" {
     boot         = true
     disk_size_gb = 50
     disk_type    = "pd-balanced"
+
+    # Disk Encryption (NIST 800-53 SC-28)
+    # If kms_key_id is provided, Terraform applies it.
+    disk_encryption_key {
+        kms_key_self_link = var.kms_key_id != "" ? var.kms_key_id : null
+    }
   }
 
   # Network Interface

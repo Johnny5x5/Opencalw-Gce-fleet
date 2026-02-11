@@ -63,3 +63,9 @@ variable "skills_bucket_name" {
   type        = string
   default     = "" # Optional
 }
+
+variable "kms_key_id" {
+  description = "The ID of the Cloud KMS Crypto Key for encryption."
+  type        = string
+  default     = "" # Optional, if empty, uses Google-managed keys
+}

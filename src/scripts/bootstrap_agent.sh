@@ -133,7 +133,24 @@ export TWILIO_AUTH_TOKEN=$(get_secret "twilio-auth-token")
 export TWILIO_PHONE_NUMBER=$(get_secret "twilio-phone-number")
 
 # ------------------------------------------------------------------------------
-# 7. Device Lab: Android Emulator Startup
+# 7. Security Evolution Logic (Stubs)
+# ------------------------------------------------------------------------------
+# In a real evolution, this would apply local ip-tables based on security_level metadata.
+# Currently, Terraform handles the heavy lifting (Encryption, Logging).
+# This is a placeholder for agent-level tightening.
+
+SECURITY_LEVEL=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/security-level || echo "1")
+
+if [ "$SECURITY_LEVEL" -ge 3 ]; then
+  echo "Applying Level 3 (Fortress) Local hardening..."
+  # Example: Block outbound traffic on eth0 except for specific IPs (redundant if Proxy is used, but good defense in depth)
+  # ufw default deny outgoing
+  # ufw allow out to 169.254.169.254 # Metadata
+  # ufw allow out to <PROXY_IP>
+fi
+
+# ------------------------------------------------------------------------------
+# 8. Device Lab: Android Emulator Startup
 # ------------------------------------------------------------------------------
 # We check the instance metadata to see if we are in the 'device-lab' department.
 DEPARTMENT=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/department || echo "unknown")
