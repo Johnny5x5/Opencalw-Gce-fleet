@@ -1,0 +1,25 @@
+{
+  "name": "Incident Response",
+  "trigger": "SEV-1 Alert (Webhook/PubSub)",
+  "steps": [
+    {
+      "step": 1,
+      "action": "acknowledge",
+      "tool": "discord-connector",
+      "params": { "channel": "#devops-alerts", "message": "Investigating incident: {{incident_id}}" }
+    },
+    {
+      "step": 2,
+      "action": "log",
+      "tool": "google-cloud-connector",
+      "params": { "dataset": "conglomerate_warehouse", "table": "agent_activity_logs", "data": { "action": "IR_START", "details": "{{incident_id}}" } }
+    },
+    {
+      "step": 3,
+      "action": "lockdown",
+      "condition": "incident_type == 'SECURITY_BREACH'",
+      "tool": "terraform",
+      "instruction": "Set security_level = 3 and apply."
+    }
+  ]
+}
