@@ -1,0 +1,53 @@
+{
+  "policy_version": "1.0",
+  "defcon_levels": {
+    "1": {
+      "name": "STARTUP",
+      "description": "Standard cloud security. Private IPs, NAT, IAP.",
+      "requirements": {
+        "private_ip": true,
+        "cmek": false,
+        "vpc_sc": false,
+        "binary_auth": false,
+        "egress_filter": "loose"
+      }
+    },
+    "2": {
+      "name": "COMPLIANCE",
+      "description": "HIPAA/PCI Baseline. Encryption and Audit Logs.",
+      "requirements": {
+        "private_ip": true,
+        "cmek": true,
+        "vpc_sc": false,
+        "binary_auth": false,
+        "audit_logging": true,
+        "egress_filter": "loose"
+      }
+    },
+    "3": {
+      "name": "FORTRESS",
+      "description": "DoD IL4 / CMMC L3. Perimeter defense and Supply Chain security.",
+      "requirements": {
+        "private_ip": true,
+        "cmek": true,
+        "vpc_sc": true,
+        "binary_auth": true,
+        "secure_proxy": true,
+        "egress_filter": "strict",
+        "allowed_domains": ["github.com", "googleapis.com"]
+      }
+    },
+    "4": {
+      "name": "BUNKER",
+      "description": "IL5 Simulation. Hardware Security and Isolation.",
+      "requirements": {
+        "private_ip": true,
+        "cmek": true,
+        "hsm": true,
+        "vpc_sc": true,
+        "air_gap": true,
+        "egress_filter": "blocked"
+      }
+    }
+  }
+}
