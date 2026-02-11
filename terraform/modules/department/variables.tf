@@ -52,6 +52,12 @@ variable "enable_nested_virt" {
   default     = false
 }
 
+variable "enable_confidential_compute" {
+  description = "Enable Confidential Computing (AMD SEV) for memory encryption."
+  type        = bool
+  default     = false
+}
+
 variable "skills_gcs_url" {
   description = "GCS URL (gs://bucket/skills.zip) to download the agent skills from."
   type        = string
@@ -68,4 +74,10 @@ variable "kms_key_id" {
   description = "The ID of the Cloud KMS Crypto Key for encryption."
   type        = string
   default     = "" # Optional, if empty, uses Google-managed keys
+}
+
+variable "retention_period" {
+  description = "WORM Retention Period in seconds. 0 = Disabled."
+  type        = number
+  default     = 0
 }

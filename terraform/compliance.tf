@@ -11,6 +11,14 @@ resource "google_kms_crypto_key" "conglomerate_key" {
   key_ring        = google_kms_key_ring.key_ring.id
   rotation_period = "7776000s" # 90 Days (Standard rotation policy)
 
+  # Support for Hardware Security Modules (HSM)
+  # Default is SOFTWARE, can be upgraded to HSM for Finance/Banking compliance.
+  purpose          = "ENCRYPT_DECRYPT"
+  version_template {
+    protection_level = var.key_protection_level
+    algorithm        = "GOOGLE_SYMMETRIC_ENCRYPTION"
+  }
+
   lifecycle {
     prevent_destroy = true # Prevent accidental deletion of keys (Data loss prevention)
   }

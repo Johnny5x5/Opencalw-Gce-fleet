@@ -98,3 +98,33 @@ module "call_center" {
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
+
+# 6. Finance Department (The Trading / Banking Agents)
+# High Security Configuration (Confidential Computing + WORM)
+module "finance" {
+  source          = "./modules/department"
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "finance"
+  vpc_network_id  = google_compute_network.vpc.id
+  subnet_id       = google_compute_subnetwork.subnet.id
+
+  # Scaling: Handles market surges
+  min_replicas    = 1
+  max_replicas    = 20
+
+  # Security: Confidential Computing (AMD SEV)
+  # Requires N2D machine type
+  machine_type                = "n2d-standard-4"
+  enable_confidential_compute = true
+  enable_nested_virt          = false # Incompatible with Confidential Compute
+
+  # Compliance: WORM Retention (7 Years = 220752000 seconds)
+  # Defaulting to 0 (Disabled) for dev, set to 220752000 in prod.
+  retention_period = 0
+
+  startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
+}
