@@ -18,6 +18,7 @@ module "hq" {
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
 
 # 2. Engineering Department
@@ -35,6 +36,7 @@ module "engineering" {
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
 
 # 3. Human Resources (HR) Department
@@ -52,6 +54,7 @@ module "hr" {
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
 
 # 4. Device Lab Department (The Shared Android Resource)
@@ -74,6 +77,7 @@ module "device_lab" {
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
 
 # 5. Call Center Department (The Voice Agents)
@@ -92,4 +96,5 @@ module "call_center" {
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }

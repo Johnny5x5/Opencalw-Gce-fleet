@@ -75,3 +75,27 @@ resource "google_project_service" "chat" {
   service = "chat.googleapis.com"
   disable_on_destroy = false
 }
+
+resource "google_project_service" "secretmanager" {
+  project = var.project_id
+  service = "secretmanager.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "kms" {
+  project = var.project_id
+  service = "kms.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "logging" {
+  project = var.project_id
+  service = "logging.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "accesscontextmanager" {
+  project = var.project_id
+  service = "accesscontextmanager.googleapis.com"
+  disable_on_destroy = false
+}
