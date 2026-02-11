@@ -1,6 +1,7 @@
 const { Firestore } = require('@google-cloud/firestore');
 const { PubSub } = require('@google-cloud/pubsub');
 const { Storage } = require('@google-cloud/storage');
+const { BigQuery } = require('@google-cloud/bigquery');
 
 /**
  * OpenClaw Skill: Google Cloud Connector
@@ -16,6 +17,7 @@ const { Storage } = require('@google-cloud/storage');
 const firestore = new Firestore();
 const pubsub = new PubSub();
 const storage = new Storage();
+const bigquery = new BigQuery();
 
 module.exports = {
   name: 'google-cloud-connector',
@@ -60,6 +62,22 @@ module.exports = {
       const file = storage.bucket(bucket).file(filename);
       const [contents] = await file.download();
       return contents.toString();
+    },
+
+    // --- Analytics (BigQuery) ---
+    log_event: async ({ dataset, table, data }) => {
+      // Data must be an object matching the table schema
+      // e.g. { agent_id: 'hq-01', timestamp: '...', action: 'login' }
+      try {
+        await bigquery
+          .dataset(dataset)
+          .table(table)
+          .insert(data);
+        return `Logged event to ${dataset}.${table}`;
+      } catch (error) {
+        // In production, we might want to fail silently or log to stderr
+        throw new Error(`BigQuery Insert Failed: ${JSON.stringify(error)}`);
+      }
     }
   }
 };

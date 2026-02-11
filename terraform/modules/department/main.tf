@@ -46,6 +46,13 @@ resource "google_storage_bucket_iam_member" "sa_skills_viewer" {
   member = "serviceAccount:${google_service_account.sa.email}"
 }
 
+# Grant SA access to BigQuery (Data Warehouse)
+resource "google_project_iam_member" "sa_bigquery_editor" {
+  project = var.project_id
+  role    = "roles/bigquery.dataEditor"
+  member  = "serviceAccount:${google_service_account.sa.email}"
+}
+
 # 4. Compute (Instance Template & MIG)
 
 # Health Check for Auto-Healing
