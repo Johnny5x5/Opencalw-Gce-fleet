@@ -118,7 +118,22 @@ else
 fi
 
 # ------------------------------------------------------------------------------
-# 6. Device Lab: Android Emulator Startup
+# 6. Secret Injection (from Secret Manager)
+# ------------------------------------------------------------------------------
+echo "Fetching secrets..."
+# Helper function to fetch secret
+get_secret() {
+  local name=$1
+  gcloud secrets versions access latest --secret="$name" --quiet 2>/dev/null || echo ""
+}
+
+export DISCORD_TOKEN=$(get_secret "discord-token")
+export TWILIO_ACCOUNT_SID=$(get_secret "twilio-account-sid")
+export TWILIO_AUTH_TOKEN=$(get_secret "twilio-auth-token")
+export TWILIO_PHONE_NUMBER=$(get_secret "twilio-phone-number")
+
+# ------------------------------------------------------------------------------
+# 7. Device Lab: Android Emulator Startup
 # ------------------------------------------------------------------------------
 # We check the instance metadata to see if we are in the 'device-lab' department.
 DEPARTMENT=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/department || echo "unknown")
@@ -191,7 +206,7 @@ autostart=true
 autorestart=true
 stderr_logfile=/var/log/openclaw.err.log
 stdout_logfile=/var/log/openclaw.out.log
-environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin"
+environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="%(ENV_DISCORD_TOKEN)s",TWILIO_ACCOUNT_SID="%(ENV_TWILIO_ACCOUNT_SID)s",TWILIO_AUTH_TOKEN="%(ENV_TWILIO_AUTH_TOKEN)s",TWILIO_PHONE_NUMBER="%(ENV_TWILIO_PHONE_NUMBER)s"
 EOF
 
 # Reload Supervisor to start services
