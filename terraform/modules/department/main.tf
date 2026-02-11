@@ -18,6 +18,15 @@ resource "google_storage_bucket" "files" {
       default_kms_key_name = var.kms_key_id
     }
   }
+
+  # Retention Policy (SEC 17a-4 WORM Compliance)
+  dynamic "retention_policy" {
+    for_each = var.retention_period > 0 ? [1] : []
+    content {
+      is_locked        = false # Default unlocked to prevent accidental lockout during dev. Can be locked via API.
+      retention_period = var.retention_period
+    }
+  }
 }
 
 # Grant SA access to its own bucket
@@ -130,6 +139,11 @@ resource "google_compute_instance_template" "template" {
   # Only enabled if the variable is set (for Device Lab)
   advanced_machine_features {
     enable_nested_virtualization = var.enable_nested_virt
+  }
+
+  # Confidential Computing (AMD SEV) - Financial Grade Security
+  confidential_instance_config {
+    enable_confidential_compute = var.enable_confidential_compute
   }
 
   metadata = {
