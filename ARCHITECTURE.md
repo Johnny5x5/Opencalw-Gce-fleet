@@ -70,7 +70,38 @@ Instances are stateless. They hydrate their state upon startup using a **Startup
 *   **Horizontal Scaling:** MIGs automatically add instances based on load.
 *   **Succession:** If a department grows into a "Child Business," its state (Firestore/GCS) can be snapshotted and migrated to a new GCP Project, while retaining the same interface contract.
 
-## 5. Directory Structure
+## 5. Global Call Center Architecture (Tiers 1-4)
+
+The "OpenClaw Conglomerate" includes a tiered Call Center capability designed to scale from a single freelancer to a multimodal AI enterprise.
+
+### **Tier 1: The "Micro Startup" (Async)**
+*   **Technology:** Google Voice for Workspace (Starter).
+*   **Mechanism:** Async Voicemail & SMS handling.
+*   **Agent Role:** Monitors Gmail for transcripts, drafts replies.
+*   **Cost:** ~$20/mo fixed.
+
+### **Tier 2: The "SMB Professional" (Structured Voice)**
+*   **Technology:** **Dialogflow CX** + Telephony Gateway.
+*   **Mechanism:**
+    *   **Inbound:** Global 1-800 Number via Google/Partner.
+    *   **Logic:** Pre-defined flows (Hours, Balance, Routing) handled by Dialogflow.
+    *   **Fulfillment:** Complex queries sent to **OpenClaw Agents** via Pub/Sub (`call-center-inbox`).
+*   **Cost:** Pay-as-you-go (~$0.007/min).
+
+### **Tier 3: The "Enterprise Knowledge" (Generative Voice)**
+*   **Technology:** **Vertex AI Search & Conversation** + Dialogflow CX Generative Fallback.
+*   **Mechanism:**
+    *   **Knowledge Base:** Company PDFs/Docs stored in GCS (`-knowledge-base`).
+    *   **RAG (Retrieval Augmented Generation):** Vertex AI indexes docs.
+    *   **Logic:** If no structured flow matches, the AI "reads" the manual and generates a natural answer.
+*   **Benefit:** Zero-shot handling of complex queries.
+
+### **Tier 4: The "Bleeding Edge" (Multimodal)**
+*   **Technology:** **Gemini 1.5 Pro Vision** (via `google-multimodal-eye` skill).
+*   **Mechanism:** Agents can analyze images/video frames sent by users.
+*   **Use Case:** "My router light is blinking red" -> AI sees image -> "That's a firmware error."
+
+## 6. Directory Structure
 
 ```
 .

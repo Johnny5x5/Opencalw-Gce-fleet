@@ -27,3 +27,15 @@ resource "google_project_service" "cloudbuild" {
   service = "cloudbuild.googleapis.com"
   disable_on_destroy = false
 }
+
+resource "google_project_service" "aiplatform" {
+  project = var.project_id
+  service = "aiplatform.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "discoveryengine" {
+  project = var.project_id
+  service = "discoveryengine.googleapis.com"
+  disable_on_destroy = false
+}
