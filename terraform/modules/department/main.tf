@@ -53,6 +53,13 @@ resource "google_project_iam_member" "sa_bigquery_editor" {
   member  = "serviceAccount:${google_service_account.sa.email}"
 }
 
+# Grant SA access to Secret Manager (to fetch Discord/Twilio keys)
+resource "google_project_iam_member" "sa_secret_accessor" {
+  project = var.project_id
+  role    = "roles/secretmanager.secretAccessor"
+  member  = "serviceAccount:${google_service_account.sa.email}"
+}
+
 # 4. Compute (Instance Template & MIG)
 
 # Health Check for Auto-Healing

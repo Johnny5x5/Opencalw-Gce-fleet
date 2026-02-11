@@ -123,7 +123,27 @@ To transform the system into a true conglomerate, we integrate the **Google Work
     *   Departmental Spend (from Sheets) vs. Agent Activity.
     *   Device Lab Utilization.
 
-## 7. Directory Structure
+## 7. Collaboration & Communication Layer
+
+The "Social Fabric" of the conglomerate, enabling real-time interaction between AI agents and human staff.
+
+### **7.1 Chat & Alerts (Google Chat / Discord)**
+*   **Skills:** `google-chat-connector`, `discord-connector`.
+*   **Mechanism:**
+    *   **Google Chat:** Agents post critical alerts ("Server Down") to Spaces.
+    *   **Discord:** Agents "hang out" in channels, providing a casual interface for humans to query status ("@HQ-Agent status report").
+*   **Use Case:** Real-time Ops monitoring and "Watercooler" chatter.
+
+### **7.2 Video Conferencing (Google Meet)**
+*   **Skill:** `google-meet-scheduler`.
+*   **Mechanism:** Agents can schedule Calendar events with auto-generated Meet links.
+*   **Future (Tier 4):** Multimodal agents join the call to present data visually.
+
+### **7.3 Telephony (Outbound)**
+*   **Skill:** `google-voice-dialer` (powered by Twilio Fallback).
+*   **Mechanism:** Agents can initiate outbound calls or send SMS notifications when urgent human intervention is required (e.g., "P0 Incident").
+
+## 8. Directory Structure
 
 ```
 .

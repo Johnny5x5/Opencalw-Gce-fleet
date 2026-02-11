@@ -63,3 +63,15 @@ resource "google_project_service" "drive" {
   service = "drive.googleapis.com"
   disable_on_destroy = false
 }
+
+resource "google_project_service" "calendar" {
+  project = var.project_id
+  service = "calendar.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "chat" {
+  project = var.project_id
+  service = "chat.googleapis.com"
+  disable_on_destroy = false
+}
