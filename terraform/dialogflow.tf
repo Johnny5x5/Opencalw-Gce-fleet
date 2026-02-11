@@ -21,6 +21,17 @@ resource "google_dialogflow_cx_agent" "call_center_agent" {
   depends_on = [google_project_service.dialogflow]
 }
 
+# Webhook to Connect to OpenClaw via Cloud Function
+resource "google_dialogflow_cx_webhook" "openclaw_webhook" {
+  parent       = google_dialogflow_cx_agent.call_center_agent.id
+  display_name = "openclaw-fulfillment"
+
+  generic_web_service {
+    # The URL of the Cloud Function we created
+    uri = google_cloudfunctions2_function.fulfillment.service_config[0].uri
+  }
+}
+
 # The Default Start Flow
 # This is where the call begins.
 resource "google_dialogflow_cx_flow" "default_start_flow" {
@@ -62,6 +73,11 @@ resource "google_dialogflow_cx_page" "welcome_page" {
         text = ["Welcome to OpenClaw Corporation. How can I help you today?", "Bienvenido a OpenClaw Corporation. ¿En qué puedo ayudarle hoy?"]
       }
     }
+    # Link to the OpenClaw Webhook
+    # In a real flow, this would be on specific intents/routes, not just entry.
+    # But for demonstration, we show how to link it.
+    webhook = google_dialogflow_cx_webhook.openclaw_webhook.id
+    tag     = "welcome"
   }
 
   # Simple transition to capture intent (Simplified for demo)

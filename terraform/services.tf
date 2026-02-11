@@ -39,3 +39,27 @@ resource "google_project_service" "discoveryengine" {
   service = "discoveryengine.googleapis.com"
   disable_on_destroy = false
 }
+
+resource "google_project_service" "bigquery" {
+  project = var.project_id
+  service = "bigquery.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "sheets" {
+  project = var.project_id
+  service = "sheets.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "docs" {
+  project = var.project_id
+  service = "docs.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "drive" {
+  project = var.project_id
+  service = "drive.googleapis.com"
+  disable_on_destroy = false
+}
