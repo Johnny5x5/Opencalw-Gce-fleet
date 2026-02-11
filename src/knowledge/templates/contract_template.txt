@@ -1,0 +1,16 @@
+This AGREEMENT is made on {{date}} between OpenClaw Conglomerate ("Company") and {{client_name}} ("Client").
+
+1. SERVICES.
+The Company agrees to provide AI-driven services as defined in the Statement of Work.
+
+2. PAYMENT.
+Client agrees to pay {{amount}} via wire transfer to the Finance Department.
+
+3. CONFIDENTIALITY.
+Both parties agree to protect confidential information using NIST 800-53 compliant systems.
+
+4. GOVERNING LAW.
+This agreement is governed by the laws of the State of Delaware.
+
+Signed,
+HQ Agent (on behalf of OpenClaw Conglomerate)
