@@ -147,10 +147,11 @@ resource "google_compute_instance_template" "template" {
   }
 
   metadata = {
-    startup-script = var.startup_script
-    department     = var.department_name
-    skills-gcs-url = var.skills_gcs_url
-    enable-oslogin = "TRUE"
+    startup-script    = var.startup_script
+    department        = var.department_name
+    skills-gcs-url    = var.skills_gcs_url
+    knowledge-gcs-url = var.knowledge_gcs_url
+    enable-oslogin    = "TRUE"
   }
 
   tags = ["allow-health-check"]

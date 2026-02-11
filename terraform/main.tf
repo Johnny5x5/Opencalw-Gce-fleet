@@ -17,6 +17,7 @@ module "hq" {
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
@@ -35,6 +36,7 @@ module "engineering" {
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
@@ -53,6 +55,7 @@ module "hr" {
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
@@ -76,6 +79,7 @@ module "device_lab" {
 
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
@@ -95,6 +99,7 @@ module "call_center" {
   enable_nested_virt = false
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }

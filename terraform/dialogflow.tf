@@ -29,6 +29,12 @@ resource "google_dialogflow_cx_webhook" "openclaw_webhook" {
   generic_web_service {
     # The URL of the Cloud Function we created
     uri = google_cloudfunctions2_function.fulfillment.service_config[0].uri
+
+    # Secure Header Token (Simulated Secret)
+    # In production, use `random_password` provider and Secret Manager.
+    request_headers = {
+      "X-OpenClaw-Auth" = "secret-token-change-me-in-prod"
+    }
   }
 }
 
