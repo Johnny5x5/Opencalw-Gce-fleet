@@ -155,7 +155,29 @@ export TWILIO_AUTH_TOKEN=$(get_secret "twilio-auth-token")
 export TWILIO_PHONE_NUMBER=$(get_secret "twilio-phone-number")
 
 # ------------------------------------------------------------------------------
-# 7. Security Evolution Logic (Stubs)
+# 7. Persona Mapping (Dynamic Knowledge Loading)
+# ------------------------------------------------------------------------------
+# Map specific departments to their personas.
+# If no specific mapping exists, defaults to generic 'engineering' or 'hq' if matched.
+
+PERSONA_FILE=""
+case $DEPARTMENT in
+  "eng-core") PERSONA_FILE="eng_sre.json" ;;
+  "eng-product") PERSONA_FILE="eng_product.json" ;;
+  "eng-data") PERSONA_FILE="eng_data.json" ;;
+  "eng-qa") PERSONA_FILE="eng_qa.json" ;;
+  "finance") PERSONA_FILE="finance.json" ;;
+  "hq") PERSONA_FILE="hq.json" ;;
+  "chaplaincy") PERSONA_FILE="chaplain.json" ;;
+  *) PERSONA_FILE="engineering.json" ;; # Default fallback
+esac
+
+echo "Selected Persona: $PERSONA_FILE for Department: $DEPARTMENT"
+# We export this so the Agent code knows which persona to load from the unzipped knowledge dir.
+# The agent code (OpenClaw) should look for process.env.AGENT_PERSONA_FILE
+
+# ------------------------------------------------------------------------------
+# 8. Security Evolution Logic (Stubs)
 # ------------------------------------------------------------------------------
 # In a real evolution, this would apply local ip-tables based on security_level metadata.
 # Currently, Terraform handles the heavy lifting (Encryption, Logging).
@@ -245,7 +267,7 @@ autostart=true
 autorestart=true
 stderr_logfile=/var/log/openclaw.err.log
 stdout_logfile=/var/log/openclaw.out.log
-environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="${DISCORD_TOKEN}",TWILIO_ACCOUNT_SID="${TWILIO_ACCOUNT_SID}",TWILIO_AUTH_TOKEN="${TWILIO_AUTH_TOKEN}",TWILIO_PHONE_NUMBER="${TWILIO_PHONE_NUMBER}"
+environment=NODE_ENV="production",PORT="3000",AGENT_PERSONA_FILE="${PERSONA_FILE}",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="${DISCORD_TOKEN}",TWILIO_ACCOUNT_SID="${TWILIO_ACCOUNT_SID}",TWILIO_AUTH_TOKEN="${TWILIO_AUTH_TOKEN}",TWILIO_PHONE_NUMBER="${TWILIO_PHONE_NUMBER}"
 EOF
 
 # Secure the config file (contains secrets)
