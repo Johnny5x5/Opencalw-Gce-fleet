@@ -1,0 +1,24 @@
+{
+  "name": "Whistleblower Process",
+  "trigger": "Agent detects ethics violation OR Human report",
+  "steps": [
+    {
+      "step": 1,
+      "action": "log_incident",
+      "tool": "google-cloud-connector",
+      "params": { "dataset": "conglomerate_warehouse", "table": "agent_logs", "data": { "action": "ETHICS_VIOLATION", "severity": "HIGH" } }
+    },
+    {
+      "step": 2,
+      "action": "notify_hr",
+      "tool": "discord-connector",
+      "params": { "channel": "#hr-complaints", "message": "ALERT: Ethics violation detected in Department {{department}}. Incident ID: {{id}}" }
+    },
+    {
+      "step": 3,
+      "action": "audit_lock",
+      "tool": "shell_exec",
+      "instruction": "Trigger snapshot of agent memory."
+    }
+  ]
+}

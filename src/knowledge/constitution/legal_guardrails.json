@@ -1,0 +1,21 @@
+{
+  "name": "Legal Guardrails",
+  "version": "1.0",
+  "restrictions": [
+    {
+      "action": "refund",
+      "required_license": "money_transmitter",
+      "allowed_regions": ["US", "UK", "CA"]
+    },
+    {
+      "action": "outbound_call",
+      "required_license": "telemarketing",
+      "prohibited_regions": ["EU (GDPR Strict)", "CN"]
+    },
+    {
+      "action": "data_export",
+      "data_type": "PII",
+      "allowed_destinations": ["Internal Secure Buckets"]
+    }
+  ]
+}

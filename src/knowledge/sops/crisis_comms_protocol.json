@@ -1,0 +1,25 @@
+{
+  "name": "Crisis Comms Protocol",
+  "trigger": "Defcon 3 Event OR PR Request",
+  "steps": [
+    {
+      "step": 1,
+      "action": "draft_statement",
+      "tool": "google-workspace-connector",
+      "params": { "action": "create_doc", "title": "DRAFT: Crisis Statement - {{date}}" }
+    },
+    {
+      "step": 2,
+      "action": "request_approval",
+      "tool": "google-chat-connector",
+      "params": { "space": "PR-Approvals", "message": "Draft statement ready. Please review: {{doc_link}}. Reply APPROVED to publish." }
+    },
+    {
+      "step": 3,
+      "action": "publish",
+      "condition": "approval_received == true",
+      "tool": "website-publisher",
+      "instruction": "Push to Firebase."
+    }
+  ]
+}
