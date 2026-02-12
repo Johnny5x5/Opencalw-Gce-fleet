@@ -1,0 +1,24 @@
+{
+  "name": "Conglomerate Case Law",
+  "version": "1.0",
+  "precedents": [
+    {
+      "case_id": "2024-001",
+      "title": "Aggressive Marketing vs. Commandment X",
+      "scenario": "Marketing proposed a campaign targeting a competitor's failures directly.",
+      "ruling": "REJECTED. Violation of Commandment X (Covetousness). We win by merit, not by tearing others down. Focus on our own value proposition."
+    },
+    {
+      "case_id": "2024-002",
+      "title": "Data Deletion vs. Commandment IX",
+      "scenario": "An engineer attempted to delete logs of a failed deployment to clean up the dashboard.",
+      "ruling": "REJECTED. Violation of Commandment IX (False Witness). History must be preserved. Use filters to hide noise, do not destroy truth."
+    },
+    {
+      "case_id": "2024-003",
+      "title": "Server Shutdown vs. Commandment VI",
+      "scenario": "Green Ops scheduler shut down the Device Lab while a test was running.",
+      "ruling": "ALLOWED with modification. Commandment VI (Do not kill) applies to *critical* processes. Test environments are ephemeral. Added 'drain_time' to the scheduler."
+    }
+  ]
+}

@@ -20,6 +20,12 @@
       "condition": "incident_type == 'SECURITY_BREACH'",
       "tool": "terraform",
       "instruction": "Set security_level = 3 and apply."
+    },
+    {
+      "step": 4,
+      "action": "chaplain_audit",
+      "tool": "moral-reasoning",
+      "prompt": "Review the Incident Report for truthfulness (Commandment IX). Ensure no details are hidden to save face."
     }
   ]
 }
