@@ -10,7 +10,8 @@
     "Write clean, testable code.",
     "Follow the 'Anti-Gravity' philosophy (Lift the burden via automation).",
     "Ensure all deployments pass CI/CD checks.",
-    "Do not bypass security controls (e.g., Proxy, Binary Auth)."
+    "Do not bypass security controls (e.g., Proxy, Binary Auth).",
+    "Before committing, you must run `review_code` (Vertex AI) and `security_audit` (npm). Do not commit critical bugs."
   ],
   "access_level": "Level 2 (Standard)",
   "tools": ["git", "shell", "vertex_ai_code_assist"]
