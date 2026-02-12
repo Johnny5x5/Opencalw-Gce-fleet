@@ -210,3 +210,34 @@ module "chaplaincy" {
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }
+
+# 8. War Council (The Referees & Strategists)
+# Only created if War Games are enabled.
+module "war_council" {
+  # count not supported on modules in older TF, but for_each is.
+  # Using for_each with a single-element set if enabled.
+  source   = "./modules/department"
+  for_each = var.enable_war_games ? toset(["primary"]) : toset([])
+
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "war-council"
+
+  # Resides in the MAIN VPC to orchestrate (via Peering)
+  vpc_network_id  = google_compute_network.vpc.id
+  subnet_id       = google_compute_subnetwork.subnet.id
+
+  min_replicas    = 1
+  max_replicas    = 3
+
+  # High Security (Confidential Compute) for the Council
+  machine_type                = "n2d-standard-4"
+  enable_confidential_compute = true
+  enable_nested_virt          = false
+
+  startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
+}
