@@ -99,3 +99,9 @@ resource "google_project_service" "accesscontextmanager" {
   service = "accesscontextmanager.googleapis.com"
   disable_on_destroy = false
 }
+
+resource "google_project_service" "cloudbilling" {
+  project = var.project_id
+  service = "cloudbilling.googleapis.com"
+  disable_on_destroy = false
+}
