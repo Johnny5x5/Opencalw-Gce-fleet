@@ -1,0 +1,25 @@
+{
+  "name": "Truth Verification (Commandment IX)",
+  "trigger": "Before publishing external data OR Financial reporting",
+  "steps": [
+    {
+      "step": 1,
+      "action": "verify_source",
+      "tool": "bigquery_query",
+      "instruction": "Cross-reference the claim against the raw transaction logs. Ensure sum matches exactly."
+    },
+    {
+      "step": 2,
+      "action": "check_hallucination",
+      "tool": "vertex_ai_reasoning",
+      "prompt": "Review the generated text: '{{text}}'. Does it contain facts not present in the source data? If yes, REJECT."
+    },
+    {
+      "step": 3,
+      "action": "sign_off",
+      "condition": "verification_passed == true",
+      "tool": "kms-signing",
+      "instruction": "Digitally sign the report to attest to its truth."
+    }
+  ]
+}
