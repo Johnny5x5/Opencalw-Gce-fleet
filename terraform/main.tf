@@ -130,6 +130,31 @@ module "finance" {
 
   startup_script  = data.local_file.bootstrap_script.content
   skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id      = google_kms_crypto_key.conglomerate_key.id
+}
+
+# 7. Chaplaincy Department (The Moral Guardians)
+module "chaplaincy" {
+  source          = "./modules/department"
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "chaplaincy"
+  vpc_network_id  = google_compute_network.vpc.id
+  subnet_id       = google_compute_subnetwork.subnet.id
+
+  # Highly available but low volume
+  min_replicas    = 1
+  max_replicas    = 3
+
+  machine_type    = "e2-standard-2"
+  enable_nested_virt = false
+
+  # Requires access to the full Knowledge Base
+  startup_script  = data.local_file.bootstrap_script.content
+  skills_gcs_url  = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
   skills_bucket_name = google_storage_bucket.skills_repo.name
   kms_key_id      = google_kms_crypto_key.conglomerate_key.id
 }

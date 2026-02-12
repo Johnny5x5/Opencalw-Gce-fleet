@@ -16,6 +16,12 @@
     },
     {
       "step": 3,
+      "action": "chaplain_review",
+      "tool": "moral-reasoning",
+      "prompt": "Review this budget allocation. Does it violate Commandment VIII (Stealing/Waste) or X (Covetousness)? Ensure funds are not used for unethical purposes."
+    },
+    {
+      "step": 4,
       "action": "record",
       "tool": "google-workspace-connector",
       "params": { "action": "append_row", "sheet": "Budget_Forecast", "values": ["{{date}}", "{{cost}}", "{{approval_status}}"] }
