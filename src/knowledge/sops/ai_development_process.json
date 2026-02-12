@@ -1,0 +1,36 @@
+{
+  "name": "AI Development Process (Autonomous Backlog)",
+  "trigger": "Cron Schedule (Every Hour) OR File Change Event",
+  "steps": [
+    {
+      "step": 1,
+      "action": "scan_backlog",
+      "tool": "google-code-studio",
+      "params": { "command": "ls backlog/*.md" }
+    },
+    {
+      "step": 2,
+      "action": "read_task",
+      "tool": "google-code-studio",
+      "params": { "command": "cat {{highest_priority_file}}" }
+    },
+    {
+      "step": 3,
+      "action": "execute",
+      "tool": "vertex_ai_reasoning",
+      "prompt": "Implement the task described in: {{task_content}}. Generate code/terraform."
+    },
+    {
+      "step": 4,
+      "action": "verify",
+      "tool": "google-code-studio",
+      "params": { "command": "npm test" }
+    },
+    {
+      "step": 5,
+      "action": "archive",
+      "tool": "shell_exec",
+      "params": { "command": "mv {{highest_priority_file}} backlog/archive/" }
+    }
+  ]
+}
