@@ -146,6 +146,13 @@ resource "google_compute_instance_template" "template" {
     enable_confidential_compute = var.enable_confidential_compute
   }
 
+  # Scheduling: Confidential VMs do not support Live Migration.
+  # We must set maintenance behavior to TERMINATE if confidential compute is enabled.
+  scheduling {
+    on_host_maintenance = var.enable_confidential_compute ? "TERMINATE" : "MIGRATE"
+    automatic_restart   = true
+  }
+
   metadata = {
     startup-script    = var.startup_script
     department        = var.department_name

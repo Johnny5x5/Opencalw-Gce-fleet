@@ -1,0 +1,24 @@
+{
+  "name": "Financial Planning (Cost Control)",
+  "trigger": "New Department Request OR Monthly Review",
+  "steps": [
+    {
+      "step": 1,
+      "action": "estimate_cost",
+      "tool": "shell_exec",
+      "params": { "command": "node tools/cost_calculator/index.js {{num_agents}} {{storage_gb}} {{security_level}}" }
+    },
+    {
+      "step": 2,
+      "action": "evaluate",
+      "tool": "vertex_ai_reasoning",
+      "prompt": "The estimated cost is {{cost}}. The current monthly budget is {{budget}}. Is this acceptable? If yes, approve. If no, suggest downgrading Security Level."
+    },
+    {
+      "step": 3,
+      "action": "record",
+      "tool": "google-workspace-connector",
+      "params": { "action": "append_row", "sheet": "Budget_Forecast", "values": ["{{date}}", "{{cost}}", "{{approval_status}}"] }
+    }
+  ]
+}

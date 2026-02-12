@@ -1,0 +1,13 @@
+{
+  "name": "conglomerate-cost-calculator",
+  "version": "1.0.0",
+  "description": "Dynamic pricing estimator for OpenClaw infrastructure security levels.",
+  "main": "index.js",
+  "bin": {
+    "cost-calc": "./index.js"
+  },
+  "dependencies": {
+    "googleapis": "^133.0.0",
+    "google-auth-library": "^9.6.0"
+  }
+}
