@@ -169,6 +169,16 @@ case $DEPARTMENT in
   "finance") PERSONA_FILE="finance.json" ;;
   "hq") PERSONA_FILE="hq.json" ;;
   "chaplaincy") PERSONA_FILE="chaplain.json" ;;
+  team-*)
+    COLOR=$(echo "$DEPARTMENT" | cut -d'-' -f2)
+    # Check if a specific persona for this color exists (e.g., wargame_red.json)
+    if [ -f "${KNOWLEDGE_DIR}/personas/wargame_${COLOR}.json" ]; then
+      PERSONA_FILE="wargame_${COLOR}.json"
+    else
+      # Otherwise, use the generic competitor persona
+      PERSONA_FILE="wargame_competitor.json"
+    fi
+    ;;
   *) PERSONA_FILE="engineering.json" ;; # Default fallback
 esac
 
