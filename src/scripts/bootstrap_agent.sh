@@ -248,6 +248,9 @@ stdout_logfile=/var/log/openclaw.out.log
 environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="${DISCORD_TOKEN}",TWILIO_ACCOUNT_SID="${TWILIO_ACCOUNT_SID}",TWILIO_AUTH_TOKEN="${TWILIO_AUTH_TOKEN}",TWILIO_PHONE_NUMBER="${TWILIO_PHONE_NUMBER}"
 EOF
 
+# Secure the config file (contains secrets)
+chmod 600 /etc/supervisor/conf.d/openclaw.conf
+
 # Reload Supervisor to start services
 service supervisor restart
 

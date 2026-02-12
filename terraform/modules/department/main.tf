@@ -102,7 +102,8 @@ resource "google_compute_instance_template" "template" {
 
   # Boot Disk
   disk {
-    source_image = "ubuntu-os-cloud/ubuntu-2204-lts"
+    # Use CVM image family if Confidential Compute is enabled (Required for AMD SEV)
+    source_image = var.enable_confidential_compute ? "ubuntu-os-cloud/ubuntu-2204-lts-cvm" : "ubuntu-os-cloud/ubuntu-2204-lts"
     auto_delete  = true
     boot         = true
     disk_size_gb = 50

@@ -24,7 +24,8 @@ async function main() {
   const securityLevel = parseInt(args[2]) || 1;
 
   console.log(`\n=== OpenClaw Conglomerate Cost Estimator ===`);
-  console.log(`Agents: ${numAgents} | Storage: ${storageGB} GB | Security Level: ${securityLevel}\n`);
+  console.log(`Agents: ${numAgents} | Storage: ${storageGB} GB | Security Level: ${securityLevel}`);
+  console.log(`Pricing Data Source: Live API (with 2024-02 reference fallback)\n`);
 
   // Authenticate (Try to get live pricing)
   const auth = new GoogleAuth({ scopes: ['https://www.googleapis.com/auth/cloud-platform'] });
