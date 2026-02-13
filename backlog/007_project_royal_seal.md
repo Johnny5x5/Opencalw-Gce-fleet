@@ -31,7 +31,15 @@ This system operates at the highest possible security level. The signing infrast
         2.  Parse against the **12 Categories of Prime Directives**.
         3.  Draft a formal "Execution Plan" (JSON/Terraform).
         4.  **Guardrail:** Present the Plan back to the Emperor: "You ordered X. This translates to Y. Does this violate Prime Directive Z? Confirm."
-        5.  Only upon "CONFIRM" + "BIOMETRIC SEAL" does the plan execute.
+        5.  Only upon "CONFIRM" + "BIOMETRIC SEAL" does the plan move to **Queue 1 (The Edict)**.
 
-4.  **Ambiguity Lock:**
+4.  **The 3-Tier Queuing Logic (Emperor's Will Protocol):**
+    -   **Queue 3 (The Well):** Raw ideas and promotions from the general backlog ("Intake Valve").
+    -   **Queue 2 (The Forge):** Active development phase. Resources swarm to build the plan.
+    -   **Queue 1 (The Edict):** Signed & Time-Locked.
+        -   **Timer:** Enforce a 7-Day Delay by default.
+        -   **Revocation:** Allow signed "Kill Codes" to remove items from Queue 1.
+        -   **Override:** Allow 0-Day execution ONLY if flagged "Emergency" + Biometric confirmed.
+
+5.  **Ambiguity Lock:**
     -   If the Scribe detects >5% ambiguity or a conflict between Categories (e.g., Cat 5 Expansion vs Cat 1 Existence), it MUST halt and request clarification. It cannot "guess."
