@@ -77,11 +77,107 @@ resource "google_compute_firewall" "wargames_allow_council" {
   source_ranges = [var.subnet_cidr] # The main VPC range
 }
 
-# 4. The 200 Teams
+# 4. Core War Game Teams (The Primary Colors)
+# Explicitly defined with higher resources and specific roles.
+
+module "team_red" {
+  source   = "./modules/department"
+  # Only create if war games are enabled
+  count    = var.enable_war_games ? 1 : 0
+
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "team-red"
+
+  vpc_network_id  = google_compute_network.wargames_vpc[0].id
+  subnet_id       = google_compute_subnetwork.wargames_subnet[0].id
+
+  # Red Team gets more power to attack
+  min_replicas = 1
+  max_replicas = 3
+  machine_type = "e2-standard-2"
+
+  startup_script    = data.local_file.bootstrap_script.content
+  skills_gcs_url    = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id        = google_kms_crypto_key.conglomerate_key.id
+}
+
+module "team_blue" {
+  source   = "./modules/department"
+  count    = var.enable_war_games ? 1 : 0
+
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "team-blue"
+
+  vpc_network_id  = google_compute_network.wargames_vpc[0].id
+  subnet_id       = google_compute_subnetwork.wargames_subnet[0].id
+
+  # Blue Team gets standard power to defend
+  min_replicas = 1
+  max_replicas = 3
+  machine_type = "e2-standard-2"
+
+  startup_script    = data.local_file.bootstrap_script.content
+  skills_gcs_url    = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id        = google_kms_crypto_key.conglomerate_key.id
+}
+
+module "team_green" {
+  source   = "./modules/department"
+  count    = var.enable_war_games ? 1 : 0
+
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "team-green"
+
+  vpc_network_id  = google_compute_network.wargames_vpc[0].id
+  subnet_id       = google_compute_subnetwork.wargames_subnet[0].id
+
+  min_replicas = 1
+  max_replicas = 2
+  machine_type = "e2-medium"
+
+  startup_script    = data.local_file.bootstrap_script.content
+  skills_gcs_url    = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id        = google_kms_crypto_key.conglomerate_key.id
+}
+
+module "team_black" {
+  source   = "./modules/department"
+  count    = var.enable_war_games ? 1 : 0
+
+  project_id      = var.project_id
+  region          = var.region
+  department_name = "team-black"
+
+  vpc_network_id  = google_compute_network.wargames_vpc[0].id
+  subnet_id       = google_compute_subnetwork.wargames_subnet[0].id
+
+  # Black team is small but agile
+  min_replicas = 1
+  max_replicas = 1
+  machine_type = "e2-medium"
+
+  startup_script    = data.local_file.bootstrap_script.content
+  skills_gcs_url    = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
+  knowledge_gcs_url = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.knowledge_zip.name}"
+  skills_bucket_name = google_storage_bucket.skills_repo.name
+  kms_key_id        = google_kms_crypto_key.conglomerate_key.id
+}
+
+# 5. The Grunt Army (Remaining Teams)
 # Dynamically generated using `range` if enabled.
+# We skip the first 4 "colors" effectively, or just add them as extra targets.
+# To keep it simple, we just generate team-001 to team-196.
 locals {
-  # Generate a list of numbers 1..200, format as strings "team-001"..."team-200"
-  team_ids = var.enable_war_games ? [for i in range(1, 201) : format("team-%03d", i)] : []
+  team_ids = var.enable_war_games ? [for i in range(1, 197) : format("team-%03d", i)] : []
 }
 
 module "war_game_team" {
@@ -92,15 +188,12 @@ module "war_game_team" {
   region          = var.region
   department_name = each.key
 
-  # Deploy into the Arena VPC
   vpc_network_id  = google_compute_network.wargames_vpc[0].id
   subnet_id       = google_compute_subnetwork.wargames_subnet[0].id
 
-  # Minimal Resources per Team to avoid quota explosion
-  # 200 Teams * 1 Instance = 200 vCPUs. (Check Quotas!)
   min_replicas = 1
   max_replicas = 1
-  machine_type = "e2-micro" # Smallest possible instance
+  machine_type = "e2-micro"
 
   startup_script    = data.local_file.bootstrap_script.content
   skills_gcs_url    = "gs://${google_storage_bucket.skills_repo.name}/${google_storage_bucket_object.skills_archive.name}"
