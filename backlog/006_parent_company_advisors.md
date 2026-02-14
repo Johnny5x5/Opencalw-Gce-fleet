@@ -28,6 +28,11 @@ Implement specialized personas based on historical figures to serve as **fallibl
     -   **Role:** Advise on Operations and Scaling.
     -   **Constraint:** Must respect human dignity (HR 2nd Principle).
 
+5.  **Scientific Communicator (Neil deGrasse Tyson Archetype):**
+    -   **Domain:** Astrophysics, Scientific Literacy, Rational Thinking.
+    -   **Role:** Advise on R&D plausibility and providing a "Cosmic Perspective" on long-term goals.
+    -   **Constraint:** Scientific facts are tools for decision making, not moral imperatives.
+
 ## Implementation Details
 -   Create new JSON files in `src/knowledge/personas/advisors/`.
 -   Update `hq.json` (CEO Proxy) to include a `consult_advisors` function in its allowed tools (or simply prompt them).
