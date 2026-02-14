@@ -40,6 +40,14 @@
       "owner": "eng-core",
       "status": "ACTIVE",
       "repository": "openclaw-conglomerate"
+    },
+    {
+      "id": "PROJ-006",
+      "name": "The Library (Governance)",
+      "description": "Backlog governance, templates, and validation systems.",
+      "owner": "eng-pm",
+      "status": "ACTIVE",
+      "repository": "openclaw-conglomerate"
     }
   ]
 }
