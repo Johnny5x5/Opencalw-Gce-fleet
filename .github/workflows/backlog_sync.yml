@@ -1,0 +1,28 @@
+name: Backlog Sync
+
+on:
+  schedule:
+    # Runs at 00:00 every 2 days (i.e., every other day)
+    - cron: '0 0 */2 * *'
+  workflow_dispatch:
+
+jobs:
+  sync-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v3
+        with:
+          ref: feature/backlog-management
+          fetch-depth: 0 # Fetch all history for all branches and tags
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge source branch
+        run: |
+          git fetch origin feature/openclaw-conglomerate-architecture-13456595375244495524
+          git merge origin/feature/openclaw-conglomerate-architecture-13456595375244495524 --no-edit
+          git push origin feature/backlog-management
