@@ -1,6 +1,7 @@
 # Title: War Council Library
 # Priority: Medium
 # Type: Feature
+# Prime Directive: Intelligence
 
 ## Description
 A central repository for War Council strategies, reports, and decisions. This will serve as the historical record for all simulations.

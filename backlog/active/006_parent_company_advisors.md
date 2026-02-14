@@ -1,6 +1,7 @@
 # Title: Parent Company Advisors
 # Priority: Medium
 # Type: Feature
+# Prime Directive: Intelligence
 
 ## Description
 Create personas for historical figures to advise the board. These "Historical Advisory Archetypes" will provide diverse perspectives on business decisions.

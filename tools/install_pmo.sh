@@ -1,0 +1,51 @@
+#!/bin/bash
+# PMO Installer Script
+# Installs the OpenClaw Project Management Office structure into a target directory.
+
+set -e
+
+if [ -z "$1" ]; then
+  echo "Usage: ./tools/install_pmo.sh <target_directory>"
+  exit 1
+fi
+
+TARGET_DIR="$1"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+REPO_ROOT="$(dirname "$SCRIPT_DIR")"
+
+echo "Installing PMO into $TARGET_DIR..."
+
+# 1. Create Directory Structure
+mkdir -p "$TARGET_DIR/backlog/active"
+mkdir -p "$TARGET_DIR/backlog/archive"
+mkdir -p "$TARGET_DIR/backlog/inbox"
+mkdir -p "$TARGET_DIR/backlog/planning"
+mkdir -p "$TARGET_DIR/backlog/roadmaps"
+mkdir -p "$TARGET_DIR/backlog/templates"
+mkdir -p "$TARGET_DIR/tools"
+mkdir -p "$TARGET_DIR/.github/workflows"
+mkdir -p "$TARGET_DIR/docs/departments/project_management"
+
+# 2. Copy Core Documentation
+cp "$REPO_ROOT/backlog/GOVERNANCE.md" "$TARGET_DIR/backlog/"
+cp "$REPO_ROOT/backlog/README.md" "$TARGET_DIR/backlog/"
+cp "$REPO_ROOT/backlog/STRATEGY.md" "$TARGET_DIR/backlog/"
+cp "$REPO_ROOT/backlog/templates/"* "$TARGET_DIR/backlog/templates/"
+cp "$REPO_ROOT/backlog/planning/RITUALS.md" "$TARGET_DIR/backlog/planning/"
+cp "$REPO_ROOT/docs/departments/project_management/ROLES.md" "$TARGET_DIR/docs/departments/project_management/"
+
+# 3. Copy Tools & Workflows
+cp "$REPO_ROOT/tools/validate_backlog.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/generate_status_report.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/.github/workflows/backlog_validation.yml" "$TARGET_DIR/.github/workflows/"
+cp "$REPO_ROOT/.github/workflows/daily_status_report.yml" "$TARGET_DIR/.github/workflows/"
+
+# 4. Success Message
+echo "PMO Installation Complete!"
+echo "Structure created in $TARGET_DIR/backlog"
+echo "Tools installed in $TARGET_DIR/tools"
+echo "Workflows installed in $TARGET_DIR/.github/workflows"
+echo ""
+echo "Next Steps:"
+echo "1. Define your Prime Directives in $TARGET_DIR/backlog/STRATEGY.md"
+echo "2. Add your first task to $TARGET_DIR/backlog/active/"

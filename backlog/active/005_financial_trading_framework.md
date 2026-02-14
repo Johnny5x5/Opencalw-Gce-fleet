@@ -1,6 +1,7 @@
 # Title: Financial Trading Framework
 # Priority: High
 # Type: Architecture
+# Prime Directive: Wealth
 
 ## Description
 We need to build a high-frequency trading engine capable of executing trades with minimal latency. This is a core component of the Conglomerate's wealth generation strategy.

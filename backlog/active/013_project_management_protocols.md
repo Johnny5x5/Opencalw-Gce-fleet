@@ -1,6 +1,7 @@
 # Title: Project Management Protocols (The Forge)
 # Priority: High
 # Type: Architecture
+# Prime Directive: Efficiency
 
 ## Description
 This initiative establishes the "The Forge" project management methodology for the Conglomerate. It aims to standardize how tasks are created, tracked, and completed across all departments, ensuring efficiency and clarity.

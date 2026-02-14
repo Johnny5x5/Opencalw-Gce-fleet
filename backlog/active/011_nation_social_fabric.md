@@ -1,6 +1,7 @@
 # Title: Nation Social Fabric
 # Priority: Medium
 # Type: Feature
+# Prime Directive: Influence
 
 ## Description
 Build a community platform to foster connection and collaboration among citizens of the Digital Nation.

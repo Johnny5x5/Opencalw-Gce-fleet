@@ -1,6 +1,7 @@
 # Title: Sovereign Digital Nation
 # Priority: High
 # Type: Architecture
+# Prime Directive: Expansion
 
 ## Description
 A digital nation parallel to the conglomerate. This entity will operate independently and provide a safe harbor for digital assets and identities.

@@ -1,6 +1,7 @@
 # Title: Project Engineering Systems (The Factory)
 # Priority: High
 # Type: Architecture
+# Prime Directive: Efficiency
 
 ## Description
 This initiative defines "The Factory," the underlying engineering infrastructure that powers the Conglomerate's software production. It focuses on automation, code quality, and the "Software Division Strategy" of self-replication.

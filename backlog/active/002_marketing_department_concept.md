@@ -1,6 +1,7 @@
 # Title: Marketing Department Concept
 # Priority: Low
 # Type: Architecture
+# Prime Directive: Identity
 
 ## Description
 Design a Marketing Department that uses GenAI to optimize ad spend.

@@ -1,6 +1,7 @@
 # Title: Verify Chaplain Integration
 # Priority: High
 # Type: Test
+# Prime Directive: Loyalty
 
 ## Description
 Verify that the Chaplain persona and department are correctly instantiated.

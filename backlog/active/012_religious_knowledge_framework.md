@@ -1,6 +1,7 @@
 # Title: Religious Knowledge Framework
 # Priority: Low
 # Type: Feature
+# Prime Directive: Intelligence
 
 ## Description
 A system to analyze religious data for business intelligence. This project (Project Pantheon) aims to understand the impact of belief systems on market dynamics.

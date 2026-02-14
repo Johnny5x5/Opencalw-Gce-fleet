@@ -1,6 +1,7 @@
 # Title: Project Royal Seal
 # Priority: Critical
 # Type: Security
+# Prime Directive: Command
 
 ## Description
 Implement strict security for Edicts. This ensures that no unauthorized commands can modify the core directives of the Conglomerate.

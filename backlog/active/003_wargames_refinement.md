@@ -1,6 +1,7 @@
 # Title: War Games Refinement
 # Priority: High
 # Type: Feature
+# Prime Directive: Defense
 
 ## Description
 The current War Games simulation is functional but lacks depth. We need to introduce more strategic elements to better simulate real-world conflict and resource management.

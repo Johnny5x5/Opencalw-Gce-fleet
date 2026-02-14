@@ -1,6 +1,7 @@
 # Title: Nation Weather Command
 # Priority: Low
 # Type: Feature
+# Prime Directive: Intelligence
 
 ## Description
 Monitor and predict global trends (digital weather). This involves analyzing market sentiment, social media trends, and geopolitical events.
