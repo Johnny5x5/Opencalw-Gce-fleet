@@ -40,6 +40,15 @@ cat <<EOF >> /etc/hosts
 127.0.0.1 www.starlink.com
 127.0.0.1 x.ai
 127.0.0.1 grok.x.ai
+# --- BLOCKED COMPETITORS (META / FACEBOOK) ---
+127.0.0.1 facebook.com
+127.0.0.1 www.facebook.com
+127.0.0.1 instagram.com
+127.0.0.1 www.instagram.com
+127.0.0.1 whatsapp.com
+127.0.0.1 www.whatsapp.com
+127.0.0.1 meta.com
+127.0.0.1 www.meta.com
 # -------------------------------------------------
 EOF
 
