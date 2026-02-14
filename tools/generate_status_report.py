@@ -52,13 +52,30 @@ def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"
     report_lines.append("## Strategic Alignment (The North Star)")
     for directive, group in sorted(directives.items()):
         report_lines.append(f"### {directive}")
-        report_lines.append("| ID | Title | Priority | Type | Status |")
-        report_lines.append("|---|---|---|---|---|")
+        report_lines.append("| ID | Title | Priority | Type | Status | Risk |")
+        report_lines.append("|---|---|---|---|---|---|")
         for item in group:
-             report_lines.append(f"| {item[0]} | {item[1]} | {item[2]} | {item[3]} | {item[4]} |")
+             # Simple Risk inference based on Priority
+             risk = "Low"
+             if item[2] == "Critical": risk = "**High**"
+             elif item[2] == "High": risk = "Medium"
+
+             report_lines.append(f"| {item[0]} | {item[1]} | {item[2]} | {item[3]} | {item[4]} | {risk} |")
         report_lines.append("") # Newline
 
-    # Section 2: Metrics (Velocity & Distribution)
+    # Section 2: Blockers & Risks (Team Black Request)
+    report_lines.append("## Critical Risks (Watchlist)")
+    blockers_found = False
+    for item in items:
+        if item[2] == "Critical":
+            report_lines.append(f"- 🔴 **CRITICAL:** {item[0]} - {item[1]} ({item[5]})")
+            blockers_found = True
+
+    if not blockers_found:
+        report_lines.append("- No critical blockers identified.")
+    report_lines.append("")
+
+    # Section 3: Metrics (Velocity & Distribution)
     report_lines.append("## Intelligence Metrics")
     report_lines.append(f"- **Total Active Initiatives:** {len(items)}")
 

@@ -4,8 +4,15 @@
 
 set -e
 
+DRY_RUN=false
+
+if [ "$1" == "--dry-run" ]; then
+  DRY_RUN=true
+  shift
+fi
+
 if [ -z "$1" ]; then
-  echo "Usage: ./tools/install_pmo.sh <target_directory>"
+  echo "Usage: ./tools/install_pmo.sh [--dry-run] <target_directory>"
   exit 1
 fi
 
@@ -14,6 +21,13 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 
 echo "Installing PMO into $TARGET_DIR..."
+
+if [ "$DRY_RUN" = true ]; then
+  echo "[DRY RUN] Would create directories in $TARGET_DIR/backlog/"
+  echo "[DRY RUN] Would copy templates and governance docs."
+  echo "[DRY RUN] Would install tools and workflows."
+  exit 0
+fi
 
 # 1. Create Directory Structure
 mkdir -p "$TARGET_DIR/backlog/active"
