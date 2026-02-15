@@ -4,54 +4,54 @@
 
 ## Strategic Alignment (The North Star)
 ### Command
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 007 | Project Royal Seal | Critical | Security | In Progress | **High** |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 007 | Project Royal Seal | Critical | Security | In Progress | **High** | ✅ Active (0d) |
 
 ### Defense
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 003 | War Games Refinement | High | Feature | In Progress | Medium |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 003 | War Games Refinement | High | Feature | In Progress | Medium | ✅ Active (0d) |
 
 ### Efficiency
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 013 | Project Management Protocols (The Forge) | High | Architecture | In Progress | Medium |
-| 014 | Project Engineering Systems (The Factory) | High | Architecture | In Progress | Medium |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 013 | Project Management Protocols (The Forge) | High | Architecture | In Progress | Medium | ⚠️ Inactive (999d) |
+| 014 | Project Engineering Systems (The Factory) | High | Architecture | In Progress | Medium | ⚠️ Inactive (999d) |
 
 ### Expansion
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 008 | Sovereign Digital Nation | High | Architecture | In Progress | Medium |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 008 | Sovereign Digital Nation | High | Architecture | In Progress | Medium | ✅ Active (0d) |
 
 ### Identity
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 002 | Marketing Department Concept | Low | Architecture | In Progress | Low |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 002 | Marketing Department Concept | Low | Architecture | In Progress | Low | ✅ Active (0d) |
 
 ### Influence
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 009 | Nation Foreign Office | Medium | Feature | In Progress | Low |
-| 011 | Nation Social Fabric | Medium | Feature | In Progress | Low |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 009 | Nation Foreign Office | Medium | Feature | In Progress | Low | Unknown |
+| 011 | Nation Social Fabric | Medium | Feature | In Progress | Low | Unknown |
 
 ### Intelligence
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 004 | War Council Library | Medium | Feature | In Progress | Low |
-| 006 | Parent Company Advisors | Medium | Feature | In Progress | Low |
-| 010 | Nation Weather Command | Low | Feature | In Progress | Low |
-| 012 | Religious Knowledge Framework | Low | Feature | In Progress | Low |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 004 | War Council Library | Medium | Feature | In Progress | Low | ⚠️ Inactive (999d) |
+| 006 | Parent Company Advisors | Medium | Feature | In Progress | Low | Unknown |
+| 010 | Nation Weather Command | Low | Feature | In Progress | Low | Unknown |
+| 012 | Religious Knowledge Framework | Low | Feature | In Progress | Low | Unknown |
 
 ### Loyalty
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 001 | Verify Chaplain Integration | High | Test | In Progress | Medium |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 001 | Verify Chaplain Integration | High | Test | In Progress | Medium | ✅ Active (0d) |
 
 ### Wealth
-| ID | Title | Priority | Type | Status | Risk |
-|---|---|---|---|---|---|
-| 005 | Financial Trading Framework | High | Architecture | In Progress | Medium |
+| ID | Title | Priority | Type | Status | Risk | Activity |
+|---|---|---|---|---|---|---|
+| 005 | Financial Trading Framework | High | Architecture | In Progress | Medium | ✅ Active (0d) |
 
 ## Critical Risks (Watchlist)
 - 🔴 **CRITICAL:** 007 - Project Royal Seal (Command)

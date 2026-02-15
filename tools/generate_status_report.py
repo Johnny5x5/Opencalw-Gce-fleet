@@ -22,6 +22,12 @@ def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"
         with open("velocity_metrics.json", "r") as f:
             velocity_data = json.load(f)
 
+    # Activity Integration (Reality Check)
+    activity_data = {}
+    if os.path.exists("activity_metrics.json"):
+        with open("activity_metrics.json", "r") as f:
+            activity_data = json.load(f)
+
     if velocity_data:
         report_lines.append(f"📊 **Projected Velocity:** At current rate ({velocity_data['velocity']} items/week), the active backlog will be cleared by **{velocity_data['completion_date']}** ({velocity_data['weeks_remaining']} weeks).")
     else:
@@ -65,15 +71,25 @@ def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"
     report_lines.append("## Strategic Alignment (The North Star)")
     for directive, group in sorted(directives.items()):
         report_lines.append(f"### {directive}")
-        report_lines.append("| ID | Title | Priority | Type | Status | Risk |")
-        report_lines.append("|---|---|---|---|---|---|")
+        report_lines.append("| ID | Title | Priority | Type | Status | Risk | Activity |")
+        report_lines.append("|---|---|---|---|---|---|---|")
         for item in group:
-             # Simple Risk inference based on Priority
+             item_id = item[0]
+             # Risk inference
              risk = "Low"
              if item[2] == "Critical": risk = "**High**"
              elif item[2] == "High": risk = "Medium"
 
-             report_lines.append(f"| {item[0]} | {item[1]} | {item[2]} | {item[3]} | {item[4]} | {risk} |")
+             # Activity Check (Reality)
+             activity = "Unknown"
+             if item_id in activity_data:
+                 metric = activity_data[item_id]
+                 if metric['days_inactive'] > 7:
+                     activity = f"⚠️ Inactive ({metric['days_inactive']}d)"
+                 else:
+                     activity = f"✅ Active ({metric['days_inactive']}d)"
+
+             report_lines.append(f"| {item[0]} | {item[1]} | {item[2]} | {item[3]} | {item[4]} | {risk} | {activity} |")
         report_lines.append("") # Newline
 
     # Section 2: Blockers & Risks (Team Black Request)

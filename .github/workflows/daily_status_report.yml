@@ -23,6 +23,9 @@ jobs:
       - name: Calculate Velocity Metrics
         run: python3 tools/calculate_velocity.py
 
+      - name: Scan Project Activity
+        run: python3 tools/scan_activity.py
+
       - name: Generate Report
         run: python3 tools/generate_status_report.py
 
