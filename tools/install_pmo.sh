@@ -61,6 +61,7 @@ if [ -f "$REPO_ROOT/tools/SHA256SUMS" ]; then
     popd > /dev/null
 fi
 
+cp "$REPO_ROOT/tools/the_covenant.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/validate_backlog.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/generate_status_report.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/calculate_velocity.py" "$TARGET_DIR/tools/"

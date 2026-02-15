@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: The Covenant (Moral Check)
+        run: python3 tools/the_covenant.py
+
       - name: Run Backlog Linter
         run: python3 tools/validate_backlog.py
 
