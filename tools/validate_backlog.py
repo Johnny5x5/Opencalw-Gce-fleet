@@ -84,6 +84,17 @@ def validate_markdown_file(filepath):
     if re.search(r'\[(.*?)\]\(\1\)', content):
          errors.append("Recursive Markdown link detected. Possible render crash attempt.")
 
+    # 2.3 Legion 11/14 Defense: The Linguists & Maximalists (Content Policing)
+    # Check for binary file extensions in links (Maximalists)
+    if re.search(r'\.(jar|exe|bin|dll|so|dmg|iso)\)', content, re.IGNORECASE):
+         errors.append("⛔ BLOCKED: Binary file link detected. Do not distribute binaries via backlog.")
+
+    # Check for Homoglyph attacks (Linguists) - Simplified check for mixed scripts in Title
+    # Detect Cyrillic/Greek mixed with Latin in Title line
+    if 'Title' in metadata:
+        if re.search(r'[a-zA-Z]', metadata['Title']) and re.search(r'[\u0400-\u04FF\u0370-\u03FF]', metadata['Title']):
+             errors.append("⚠️ SPOOFING RISK: Mixed-script Title detected (Homoglyph).")
+
     # 3. Check for Checkboxes (Actionable items)
     if "- [ ]" not in content and "- [x]" not in content:
          errors.append("No actionable tasks found (missing '- [ ]').")
@@ -130,6 +141,19 @@ def validate_markdown_file(filepath):
     private_ips = r"\b(10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3})\b"
     if re.search(private_ips, content):
         errors.append("⚠️ SECURITY RISK: Private IP address detected. Do not leak internal network topology.")
+
+    # 7. Legion 15 Defense: The Anarchists (Shell Injection)
+    # Detect dangerous shell commands in code blocks
+    dangerous_shell = [
+        r"rm\s+-[rRf]+\s+/",  # rm -rf /
+        r":\(\)\s*\{\s*:\|:&", # Fork Bomb
+        r"sudo\s+",
+        r"mkfs",
+        r"dd\s+if="
+    ]
+    for pattern in dangerous_shell:
+        if re.search(pattern, content):
+            errors.append("🚨 CRITICAL: Destructive shell command detected! Investigation required.")
 
     if errors:
         print(f"FAILED: {filepath}")

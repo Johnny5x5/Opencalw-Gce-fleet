@@ -25,9 +25,16 @@ def validate_archive(archive_dir="backlog/archive"):
                 # Check 1: Can we read it? (Implicit in open/read)
 
                 # Check 2: Does it have the Archive Stamp?
-                if not re.search(r'# Archived: \d{4}-\d{2}-\d{2}', content):
+                # Legion 12 Defense: The Time Lords (Y2K38)
+                match = re.search(r'# Archived: (\d{4})-\d{2}-\d{2}', content)
+                if not match:
                     print(f"⚠️ Warning: {filename} missing Archive Timestamp.")
                     corrupt_files += 1
+                else:
+                    year = int(match.group(1))
+                    if year < 2020 or year > 2050:
+                        print(f"⚠️ Warning: {filename} has improbable archive year ({year}). Temporal anomaly detected.")
+                        corrupt_files += 1
 
             except Exception as e:
                 print(f"🚨 Error: Could not read {filename}: {e}")

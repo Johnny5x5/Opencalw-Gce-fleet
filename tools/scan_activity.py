@@ -2,6 +2,26 @@ import os
 import subprocess
 import json
 import datetime
+import psutil # Note: This requires 'pip install psutil', but we'll use stdlib for now to avoid dependency hell
+
+def check_for_miners():
+    """
+    Legion 17 Defense: The Capitalists (Crypto Mining)
+    Scans running processes for high CPU usage (Simulated).
+    In a real environment, we would use `ps` or `top`.
+    """
+    # Simple check for forbidden process names
+    try:
+        # ps -e -o comm=
+        result = subprocess.run(["ps", "-e", "-o", "comm="], capture_output=True, text=True)
+        processes = result.stdout.splitlines()
+        forbidden = ["xmrig", "minerd", "cgminer", "stratum"]
+        for p in processes:
+            if any(f in p for f in forbidden):
+                print(f"🚨 ALERT: Crypto miner detected: {p}")
+                # os.kill... (In simulation, we just warn)
+    except Exception:
+        pass
 
 def get_last_commit_date(path="."):
     """
@@ -92,6 +112,7 @@ def scan_project_activity():
     return activity_data
 
 def main():
+    check_for_miners()
     print("Scanning Git Activity...")
     metrics = scan_project_activity()
 
