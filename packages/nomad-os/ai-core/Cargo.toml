@@ -1,0 +1,11 @@
+[package]
+name = "nomad-ai-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Dependencies for GGML or Candle (Rust ML frameworks) would go here
+
+[lib]
+name = "nomad_ai_core"
+path = "src/lib.rs"

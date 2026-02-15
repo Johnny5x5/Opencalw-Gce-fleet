@@ -1,0 +1,11 @@
+[package]
+name = "nomad-userland"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nomad-system = { path = "../system" }
+
+[[bin]]
+name = "nomad-shell"
+path = "src/shell.rs"
