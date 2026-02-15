@@ -1,6 +1,8 @@
 // Nomad AI Core: Neural Interface
 #![no_std]
 
+pub mod librarian;
+
 pub struct NeuralTask {
     pub model_id: u32,
     pub priority: u8,

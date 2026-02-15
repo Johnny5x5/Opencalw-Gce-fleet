@@ -41,6 +41,19 @@ impl VideoCodecDriver {
     }
 }
 
+pub trait EmbeddingDriver {
+    fn embed(&self, text: &str) -> [f32; 384]; // 384-dim vector (MiniLM)
+}
+
+pub struct NPUEmbeddingDriver;
+
+impl EmbeddingDriver for NPUEmbeddingDriver {
+    fn embed(&self, _text: &str) -> [f32; 384] {
+        // Mock NPU Embedding: Return random vector
+        [0.1; 384]
+    }
+}
+
 pub struct NPUDriver;
 
 impl NPUDriver {

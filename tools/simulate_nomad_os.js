@@ -13,6 +13,7 @@ const requiredPaths = [
     'packages/nomad-os/drivers/src/lib.rs',
     'packages/nomad-os/ai-core/src/lib.rs',
     'packages/nomad-os/userland/src/main.rs', // TUI Dashboard
+    'packages/nomad-os/ai-core/src/librarian.rs', // RAG Core
     'src/functions/nomad-uplink/index.js',
     'docs/specs/NOMAD_MESSAGING.yaml',
     'terraform/modules/messaging_infrastructure/main.tf'
@@ -81,9 +82,24 @@ console.log("\n=== Phase 4: User Experience (TUI Dashboard) ===");
 const tuiCode = fs.readFileSync('packages/nomad-os/userland/src/main.rs', 'utf8');
 if (tuiCode.includes('ratatui') && tuiCode.includes('MenuItem::Status')) {
     console.log("[PASS] TUI Dashboard (Ratatui) source code verified.");
-    console.log("[PASS] TUI Menu Structure (Status, Mission, Mesh, Console) confirmed.");
+
+    if (tuiCode.includes('MenuItem::Library')) {
+        console.log("[PASS] TUI Menu Structure (Status, Mission, Mesh, Library, Console) confirmed.");
+    } else {
+        console.error("[FAIL] TUI missing 'Library' tab.");
+        process.exit(1);
+    }
 } else {
     console.error("[FAIL] TUI Dashboard source code invalid.");
+    process.exit(1);
+}
+
+console.log("\n=== Phase 5: Librarian Core (RAG) Check ===");
+const librarianCode = fs.readFileSync('packages/nomad-os/ai-core/src/librarian.rs', 'utf8');
+if (librarianCode.includes('struct Indexer') && librarianCode.includes('struct Retriever')) {
+    console.log("[PASS] Librarian Core (Indexer/Retriever) implementation found.");
+} else {
+    console.error("[FAIL] Librarian Core missing.");
     process.exit(1);
 }
 

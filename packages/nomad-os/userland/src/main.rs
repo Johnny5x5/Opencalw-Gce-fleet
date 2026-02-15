@@ -18,6 +18,7 @@ enum MenuItem {
     Status,
     Mission,
     Mesh,
+    Library, // New RAG Tab
     Console,
 }
 
@@ -27,7 +28,8 @@ impl From<MenuItem> for usize {
             MenuItem::Status => 0,
             MenuItem::Mission => 1,
             MenuItem::Mesh => 2,
-            MenuItem::Console => 3,
+            MenuItem::Library => 3,
+            MenuItem::Console => 4,
         }
     }
 }
@@ -41,7 +43,7 @@ fn main() -> Result<(), io::Error> {
     let mut terminal = Terminal::new(backend)?;
 
     // App State
-    let menu_titles = vec!["Status", "Mission", "Mesh", "Console"];
+    let menu_titles = vec!["Status", "Mission", "Mesh", "Library", "Console"];
     let mut active_menu_item = MenuItem::Status;
 
     // Main Loop
@@ -135,6 +137,30 @@ fn main() -> Result<(), io::Error> {
                     let mesh_list = List::new(nodes).block(Block::default().title("Mesh Topology").borders(Borders::ALL));
                     rect.render_widget(mesh_list, chunks[1]);
                 }
+                MenuItem::Library => {
+                    let library_chunks = Layout::default()
+                        .direction(Direction::Horizontal)
+                        .constraints([Constraint::Percentage(30), Constraint::Percentage(70)].as_ref())
+                        .split(chunks[1]);
+
+                    // Index List
+                    let docs = vec![
+                        ListItem::new("jeep_manual_2024.pdf (Indexed)"),
+                        ListItem::new("survival_guide.md (Indexed)"),
+                        ListItem::new("area_map_sector_7.png (Vectorized)"),
+                    ];
+                    let doc_list = List::new(docs).block(Block::default().title("Indexed Knowledge (NVMe)").borders(Borders::ALL));
+                    rect.render_widget(doc_list, library_chunks[0]);
+
+                    // Search/Chat
+                    let chat = vec![
+                        ListItem::new("User: How to fix axle?"),
+                        ListItem::new("Librarian: [Retrieving from jeep_manual_2024.pdf...]"),
+                        ListItem::new("Analyst (8B): Use a 14mm socket to remove the hub nut..."),
+                    ];
+                    let chat_list = List::new(chat).block(Block::default().title("RAG Interface").borders(Borders::ALL));
+                    rect.render_widget(chat_list, library_chunks[1]);
+                }
                 MenuItem::Console => {
                     let console = Paragraph::new("> type command here...\n\n[CLOUD TETHER] Status: ACTIVE (80/20 Rule)\n[SYSTEM] Routing strategic query 'Analyze Sector 7' to Federal Brain...\n[REPLY] Estimated: 20s")
                         .block(Block::default().title("Sovereign Shell").borders(Borders::ALL));
@@ -158,7 +184,8 @@ fn main() -> Result<(), io::Error> {
                     active_menu_item = match active_menu_item {
                         MenuItem::Status => MenuItem::Mission,
                         MenuItem::Mission => MenuItem::Mesh,
-                        MenuItem::Mesh => MenuItem::Console,
+                        MenuItem::Mesh => MenuItem::Library,
+                        MenuItem::Library => MenuItem::Console,
                         MenuItem::Console => MenuItem::Status,
                     };
                 }
