@@ -1,8 +1,16 @@
 # Prime Directive Alignment Strategy
 
-The backlog is the execution arm of the "Emperor's Will Protocol". Every task must align with one of the 12 Prime Directives.
+The backlog is the execution arm of the "Emperor's Will Protocol".
 
-## The Hierarchy of Directives
+## 0. The Covenant (Supreme Law)
+> "The Directives are the Engine. The Commandments are the Rails."
+
+Before any Prime Directive is considered, the **Ten Commandments** (The Covenant) must be satisfied. No objective, no matter how profitable or efficient, may violate the Supreme Law.
+- **Priority:** Absolute (Infinite).
+- **Scope:** Moral, Ethical, and Spiritual boundaries.
+
+## The Hierarchy of Directives (Corporate Law)
+Subject to The Covenant, the following priorities apply:
 
 1.  **Existence (Survival):** Anything critical to the stability and life of the system.
     - *Aligned Projects:* `PROJ-001 (Core)`, `PROJ-007 (Royal Seal)`

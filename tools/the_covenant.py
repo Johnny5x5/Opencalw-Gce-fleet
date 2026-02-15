@@ -39,6 +39,12 @@ def the_covenant(repo_root="."):
         # It might not exist in this repo structure yet, so we warn.
         print("⚠️ 5. HONOR: 'corporate_history.json' missing. Do we not know our ancestors?")
 
+    # 11. Fractal Governance (Political Husk)
+    # Ensure the Political Structure exists and inherits the Covenant
+    pol_struct = os.path.join(repo_root, "docs/nation/POLITICAL_STRUCTURE.md")
+    if not os.path.exists(pol_struct):
+        violations.append("11. FRACTAL: 'docs/nation/POLITICAL_STRUCTURE.md' missing. The Husk is empty.")
+
     # Scan Files for Text Violations (2, 3, 6, 7, 10)
     for root, dirs, files in os.walk(repo_root):
         if ".git" in root or "node_modules" in root:

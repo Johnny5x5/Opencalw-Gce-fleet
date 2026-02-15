@@ -3,7 +3,13 @@
 This document establishes the Supreme Hierarchical Framework for all mandates within the Conglomerate. These **12 Categories** organize the Emperor's will into a structured cascade of priority.
 
 **Rule of Precedence:**
-A lower-category directive (e.g., Category 12) can **NEVER** violate a higher-category directive (e.g., Category 1). Conflict resolution always favors the lower number.
+1.  **The Ten Commandments (Supreme Law):** Overrides everything below.
+2.  **The Prime Directives:** A lower-category directive (e.g., Category 12) can **NEVER** violate a higher-category directive (e.g., Category 1).
+
+## Category 0: THE COVENANT (The Boundary)
+*   **Scope:** The Ten Commandments.
+*   **Mandate:** "Fear God and keep His commandments."
+*   **Guardrail:** No Directive may compel sin.
 
 ## Category 1: EXISTENCE (The Absolute)
 *   **Scope:** The survival of the Emperor and the Continuity of the Conglomerate.
