@@ -112,6 +112,25 @@ def validate_markdown_file(filepath):
              if filtered:
                  errors.append(f"⚠️ PRIVACY RISK: Potential {name} detected! Don't commit PII.")
 
+    # 5. Legion 6 Defense: The Cryptographers (Weak Crypto)
+    weak_crypto = {
+        "MD5": r"\bMD5\b",
+        "SHA1": r"\bSHA-?1\b",
+        "DES": r"\bDES\b",
+        "RC4": r"\bRC4\b",
+        "Telnet": r"\bTelnet\b",
+        "FTP": r"\bFTP\b"
+    }
+    for name, pattern in weak_crypto.items():
+        if re.search(pattern, content, re.IGNORECASE):
+            errors.append(f"⛔ COMPLIANCE RISK: Banned cryptographic term '{name}' detected. Use modern standards (AES-256, SHA-256, SSH, SFTP).")
+
+    # 6. Legion 7 Defense: The Spies (Metadata Leakage)
+    # Scan for private IP addresses (10.x.x.x, 192.168.x.x, 172.16-31.x.x)
+    private_ips = r"\b(10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3})\b"
+    if re.search(private_ips, content):
+        errors.append("⚠️ SECURITY RISK: Private IP address detected. Do not leak internal network topology.")
+
     if errors:
         print(f"FAILED: {filepath}")
         for err in errors:
