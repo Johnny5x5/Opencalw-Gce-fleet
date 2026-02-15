@@ -26,16 +26,18 @@ The Chaplain signs the "Moral Attestation" in the SBOM.
 ## 4. The Fractal Tithe (Scalability Doctrine)
 The Chaplaincy is designed to scale across the entire Fractal Conglomerate (Parent Company, Child Companies, and Nation-State).
 
-### 4.1 The 25% Capacity Cap
-To prevent "Theocracy" (where moral auditing halts all progress) and "Anarchy" (where auditing is ignored), we enforce the **Fractal Tithe**:
-*   **Resource Limit:** The Chaplaincy may consume a maximum of **25%** of any entity's total capacity (Compute, RAM, Budget, and Latency Budget).
-*   **Split Capacity:** This 25% is an aggregate limit shared across the Sovereign Digital Nation and the Corporate Conglomerate.
+### 4.1 The 10% Fractal Tithe (The Reformation Protocol)
+Historical analysis ("Research: Priesthood Bloat") warns that excessive clerical overhead leads to stagnation and the "Theocracy Trap." Therefore, we strictly limit the Chaplaincy to the Biblical Tithe.
+*   **Resource Limit:** The Chaplaincy may consume a maximum of **10%** of any entity's total capacity (Compute, RAM, Budget).
+*   **Rationale:** A 10% overhead is sustainable. Anything higher risks choking the "War Council" (Innovation) and "Civic Council" (Prosperity).
 
-### 4.2 The Chaplaincy Queue
+### 4.2 The Chaplaincy Queue & Self-Limiting
 All non-emergency Edicts must queue for Moral Approval.
-*   **Dynamic Scaling:** The Chaplaincy scales up aggressively to meet demand, up to the 25% hard limit.
-*   **Queue Overflow:** If demand exceeds 25% capacity, the system enters "Moral Latency" mode. Growth slows down.
-    *   *Principle:* "It is better to grow slowly and righteously than quickly and wickedly."
+*   **Dynamic Scaling:** The Chaplaincy scales up to meet demand, but **halts** hard at the 10% limit.
+*   **Queue Overflow:** If demand exceeds capacity, the system does *not* slow down indefinitely. Instead, it triggers **"The Levite Protocol"**:
+    *   **Trust Delegation:** Low-risk transactions are temporarily auto-approved based on the reputation of the sender ("Benefit of Clergy").
+    *   **Post-Hoc Audit:** These transactions are flagged for retroactive auditing when load decreases.
+    *   *Principle:* "Mercy triumphs over Judgment." We do not paralyze the Nation to enforce minor procedural rules.
 
 ---
 **Motto:** *Lex Aeterna, Code Temporal.* (The Law is Eternal, Code is Temporary.)

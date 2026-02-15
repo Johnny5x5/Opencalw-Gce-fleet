@@ -18,17 +18,18 @@ To queue all strategic "Edicts" and "Artifacts" for moral auditing by the Chapla
 4.  **Routine (Low):** Minor log rotation, routine optimization.
     *   *Action:* Sampled (1% audit rate). Most pass automatically.
 
-## 3. The 25% Capacity Circuit Breaker
+## 3. The 10% Capacity Circuit Breaker (The Levite Protocol)
 The system monitors the "Tithed Capacity" ($C_{tithe}$) vs "Total Capacity" ($C_{total}$).
 
 $$
-C_{tithe} \leq 0.25 \times C_{total}
+C_{tithe} \leq 0.10 \times C_{total}
 $$
 
-If the Chaplaincy Queue depth requires more than 25% of the entity's compute to process:
-1.  **Throttle:** The "Civic Council" issues a `SLOW_DOWN` order to the Engineering department.
-2.  **Shed:** "Routine" tasks are shed (auto-approved with a "Pending Audit" flag).
-3.  **Scale:** Additional "Assistant Chaplain" agents are spun up, up to the hard resource cap.
+Research into "Priesthood Bloat" indicates that exceeding 10-15% overhead causes societal stagnation.
+If the Chaplaincy Queue depth requires more than **10%** of the entity's compute to process:
+1.  **Auto-Absolution:** "Routine" and "Tactical" tasks from high-reputation agents are auto-approved.
+2.  **Post-Hoc Queue:** These tasks are moved to a "Retroactive Audit" queue to be checked when load drops.
+3.  **Halt:** The Chaplaincy does *not* scale beyond 10%. It accepts that it cannot police everything in real-time.
 
 ## 4. Implementation Details
 *   **Input Topic:** `chaplaincy.inbox`
