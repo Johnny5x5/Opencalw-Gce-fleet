@@ -16,14 +16,14 @@ def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"
     report_lines.append(f"# State of the Union: {datetime.date.today()}")
     report_lines.append("## Executive Summary")
 
-    # Oracle Integration (Predictive)
-    oracle_data = {}
-    if os.path.exists("oracle_prediction.json"):
-        with open("oracle_prediction.json", "r") as f:
-            oracle_data = json.load(f)
+    # Velocity Integration (Predictive)
+    velocity_data = {}
+    if os.path.exists("velocity_metrics.json"):
+        with open("velocity_metrics.json", "r") as f:
+            velocity_data = json.load(f)
 
-    if oracle_data:
-        report_lines.append(f"🔮 **The Oracle Predicts:** At current velocity ({oracle_data['velocity']} items/week), the active backlog will be cleared by **{oracle_data['completion_date']}** ({oracle_data['weeks_remaining']} weeks).")
+    if velocity_data:
+        report_lines.append(f"📊 **Projected Velocity:** At current rate ({velocity_data['velocity']} items/week), the active backlog will be cleared by **{velocity_data['completion_date']}** ({velocity_data['weeks_remaining']} weeks).")
     else:
         report_lines.append("The Conglomerate is operating at nominal capacity. Below is the current status of all strategic initiatives.")
 

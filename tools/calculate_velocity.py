@@ -26,14 +26,9 @@ def predict_completion_dates(backlog_dir="backlog/active", velocity=3.0):
             item_id = filename.split('_')[0]
             # Map item ID to Project ID (This mapping is usually in registry.json)
             # For now, we assume 1 item = 1 unit of work for its parent project.
-            # Simplified: Group by Prime Directive or broad Category?
-            # Let's group by the ID range or just treat each ITEM as a mini-project.
-
-            # Better approach: Check if the item has a "Target Date" in metadata?
-            # Or just predict when the *Item* itself will be done based on queue position.
             pass
 
-    # Simplified Oracle Logic:
+    # Simplified Logic:
     # 1. Count total active items (N)
     # 2. Velocity (V) = 3 items/week
     # 3. Weeks to Complete All = N / V
@@ -55,13 +50,13 @@ def predict_completion_dates(backlog_dir="backlog/active", velocity=3.0):
 def main():
     prediction = predict_completion_dates()
 
-    print("🔮 THE ORACLE HAS SPOKEN 🔮")
+    print("Project Velocity Calculation Complete.")
     print(f"Current Velocity: {prediction['velocity']} items/week")
     print(f"Active Burden: {prediction['total_items']} items")
     print(f"Estimated Completion of Current Backlog: {prediction['completion_date']}")
 
     # Save to JSON for other tools to consume
-    with open("oracle_prediction.json", "w") as f:
+    with open("velocity_metrics.json", "w") as f:
         json.dump(prediction, f, indent=2)
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # State of the Union: 2026-02-15
 ## Executive Summary
-🔮 **The Oracle Predicts:** At current velocity (3.0 items/week), the active backlog will be cleared by **2026-03-19** (4.7 weeks).
+📊 **Projected Velocity:** At current rate (3.0 items/week), the active backlog will be cleared by **2026-03-19** (4.7 weeks).
 
 ## Strategic Alignment (The North Star)
 ### Command
