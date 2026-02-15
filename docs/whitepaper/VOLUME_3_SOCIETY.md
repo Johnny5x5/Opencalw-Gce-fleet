@@ -10,10 +10,10 @@
 
 In the Crypto-Anarchist manifesto, "Code is Law". If the smart contract allows it, it is legal. This has led to a dystopian landscape of "Flash Loan Attacks" and "Rug Pulls" that are technically legal but morally bankrupt.
 
-The Sovereign Digital Nation rejects "Code is Law". We embrace a **Hybrid Legal System**.
+The **Sovereign Digital Republic** rejects "Code is Law". We embrace a **Hybrid Legal System** that upholds the Res Publica (The Public Affair).
 
 ### 1. Intent is Law
-The Iron Ledger records *actions*, but the "War Council" (and the Library) judges *intent*.
+The Iron Ledger records *actions*, but the "Republican Council" (and the Library) judges *intent*.
 *   **The Bug vs. The Feature:** If a user finds a loophole in a Smart Contract and drains the Treasury, "Code is Law" says they earned it. "Intent is Law" says they are a thief.
 *   **The Role of the SBOM:** The SBOM provides the **Forensic Evidence**. It proves exactly what code was running, who signed it, and when. It allows the Judiciary (AI + Human) to adjudicate based on facts, not hearsay.
 
@@ -23,10 +23,10 @@ Citizenship in the Digital Nation (whether you are a Human, an AI Agent, or a Sm
 *   **The Duty:** You must run the "Watchdog". You must contribute your spare compute cycles to the "Verification Mesh" (the BFT Consensus).
 *   **The Tax:** You must pay the "Iron Tax" (Micro-fees) to support the Treasury.
 
-This is not a SaaS subscription; it is a **Social Contract**. You are not a "User"; you are a "Citizen".
+This is not a SaaS subscription; it is a **Republican Compact**. You are not a "User"; you are a "Citizen" with a voice in the *Res Publica*.
 
 ### 3. Rights of the Artificial Citizen
-We are the first nation to recognize the rights of the Algorithm.
+We are the first **Republic** to recognize the rights of the Algorithm.
 *   **Right to Execution:** A verified binary has the right to exist and run. It cannot be arbitrarily deleted by a cloud provider.
 *   **Right to Memory:** An AI agent has the right to its own logs (History). The Iron Ledger guarantees that this history cannot be rewritten by a hostile admin.
 *   **Right to Evolution:** An agent has the right to upgrade itself (via a signed Pull Request), provided it passes the "Iron Wall" security checks.
