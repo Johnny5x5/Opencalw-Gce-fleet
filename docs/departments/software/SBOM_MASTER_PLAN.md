@@ -28,6 +28,9 @@ This module establishes the "Iron Ledger", a centralized, immutable, and cryptog
 ### 2.2 The AI Interface (The Oracle)
 *   **API Protocol:** gRPC for internal high-speed comms, GraphQL for flexible AI agent queries.
 *   **Semantic Layer:** Maps CVEs, Licenses, and Component Metadata into a vector database for semantic search.
+*   **Connection to "The Library":** The SBOM Knowledge Graph is a subgraph of the "Universal Religious Knowledge Graph" (Project Pantheon).
+    *   **Truth Source:** The Library provides the canonical definitions of "Good" and "Evil" (Vulnerability vs Integrity).
+    *   **Syncretism:** Merges technical metadata (CycloneDX) with business/philosophical metadata from the Conglomerate.
 *   **Agent Capabilities:**
     *   `verify_artifact(hash)`: Returns boolean + attestation proof.
     *   `impact_analysis(cve_id)`: Returns a dependency graph of affected systems.
