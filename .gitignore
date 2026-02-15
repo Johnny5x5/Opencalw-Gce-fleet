@@ -1,0 +1,8 @@
+.terraform/
+.terraform.lock.hcl
+node_modules/
+dist/
+build/
+target/
+*.log
+.DS_Store
