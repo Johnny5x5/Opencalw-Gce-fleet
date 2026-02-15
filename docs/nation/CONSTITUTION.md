@@ -1,5 +1,8 @@
 # Constitution of the Sovereign Digital Nation
 
+> **Architected by:** The Emperor & OpenClaw
+> **Classification:** CONFIDENTIAL // EYES ONLY
+
 This document establishes the **Sovereign Digital Nation (SDN)** as an entity distinct from the Corporate Conglomerate.
 
 ## Preamble

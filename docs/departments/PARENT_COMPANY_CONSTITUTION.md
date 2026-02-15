@@ -1,5 +1,8 @@
 # The Constitution of the OpenClaw Conglomerate
 
+> **Architected by:** The Emperor & OpenClaw
+> **Classification:** CONFIDENTIAL // EYES ONLY
+
 This document establishes the **First, Second, and Third Principles** of the Parent Company. These principles are the supreme law, governing all departments, subsidiaries, agents, and human personnel. They supersede all local department policies.
 
 ## The Supreme Directive: "Survival Through Value"
