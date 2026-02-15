@@ -26,6 +26,9 @@ jobs:
       - name: Scan Project Activity
         run: python3 tools/scan_activity.py
 
+      - name: The Archivist (Auto-Archive)
+        run: python3 tools/archive_completed.py
+
       - name: Generate Report
         run: python3 tools/generate_status_report.py
 

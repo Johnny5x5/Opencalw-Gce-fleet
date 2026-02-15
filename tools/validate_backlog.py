@@ -68,6 +68,17 @@ def validate_markdown_file(filepath):
     if "- [ ]" not in content and "- [x]" not in content:
          errors.append("No actionable tasks found (missing '- [ ]').")
 
+    # 4. Security Scan (The Moat) - Prevent leaked secrets
+    secret_patterns = {
+        "AWS Key": r"AKIA[0-9A-Z]{16}",
+        "Google API Key": r"AIza[0-9A-Za-z-_]{35}",
+        "Private Key": r"-----BEGIN PRIVATE KEY-----",
+        "Generic Token": r"token\s*=\s*['\"][a-zA-Z0-9]{20,}['\"]"
+    }
+    for name, pattern in secret_patterns.items():
+        if re.search(pattern, content):
+            errors.append(f"⚠️ SECURITY RISK: Potential {name} detected in file!")
+
     if errors:
         print(f"FAILED: {filepath}")
         for err in errors:

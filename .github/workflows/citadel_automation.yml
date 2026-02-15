@@ -1,0 +1,33 @@
+name: The Citadel (Triage & Stale Bot)
+
+on:
+  pull_request:
+    types: [opened, edited]
+  schedule:
+    - cron: '30 1 * * *' # 1:30 AM daily (Stale Bot)
+
+jobs:
+  triage:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-Labeler
+        uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml
+
+  stale:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Stale Issues
+        uses: actions/stale@v8
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          days-before-stale: 30
+          days-before-close: 7
+          stale-issue-message: "⚠️ This issue has been inactive for 30 days. It will be closed in 7 days if no further activity occurs. (Efficiency Directive)"
+          stale-pr-message: "⚠️ This PR has been inactive for 30 days. It will be closed in 7 days. (Efficiency Directive)"
+          stale-issue-label: "status: stale"
+          stale-pr-label: "status: stale"
