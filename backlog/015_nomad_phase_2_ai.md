@@ -31,6 +31,14 @@ Implementation plan for the "Librarian" system, enabling the Nomad Tablet (RK358
 *   **Ticket-232:** Implement "Ask Librarian" command in Console.
     *   *Feature:* `ask "How to fix axle?"` -> Displays retrieved context + AI summary.
 
+#### EPIC-240: The Scout & Commander Protocol (Cloud Tether)
+*   **Ticket-241:** Implement `SitRepGenerator` in `nomad-ai-core`.
+    *   *Feature:* Summarizes last 100 log entries into a 1KB "SitRep" JSON.
+*   **Ticket-242:** Implement `QueryRouter` logic.
+    *   *Feature:* Detects `#strategic` tag and routes to Cloud Bundle Protocol instead of Local NPU.
+*   **Ticket-243:** Update Cloud Uplink to parse `sitrep` bundles.
+    *   *Feature:* Returns simulated "Mission Order" responses.
+
 ### Dependencies
 *   `rust-lance` crate.
 *   `rknpu2` driver (external binary blob).

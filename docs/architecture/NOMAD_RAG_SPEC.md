@@ -43,20 +43,41 @@ The "Librarian" is a userspace daemon (Core 3/Storage) that indexes all user-pro
 *   **Runtime:** `rknpu2` (Rockchip NPU) or `ggml` with NPU backend.
 *   **Output:** Streams tokens to the TUI.
 
-### 3. The Query Router (Hybrid Intelligence)
-To implement the **80/20 Rule** ("The Tether"), the Query Router acts as a gateway before the Librarian.
+### 3. The Query Router ("Scout & Commander" Protocol)
+The Router implements the Functional Split (80/20 Rule) via the Bundle Protocol.
 
-*   **Logic:**
-    1.  **Complexity Check:** If query length > 500 tokens OR user explicitly tags `#strategic`, Route to Cloud.
-    2.  **Capability Check:** If query asks for "Satellite Analysis" or "Encryption Breaking" (tasks beyond 8B capabilities), Route to Cloud.
-    3.  **Default:** Route to Local Librarian (8B Model).
+#### The Protocol
+*   **Protocol Type:** `application/vnd.nomad.sitrep+cbor`
+*   **Structure:**
+    *   **SitRep (Situation Report):** Compressed summary from the Scout (Local).
+        ```json
+        {
+          "type": "sitrep",
+          "id": "sitrep-001",
+          "timestamp": 1715788800,
+          "context_hash": "sha256...",
+          "summary": "User detected anomalous radio signal at 433MHz. GPS 34.05, -118.24. Requesting analysis.",
+          "priority": "flash"
+        }
+        ```
+    *   **Order (Mission Directive):** Strategic command from the Commander (Cloud).
+        ```json
+        {
+          "type": "order",
+          "id": "order-001",
+          "ref_id": "sitrep-001",
+          "directive": "Maintain radio silence. Signal signature matches known jammer. Move to secondary rally point.",
+          "attachments": ["map_update.pdf"]
+        }
+        ```
 
-*   **Cloud Handoff Protocol:**
-    *   If routed to Cloud:
-        1.  Create Bundle: `type: "ai_heavy_lift"`, `priority: "flash"`.
-        2.  Payload: `{ "query": "Analyze these coordinates...", "context": [User Attached Files] }`.
-        3.  Wait for Uplink Response (Async).
-        4.  TUI displays: `[CLOUD] Request Sent. Estimated Reply: 20s`.
+#### Routing Logic
+1.  **Tactical (Local):** Simple queries run on the 8B NPU model.
+2.  **Strategic (Cloud):**
+    *   **User Action:** Tags query `#strategic` or explicitly requests "Heavy Lift".
+    *   **Scout Action:** Summarizes local context into a SitRep (1KB max).
+    *   **Transmission:** SitRep is bundled and sent via Uplink.
+    *   **Response:** Cloud replies with an Order bundle.
 
 ### 4. Implementation Plan
 #### Phase 1: The Core Library (Rust)
@@ -75,8 +96,9 @@ To implement the **80/20 Rule** ("The Tether"), the Query Router acts as a gatew
 #### Phase 4: The Router Integration
 *   Implement `QueryRouter` struct in `nomad-ai-core`.
 *   Connect `QueryRouter` to `nomad-system`'s Bundle Protocol interface.
+*   Implement `SitRepGenerator` to compress context.
 
 ### 5. Data Flow
 `User Query` -> `Query Router`
     |-> [Tactical] -> `Embedder` -> `Local Vector Search` -> `Local NPU` -> `TUI`
-    |-> [Strategic] -> `Bundle Protocol` -> `Cloud Uplink` -> `Federal AI` -> `Downlink` -> `TUI`
+    |-> [Strategic] -> `SitRep Generator` -> `Bundle Protocol` -> `Cloud Uplink` -> `Federal AI` -> `Downlink` -> `TUI`
