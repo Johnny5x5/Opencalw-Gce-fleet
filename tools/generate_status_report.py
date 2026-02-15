@@ -2,6 +2,7 @@ import os
 import sys
 import datetime
 import collections
+import json
 
 def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"):
     """
@@ -14,7 +15,19 @@ def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"
     report_lines = []
     report_lines.append(f"# State of the Union: {datetime.date.today()}")
     report_lines.append("## Executive Summary")
-    report_lines.append("The Conglomerate is operating at nominal capacity. Below is the current status of all strategic initiatives.\n")
+
+    # Oracle Integration (Predictive)
+    oracle_data = {}
+    if os.path.exists("oracle_prediction.json"):
+        with open("oracle_prediction.json", "r") as f:
+            oracle_data = json.load(f)
+
+    if oracle_data:
+        report_lines.append(f"🔮 **The Oracle Predicts:** At current velocity ({oracle_data['velocity']} items/week), the active backlog will be cleared by **{oracle_data['completion_date']}** ({oracle_data['weeks_remaining']} weeks).")
+    else:
+        report_lines.append("The Conglomerate is operating at nominal capacity. Below is the current status of all strategic initiatives.")
+
+    report_lines.append("")
 
     # Data Collection
     items = []

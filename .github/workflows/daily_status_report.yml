@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: Consult The Oracle (Predict Velocity)
+        run: python3 tools/predict_velocity.py
+
       - name: Generate Report
         run: python3 tools/generate_status_report.py
 
