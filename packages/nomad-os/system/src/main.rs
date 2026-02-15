@@ -18,9 +18,38 @@ pub struct Process {
     pub root_cnode: Capability,
 }
 
+pub struct MessageQueue {
+    pub pending_count: usize,
+    pub database_path: &'static str,
+}
+
+impl MessageQueue {
+    pub fn new() -> Self {
+        Self {
+            pending_count: 5, // Simulation: Start with 5 pending messages
+            database_path: "/data/nomad/queue.db",
+        }
+    }
+
+    pub fn push(&mut self, _msg: &[u8]) {
+        // In real impl: Write to sled/sqlite
+        self.pending_count += 1;
+    }
+
+    pub fn pop(&mut self) -> Option<usize> {
+        if self.pending_count > 0 {
+            self.pending_count -= 1;
+            Some(1) // Simulation: Return dummy ID
+        } else {
+            None
+        }
+    }
+}
+
 pub struct Guardian {
     pub processes: [Option<Process>; 4], // 4 Cores
     pub next_pid: u32,
+    pub queue: MessageQueue,
 }
 
 impl Guardian {
@@ -28,6 +57,7 @@ impl Guardian {
         Self {
             processes: [None, None, None, None],
             next_pid: 1,
+            queue: MessageQueue::new(),
         }
     }
 

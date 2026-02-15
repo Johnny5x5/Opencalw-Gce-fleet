@@ -101,6 +101,8 @@ fn main() -> Result<(), io::Error> {
                         ListItem::new("Core 1 (Radio): 99% [ACTIVE] (LoRa/Sat)"),
                         ListItem::new("Core 2 (Crypto): 5% [IDLE]"),
                         ListItem::new("Core 3 (Storage): 45% [ACTIVE] (DTN Sync)"),
+                        ListItem::new(""),
+                        ListItem::new("Message Queue: 5 Pending (Store-and-Forward)"),
                     ];
                     let core_list = List::new(cores).block(Block::default().title("Core Status (AMP)").borders(Borders::ALL));
                     rect.render_widget(core_list, status_chunks[0]);

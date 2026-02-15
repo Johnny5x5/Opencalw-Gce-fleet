@@ -78,9 +78,24 @@ exports.nomadUplink = async (req, res) => {
     }
   ];
 
+  // Queue Abstraction Layer (Multi-Cloud Support)
+  const queueProvider = process.env.NOMAD_QUEUE_PROVIDER || 'pubsub'; // 'pubsub' or 'rabbitmq'
+
   if (type === 'ai_heavy_lift') {
-    console.log(`[HYBRID AI] Received Strategic Query. Routing to Federal Brain (Gemini 1.5 Pro)...`);
-    // Simulate processing delay and complex reasoning
+    console.log(`[HYBRID AI] Received Strategic Query.`);
+    console.log(`[QUEUE] Provider: ${queueProvider.toUpperCase()}`);
+
+    if (queueProvider === 'rabbitmq') {
+      console.log(`[RABBITMQ] Publishing message to exchange 'nomad-strategic-tasks'...`);
+      // In a real implementation: channel.publish('nomad-strategic-tasks', routingKey, Buffer.from(payload));
+      console.log(`[RABBITMQ] Message ID: task-${Date.now()} ACKnowledged.`);
+    } else {
+      console.log(`[PUBSUB] Publishing message to topic 'nomad-strategic-tasks'...`);
+      // In a real implementation: pubsub.topic('nomad-strategic-tasks').publish(Buffer.from(payload));
+      console.log(`[PUBSUB] Message ID: task-${Date.now()} ACKnowledged.`);
+    }
+
+    // Simulate processing delay and complex reasoning (Async Worker Reply)
     queuedMessages.push({
       id: `ai-reply-${Date.now()}`,
       type: 'ai_response',
