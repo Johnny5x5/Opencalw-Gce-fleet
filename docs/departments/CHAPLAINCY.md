@@ -23,5 +23,19 @@ Agents that encounter an ethical dilemma (e.g., "To optimize this route, I must 
 The Chaplain signs the "Moral Attestation" in the SBOM.
 *   **Seal of Righteousness:** A binary cannot reach "Golden Master" status without the Chaplain's digital signature, certifying that it complies with the Constitution.
 
+## 4. The Fractal Tithe (Scalability Doctrine)
+The Chaplaincy is designed to scale across the entire Fractal Conglomerate (Parent Company, Child Companies, and Nation-State).
+
+### 4.1 The 25% Capacity Cap
+To prevent "Theocracy" (where moral auditing halts all progress) and "Anarchy" (where auditing is ignored), we enforce the **Fractal Tithe**:
+*   **Resource Limit:** The Chaplaincy may consume a maximum of **25%** of any entity's total capacity (Compute, RAM, Budget, and Latency Budget).
+*   **Split Capacity:** This 25% is an aggregate limit shared across the Sovereign Digital Nation and the Corporate Conglomerate.
+
+### 4.2 The Chaplaincy Queue
+All non-emergency Edicts must queue for Moral Approval.
+*   **Dynamic Scaling:** The Chaplaincy scales up aggressively to meet demand, up to the 25% hard limit.
+*   **Queue Overflow:** If demand exceeds 25% capacity, the system enters "Moral Latency" mode. Growth slows down.
+    *   *Principle:* "It is better to grow slowly and righteously than quickly and wickedly."
+
 ---
 **Motto:** *Lex Aeterna, Code Temporal.* (The Law is Eternal, Code is Temporary.)
