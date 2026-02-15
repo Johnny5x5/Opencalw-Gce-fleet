@@ -1,0 +1,47 @@
+{
+  "001": {
+    "last_active": "2026-02-14",
+    "days_inactive": 0,
+    "status": "Healthy"
+  },
+  "002": {
+    "last_active": "2026-02-14",
+    "days_inactive": 0,
+    "status": "Healthy"
+  },
+  "003": {
+    "last_active": "2026-02-14",
+    "days_inactive": 0,
+    "status": "Healthy"
+  },
+  "004": {
+    "last_active": "Never",
+    "days_inactive": 999,
+    "status": "Inactive"
+  },
+  "005": {
+    "last_active": "2026-02-14",
+    "days_inactive": 0,
+    "status": "Healthy"
+  },
+  "007": {
+    "last_active": "2026-02-14",
+    "days_inactive": 0,
+    "status": "Healthy"
+  },
+  "008": {
+    "last_active": "2026-02-14",
+    "days_inactive": 0,
+    "status": "Healthy"
+  },
+  "013": {
+    "last_active": "Never",
+    "days_inactive": 999,
+    "status": "Inactive"
+  },
+  "014": {
+    "last_active": "Never",
+    "days_inactive": 999,
+    "status": "Inactive"
+  }
+}

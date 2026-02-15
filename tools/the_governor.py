@@ -6,12 +6,16 @@ def manage_backlog_priorities(activity_file="activity_metrics.json", backlog_dir
     """
     The Governor: Autonomously adjusts priorities based on activity and stale status.
     """
-    if not os.path.exists(activity_file):
-        print(f"Error: {activity_file} not found.")
+    # Round 5 Defense: The Chaos Monkey (Resilience)
+    # Default to empty if file missing or corrupt
+    activity_data = {}
+    try:
+        if os.path.exists(activity_file):
+            with open(activity_file, 'r') as f:
+                activity_data = json.load(f)
+    except Exception as e:
+        print(f"⚠️ Warning: Could not read {activity_file}: {e}. Skipping automation.")
         return
-
-    with open(activity_file, 'r') as f:
-        activity_data = json.load(f)
 
     changed_files = []
 

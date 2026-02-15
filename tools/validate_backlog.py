@@ -64,6 +64,15 @@ def validate_markdown_file(filepath):
     if "## Acceptance Criteria" not in content and "## Objectives" not in content:
         errors.append("Missing '## Acceptance Criteria' or '## Objectives' section")
 
+    # 2.1 Round 2 Defense: Semantic Density Check (The Lie)
+    # Ensure description is at least 10 words (prevents "TODO" spam)
+    description_match = re.search(r'## (Description|Context|Problem)(.*?)(##|$)', content, re.DOTALL)
+    if description_match:
+        desc_text = description_match.group(2).strip()
+        word_count = len(desc_text.split())
+        if word_count < 10:
+             errors.append(f"Description too short ({word_count} words). Minimum 10 words required.")
+
     # 3. Check for Checkboxes (Actionable items)
     if "- [ ]" not in content and "- [x]" not in content:
          errors.append("No actionable tasks found (missing '- [ ]').")

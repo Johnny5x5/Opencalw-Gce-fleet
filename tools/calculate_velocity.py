@@ -35,6 +35,11 @@ def predict_completion_dates(backlog_dir="backlog/active", velocity=3.0):
 
     active_items = [f for f in os.listdir(backlog_dir) if f.endswith(".md")]
     total_items = len(active_items)
+
+    # Round 9 Defense: The Flash Crash (Div0 Protection)
+    if velocity <= 0.1:
+         velocity = 0.1 # Minimum velocity to prevent infinite/crash
+
     weeks_remaining = total_items / velocity
 
     today = datetime.date.today()

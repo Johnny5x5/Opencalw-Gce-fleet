@@ -16,8 +16,8 @@
 ### Efficiency
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 013 | Project Management Protocols (The Forge) | High | Architecture | In Progress | Medium | ⚠️ Inactive (999d) |
-| 014 | Project Engineering Systems (The Factory) | High | Architecture | In Progress | Medium | ⚠️ Inactive (999d) |
+| 013 | Project Management Protocols (The Forge) | Medium | Architecture | In Progress | Low | ⚠️ Inactive (999d) |
+| 014 | Project Engineering Systems (The Factory) | Low | Architecture | In Progress | Low | ⚠️ Inactive (999d) |
 
 ### Expansion
 | ID | Title | Priority | Type | Status | Risk | Activity |
@@ -67,7 +67,7 @@
 - Security: 1
 
 **Distribution by Priority:**
-- High: 6
-- Low: 3
-- Medium: 4
+- High: 4
+- Low: 4
+- Medium: 5
 - Critical: 1
