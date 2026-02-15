@@ -5,6 +5,9 @@
  * Provides high-security Software Bill of Materials verification and analysis.
  */
 
+// Note: In production, this would use 'protobufjs' to load schemas dynamically.
+// For now, we simulate the contract defined in `schemas/service.proto`.
+
 // Placeholder for the "Rust Core" engine
 const engine = {
   verify: async (artifact) => {
@@ -22,10 +25,18 @@ module.exports = {
   name: 'sbom-secure',
   description: 'Military-grade SBOM verification, signing, and vulnerability analysis.',
 
+  // Expose schema paths for AI Agents to inspect the contract
+  schemas: {
+    sbom: 'packages/sbom-secure/schemas/sbom.proto',
+    service: 'packages/sbom-secure/schemas/service.proto'
+  },
+
   actions: {
     /**
      * Verifies the cryptographic signature of a software artifact.
      * Enforces Zero Trust: Returns false if ANY check fails.
+     *
+     * Conforms to `rpc VerifyArtifact` in service.proto
      */
     verify_artifact: async ({ hash, signature, public_key }) => {
       try {
@@ -69,6 +80,8 @@ module.exports = {
     /**
      * Queries the Knowledge Graph for vulnerability impact.
      * AI-First Interface: Returns semantic data for LLM consumption.
+     *
+     * Conforms to `rpc QueryImpact` in service.proto
      */
     query_impact: async ({ cve_id }) => {
       // Future: Query Redis/GraphDB

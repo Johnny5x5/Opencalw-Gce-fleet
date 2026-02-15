@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+package openclaw.nation.sbom.v1;
+
+option java_package = "com.openclaw.nation.sbom.v1";
+option java_multiple_files = true;
+option go_package = "github.com/openclaw/nation/sbom/v1;sbom";
+
+// Represents a verified software component
+message Artifact {
+  // SHA-256 hash of the artifact
+  string hash = 1;
+  // Unique identifier (PURL - Package URL)
+  string purl = 2;
+  // Component name
+  string name = 3;
+  // Component version
+  string version = 4;
+  // License expression (SPDX)
+  string license = 5;
+  // Attestation status
+  bool verified = 6;
+  // Cryptographic proof (Sigstore)
+  string signature_proof = 7;
+}
+
+// Represents a full Software Bill of Materials
+message SBOM {
+  // CycloneDX Spec Version
+  string spec_version = 1;
+  // List of components
+  repeated Artifact components = 2;
+  // Metadata about the build
+  Metadata metadata = 3;
+}
+
+message Metadata {
+  string timestamp = 1;
+  // Tool used to generate the SBOM
+  string generator_tool = 2;
+  // Entity responsible for the build
+  string organization = 3;
+}
+
+// Represents a known vulnerability
+message Vulnerability {
+  // CVE ID (e.g., CVE-2023-1234)
+  string id = 1;
+  // Severity (CVSS score)
+  double severity = 2;
+  // Detailed description
+  string description = 3;
+  // Recommendation for remediation
+  string remediation = 4;
+  // Affected components
+  repeated string affected_purls = 5;
+}
+
+// VEX (Vulnerability Exploitability Exchange) Status
+enum VexStatus {
+  VEX_STATUS_UNKNOWN = 0;
+  VEX_STATUS_AFFECTED = 1;
+  VEX_STATUS_NOT_AFFECTED = 2;
+  VEX_STATUS_FIXED = 3;
+  VEX_STATUS_UNDER_INVESTIGATION = 4;
+}
+
+message VexStatement {
+  string vulnerability_id = 1;
+  VexStatus status = 2;
+  string justification = 3;
+  string artifact_hash = 4;
+}
