@@ -15,7 +15,10 @@ This module establishes the "Iron Ledger", a centralized, immutable, and cryptog
 ## 2. Technical Architecture
 
 ### 2.1 The Core Engine (The Forge)
-*   **Language:** Rust (for memory safety and performance) wrapped in a Node.js/TypeScript API layer for easy AI consumption.
+*   **Production Stack (Choice of Two):**
+    *   **Option A: Rust** (for maximum memory safety, performance, and embedded/kernel integration).
+    *   **Option B: BEAM Stack (Erlang/Elixir)** (for 99.9999999% availability, fault tolerance, and massive concurrency).
+*   **Prototype Layer:** Node.js/TypeScript API layer (current implementation) acts as the "Control Plane" and AI Interface.
 *   **Standard:** CycloneDX v1.5+ (supporting ML/AI models and VEX).
 *   **Storage:**
     *   **Hot:** Redis (Cluster Mode) for sub-millisecond graph queries.

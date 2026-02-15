@@ -37,6 +37,20 @@ const impact = await sbom.queryImpact({
 *   **Attestation:** All outputs are cryptographically signed.
 
 ## Development Directives
-1.  **Rust Core:** Performance critical components should be implemented in Rust (see `src/core/`).
-2.  **AI First:** All APIs must return semantic, machine-readable data.
-3.  **Zero Trust:** Assume all inputs are malicious until verified.
+
+### 1. Production Core (The Engine)
+The core logic for parsing, verifying, and storing millions of components is designed to be decoupled from the API layer.
+*   **Rust Implementation (Option A):** Located in `src/core/rust_engine/`. Optimized for raw speed and memory safety.
+*   **BEAM/Elixir Implementation (Option B):** Located in `src/core/beam_engine/`. Optimized for massive concurrency and 99.999% uptime.
+*   **Status:** Both are currently stubs waiting for the AI implementation team.
+
+### 2. Prototype / Control Plane (The Interface)
+The current Node.js implementation (`src/index.js`) acts as the:
+*   **API Gateway:** Accepting requests from AI Agents via the Skill interface.
+*   **Orchestrator:** It will eventually delegate heavy lifting to the Production Core via gRPC.
+
+### 3. AI First
+All APIs must return semantic, machine-readable data defined by the Protobuf schemas in `schemas/`.
+
+### 4. Zero Trust
+Assume all inputs are malicious until verified.
