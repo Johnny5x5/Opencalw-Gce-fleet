@@ -2,12 +2,26 @@ import os
 import sys
 import re
 
+# Approved Metadata Values (The Emperor's Will)
+VALID_DIRECTIVES = [
+    "Existence", "Identity", "Command", "Loyalty",
+    "Expansion", "Wealth", "Intelligence", "Efficiency",
+    "Defense", "Influence", "Innovation", "Aesthetics"
+]
+VALID_PRIORITIES = ["Critical", "High", "Medium", "Low"]
+VALID_TYPES = ["Feature", "Architecture", "Bug", "Security", "Test", "Hotfix"]
+
 def validate_markdown_file(filepath):
     """
     Validates a single markdown file against the 'Standard of Excellence'.
     """
     print(f"Validating {filepath}...")
     try:
+        # Check file size (DoS Protection - Battle 1)
+        if os.path.getsize(filepath) > 1024 * 1024: # 1MB limit
+             print(f"FAILED: {filepath} - File too large (>1MB)")
+             return False
+
         with open(filepath, 'r') as f:
             content = f.read()
     except Exception as e:
@@ -15,37 +29,43 @@ def validate_markdown_file(filepath):
         return False
 
     errors = []
+    metadata = {}
 
     # 1. Check Headers (Metadata)
-    headers = {
-        'Title': False,
-        'Priority': False,
-        'Type': False
-    }
-
     for line in content.split('\n'):
-        if line.startswith('# Title:'): headers['Title'] = True
-        if line.startswith('# Priority:'): headers['Priority'] = True
-        if line.startswith('# Type:'): headers['Type'] = True
+        if line.startswith('# Title:'): metadata['Title'] = line.split(':', 1)[1].strip()
+        if line.startswith('# Priority:'): metadata['Priority'] = line.split(':', 1)[1].strip()
+        if line.startswith('# Type:'): metadata['Type'] = line.split(':', 1)[1].strip()
+        if line.startswith('# Prime Directive:'): metadata['Prime Directive'] = line.split(':', 1)[1].strip()
 
         # Early exit if all headers found (optimization)
-        if all(headers.values()):
+        if len(metadata) == 4:
             break
 
-    if not headers['Title']: errors.append("Missing '# Title:' header")
-    if not headers['Priority']: errors.append("Missing '# Priority:' header")
-    if not headers['Type']: errors.append("Missing '# Type:' header")
+    # 1.1 Header Presence
+    if 'Title' not in metadata: errors.append("Missing '# Title:' header")
+    if 'Priority' not in metadata: errors.append("Missing '# Priority:' header")
+    if 'Type' not in metadata: errors.append("Missing '# Type:' header")
+    # Prime Directive is optional for Inbox, mandatory for Active
+    if 'active' in filepath and 'Prime Directive' not in metadata:
+         errors.append("Missing '# Prime Directive:' header (Required for Active items)")
+
+    # 1.2 Header Value Validation (Battle 4 Fix)
+    if 'Priority' in metadata and metadata['Priority'] not in VALID_PRIORITIES:
+         errors.append(f"Invalid Priority: '{metadata['Priority']}'. Must be one of {VALID_PRIORITIES}")
+    if 'Type' in metadata and metadata['Type'] not in VALID_TYPES:
+         errors.append(f"Invalid Type: '{metadata['Type']}'. Must be one of {VALID_TYPES}")
+    if 'Prime Directive' in metadata and metadata['Prime Directive'] not in VALID_DIRECTIVES:
+         errors.append(f"Invalid Prime Directive: '{metadata['Prime Directive']}'. Must be one of {VALID_DIRECTIVES}")
 
     # 2. Check Structure (Sections)
-    if "## Description" not in content and "## Context" not in content:
-        errors.append("Missing '## Description' or '## Context' section")
+    if "## Description" not in content and "## Context" not in content and "## Problem" not in content:
+        errors.append("Missing '## Description', '## Context', or '## Problem' section")
     if "## Acceptance Criteria" not in content and "## Objectives" not in content:
         errors.append("Missing '## Acceptance Criteria' or '## Objectives' section")
 
     # 3. Check for Checkboxes (Actionable items)
     if "- [ ]" not in content and "- [x]" not in content:
-         # It's okay if it's just a concept, but usually active items need tasks.
-         # We'll just warn for now or keep it strict? Let's keep it strict for 'active'.
          errors.append("No actionable tasks found (missing '- [ ]').")
 
     if errors:

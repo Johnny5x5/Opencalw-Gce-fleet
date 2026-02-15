@@ -77,7 +77,17 @@ def generate_status_report(backlog_dir="backlog/active", output_file="STATUS.md"
 
     # Section 3: Metrics (Velocity & Distribution)
     report_lines.append("## Intelligence Metrics")
+
+    # Battle 2 Defense: Inbox Warning (DoS / Flood Risk)
+    inbox_count = 0
+    if os.path.exists("backlog/inbox"):
+        inbox_count = len([f for f in os.listdir("backlog/inbox") if f.endswith(".md")])
+
     report_lines.append(f"- **Total Active Initiatives:** {len(items)}")
+    if inbox_count > 50:
+         report_lines.append(f"- ⚠️ **INBOX FLOOD WARNING:** {inbox_count} items in Inbox. Please triage immediately.")
+    else:
+         report_lines.append(f"- **Inbox Items:** {inbox_count}")
 
     report_lines.append("\n**Distribution by Type:**")
     for t, count in types.items():
