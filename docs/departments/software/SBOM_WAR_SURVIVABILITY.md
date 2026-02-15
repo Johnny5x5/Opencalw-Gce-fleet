@@ -37,5 +37,22 @@
 *   **Kernel:** seL4 (mathematically proven bug-free kernel).
 *   **Parsers:** All SBOM parsers (CycloneDX) must be formally verified or written in memory-safe Rust with `forbid(unsafe_code)`.
 
+## 6. The "Ghost Protocol" (Network Denial Survivability)
+**Threat:** Total destruction of the internet backbone (TCP/IP routing failure) or State-level Deep Packet Inspection (DPI) censorship.
+**Response:**
+*   **Delay Tolerant Networking (DTN):** SBOM updates are encapsulated in **RFC 5050 Bundles**. These bundles can travel via:
+    *   **Sneaker-net:** Physical USB drives carried by couriers.
+    *   **LoRa/HF Radio:** Low-bandwidth secure meshes (NomadOS native).
+    *   **Satellite:** Uncensorable broadcast (out-of-band).
+*   **Steganography:** Critical vulnerability updates are hidden inside benign cover traffic (e.g., encoded in the least significant bits of public domain images or audio logs) to pass through enemy firewalls.
+
+## 7. Polymorphic Defense (Cyber-Biology)
+**Threat:** "Class Break" attacks where a single exploit affects 100% of the nodes running the same binary.
+**Response:**
+*   **Binary Diversity:** Every node runs a unique compilation of the SBOM engine.
+    *   Randomized memory layouts (ASLR++).
+    *   Functional equivalents (using different instruction sequences to achieve the same result).
+*   **The "Hydra" Effect:** If one node crashes from an exploit, it broadcasts the attack signature via the BFT mesh, and all other nodes "mutate" their attack surface immediately.
+
 ---
 **Status:** Protocol Definition Only. Implementation pending AI Engineering Team.
