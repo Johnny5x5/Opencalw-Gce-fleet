@@ -25,18 +25,37 @@ pub struct VideoCodecDriver;
 
 impl VideoCodecDriver {
     pub fn init(&mut self) {
-        // Init VPU (Video Processing Unit) Hardware
-        // Setup H.264/H.265/AV1 Hardware Codecs
+        // Init RK3588 VPU (Video Processing Unit) Hardware
+        // Setup H.264/H.265/AV1/VP9 Hardware Codecs
     }
 
     pub fn encode_frame(&mut self, _data: &[u8]) -> &[u8] {
-        // Hardware Accelerated Encode
+        // Hardware Accelerated Encode via RK MPP (Media Process Platform)
         // This can be used by the AI Agent for vision processing optimization
         &[]
     }
 
     pub fn decode_frame(&mut self, _data: &[u8]) -> &[u8] {
-        // Hardware Accelerated Decode
+        // Hardware Accelerated Decode via RK MPP
+        &[]
+    }
+}
+
+pub struct NPUDriver;
+
+impl NPUDriver {
+    pub fn init(&mut self) {
+        // Init RK3588 NPU (Neural Processing Unit)
+        // 6 TOPS Int8 performance
+    }
+
+    pub fn load_quantized_model(&mut self, _path: &str) {
+        // Map NVMe RAID 0 "Virtual RAM" directly to NPU address space
+        // Zero-Copy load of Llama-3-8B-Quantized
+    }
+
+    pub fn run_inference(&mut self, _input: &[u8]) -> &[u8] {
+        // Execute RKNPU2 operation
         &[]
     }
 }

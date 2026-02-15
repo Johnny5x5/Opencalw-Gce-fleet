@@ -38,10 +38,18 @@ NomadOS scales from IoT to Workstation using Asymmetric Multi-Processing.
 *   **Radio:** LoRa + BLE.
 *   **Power:** Years on battery.
 
-#### Class B: The "Sovereign Phone" (Mobile)
-*   **Cluster 1 (Efficiency):** 4x ULP Cores (Radio/Sensor/Crypto/Storage). *Always On.*
-*   **Cluster 2 (Performance):** 4x High-Perf Cores (App/UI). *Sleeps Often.*
-*   **NPU:** 4 TOPS (Int8) for local SLM/Voice.
+#### Class B: The "Sovereign Tablet" (Nomad Reference Prototype)
+*   **SoC:** Rockchip RK3588 (8nm).
+*   **CPU:** Heterogeneous Octa-Core.
+    *   **Cluster 1 (Performance):** 4x Cortex-A76 @ 2.4GHz.
+    *   **Cluster 2 (Efficiency/Comms):** 4x Cortex-A55 @ 1.8GHz.
+*   **NPU:** 6 TOPS (Int8) dedicated Neural Processing Unit.
+*   **VPU:** 8K@60fps H.265/VP9 Hardware Decoder/Encoder.
+*   **Memory Architecture (Virtual RAM):**
+    *   **RAM:** 32GB LPDDR4X (Soldered).
+    *   **AI Cache:** **Dual M.2 NVMe Slots (PCIe 3.0 x4)** configured in RAID 0.
+    *   **Bandwidth:** ~7GB/s throughput allows loading 70B+ parameter models directly from disk ("Swap as RAM").
+*   **Display:** 10" E-Ink (Daylight Readable) or 1000-nit Transflective LCD.
 
 #### Class C: The "Sovereign Station" (Laptop/Desktop)
 *   **Cluster 1 (Efficiency):** 4x ULP Cores (Radio/Sensor/Crypto/Storage). *Always On.*
