@@ -31,6 +31,17 @@ def manage_backlog_priorities(activity_file="activity_metrics.json", backlog_dir
         if not target_file:
             continue
 
+        # Defense 2: The Truce (Respect Human Activity)
+        # If the file was modified < 24 hours ago, skip it.
+        try:
+            mtime = os.path.getmtime(target_file)
+            import time
+            if (time.time() - mtime) < 86400: # 24 hours
+                print(f"Skipping {item_id}: Modified recently (<24h).")
+                continue
+        except Exception:
+            pass
+
         try:
             with open(target_file, 'r') as f:
                 content = f.read()

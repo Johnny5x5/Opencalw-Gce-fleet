@@ -58,6 +58,31 @@ def scan_project_activity():
                 "status": "Healthy" if days_inactive < 7 else "Stale"
             }
         else:
+             # Fallback: Check the backlog file itself (maybe the "Work" is just updating the ticket?)
+             backlog_file = f"backlog/active/{item_id}_*.md"
+             # Use glob to find the actual file
+             try:
+                 # This is a bit hacky, but robust enough for the MVP
+                 result = subprocess.run(f"ls backlog/active/{item_id}_*.md", shell=True, capture_output=True, text=True)
+                 if result.returncode == 0:
+                     actual_file = result.stdout.strip().split('\n')[0]
+                     last_date = get_last_commit_date(actual_file)
+
+                     if last_date:
+                         commit_dt = datetime.datetime.fromisoformat(last_date)
+                         now_dt = datetime.datetime.now(commit_dt.tzinfo)
+                         delta = now_dt - commit_dt
+                         days_inactive = delta.days
+
+                         activity_data[item_id] = {
+                            "last_active": last_date.split('T')[0],
+                            "days_inactive": days_inactive,
+                            "status": "Healthy" if days_inactive < 7 else "Stale"
+                        }
+                         continue # Skip the "Never" block
+             except Exception:
+                 pass
+
              activity_data[item_id] = {
                 "last_active": "Never",
                 "days_inactive": 999,

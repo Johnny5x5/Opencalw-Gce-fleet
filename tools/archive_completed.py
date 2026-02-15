@@ -32,6 +32,8 @@ def archive_completed_items(backlog_dir="backlog/active", archive_dir="backlog/a
                 is_done = True
 
             # Condition 2: All tasks checked (and at least one task existed)
+            # Defense 3: The Assassin (Prevent Empty Archive)
+            # Ensure there is at least one closed task.
             elif open_tasks == 0 and closed_tasks > 0:
                 is_done = True
 
