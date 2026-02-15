@@ -73,6 +73,17 @@ def validate_markdown_file(filepath):
         if word_count < 10:
              errors.append(f"Description too short ({word_count} words). Minimum 10 words required.")
 
+    # 2.2 Legion 1 Defense: The Swarm (Input Sanitization)
+    # Check for weird control characters or excessive emojis
+    # Allow basic emojis but flag if > 5 per file (Spam Risk)
+    emoji_count = len(re.findall(r'[^\x00-\x7F]', content))
+    if emoji_count > 50: # Conservative limit (some unicode is fine)
+         errors.append(f"Excessive Unicode characters detected ({emoji_count}). Possible spam or binary injection.")
+
+    # Check for Recursive Markdown Links [Text](Text)
+    if re.search(r'\[(.*?)\]\(\1\)', content):
+         errors.append("Recursive Markdown link detected. Possible render crash attempt.")
+
     # 3. Check for Checkboxes (Actionable items)
     if "- [ ]" not in content and "- [x]" not in content:
          errors.append("No actionable tasks found (missing '- [ ]').")
@@ -87,6 +98,19 @@ def validate_markdown_file(filepath):
     for name, pattern in secret_patterns.items():
         if re.search(pattern, content):
             errors.append(f"⚠️ SECURITY RISK: Potential {name} detected in file!")
+
+    # 4.1 Legion 2 Defense: The Lawyers (PII & Compliance)
+    pii_patterns = {
+        "Email Address": r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}",
+        "Phone Number": r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b"
+    }
+    for name, pattern in pii_patterns.items():
+        matches = re.findall(pattern, content)
+        if matches:
+             # Filter out common false positives like example.com
+             filtered = [m for m in matches if "example.com" not in m and "test.com" not in m]
+             if filtered:
+                 errors.append(f"⚠️ PRIVACY RISK: Potential {name} detected! Don't commit PII.")
 
     if errors:
         print(f"FAILED: {filepath}")

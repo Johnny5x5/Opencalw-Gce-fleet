@@ -49,10 +49,29 @@ cp "$REPO_ROOT/backlog/planning/RITUALS.md" "$TARGET_DIR/backlog/planning/"
 cp "$REPO_ROOT/docs/departments/project_management/ROLES.md" "$TARGET_DIR/docs/departments/project_management/"
 
 # 3. Copy Tools & Workflows
+# Legion 4 Defense: The Ghosts (Supply Chain Verification)
+echo "Verifying Tool Integrity..."
+if [ -f "$REPO_ROOT/tools/SHA256SUMS" ]; then
+    pushd "$REPO_ROOT/tools" > /dev/null
+    sha256sum -c SHA256SUMS
+    if [ $? -ne 0 ]; then
+        echo "🚨 ERROR: Tool integrity check failed! Aborting installation."
+        exit 1
+    fi
+    popd > /dev/null
+fi
+
 cp "$REPO_ROOT/tools/validate_backlog.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/generate_status_report.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/calculate_velocity.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/scan_activity.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/the_governor.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/archive_completed.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/SHA256SUMS" "$TARGET_DIR/tools/"
+
 cp "$REPO_ROOT/.github/workflows/backlog_validation.yml" "$TARGET_DIR/.github/workflows/"
 cp "$REPO_ROOT/.github/workflows/daily_status_report.yml" "$TARGET_DIR/.github/workflows/"
+cp "$REPO_ROOT/.github/workflows/citadel_automation.yml" "$TARGET_DIR/.github/workflows/"
 
 # 4. Success Message
 echo "PMO Installation Complete!"
