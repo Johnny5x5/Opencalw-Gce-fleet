@@ -30,8 +30,10 @@ exports.nomadUplink = async (req, res) => {
   }
 
   // Reconstruct the message to sign: timestamp + body
-  // In a real implementation, we would use the raw body buffer
-  const payload = JSON.stringify(req.body);
+  // SECURITY NOTE: In a real military-grade environment, we must use the raw request buffer
+  // (req.rawBody) to guarantee the signature matches. Using JSON.stringify() is brittle
+  // and susceptible to formatting differences, but sufficient for this architectural simulation.
+  const payload = req.rawBody ? req.rawBody.toString() : JSON.stringify(req.body);
   const message = `${timestamp}.${payload}`;
 
   // Use a shared secret (env var) - Mandatory for Military Grade Security
