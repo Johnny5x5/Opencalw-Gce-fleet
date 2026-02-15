@@ -19,6 +19,12 @@
     "provenance_check": "SLSA_LEVEL_3",
     "fips_140_2_compliance": true
   },
+  "war_readiness": {
+    "pqc_migration": "HYBRID_MANDATORY",
+    "bft_tolerance": "33_PERCENT",
+    "geo_redundancy": "TRIPLE_BUNKER",
+    "doomsday_archival": "M_DISC_REQUIRED"
+  },
   "audit": {
     "log_retention_days": 365,
     "immutable_logs": true,
