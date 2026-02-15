@@ -1,0 +1,23 @@
+{
+  "classification": "DEFCON_4_BUNKER",
+  "dod_impact_level": "IL5",
+  "access_control": {
+    "requires_mfa": true,
+    "requires_hsm": true,
+    "requires_citizen_verification": true
+  },
+  "network": {
+    "air_gap_simulation": true,
+    "allow_egress": ["sigstore.dev", "rekor.dev", "npm-registry-mirror.internal"],
+    "deny_all_inbound": true
+  },
+  "supply_chain": {
+    "require_signed_commits": true,
+    "require_signed_artifacts": true,
+    "provenance_check": "SLSA_LEVEL_3"
+  },
+  "audit": {
+    "log_retention_days": 365,
+    "immutable_logs": true
+  }
+}
