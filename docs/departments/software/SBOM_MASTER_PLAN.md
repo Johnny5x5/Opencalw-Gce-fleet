@@ -33,11 +33,13 @@ This module establishes the "Iron Ledger", a centralized, immutable, and cryptog
     *   `impact_analysis(cve_id)`: Returns a dependency graph of affected systems.
     *   `policy_check(component)`: Validates against DEFCON_4_BUNKER standards.
 
-### 2.3 Security Controls (DoD IL5+)
-*   **Identity:** SPIFFE/SPIRE for workload identity.
+### 2.3 Security Controls (DoD IL5+ / Level 5)
+*   **Security Level:** **LEVEL 5 (Critical)** - Failure equates to existential threat.
+*   **Hardware Security:** **FIPS 140-2 Level 3** (or higher) HSM required for all root keys.
+*   **Identity:** SPIFFE/SPIRE for workload identity with biometric factor for human overrides.
 *   **Signing:** Keyless signing via OIDC (Simulated) + Hardware Token (YubiKey/Titan) for root keys.
-*   **Encryption:** AES-256-GCM for data at rest, TLS 1.3 (mTLS) for data in transit.
-*   **Isolation:** The SBOM module runs in a dedicated VPC with no internet access (egress via strict proxy only).
+*   **Encryption:** AES-256-GCM (SHA-512 Hashing) for data at rest, TLS 1.3 (mTLS) for data in transit.
+*   **Isolation:** The SBOM module runs in a dedicated VPC with **Total Air Gap Simulation** (no direct internet access; egress via strict data diode only).
 
 ## 3. Implementation Phases (Fractal Scaling)
 

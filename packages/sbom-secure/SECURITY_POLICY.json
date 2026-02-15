@@ -1,10 +1,12 @@
 {
   "classification": "DEFCON_4_BUNKER",
   "dod_impact_level": "IL5",
+  "security_level": "LEVEL_5",
   "access_control": {
     "requires_mfa": true,
     "requires_hsm": true,
-    "requires_citizen_verification": true
+    "requires_citizen_verification": true,
+    "requires_biometric": true
   },
   "network": {
     "air_gap_simulation": true,
@@ -14,10 +16,12 @@
   "supply_chain": {
     "require_signed_commits": true,
     "require_signed_artifacts": true,
-    "provenance_check": "SLSA_LEVEL_3"
+    "provenance_check": "SLSA_LEVEL_3",
+    "fips_140_2_compliance": true
   },
   "audit": {
     "log_retention_days": 365,
-    "immutable_logs": true
+    "immutable_logs": true,
+    "tamper_evident_hashing": "SHA-512"
   }
 }
