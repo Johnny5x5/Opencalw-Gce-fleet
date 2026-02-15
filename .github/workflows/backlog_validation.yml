@@ -28,3 +28,15 @@ jobs:
 
       - name: Run Backlog Linter
         run: python3 tools/validate_backlog.py
+
+      - name: Run Dependency Audit
+        run: python3 tools/audit_dependencies.py
+
+      - name: Run Link Checker
+        run: python3 tools/check_links.py
+
+      - name: Run Duplicate Detector
+        run: python3 tools/detect_duplicates.py
+
+      - name: Run Archive Validator
+        run: python3 tools/validate_archive.py
