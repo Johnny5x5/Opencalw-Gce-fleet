@@ -26,6 +26,9 @@ jobs:
       - name: Scan Project Activity
         run: python3 tools/scan_activity.py
 
+      - name: The Governor (Auto-Prioritize)
+        run: python3 tools/the_governor.py
+
       - name: The Archivist (Auto-Archive)
         run: python3 tools/archive_completed.py
 

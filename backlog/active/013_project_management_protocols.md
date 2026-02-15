@@ -1,5 +1,5 @@
 # Title: Project Management Protocols (The Forge)
-# Priority: High
+# Priority: Medium
 # Type: Architecture
 # Prime Directive: Efficiency
 
@@ -17,3 +17,7 @@ This initiative establishes the "The Forge" project management methodology for t
 - [ ] Create templates for Sprint Planning and Sprint Review meetings.
 - [ ] Implement a GitHub Project board (or equivalent simulation via JSON) to visualize the 3-Tier Queue.
 - [ ] Develop a `report_generator.py` script to summarize weekly progress from the backlog.
+
+
+## Governor's Log
+- **Auto-Downgrade:** Priority changed to Medium due to Stale (>14 days inactive).

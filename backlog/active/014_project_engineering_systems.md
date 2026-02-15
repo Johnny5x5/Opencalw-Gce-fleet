@@ -1,5 +1,5 @@
 # Title: Project Engineering Systems (The Factory)
-# Priority: High
+# Priority: Low
 # Type: Architecture
 # Prime Directive: Efficiency
 
@@ -17,3 +17,7 @@ This initiative defines "The Factory," the underlying engineering infrastructure
 - [ ] Update `cloudbuild.yaml` to include a "Quality Gate" step that fails builds if code coverage drops.
 - [ ] Create a `tools/setup_dev_env.sh` script to enforce standard tooling on all developer machines (agents).
 - [ ] Implement a "Golden Path" template for new microservices/skills to ensure instant compliance with "The Factory" standards.
+
+
+## Governor's Log
+- **Auto-Downgrade:** Priority changed to Low due to Stale (>30 days inactive).
