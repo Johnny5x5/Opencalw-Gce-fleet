@@ -13,7 +13,9 @@ const requiredPaths = [
     'packages/nomad-os/drivers/src/lib.rs',
     'packages/nomad-os/ai-core/src/lib.rs',
     'packages/nomad-os/userland/src/main.rs', // TUI Dashboard
-    'src/functions/nomad-uplink/index.js'
+    'src/functions/nomad-uplink/index.js',
+    'docs/specs/NOMAD_MESSAGING.yaml',
+    'terraform/modules/messaging_infrastructure/main.tf'
 ];
 
 let architecturePass = true;
@@ -46,17 +48,32 @@ if (uplinkCode.length > 0) {
     } else {
         console.warn("[WARN] Uplink HMAC check inconclusive (string match failed), but file exists.");
     }
+
+    if (uplinkCode.includes('process.env.NOMAD_QUEUE_PROVIDER')) {
+        console.log("[PASS] Cloud Gateway implements Queue Abstraction Layer (Multi-Cloud Support).");
+    } else {
+        console.error("[FAIL] Cloud Gateway missing Queue Abstraction logic.");
+        process.exit(1);
+    }
 } else {
     console.error("[FAIL] Uplink Function empty or unreadable.");
     process.exit(1);
 }
 
-console.log("\n=== Phase 3: Hardware Acceleration Check ===");
+console.log("\n=== Phase 3: Hardware Acceleration & Local Messaging Check ===");
 const driverCode = fs.readFileSync('packages/nomad-os/drivers/src/lib.rs', 'utf8');
 if (driverCode.includes('VideoCodecDriver') && driverCode.includes('encode_frame')) {
     console.log("[PASS] Video Codec Driver (VPU) definition found.");
 } else {
     console.error("[FAIL] Video Codec Driver missing.");
+    process.exit(1);
+}
+
+const systemCode = fs.readFileSync('packages/nomad-os/system/src/main.rs', 'utf8');
+if (systemCode.includes('struct MessageQueue')) {
+    console.log("[PASS] Local Store-and-Forward Queue (MessageQueue struct) implementation found.");
+} else {
+    console.error("[FAIL] Local MessageQueue missing.");
     process.exit(1);
 }
 
