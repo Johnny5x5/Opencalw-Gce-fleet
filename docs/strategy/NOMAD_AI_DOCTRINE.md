@@ -27,13 +27,23 @@ We reject the premise that the AI must *memorize* everything. Instead, we give t
     3.  Receives the 3 exact pages from the Jeep Service Manual.
     4.  Summarizes the answer for you in 2 seconds.
 
-### 4. Strategic Advantage
-*   **Speed:** Answers in seconds, not minutes.
+### 4. Hybrid Intelligence: "The Tether" (80/20 Rule)
+While the local Analyst (8B Model) handles 80% of tasks, some missions require massive reasoning power (e.g., decrypting complex patterns, analyzing satellite imagery, or running 500k-token legal reviews).
+
+*   **The 20% Solution:**
+    *   **The Router:** A lightweight classifier determines if a query is "Tactical" (Local) or "Strategic" (Cloud).
+    *   **The Bundle:** Strategic queries are packaged into an encrypted bundle (`type: "ai_heavy_lift"`) and sent via the Uplink when connectivity allows.
+    *   **The Federal Brain:** The Cloud Backend processes the request using a massive "God Model" (e.g., Gemini 1.5 Pro) and returns the answer in the next downlink bundle.
+    *   **Result:** You get "Supercomputer" answers, just with a time delay.
+
+### 5. Strategic Advantage
+*   **Speed:** Answers in seconds, not minutes (for 80% of tasks).
 *   **Accuracy:** The AI cites its sources ("See Page 42 of Jeep_Manual.pdf"). It hallucinates less because it is reading real data.
-*   **Privacy:** All data stays on the NVMe. No cloud search required.
+*   **Privacy:** All data stays on the NVMe. No cloud search required unless explicitly requested.
 *   **Efficiency:** Runs on 5 Watts of power, not 500 Watts.
 
-### 5. Deployment
+### 6. Deployment
 *   **Phase 1:** Build the "Librarian" Indexer in Rust (LanceDB/Qdrant).
 *   **Phase 2:** Optimize Llama-3-8B-Quantized for the RK3588 NPU.
 *   **Phase 3:** Integrate into the Nomad Shell (TUI).
+*   **Phase 4:** Implement "The Tether" Query Router for Cloud handoff.

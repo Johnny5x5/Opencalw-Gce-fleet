@@ -69,6 +69,26 @@ exports.nomadUplink = async (req, res) => {
     // Here we would write to BigQuery or a Merkle Tree storage
   }
 
+  let queuedMessages = [
+    {
+      id: 'msg-001',
+      type: 'mission_update',
+      content: 'Weather alert: Sandstorm approaching sector 7.',
+      priority: 'high'
+    }
+  ];
+
+  if (type === 'ai_heavy_lift') {
+    console.log(`[HYBRID AI] Received Strategic Query. Routing to Federal Brain (Gemini 1.5 Pro)...`);
+    // Simulate processing delay and complex reasoning
+    queuedMessages.push({
+      id: `ai-reply-${Date.now()}`,
+      type: 'ai_response',
+      content: 'STRATEGIC ANALYSIS: The satellite imagery indicates a 40% probability of aquifer presence at coordinates 34.05, -118.24. Recommend deploying ground sensors for verification. [Source: Sentinel-2 Infrared]',
+      priority: 'flash'
+    });
+  }
+
   if (encryptedBundle) {
     console.log(`[BUNDLE] Received ${encryptedBundle.length} bytes of encrypted data.`);
     // Here we would decrypt and route to the AI Agent
@@ -79,14 +99,7 @@ exports.nomadUplink = async (req, res) => {
   const responsePayload = {
     status: 'success',
     serverTime: now,
-    queuedMessages: [
-      {
-        id: 'msg-001',
-        type: 'mission_update',
-        content: 'Weather alert: Sandstorm approaching sector 7.',
-        priority: 'high'
-      }
-    ],
+    queuedMessages: queuedMessages,
     systemUpdate: null // No OTA update at this time
   };
 

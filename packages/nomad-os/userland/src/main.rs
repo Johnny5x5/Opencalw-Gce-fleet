@@ -134,7 +134,7 @@ fn main() -> Result<(), io::Error> {
                     rect.render_widget(mesh_list, chunks[1]);
                 }
                 MenuItem::Console => {
-                    let console = Paragraph::new("> type command here...")
+                    let console = Paragraph::new("> type command here...\n\n[CLOUD TETHER] Status: ACTIVE (80/20 Rule)\n[SYSTEM] Routing strategic query 'Analyze Sector 7' to Federal Brain...\n[REPLY] Estimated: 20s")
                         .block(Block::default().title("Sovereign Shell").borders(Borders::ALL));
                     rect.render_widget(console, chunks[1]);
                 }

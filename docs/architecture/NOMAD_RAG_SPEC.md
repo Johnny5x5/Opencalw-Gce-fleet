@@ -43,7 +43,22 @@ The "Librarian" is a userspace daemon (Core 3/Storage) that indexes all user-pro
 *   **Runtime:** `rknpu2` (Rockchip NPU) or `ggml` with NPU backend.
 *   **Output:** Streams tokens to the TUI.
 
-### 3. Implementation Plan
+### 3. The Query Router (Hybrid Intelligence)
+To implement the **80/20 Rule** ("The Tether"), the Query Router acts as a gateway before the Librarian.
+
+*   **Logic:**
+    1.  **Complexity Check:** If query length > 500 tokens OR user explicitly tags `#strategic`, Route to Cloud.
+    2.  **Capability Check:** If query asks for "Satellite Analysis" or "Encryption Breaking" (tasks beyond 8B capabilities), Route to Cloud.
+    3.  **Default:** Route to Local Librarian (8B Model).
+
+*   **Cloud Handoff Protocol:**
+    *   If routed to Cloud:
+        1.  Create Bundle: `type: "ai_heavy_lift"`, `priority: "flash"`.
+        2.  Payload: `{ "query": "Analyze these coordinates...", "context": [User Attached Files] }`.
+        3.  Wait for Uplink Response (Async).
+        4.  TUI displays: `[CLOUD] Request Sent. Estimated Reply: 20s`.
+
+### 4. Implementation Plan
 #### Phase 1: The Core Library (Rust)
 *   Create `packages/nomad-os/ai-core/src/librarian.rs`.
 *   Implement `Indexer` struct using `lance`.
@@ -57,5 +72,11 @@ The "Librarian" is a userspace daemon (Core 3/Storage) that indexes all user-pro
 *   Update `nomad-ai-core` to wrap the `Retriever` -> `Generator` pipeline.
 *   Expose `ask_librarian(query: &str)` API to the TUI.
 
-### 4. Data Flow
-`User Query` -> `Embedder` -> `Vector Search (NVMe)` -> `Context Chunks` -> `LLM Prompt` -> `NPU Inference` -> `TUI Response`
+#### Phase 4: The Router Integration
+*   Implement `QueryRouter` struct in `nomad-ai-core`.
+*   Connect `QueryRouter` to `nomad-system`'s Bundle Protocol interface.
+
+### 5. Data Flow
+`User Query` -> `Query Router`
+    |-> [Tactical] -> `Embedder` -> `Local Vector Search` -> `Local NPU` -> `TUI`
+    |-> [Strategic] -> `Bundle Protocol` -> `Cloud Uplink` -> `Federal AI` -> `Downlink` -> `TUI`
