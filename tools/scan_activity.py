@@ -2,7 +2,6 @@ import os
 import subprocess
 import json
 import datetime
-import psutil # Note: This requires 'pip install psutil', but we'll use stdlib for now to avoid dependency issues
 
 def check_for_miners():
     """
