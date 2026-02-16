@@ -10,5 +10,6 @@ module.exports = {
   'google-workspace-connector': require('./google-workspace-connector'),
   'moral-reasoning': require('./moral-reasoning'),
   'outbound-sales': require('./outbound-sales'),
-  'sbom-secure': require('../../sbom-secure/src/index.js')
+  'sbom-secure': require('../../sbom-secure/src/index.js'),
+  'library-access': require('./library-access')
 };

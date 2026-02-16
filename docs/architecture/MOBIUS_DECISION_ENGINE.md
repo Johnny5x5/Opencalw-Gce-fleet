@@ -9,6 +9,7 @@ The **Mobius Engine** is cyclical but with a "Twist".
 *   **Surface A (Tech):** The "War Council" optimizes for Efficiency, Speed, and Lethality.
 *   **Surface B (Moral):** The "Chaplaincy" optimizes for Righteousness, Sustainability, and Law.
 *   **The Twist:** At the end of every optimization cycle, the Output of A becomes the Input of B, and vice-versa.
+    *   *The Injection of Truth:* The **Librarian Agent** continuously feeds "Universal Truth" (from the National Library) into the Twist point, ensuring the loop does not drift into hallucination.
 
 ### 1.1 The Continuous Loop
 1.  **Thesis (Tech):** "Build a faster nuclear reactor."
