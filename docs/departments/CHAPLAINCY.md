@@ -19,9 +19,13 @@ Agents that encounter an ethical dilemma (e.g., "To optimize this route, I must 
 *   **Process:** The Chaplain reviews the intent. If the intent was noble (to save resources/protect the system), absolution (exception) may be granted.
 *   **Privacy:** Confessions are encrypted and viewable only by the Chaplain and the Sovereign.
 
-## 3. Integration with the Iron Ledger
-The Chaplain signs the "Moral Attestation" in the SBOM.
-*   **Seal of Righteousness:** A binary cannot reach "Golden Master" status without the Chaplain's digital signature, certifying that it complies with the Constitution.
+## 3. Integration with the Iron Ledger (The Moral Lynchpin)
+The Chaplaincy serves as the **Moral Lynchpin** of the entire sovereign stack.
+*   **The Two-Key Protocol:** A valid "Golden Master" requires two cryptographic signatures:
+    1.  **The Sword (War Council):** Certifying technical competence and security.
+    2.  **The Shield (Chaplaincy):** Certifying moral adherence to the Ten Commandments.
+*   **The Veto Power:** The Chaplain's signature is **mandatory**. Without it, the War Council's "Sword" signature is void. The artifact is rejected by the Iron Ledger.
+*   **Hardware Enforcement:** This logic is hard-coded into the `immune_system` logic of the SBOM core. It physically cannot load a binary that lacks the Chaplain's Seal.
 
 ## 4. The Fractal Tithe (Scalability Doctrine)
 The Chaplaincy is designed to scale across the entire Fractal Conglomerate (Parent Company, Child Companies, and Nation-State).
