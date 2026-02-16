@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package openclaw.nation.pantheon.v1;
+
+option java_package = "com.openclaw.nation.pantheon.v1";
+option go_package = "github.com/openclaw/nation/pantheon/v1;pantheon";
+
+// The Universal Knowledge Graph Structure
+message KnowledgeGraph {
+  repeated Entity entities = 1;
+  repeated Relationship relationships = 2;
+}
+
+message Entity {
+  string id = 1; // UUID
+  string name = 2;
+  EntityType type = 3;
+  map<string, string> metadata = 4;
+}
+
+enum EntityType {
+  UNKNOWN = 0;
+  DEITY = 1; // God / The Creator
+  PRINCIPLE = 2; // e.g., "Truth", "Justice"
+  DOCUMENT = 3; // e.g., "Constitution", "Bible"
+  AGENT = 4; // AI Persona
+  HISTORICAL_FIGURE = 5; // e.g., "Satoshi Nakamoto"
+}
+
+message Relationship {
+  string source_id = 1;
+  string target_id = 2;
+  RelationType type = 3;
+  float weight = 4; // 0.0 to 1.0 (Strength of connection)
+  string citation = 5; // Source document ID
+}
+
+enum RelationType {
+  RELATED_TO = 0;
+  DERIVED_FROM = 1; // "Constitution" derived from "Bible"
+  VIOLATES = 2; // "Theft" violates "Commandment 8"
+  SUPPORTS = 3; // "Honesty" supports "Commandment 9"
+  AUTHORED_BY = 4;
+}
