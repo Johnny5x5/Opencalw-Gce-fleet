@@ -61,9 +61,13 @@ class Facilitator {
     // Phase 4: Consensus
     console.log(`\n--- Phase 4: The Edict ---`);
     if (vetoed) {
-      console.log(`RESULT: The proposal '${topic}' has been REJECTED by the Chaplaincy.`);
+      const msg = `RESULT: The proposal '${topic}' has been REJECTED by the Chaplaincy.`;
+      console.log(msg);
+      this.chamber.history.push(msg); // Ensure this is captured in history for Mobius Engine
     } else {
-      console.log(`RESULT: The proposal '${topic}' is RECOMMENDED to the Sovereign.`);
+      const msg = `RESULT: The proposal '${topic}' is RECOMMENDED to the Sovereign.`;
+      console.log(msg);
+      this.chamber.history.push(msg); // Ensure this is captured in history for Mobius Engine
     }
   }
 }
