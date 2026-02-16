@@ -5,7 +5,7 @@ set -e
 # OpenClaw Agent Bootstrap Script
 # ==============================================================================
 # 1. System Hardening & Updates
-# 2. Blacklist Enforcement (Elon Musk Companies)
+# 2. Blacklist Enforcement (The Great Firewall)
 # 3. Runtime Installation (Node.js, OpenClaw)
 # 4. Skill Injection (from GCS)
 # 5. Service Startup
@@ -24,32 +24,82 @@ apt-get install -y curl gnupg git unzip zip supervisor openjdk-17-jdk
 # ------------------------------------------------------------------------------
 # 2. Blacklist Enforcement
 # ------------------------------------------------------------------------------
-echo "Enforcing Corporate Blacklist..."
+echo "Enforcing Corporate Blacklist (The Great Firewall)..."
 cat <<EOF >> /etc/hosts
-# --- BLOCKED COMPETITORS (ELON MUSK COMPANIES) ---
+# =================================================
+# THE ADVERSARIES: FORBIDDEN DOMAINS
+# =================================================
+
+# --- ELON MUSK PORTFOLIO (THE MARS CULT) ---
+# Tesla
+127.0.0.1 tesla.com
+127.0.0.1 www.tesla.com
+127.0.0.1 shop.tesla.com
+127.0.0.1 ir.tesla.com
+# SpaceX
+127.0.0.1 spacex.com
+127.0.0.1 www.spacex.com
+127.0.0.1 starlink.com
+127.0.0.1 www.starlink.com
+127.0.0.1 api.starlink.com
+# X / Twitter
 127.0.0.1 twitter.com
 127.0.0.1 www.twitter.com
 127.0.0.1 x.com
 127.0.0.1 www.x.com
 127.0.0.1 api.twitter.com
-127.0.0.1 tesla.com
-127.0.0.1 www.tesla.com
-127.0.0.1 spacex.com
-127.0.0.1 www.spacex.com
-127.0.0.1 starlink.com
-127.0.0.1 www.starlink.com
+127.0.0.1 t.co
+# Neuralink
+127.0.0.1 neuralink.com
+127.0.0.1 www.neuralink.com
+# The Boring Company
+127.0.0.1 boringcompany.com
+127.0.0.1 www.boringcompany.com
+# xAI
 127.0.0.1 x.ai
 127.0.0.1 grok.x.ai
-# --- BLOCKED COMPETITORS (META / FACEBOOK) ---
-127.0.0.1 facebook.com
-127.0.0.1 www.facebook.com
-127.0.0.1 instagram.com
-127.0.0.1 www.instagram.com
-127.0.0.1 whatsapp.com
-127.0.0.1 www.whatsapp.com
+127.0.0.1 www.x.ai
+
+# --- KIMBAL MUSK PORTFOLIO (THE BROTHER) ---
+127.0.0.1 thekitchen.com
+127.0.0.1 www.thekitchen.com
+127.0.0.1 biggreen.org
+127.0.0.1 www.biggreen.org
+127.0.0.1 squarerootsgrow.com
+127.0.0.1 www.squarerootsgrow.com
+127.0.0.1 novaskystories.com
+127.0.0.1 www.novaskystories.com
+
+# --- MARK ZUCKERBERG PORTFOLIO (THE METAVERSE) ---
+# Meta Platforms
 127.0.0.1 meta.com
 127.0.0.1 www.meta.com
-# -------------------------------------------------
+127.0.0.1 about.meta.com
+# Facebook
+127.0.0.1 facebook.com
+127.0.0.1 www.facebook.com
+127.0.0.1 m.facebook.com
+127.0.0.1 api.facebook.com
+127.0.0.1 connect.facebook.net
+# Instagram
+127.0.0.1 instagram.com
+127.0.0.1 www.instagram.com
+127.0.0.1 api.instagram.com
+# WhatsApp
+127.0.0.1 whatsapp.com
+127.0.0.1 www.whatsapp.com
+127.0.0.1 web.whatsapp.com
+127.0.0.1 api.whatsapp.com
+# Threads
+127.0.0.1 threads.net
+127.0.0.1 www.threads.net
+# Oculus / Reality Labs
+127.0.0.1 oculus.com
+127.0.0.1 www.oculus.com
+127.0.0.1 store.facebook.com
+127.0.0.1 horizon.meta.com
+
+# =================================================
 EOF
 
 # ------------------------------------------------------------------------------

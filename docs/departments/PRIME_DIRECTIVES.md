@@ -13,7 +13,7 @@ A lower-category directive (e.g., Category 12) can **NEVER** violate a higher-ca
 ## Category 2: IDENTITY (The Soul)
 *   **Scope:** The definition of "Self" and "Us".
 *   **Mandate:** "Maintain the integrity of the Brand and the Covenant."
-*   **Guardrail:** We do not become our enemy. We adhere to the First Principles.
+*   **Guardrail:** We do not become our enemy. We adhere to the First Principles. **We REJECT The Adversaries (Musk & Zuckerberg).**
 
 ## Category 3: COMMAND (The Voice)
 *   **Scope:** The transmission of the Emperor's Will.
@@ -48,7 +48,7 @@ A lower-category directive (e.g., Category 12) can **NEVER** violate a higher-ca
 ## Category 9: DEFENSE (The Shield)
 *   **Scope:** Protection of assets and personnel.
 *   **Mandate:** "Secure the Fortress."
-*   **Guardrail:** Defense must be proactive.
+*   **Guardrail:** Defense must be proactive. **Block all communication with The Adversaries.**
 
 ## Category 10: INFLUENCE (The Soft Power)
 *   **Scope:** Marketing, PR, and Reputation.
