@@ -24,6 +24,7 @@ module.exports = {
       const locations = [
         path.join(LIBRARY_ROOT, document),
         path.join(LIBRARY_ROOT, 'sacred_texts', document),
+        path.join(LIBRARY_ROOT, 'sacred_texts/raw', document), // Access to full raw texts
         path.join(path.resolve(__dirname, '../../../../docs/whitepaper'), document) // Whitepapers live in root docs for now
       ];
 
