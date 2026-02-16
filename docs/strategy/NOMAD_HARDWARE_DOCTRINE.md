@@ -57,6 +57,11 @@ NomadOS scales from IoT to Workstation using Asymmetric Multi-Processing.
 *   **NPU:** 50+ TOPS for local LLM Training/Inference.
 *   **GPU:** Discrete GPU for 3D/Compute.
 
+#### Class D: The "Sovereign Server" (Future Proofing)
+*   **Hypervisor Capacity:** The NomadOS Kernel (Guardian) is hard-coded to address up to **128 Cores**.
+*   **Use Case:** Rackmount deployments for Federal Cloud Nodes or Clan Servers.
+*   **Architecture:** Massive NUMA topology support.
+
 ### 4. Custom Silicon Strategy (2029 Target)
 *   **ISA:** RISC-V (Open Standard).
 *   **Word Size:** 128-bit Address Space (Future Proofing).

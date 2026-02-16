@@ -81,7 +81,11 @@ fn main() -> Result<(), io::Error> {
                 })
                 .collect();
 
-            let title = if is_folded { "NomadOS (Phone Mode)" } else { "NomadOS (Station Mode - 8 Cores Active)" };
+            let title = if is_folded {
+                "NomadOS (Phone Mode)"
+            } else {
+                "NomadOS (Station Mode - 8 Cores Active) [Max: 128]"
+            };
 
             let tabs = Tabs::new(menu)
                 .select(active_menu_item.into())

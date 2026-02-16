@@ -6,11 +6,13 @@ use core::panic::PanicInfo;
 // In a real seL4 system, we would use sel4-sys and alloc/vec
 // For this simulation, we'll define mock structures.
 
+#[derive(Clone, Copy)]
 pub struct Capability {
     pub cptr: usize,
     pub rights: u8, // Read, Write, Execute, Grant
 }
 
+#[derive(Clone, Copy)]
 pub struct Process {
     pub id: u32,
     pub name: &'static str,
@@ -47,7 +49,7 @@ impl MessageQueue {
 }
 
 pub struct Guardian {
-    pub processes: [Option<Process>; 8], // 8 Cores (Nomad Tablet Standard)
+    pub processes: [Option<Process>; 128], // Scaled to 128 Cores (Future Proofing)
     pub next_pid: u32,
     pub queue: MessageQueue,
 }
@@ -55,14 +57,14 @@ pub struct Guardian {
 impl Guardian {
     pub fn new() -> Self {
         Self {
-            processes: [None, None, None, None, None, None, None, None],
+            processes: [None; 128],
             next_pid: 1,
             queue: MessageQueue::new(),
         }
     }
 
     pub fn spawn_process(&mut self, core_id: u8, name: &'static str) {
-        if core_id > 7 {
+        if core_id > 127 {
             return; // Invalid core
         }
 
