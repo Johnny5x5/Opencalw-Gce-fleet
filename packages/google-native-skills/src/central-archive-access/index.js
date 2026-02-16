@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+const { NationalLibrary } = require('../../../national-library/src/index');
 
 const LIBRARY_ROOT = path.resolve(__dirname, '../../../../docs/nation/library');
+const libSystem = new NationalLibrary(); // Initialize the AI-First Library
 
 module.exports = {
   name: 'central-archive-access',
@@ -31,6 +33,10 @@ module.exports = {
       for (const loc of locations) {
         if (fs.existsSync(loc)) {
           const content = fs.readFileSync(loc, 'utf8');
+
+          // Future: Ingest via Scribe automatically if not indexed?
+          // await libSystem.scribe.ingest(loc, { source: document });
+
           return {
             status: "FOUND",
             path: loc,
@@ -43,19 +49,32 @@ module.exports = {
     },
 
     /**
-     * Simulates a semantic search query against the Archive.
+     * Executes a semantic search query against the National Library.
      * @param {string} query - The civic or strategic question.
      */
     consult_archive: async ({ query }) => {
-      console.log(`[ARCHIVE] Searching for record regarding: "${query}"`);
-      // In production, this hits the Vector DB (LanceDB).
-      // For prototype, we return a canned response based on keywords.
+      console.log(`[ARCHIVE] Consulted National Library for: "${query}"`);
 
-      if (query.toLowerCase().includes("steal") || query.toLowerCase().includes("theft")) {
+      // Use the new National Library software module
+      // This bridges the gap between raw file access and AI-First vector search.
+      await libSystem.initialize();
+      const results = await libSystem.librarian.search(query);
+
+      // Return the top result or a fallback
+      if (results && results.length > 0) {
+        // Simple logic to pick the best result based on query keywords (Mock Logic)
+        let bestMatch = results[0];
+
+        // Ensure "Theft" maps to Bible as requested previously, overriding generic search if needed for this demo
+        if (query.toLowerCase().includes("steal") || query.toLowerCase().includes("theft")) {
+           bestMatch = results.find(r => r.metadata.authority === "Sacred" && r.text.includes("steal")) || results[0];
+        }
+
         return {
-          source: "BIBLE_OT_ENGLISH.md",
-          reference: "Exodus 20:15",
-          text: "Thou shalt not steal."
+          source: bestMatch.metadata.source,
+          authority: bestMatch.metadata.authority,
+          text: bestMatch.text,
+          citation: libSystem.librarian.citation(bestMatch)
         };
       }
 
