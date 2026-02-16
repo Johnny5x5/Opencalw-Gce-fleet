@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 # Dependencies for GGML or Candle (Rust ML frameworks) would go here
+nomad-storage = { path = "../storage" }
 
 [lib]
 name = "nomad_ai_core"

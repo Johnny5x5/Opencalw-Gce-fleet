@@ -4,75 +4,42 @@
 extern crate alloc;
 use alloc::vec::Vec;
 use alloc::string::String;
+use nomad_storage::NomadFS;
 
-// --- Vector Store Interface ---
+// --- The Librarian ---
+// Integrates NomadFS (Storage) with the AI Core.
 
-pub trait VectorStore {
-    fn insert(&mut self, text: &str, vector: &[f32]);
-    fn search(&self, query_vector: &[f32], top_k: usize) -> Vec<String>;
+pub struct Librarian {
+    pub fs: NomadFS,
 }
 
-pub struct LanceDBStub {
-    // In a real impl, this would hold the connection to the LanceDB on NVMe
-    pub path: &'static str,
-}
-
-impl LanceDBStub {
+impl Librarian {
     pub fn new() -> Self {
-        Self { path: "/data/nomad/library/vectors.lance" }
-    }
-}
-
-impl VectorStore for LanceDBStub {
-    fn insert(&mut self, _text: &str, _vector: &[f32]) {
-        // Mock Insert: Write to NVMe
+        Self { fs: NomadFS::new() }
     }
 
-    fn search(&self, _query_vector: &[f32], _top_k: usize) -> Vec<String> {
-        // Mock Search: Return dummy results
-        let mut results = Vec::new();
-        results.push(String::from("Found match in manual.pdf (Chunk #42)"));
-        results.push(String::from("Found match in map_log.txt (Chunk #7)"));
-        results
-    }
-}
+    pub fn ingest(&mut self, filename: &str, content: &[u8]) {
+        // 1. Embed Content (Simulated Vector)
+        let vector = [0.1; 384];
 
-// --- The Indexer ---
+        // 2. Store in NomadFS (Blob + Vector)
+        self.fs.put(content, vector);
 
-pub struct Indexer {
-    pub store: LanceDBStub,
-}
-
-impl Indexer {
-    pub fn new() -> Self {
-        Self { store: LanceDBStub::new() }
-    }
-
-    pub fn ingest_file(&mut self, filename: &str) {
-        // 1. Read File
-        // 2. Chunk Text
-        // 3. Embed (Call NPU)
-        // 4. Store
-        self.store.insert(filename, &[0.1, 0.2, 0.3]); // Dummy vector
-    }
-}
-
-// --- The Retriever ---
-
-pub struct Retriever {
-    pub store: LanceDBStub,
-}
-
-impl Retriever {
-    pub fn new() -> Self {
-        Self { store: LanceDBStub::new() }
+        // 3. Log
+        // println!("Indexed: {}", filename);
     }
 
     pub fn query(&self, _question: &str) -> Vec<String> {
-        // 1. Embed Question (Call NPU)
-        let query_vec = [0.1, 0.2, 0.3];
+        // 1. Embed Question
+        let query_vec = [0.1; 384];
 
-        // 2. Search Vector DB
-        self.store.search(&query_vec, 3)
+        // 2. Search NomadFS
+        let _matches = self.fs.search(query_vec);
+
+        // 3. Return Dummy Context (Simulating retrieval of matched blobs)
+        let mut results = Vec::new();
+        results.push(String::from("NomadFS: Retrieved 'Jeep Manual' (Score: 0.98)"));
+        results.push(String::from("NomadFS: Retrieved 'Sector Map' (Score: 0.85)"));
+        results
     }
 }

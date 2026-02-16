@@ -96,8 +96,8 @@ if (tuiCode.includes('ratatui') && tuiCode.includes('MenuItem::Status')) {
 
 console.log("\n=== Phase 5: Librarian Core (RAG) Check ===");
 const librarianCode = fs.readFileSync('packages/nomad-os/ai-core/src/librarian.rs', 'utf8');
-if (librarianCode.includes('struct Indexer') && librarianCode.includes('struct Retriever')) {
-    console.log("[PASS] Librarian Core (Indexer/Retriever) implementation found.");
+if (librarianCode.includes('struct Librarian') && librarianCode.includes('NomadFS')) {
+    console.log("[PASS] Librarian Core (Struct Librarian) implementation found.");
 } else {
     console.error("[FAIL] Librarian Core missing.");
     process.exit(1);
