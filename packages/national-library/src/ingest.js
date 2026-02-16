@@ -16,19 +16,21 @@ class Scribe {
     console.log(`[SCRIBE] Ingesting document: ${path}`);
 
     // 1. Read File (Simulated)
-    // In production, this would use fs to read the file.
     const raw_text = `Simulated content for ${path}`;
 
-    // 2. Chunking (Simulated)
-    // In production, this would use a recursive text splitter (LangChain).
+    // 2. Metadata Extraction (Simulated)
+    // Extract metadata from headers or file content using simple regex.
+    const extractedMeta = this.extractMetadata(path, raw_text);
+    const finalMeta = { ...extractedMeta, ...metadata };
+
+    // 3. Chunking (Simulated)
     const chunks = [
-      { id: `${path}_1`, text: raw_text.substring(0, 100), metadata },
-      { id: `${path}_2`, text: raw_text.substring(100), metadata }
+      { id: `${path}_1`, text: raw_text.substring(0, 100), metadata: finalMeta },
+      { id: `${path}_2`, text: raw_text.substring(100), metadata: finalMeta }
     ];
 
-    // 3. Embedding & Indexing (Simulated)
-    // In production, this would generate embeddings and upsert to LanceDB.
-    console.log(`[SCRIBE] Vectorizing ${chunks.length} semantic chunks...`);
+    // 4. Embedding & Indexing (Simulated)
+    console.log(`[SCRIBE] Vectorizing ${chunks.length} semantic chunks with metadata: ${JSON.stringify(finalMeta)}`);
 
     this.documents.push({ path, chunks });
     this.processed_count++;
@@ -38,6 +40,27 @@ class Scribe {
       chunks_processed: chunks.length,
       doc_id: path // Using path as ID for now
     };
+  }
+
+  /**
+   * Extracts metadata from file content or path.
+   * @param {string} path
+   * @param {string} text
+   */
+  extractMetadata(path, text) {
+    // In production, use NLP (Spacy/LLM) to extract Author, Date, Topic.
+    // Here we use simple heuristics.
+    let meta = { classification: "PUBLIC" };
+
+    if (path.includes("BIBLE") || path.includes("SACRED")) {
+      meta.classification = "SACRED";
+      meta.authority = "Divine/Historical";
+    } else if (path.includes("WAR") || path.includes("STRATEGY")) {
+      meta.classification = "RESTRICTED";
+      meta.authority = "War Council";
+    }
+
+    return meta;
   }
 
   getStats() {
