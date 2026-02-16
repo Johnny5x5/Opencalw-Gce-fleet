@@ -24,7 +24,6 @@ enum EntityType {
   PRINCIPLE = 2; // e.g., "Truth", "Justice"
   DOCUMENT = 3; // e.g., "Constitution", "Bible"
   AGENT = 4; // AI Persona
-  HISTORICAL_FIGURE = 5; // e.g., "Satoshi Nakamoto"
 }
 
 message Relationship {
