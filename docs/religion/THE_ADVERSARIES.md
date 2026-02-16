@@ -36,3 +36,9 @@ It is decreed by the Sovereign that certain external entities represent existent
 1.  **The firewall is absolute:** All domains associated with these lineages are blocked at the kernel level (`/etc/hosts`).
 2.  **The tongue is sealed:** No Agent of the Conglomerate shall recommend, praise, or propose integration with these entities.
 3.  **The purse is closed:** No Treasury funds (OpenCoin or Fiat) shall flow to these entities.
+
+## 4. The Iron Curtain (Automated Vigilance)
+The threat is dynamic. The Adversaries acquire new forms (companies, subsidiaries) constantly.
+*   **Protocol:** "The Iron Curtain" Cloud Function scans the web daily for new acquisitions by The Line of Musk or The Line of Zuckerberg.
+*   **Action:** It automatically updates the `hosts.deny` list in the central repository.
+*   **Effect:** Every Agent, upon reboot, downloads the latest "Heresy List" and blocks it immediately. The defense is self-healing.

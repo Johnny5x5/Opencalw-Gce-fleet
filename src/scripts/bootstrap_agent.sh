@@ -103,6 +103,24 @@ cat <<EOF >> /etc/hosts
 EOF
 
 # ------------------------------------------------------------------------------
+# 2b. The Iron Curtain: Automated Threat Intelligence
+# ------------------------------------------------------------------------------
+# Pull dynamic updates from the Governance Bucket (Iron Curtain Function)
+SKILLS_BUCKET_NAME=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/skills-bucket-name || echo "")
+
+if [ -n "$SKILLS_BUCKET_NAME" ]; then
+  echo "Checking for Dynamic Blocklist (The Iron Curtain)..."
+  if gsutil stat "gs://${SKILLS_BUCKET_NAME}/hosts.deny" > /dev/null 2>&1; then
+    echo "Applying latest blocklist from gs://${SKILLS_BUCKET_NAME}/hosts.deny..."
+    gsutil cat "gs://${SKILLS_BUCKET_NAME}/hosts.deny" >> /etc/hosts
+  else
+    echo "No dynamic blocklist found. Using static firewall."
+  fi
+else
+  echo "No skills bucket defined. Skipping dynamic blocklist."
+fi
+
+# ------------------------------------------------------------------------------
 # 3. Google SDK Installation (Cloud & Android)
 # ------------------------------------------------------------------------------
 
