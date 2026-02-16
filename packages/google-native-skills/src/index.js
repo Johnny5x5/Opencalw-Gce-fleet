@@ -11,5 +11,5 @@ module.exports = {
   'moral-reasoning': require('./moral-reasoning'),
   'outbound-sales': require('./outbound-sales'),
   'sbom-secure': require('../../sbom-secure/src/index.js'),
-  'library-access': require('./library-access')
+  'central-archive-access': require('./central-archive-access')
 };

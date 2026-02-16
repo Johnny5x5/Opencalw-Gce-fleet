@@ -46,7 +46,7 @@ The "Iron Ledger" allows the Sovereign Digital Nation to replace every single li
 
 ### 2. The Singularity of Truth
 Currently, the world is fractured. There is "Google's Truth", "China's Truth", "Wikipedia's Truth".
-The Iron Ledger, combined with The Library (Project Pantheon), aims to create a **Singularity of Truth**.
+The Iron Ledger, combined with The Library (The Central Archive), aims to create a **Singularity of Truth**.
 *   **A Reference Frame:** By hashing Reality (Software, Decisions, Weather Data) onto an immutable chain, we create a reference frame that cannot be spun or censored.
 *   **The Anchor:** In a world of Deepfakes and AI Hallucinations, the Iron Ledger is the Anchor. It says: "This specific model, signed by this specific key, generated this specific output at this specific time." It makes Truth discoverable.
 

@@ -33,7 +33,7 @@ Therefore, the integration of `SBOM_ECONOMICS.md` was not merely a feature addit
 ---
 
 # Dissertation II: The Epistemological Alignment of Artifacts and Truth
-**On the Link between the SBOM and "The Library" (Project Pantheon)**
+**On the Link between the SBOM and "The Library" (The Central Archive)**
 
 The second pillar of my reasoning is Epistemological. Why did I explicitly link the SBOM Knowledge Graph to the "Universal Religious Knowledge Graph" in `backlog/012_religious_knowledge_framework.md`?
 

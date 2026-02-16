@@ -1,10 +1,15 @@
 # The National Library of the Sovereign Digital Nation
-**Classification:** PUBLIC / SACRED
-**Custodian:** The Librarian Agent
-**Mission:** To house the "Universal Truth" that guides the Nation.
+**Classification:** PUBLIC / CIVIC
+**Custodian:** The Archivist Agent (Director of The Central Archive)
+**Mission:** To house the "Universal Truth" and Metadata that guides the Republic.
+
+## The Central Archive Strategy
+The Central Archive handles all routing of public truth.
+*   **Centralization:** All shared ontology (Truth, Constitution, Protocols) resides here.
+*   **Federation:** Corporations and Departments manage their own private data silos, but must route public metadata through The Central Archive.
 
 ## Structure
-*   **Sacred Texts:** The moral and spiritual foundation (Torah, Gospel, Constitution).
+*   **Sacred Texts:** The moral foundation (Torah, Gospel, Constitution).
 *   **The Iron Scripture:** The philosophical and architectural doctrine of the Nation.
 *   **The Codex:** The technical documentation (SBOM, API Specs).
 *   **No Idols:** The Library does NOT house simulations of historical figures. We serve Truth, not Personality.
