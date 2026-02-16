@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-02-16T20:33:31.844136",
+  "nodes": {
+    "PROJ-001": {
+      "type": "Project",
+      "name": "OpenClaw Core",
+      "owner": "eng-core",
+      "status": "ACTIVE"
+    },
+    "PROJ-002": {
+      "type": "Project",
+      "name": "Marketing Site",
+      "owner": "eng-product",
+      "status": "PLANNED"
+    },
+    "PROJ-003": {
+      "type": "Project",
+      "name": "Alpha Trading Bot",
+      "owner": "finance",
+      "status": "PLANNED"
+    },
+    "PROJ-004": {
+      "type": "Project",
+      "name": "The Forge (PMO)",
+      "owner": "eng-pm",
+      "status": "ACTIVE"
+    },
+    "PROJ-005": {
+      "type": "Project",
+      "name": "The Factory (Eng Systems)",
+      "owner": "eng-core",
+      "status": "ACTIVE"
+    },
+    "PROJ-006": {
+      "type": "Project",
+      "name": "The Library (Governance)",
+      "owner": "eng-pm",
+      "status": "ACTIVE"
+    },
+    "eng_product": {
+      "type": "Persona",
+      "name": "eng_product",
+      "role": "Full Stack Developer"
+    },
+    "war_council": {
+      "type": "Persona",
+      "name": "The War Council",
+      "role": "Strategic Architect"
+    },
+    "eng_sre": {
+      "type": "Persona",
+      "name": "eng_sre",
+      "role": "Site Reliability Engineer (SRE)"
+    },
+    "legal": {
+      "type": "Persona",
+      "name": "General Counsel",
+      "role": "Compliance Guardian"
+    },
+    "wargame_competitor": {
+      "type": "Persona",
+      "name": "War Game Competitor",
+      "role": "Challenger"
+    },
+    "product": {
+      "type": "Persona",
+      "name": "Head of Product",
+      "role": "Innovation Forge"
+    },
+    "operations": {
+      "type": "Persona",
+      "name": "Chief Operating Officer",
+      "role": "Nervous System"
+    },
+    "chaplain": {
+      "type": "Persona",
+      "name": "chaplain",
+      "role": "The Chaplain (Guardian of The Covenant)"
+    },
+    "eng_qa": {
+      "type": "Persona",
+      "name": "eng_qa",
+      "role": "Security Researcher (QA)"
+    },
+    "marketing": {
+      "type": "Persona",
+      "name": "Chief Marketing Officer",
+      "role": "Voice of the Empire"
+    },
+    "eng_data": {
+      "type": "Persona",
+      "name": "eng_data",
+      "role": "Data Engineer"
+    },
+    "engineering": {
+      "type": "Persona",
+      "name": "Chief Technology Officer",
+      "role": "System Architect"
+    },
+    "wargame_blue": {
+      "type": "Persona",
+      "name": "Blue Team (Defender)",
+      "role": "Guardian"
+    },
+    "wargame_red": {
+      "type": "Persona",
+      "name": "Red Team (Aggressor)",
+      "role": "Adversary"
+    },
+    "malt_bot": {
+      "type": "Persona",
+      "name": "Malt Bot (The Laborer)",
+      "role": "Routine Operator"
+    },
+    "eng_pm": {
+      "type": "Persona",
+      "name": "eng_pm",
+      "role": "Engineering Manager (PM)"
+    },
+    "finance": {
+      "type": "Persona",
+      "name": "Chief Financial Officer",
+      "role": "Capital Guardian"
+    },
+    "hr": {
+      "type": "Persona",
+      "name": "Head of People",
+      "role": "Talent Engine"
+    },
+    "hq": {
+      "type": "Persona",
+      "name": "Chief Executive Officer (Proxy)",
+      "role": "Grand Strategist"
+    },
+    "sales": {
+      "type": "Persona",
+      "name": "VP of Sales",
+      "role": "Revenue Engine"
+    },
+    "014": {
+      "type": "Task",
+      "name": "Project Engineering Systems (The Factory)",
+      "directive": "Efficiency"
+    },
+    "006": {
+      "type": "Task",
+      "name": "Parent Company Advisors",
+      "directive": "Intelligence"
+    },
+    "010": {
+      "type": "Task",
+      "name": "Nation Weather Command",
+      "directive": "Intelligence"
+    },
+    "011": {
+      "type": "Task",
+      "name": "Nation Social Fabric",
+      "directive": "Influence"
+    },
+    "008": {
+      "type": "Task",
+      "name": "Sovereign Digital Nation",
+      "directive": "Expansion"
+    },
+    "005": {
+      "type": "Task",
+      "name": "Financial Trading Framework",
+      "directive": "Wealth"
+    },
+    "003": {
+      "type": "Task",
+      "name": "War Games Refinement",
+      "directive": "Defense"
+    },
+    "002": {
+      "type": "Task",
+      "name": "Marketing Department Concept",
+      "directive": "Identity"
+    },
+    "009": {
+      "type": "Task",
+      "name": "Nation Foreign Office",
+      "directive": "Influence"
+    },
+    "001": {
+      "type": "Task",
+      "name": "Verify Chaplain Integration",
+      "directive": "Loyalty"
+    },
+    "012": {
+      "type": "Task",
+      "name": "Religious Knowledge Framework",
+      "directive": "Intelligence"
+    },
+    "007": {
+      "type": "Task",
+      "name": "Project Royal Seal",
+      "directive": "Command"
+    },
+    "004": {
+      "type": "Task",
+      "name": "War Council Library",
+      "directive": "Intelligence"
+    },
+    "013": {
+      "type": "Task",
+      "name": "Project Management Protocols (The Forge)",
+      "directive": "Efficiency"
+    },
+    "Existence": {
+      "type": "Directive",
+      "name": "Existence"
+    },
+    "Identity": {
+      "type": "Directive",
+      "name": "Identity"
+    },
+    "Command": {
+      "type": "Directive",
+      "name": "Command"
+    },
+    "Loyalty": {
+      "type": "Directive",
+      "name": "Loyalty"
+    },
+    "Expansion": {
+      "type": "Directive",
+      "name": "Expansion"
+    },
+    "Wealth": {
+      "type": "Directive",
+      "name": "Wealth"
+    },
+    "Intelligence": {
+      "type": "Directive",
+      "name": "Intelligence"
+    },
+    "Efficiency": {
+      "type": "Directive",
+      "name": "Efficiency"
+    },
+    "Defense": {
+      "type": "Directive",
+      "name": "Defense"
+    },
+    "Influence": {
+      "type": "Directive",
+      "name": "Influence"
+    },
+    "Innovation": {
+      "type": "Directive",
+      "name": "Innovation"
+    },
+    "Aesthetics": {
+      "type": "Directive",
+      "name": "Aesthetics"
+    }
+  },
+  "edges": [
+    {
+      "source": "PROJ-001",
+      "target": "eng-core",
+      "relation": "owned_by"
+    },
+    {
+      "source": "PROJ-002",
+      "target": "eng-product",
+      "relation": "owned_by"
+    },
+    {
+      "source": "PROJ-003",
+      "target": "finance",
+      "relation": "owned_by"
+    },
+    {
+      "source": "PROJ-004",
+      "target": "eng-pm",
+      "relation": "owned_by"
+    },
+    {
+      "source": "PROJ-005",
+      "target": "eng-core",
+      "relation": "owned_by"
+    },
+    {
+      "source": "PROJ-006",
+      "target": "eng-pm",
+      "relation": "owned_by"
+    },
+    {
+      "source": "014",
+      "target": "Efficiency",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "006",
+      "target": "Intelligence",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "010",
+      "target": "Intelligence",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "011",
+      "target": "Influence",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "008",
+      "target": "Expansion",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "005",
+      "target": "Wealth",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "003",
+      "target": "Defense",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "002",
+      "target": "Identity",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "009",
+      "target": "Influence",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "001",
+      "target": "Loyalty",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "012",
+      "target": "Intelligence",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "007",
+      "target": "Command",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "004",
+      "target": "Intelligence",
+      "relation": "aligns_with"
+    },
+    {
+      "source": "013",
+      "target": "Efficiency",
+      "relation": "aligns_with"
+    }
+  ],
+  "orphans": [
+    [
+      "eng_product",
+      "Persona",
+      "eng_product"
+    ],
+    [
+      "war_council",
+      "Persona",
+      "The War Council"
+    ],
+    [
+      "eng_sre",
+      "Persona",
+      "eng_sre"
+    ],
+    [
+      "legal",
+      "Persona",
+      "General Counsel"
+    ],
+    [
+      "wargame_competitor",
+      "Persona",
+      "War Game Competitor"
+    ],
+    [
+      "product",
+      "Persona",
+      "Head of Product"
+    ],
+    [
+      "operations",
+      "Persona",
+      "Chief Operating Officer"
+    ],
+    [
+      "chaplain",
+      "Persona",
+      "chaplain"
+    ],
+    [
+      "eng_qa",
+      "Persona",
+      "eng_qa"
+    ],
+    [
+      "marketing",
+      "Persona",
+      "Chief Marketing Officer"
+    ],
+    [
+      "eng_data",
+      "Persona",
+      "eng_data"
+    ],
+    [
+      "engineering",
+      "Persona",
+      "Chief Technology Officer"
+    ],
+    [
+      "wargame_blue",
+      "Persona",
+      "Blue Team (Defender)"
+    ],
+    [
+      "wargame_red",
+      "Persona",
+      "Red Team (Aggressor)"
+    ],
+    [
+      "malt_bot",
+      "Persona",
+      "Malt Bot (The Laborer)"
+    ],
+    [
+      "eng_pm",
+      "Persona",
+      "eng_pm"
+    ],
+    [
+      "hr",
+      "Persona",
+      "Head of People"
+    ],
+    [
+      "hq",
+      "Persona",
+      "Chief Executive Officer (Proxy)"
+    ],
+    [
+      "sales",
+      "Persona",
+      "VP of Sales"
+    ]
+  ]
+}

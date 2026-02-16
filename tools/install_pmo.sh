@@ -78,6 +78,7 @@ cp "$REPO_ROOT/tools/pubsub_to_inbox.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/report_to_pubsub.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/generate_code_map.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/scaffold_department.py" "$TARGET_DIR/tools/"
+cp "$REPO_ROOT/tools/the_librarian.py" "$TARGET_DIR/tools/"
 cp "$REPO_ROOT/tools/SHA256SUMS" "$TARGET_DIR/tools/"
 
 cp "$REPO_ROOT/.github/workflows/backlog_validation.yml" "$TARGET_DIR/.github/workflows/"

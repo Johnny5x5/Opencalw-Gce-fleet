@@ -37,6 +37,9 @@ jobs:
       - name: The Cartographer (Map the Repo)
         run: python3 tools/generate_code_map.py
 
+      - name: The Librarian (Index Knowledge)
+        run: python3 tools/the_librarian.py
+
       - name: Generate Report
         run: python3 tools/generate_status_report.py
 
