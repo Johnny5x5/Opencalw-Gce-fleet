@@ -38,12 +38,13 @@ A background process (`SyncDaemon`) manages data flow between tiers.
     *   **Trigger:** WiFi/LoRa adjacency detected.
     *   **Action:** Form Raft Consensus Group with neighbors.
     *   **Sync:** Replicate objects tagged `scope:clan`.
-*   **Mode 3 (Cloud/CockroachDB):**
+*   **Mode 3 (Cloud/TiDB):**
     *   **Trigger:** Uplink active (Satellite/LTE).
-    *   **Action:** Connect to Federal CockroachDB Cluster.
+    *   **Action:** Connect to Federal TiDB Cluster (TiKV Backend).
     *   **Sync:** Replicate objects tagged `scope:federal` or `scope:strategic`.
+    *   **Protocol:** Native TiKV Replication (Rust-to-Rust) for maximum efficiency and compatibility.
 
 ### 6. Implementation Strategy
 *   **Crate:** `packages/nomad-os/storage`
 *   **Traits:** `BlockDevice`, `ObjectStore`, `SemanticIndex`, `ReplicationProvider`.
-*   **Adapters:** `LSMAdapter`, `TiKVAdapter`, `CockroachAdapter`.
+*   **Adapters:** `LSMAdapter`, `TiKVAdapter` (Unified for Mesh and Cloud).

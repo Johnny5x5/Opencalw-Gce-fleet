@@ -21,11 +21,11 @@ A single tablet is fast but fragile. A cloud is survivable but centralized. A me
 *   **Behavior:** When you meet other Nomads, your devices form a temporary cluster. Shared data (Maps, Intel, Public Logs) is replicated. If your device breaks, your Clan has a copy.
 *   **Analogy:** Verbal Communication with your Squad.
 
-#### Tier 3: Federal Sovereignty (The Library / CockroachDB)
-*   **Technology:** CockroachDB (Geo-Distributed SQL).
+#### Tier 3: Federal Sovereignty (The Library / TiDB)
+*   **Technology:** TiDB (Geo-Distributed SQL powered by TiKV).
 *   **Location:** Federal Cloud (Multi-Region / Bunker).
 *   **Role:** The "Cold/Strategic" Layer.
-*   **Behavior:** When the Uplink is active, "Strategic" data is pushed to the Federal Archive. It is indestructible (survives regional nukes).
+*   **Behavior:** When the Uplink is active, "Strategic" data is pushed to the Federal Archive using the native TiKV replication protocol. This avoids the overhead of SQL translation bridges.
 *   **Analogy:** The National Archives.
 
 ### 3. The Sync Protocol (The "Waterfalls")
