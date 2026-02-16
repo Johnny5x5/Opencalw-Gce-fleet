@@ -8,7 +8,7 @@ The Ten Commandments are infinite. This document defines how we *apply* them to 
 *   **Enforcement:** `GOVERNANCE.md` must exist and acknowledge the Chain of Command.
 
 ## 2. Idolatry (No Graven Images)
-*   **Application:** We do not worship our tools. We do not name software "God", "Oracle", or "Divine".
+*   **Application:** We do not worship our tools. We do not name software "God", "Oracle", or use supernatural terminology.
 *   **Enforcement:** `the_covenant.py` scans for idolatrous naming conventions.
 
 ## 3. Respect (Name in Vain)

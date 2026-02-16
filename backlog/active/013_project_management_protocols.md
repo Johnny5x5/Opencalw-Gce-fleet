@@ -1,5 +1,5 @@
 # Title: Project Management Protocols (The Forge)
-# Priority: Medium
+# Priority: Low
 # Type: Architecture
 # Prime Directive: Efficiency
 
@@ -21,3 +21,4 @@ This initiative establishes the "The Forge" project management methodology for t
 
 ## Governor's Log
 - **Auto-Downgrade:** Priority changed to Medium due to Stale (>14 days inactive).
+- **Auto-Downgrade:** Priority changed to Low due to Stale (>30 days inactive).

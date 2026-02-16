@@ -6,28 +6,28 @@
 ### Command
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 007 | Project Royal Seal | Critical | Security | In Progress | **High** | Unknown |
+| 007 | Project Royal Seal | Critical | Security | In Progress | **High** | ✅ Active (1d) |
 
 ### Defense
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 003 | War Games Refinement | High | Feature | In Progress | Medium | Unknown |
+| 003 | War Games Refinement | High | Feature | In Progress | Medium | ✅ Active (1d) |
 
 ### Efficiency
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 013 | Project Management Protocols (The Forge) | Medium | Architecture | In Progress | Low | Unknown |
-| 014 | Project Engineering Systems (The Factory) | Low | Architecture | In Progress | Low | Unknown |
+| 013 | Project Management Protocols (The Forge) | Low | Architecture | In Progress | Low | ⚠️ Inactive (999d) |
+| 014 | Project Engineering Systems (The Factory) | Low | Architecture | In Progress | Low | ⚠️ Inactive (999d) |
 
 ### Expansion
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 008 | Sovereign Digital Nation | High | Architecture | In Progress | Medium | Unknown |
+| 008 | Sovereign Digital Nation | High | Architecture | In Progress | Medium | ✅ Active (1d) |
 
 ### Identity
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 002 | Marketing Department Concept | Low | Architecture | In Progress | Low | Unknown |
+| 002 | Marketing Department Concept | Low | Architecture | In Progress | Low | ✅ Active (1d) |
 
 ### Influence
 | ID | Title | Priority | Type | Status | Risk | Activity |
@@ -38,7 +38,7 @@
 ### Intelligence
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 004 | War Council Library | Medium | Feature | In Progress | Low | Unknown |
+| 004 | War Council Library | Low | Feature | In Progress | Low | ⚠️ Inactive (999d) |
 | 006 | Parent Company Advisors | Medium | Feature | In Progress | Low | Unknown |
 | 010 | Nation Weather Command | Low | Feature | In Progress | Low | Unknown |
 | 012 | Religious Knowledge Framework | Low | Feature | In Progress | Low | Unknown |
@@ -46,12 +46,12 @@
 ### Loyalty
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 001 | Verify Chaplain Integration | High | Test | In Progress | Medium | Unknown |
+| 001 | Verify Chaplain Integration | High | Test | In Progress | Medium | ✅ Active (1d) |
 
 ### Wealth
 | ID | Title | Priority | Type | Status | Risk | Activity |
 |---|---|---|---|---|---|---|
-| 005 | Financial Trading Framework | High | Architecture | In Progress | Medium | Unknown |
+| 005 | Financial Trading Framework | High | Architecture | In Progress | Medium | ✅ Active (1d) |
 
 ## Critical Risks (Watchlist)
 - 🔴 **CRITICAL:** 007 - Project Royal Seal (Command)
@@ -68,6 +68,6 @@
 
 **Distribution by Priority:**
 - High: 4
-- Low: 4
-- Medium: 5
+- Low: 6
+- Medium: 3
 - Critical: 1
