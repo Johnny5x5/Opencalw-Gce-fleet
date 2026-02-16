@@ -9,14 +9,20 @@ This document defines the boot sequence for NomadOS on UEFI-compliant hardware (
 *   **Role:** Hardware initialization (POST).
 *   **Action:** Loads `/EFI/BOOT/BOOTX64.EFI` (or `BOOTAA64.EFI`) from the ESP partition.
 
-#### Stage 2: The Nomad Bootloader (Rust)
+#### Stage 2: The Nomad Bootloader (Limine)
+*   **Component:** `limine-bootloader` (External Dependency)
+*   **Role:**
+    1.  Standardizes the UEFI environment (Hardware Quirks).
+    2.  Loads the `nomad-kernel` (seL4 + Bindings).
+    3.  Passes the "Limine Boot Struct" (Memory Map, Framebuffer) to the kernel.
+    4.  Ensures CPU is in 64-bit Long Mode (x86_64) or AArch64 (ARM).
+
+#### Stage 2.5: The Nomad Second Stage (Rust)
 *   **Crate:** `packages/nomad-os/bootloader`
 *   **Role:**
-    1.  Get Memory Map from UEFI.
-    2.  Exit Boot Services (taking full control of hardware).
-    3.  Load the **seL4 Microkernel** ELF binary into memory.
-    4.  Load the **Nomad System (Guardian)** ELF binary (Root Task).
-    5.  Jump to seL4 Entry Point.
+    1.  Receives control from Limine.
+    2.  Unlocks the TPM (Measured Boot).
+    3.  Hands over resources to the Guardian.
 
 #### Stage 3: The Microkernel (seL4)
 *   **Role:** Enforce isolation.

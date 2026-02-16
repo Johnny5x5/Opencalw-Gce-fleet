@@ -1,35 +1,43 @@
 #![no_std]
 #![no_main]
 
-use uefi::prelude::*;
-use core::fmt::Write;
+// NomadOS Second Stage Bootloader (Post-Limine)
+// This code runs AFTER Limine has successfully loaded us.
+// The CPU is already in 64-bit Long Mode. Paging is enabled.
 
-#[entry]
-fn main(_image_handle: Handle, mut system_table: SystemTable<Boot>) -> Status {
-    uefi_services::init(&mut system_table).unwrap();
-    let boot_services = system_table.boot_services();
+use core::panic::PanicInfo;
 
-    // 1. Output Banner
-    system_table.stdout().reset(false).unwrap();
-    writeln!(system_table.stdout(), "Welcome to NomadOS v0.1 (Sovereign Edition)").unwrap();
-    writeln!(system_table.stdout(), "Initializing Boot Sequence...").unwrap();
+// The Limine Boot Protocol Request
+// We ask Limine to give us the Memory Map.
+static MEMORY_MAP_REQUEST: limine::MemoryMapRequest = limine::MemoryMapRequest::new(0);
 
-    // 2. Simulate Hardware Check
-    writeln!(system_table.stdout(), "[  OK  ] CPU: Found 8 Cores (RK3588 Emulated)").unwrap();
-    writeln!(system_table.stdout(), "[  OK  ] RAM: 32GB LPDDR5 Detected").unwrap();
-    writeln!(system_table.stdout(), "[  OK  ] NPU: Neural Engine Ready").unwrap();
-
-    // 3. Simulate Kernel Load
-    writeln!(system_table.stdout(), "Loading Kernel from /EFI/NOMAD/KERNEL.ELF...").unwrap();
-
-    // In a real implementation:
-    // boot_services.allocate_pages(...)
-    // boot_services.exit_boot_services(...)
-
-    writeln!(system_table.stdout(), "Handing over control to seL4...").unwrap();
-
-    // 4. Hang (Proof of Life)
-    loop {
-        core::hint::spin_loop();
+#[no_mangle]
+pub extern "C" fn _start() -> ! {
+    // 1. Verify we were loaded by a compliant bootloader
+    if MEMORY_MAP_REQUEST.get_response().is_none() {
+        // Panic if we don't have a map.
+        loop {}
     }
+
+    let memmap = MEMORY_MAP_REQUEST.get_response().unwrap();
+
+    // 2. Mock TPM Measurement (Hash the Kernel)
+    measure_kernel_integrity();
+
+    // 3. Handover to Guardian (nomad-system)
+    // In a real impl, we would jump to the entry point of the System crate.
+
+    loop {
+        // Spin forever (We are the OS now)
+    }
+}
+
+fn measure_kernel_integrity() {
+    // Simulation: Calculate SHA-256 of the next stage
+    // Unlock TPM keys if valid
+}
+
+#[panic_handler]
+fn panic(_info: &PanicInfo) -> ! {
+    loop {}
 }
