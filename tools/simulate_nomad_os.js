@@ -14,6 +14,7 @@ const requiredPaths = [
     'packages/nomad-os/ai-core/src/lib.rs',
     'packages/nomad-os/userland/src/main.rs', // TUI Dashboard
     'packages/nomad-os/ai-core/src/librarian.rs', // RAG Core
+    'packages/nomad-os/bootloader/src/main.rs', // UEFI Bootloader
     'src/functions/nomad-uplink/index.js',
     'docs/specs/NOMAD_MESSAGING.yaml',
     'terraform/modules/messaging_infrastructure/main.tf'

@@ -1,0 +1,12 @@
+[package]
+name = "nomad-bootloader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+uefi = "0.24.0"
+uefi-services = "0.21.0"
+
+[[bin]]
+name = "nomad-bootloader"
+path = "src/main.rs"
