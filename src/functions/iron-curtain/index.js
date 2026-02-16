@@ -24,7 +24,7 @@ exports.updateBlocklist = async (req, res) => {
     const hostsContent = generateHostsFile(newThreats);
 
     // 3. Generate updated JSON for Agents
-    const vendors content = generateVendorsJson(newThreats);
+    const vendorsContent = generateVendorsJson(newThreats);
 
     // 4. Upload to GCS (The Truth Source)
     await storage.bucket(BUCKET_NAME).file(HOSTS_FILE).save(hostsContent);
