@@ -32,13 +32,15 @@ To build a **Sovereign, AI-Native, Mathematically Verified Operating System** th
 *   **Objective:** Integrate the "Neural Kernel Interface" (NKI).
 *   **Key Deliverables:**
     *   **NPU Scheduler:** The OS schedules "Inference Tasks" alongside compute tasks.
-    *   **Local LLM:** A verified, sandboxed runtime for running small language models (SLMs) on-device (e.g., Llama-3-8B-Quantized).
-    *   **Generative UI:** The first "Intent-Based" User Interface prototype.
+    *   **Project Librarian (RAG):** Infinite local knowledge via NVMe Vector Store.
+    *   **The Tether:** Hybrid Cloud/Local AI routing (80/20 Rule).
 
-#### Year 4: The Ecosystem (Applications & Tools)
-*   **Objective:** Empower developers and users to build on NomadOS.
+#### Year 4: The Revolution (Post-App Paradigm)
+*   **Objective:** Go Head-to-Head with Android/Windows by eliminating Apps.
 *   **Key Deliverables:**
-    *   **Wasm Sandbox:** Run untrusted code (legacy apps) in secure WebAssembly containers.
+    *   **Generative UI (GenUI):** An NPU-driven interface engine that renders "Intents" instead of launching static apps.
+    *   **NomadFS (Universal Data Plane):** A unified semantic filesystem for all user data.
+    *   **Project Chameleon (Optional):** A containerized Android compatibility layer (fallback only).
     *   **"The Forge":** An on-device development environment (VS Code equivalent) powered by local AI coding assistants.
     *   **Sovereign Cloud:** Self-hosted sync services (The "Federalized Backend" productized).
 
