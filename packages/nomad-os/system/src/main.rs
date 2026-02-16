@@ -47,7 +47,7 @@ impl MessageQueue {
 }
 
 pub struct Guardian {
-    pub processes: [Option<Process>; 4], // 4 Cores
+    pub processes: [Option<Process>; 8], // 8 Cores (Nomad Tablet Standard)
     pub next_pid: u32,
     pub queue: MessageQueue,
 }
@@ -55,14 +55,14 @@ pub struct Guardian {
 impl Guardian {
     pub fn new() -> Self {
         Self {
-            processes: [None, None, None, None],
+            processes: [None, None, None, None, None, None, None, None],
             next_pid: 1,
             queue: MessageQueue::new(),
         }
     }
 
     pub fn spawn_process(&mut self, core_id: u8, name: &'static str) {
-        if core_id > 3 {
+        if core_id > 7 {
             return; // Invalid core
         }
 
@@ -100,20 +100,19 @@ impl Guardian {
 pub extern "C" fn _start() -> ! {
     let mut guardian = Guardian::new();
 
-    // 1. Core 0: User Shell (The Sovereign)
-    guardian.spawn_process(0, "nomad-shell");
+    // 1. Core 0: Kernel/Hypervisor (seL4) - Reserved
+    // 2. Core 1: The Janitor (System GC) - Reserved
+    guardian.spawn_process(1, "nomad-janitor");
 
-    // 2. Core 1: Radio Manager (The Sentry)
-    // Runs on ULP Core, manages LoRa/Sat
-    guardian.spawn_process(1, "nomad-radio");
+    // 3. Core 2: User Shell (The Sovereign)
+    guardian.spawn_process(2, "nomad-shell");
 
-    // 3. Core 2: Crypto Service (The Vault)
-    // Manages Keys, Enclaves
-    guardian.spawn_process(2, "nomad-crypto");
+    // 4. Core 3: Radio Manager (The Sentry)
+    guardian.spawn_process(3, "nomad-radio");
 
-    // 4. Core 3: Storage/DTN (The Scribe)
-    // Manages Filesystem and Bundle Protocol
-    guardian.spawn_process(3, "nomad-storage");
+    // 5. Cores 4-7: AI Cluster (The Brain) - Polymorphic
+    // Dynamically spawned when unfolded
+    // guardian.spawn_process(4, "nomad-ai-worker-0");
 
     loop {
         // The Guardian monitors system health and handles faults

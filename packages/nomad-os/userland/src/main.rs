@@ -45,6 +45,7 @@ fn main() -> Result<(), io::Error> {
     // App State
     let menu_titles = vec!["Status", "Mission", "Mesh", "Library", "Console"];
     let mut active_menu_item = MenuItem::Status;
+    let mut is_folded = true; // Phone Mode by default
 
     // Main Loop
     loop {
@@ -80,9 +81,11 @@ fn main() -> Result<(), io::Error> {
                 })
                 .collect();
 
+            let title = if is_folded { "NomadOS (Phone Mode)" } else { "NomadOS (Station Mode - 8 Cores Active)" };
+
             let tabs = Tabs::new(menu)
                 .select(active_menu_item.into())
-                .block(Block::default().title("NomadOS - Sovereign Edition").borders(Borders::ALL))
+                .block(Block::default().title(title).borders(Borders::ALL))
                 .style(Style::default().fg(Color::White))
                 .highlight_style(Style::default().fg(Color::Yellow))
                 .divider(Span::raw("|"));
@@ -92,22 +95,42 @@ fn main() -> Result<(), io::Error> {
             // 2. Main Content Area
             match active_menu_item {
                 MenuItem::Status => {
-                    let status_chunks = Layout::default()
-                        .direction(Direction::Horizontal)
-                        .constraints([Constraint::Percentage(50), Constraint::Percentage(50)].as_ref())
-                        .split(chunks[1]);
+                    let layout = if is_folded {
+                        // Phone Mode: Vertical Stack
+                        Layout::default()
+                            .direction(Direction::Vertical)
+                            .constraints([Constraint::Percentage(50), Constraint::Percentage(50)].as_ref())
+                            .split(chunks[1])
+                    } else {
+                        // Station Mode: Horizontal Split
+                        Layout::default()
+                            .direction(Direction::Horizontal)
+                            .constraints([Constraint::Percentage(50), Constraint::Percentage(50)].as_ref())
+                            .split(chunks[1])
+                    };
 
                     // Left Panel: Core Usage
-                    let cores = vec![
-                        ListItem::new("Core 0 (User): 12% [ACTIVE]"),
-                        ListItem::new("Core 1 (Radio): 99% [ACTIVE] (LoRa/Sat)"),
-                        ListItem::new("Core 2 (Crypto): 5% [IDLE]"),
-                        ListItem::new("Core 3 (Storage): 45% [ACTIVE] (DTN Sync)"),
-                        ListItem::new(""),
-                        ListItem::new("Message Queue: 5 Pending (Store-and-Forward)"),
+                    let mut cores = vec![
+                        ListItem::new("Core 0 (Kernel): seL4 Hypervisor [ACTIVE]"),
+                        ListItem::new("Core 1 (Janitor): System GC [ACTIVE]"),
+                        ListItem::new("Core 2 (User): UI Shell [ACTIVE]"),
+                        ListItem::new("Core 3 (Radio): LoRa/Sat Driver [ACTIVE]"),
                     ];
-                    let core_list = List::new(cores).block(Block::default().title("Core Status (AMP)").borders(Borders::ALL));
-                    rect.render_widget(core_list, status_chunks[0]);
+
+                    if !is_folded {
+                        cores.push(ListItem::new("Core 4-7 (AI Cluster): Llama-3-8B [ACTIVE]"));
+                        cores.push(ListItem::new("Core 5: Vector Search [ACTIVE]"));
+                        cores.push(ListItem::new("Core 6: Crypto [ACTIVE]"));
+                        cores.push(ListItem::new("Core 7: Storage [ACTIVE]"));
+                    } else {
+                        cores.push(ListItem::new("Core 4-7: [SLEEPING] (Power Save)"));
+                    }
+
+                    cores.push(ListItem::new(""));
+                    cores.push(ListItem::new("Message Queue: 5 Pending (Store-and-Forward)"));
+
+                    let core_list = List::new(cores).block(Block::default().title("Core Status (8-Core AMP)").borders(Borders::ALL));
+                    rect.render_widget(core_list, layout[0]);
 
                     // Right Panel: Environment
                     let env_data = vec![
@@ -117,7 +140,7 @@ fn main() -> Result<(), io::Error> {
                         ListItem::new("Signal: -85dBm (Strong)"),
                     ];
                     let env_list = List::new(env_data).block(Block::default().title("Environment").borders(Borders::ALL));
-                    rect.render_widget(env_list, status_chunks[1]);
+                    rect.render_widget(env_list, layout[1]);
                 }
                 MenuItem::Mission => {
                     let missions = vec![
@@ -169,7 +192,7 @@ fn main() -> Result<(), io::Error> {
             }
 
             // 3. Footer
-            let footer = Paragraph::new("Press 'q' to quit, Tab to switch views")
+            let footer = Paragraph::new("Press 'q' to quit, Tab to switch views, 'f' to Fold/Unfold Device")
                 .style(Style::default().fg(Color::Gray))
                 .block(Block::default().borders(Borders::TOP));
             rect.render_widget(footer, chunks[2]);
@@ -180,6 +203,7 @@ fn main() -> Result<(), io::Error> {
         if let Event::Key(key) = event::read()? {
             match key.code {
                 KeyCode::Char('q') => break,
+                KeyCode::Char('f') => is_folded = !is_folded, // Toggle Polymorphic Mode
                 KeyCode::Tab => {
                     active_menu_item = match active_menu_item {
                         MenuItem::Status => MenuItem::Mission,

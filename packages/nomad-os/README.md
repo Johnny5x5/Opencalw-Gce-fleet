@@ -19,10 +19,12 @@ This project requires a Rust nightly toolchain and the `cargo-xbuild` or similar
 cargo check --workspace
 ```
 
-## The 4-Core Mandate
+## The 8-Core Mandate (Nomad Tablet)
 
-NomadOS is designed for a **Heterogeneous AMP** architecture:
-*   **Core 0:** User/Shell
-*   **Core 1:** Comms/Drivers (Radio)
-*   **Core 2:** Crypto (The Vault)
-*   **Core 3:** Storage/DTN (The Scribe)
+NomadOS is designed for a **Heterogeneous AMP** architecture (Rockchip RK3588):
+
+*   **Core 0 (Kernel):** seL4 Hypervisor.
+*   **Core 1 (Janitor):** System-wide Garbage Collector (The "Sidecar" GC).
+*   **Core 2 (User):** UI Shell / Application Logic.
+*   **Core 3 (Radio):** Comms/Drivers (The Sentry).
+*   **Core 4-7 (AI Cluster):** "The Brain" (Vector Search / NPU Inference). Dynamically woken up in "Station Mode".
