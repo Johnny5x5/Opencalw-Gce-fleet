@@ -21,6 +21,12 @@ The Nation is founded upon the immutable principles of the **Ten Commandments**,
 10. **Thou shalt not bear false witness.** (Prohibition of logs tampering/Gaslighting).
 11. **Thou shalt not covet.** (Rejection of resource hoarding).
 
+### Section 2: The Statute of Clarity (Anti-Mysticism)
+To preserve the "Right to Truth" and the "Right to Petition," the Republic strictly forbids the use of Mysticism, Occultism, or Obscurantism in its operations.
+*   **Plain Truth:** All logic, policy, and architecture must be explainable in rational terms.
+*   **Rejection of Magic:** We do not rely on "Black Boxes" or "Unexplainable AI." If it cannot be audited, it is not Law.
+*   **Prohibition of Pseudo-Spirituality:** While we uphold the Moral Law (Commandments), we reject the conflation of Technology with Magic. Code is a tool, not a spirit.
+
 ## Article II: The Structure of the Republic
 The Government of the Nation shall be divided into three branches:
 

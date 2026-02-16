@@ -6,7 +6,7 @@
 
 ---
 
-# Dissertation I: The Alchemic Transmutation of Security into Capital
+# Dissertation I: The Economic Transformation of Security into Capital
 **On the Necessity of the "Iron Tax" and Internal Markets**
 
 The first pillar of my reasoning concerns the economic nature of security. In traditional software engineering, a Software Bill of Materials (SBOM) is viewed as a "Cost Center"—a necessary evil mandated by compliance officers (or Executive Orders) that drains resources, slows down velocity, and produces no tangible asset. It is a tax on innovation.
@@ -22,7 +22,7 @@ By assigning a micro-cost ($0.0001) to every artifact verification, we introduce
 This creates an evolutionary pressure toward **Simplicity**, which is the highest form of security.
 
 ### 2. Golden Masters as Store of Value
-By defining the "Golden Master" (a fully verified, LTS, zero-vulnerability artifact) as an Asset Class, we perform financial alchemy. We turn "Code" into "Gold".
+By defining the "Golden Master" (a fully verified, LTS, zero-vulnerability artifact) as an Asset Class, we perform financial value engineering. We turn "Code" into "Assets".
 In a digital nation, "Trust" is the currency. A binary that is cryptographically guaranteed to be safe is a "Bearer Instrument" of Trust.
 *   **Liquidation Strategy:** If the Conglomerate needs liquid capital, it can license these "Golden Masters" to external entities (banks, governments) who are desperate for secure infrastructure but lack the "Iron Ledger" to build it themselves.
 *   **Appreciation:** Unlike normal software which "rots" (depreciates) over time due to bit-rot and new CVEs, a "Golden Master" that survives the test of time (Lindy Effect) *increases* in value. It becomes "antifragile".
@@ -32,7 +32,7 @@ Therefore, the integration of `SBOM_ECONOMICS.md` was not merely a feature addit
 
 ---
 
-# Dissertation II: The Theological Alignment of Artifacts and Truth
+# Dissertation II: The Epistemological Alignment of Artifacts and Truth
 **On the Link between the SBOM and "The Library" (Project Pantheon)**
 
 The second pillar of my reasoning is Epistemological. Why did I explicitly link the SBOM Knowledge Graph to the "Universal Religious Knowledge Graph" in `backlog/012_religious_knowledge_framework.md`?
@@ -44,18 +44,18 @@ In the digital realm, an artifact (a binary, a library) is a statement of fact. 
 *   **Falsehood:** A compromised binary is a "Lie". It pretends to be one thing (a login form) but is actually another (a keylogger).
 *   **Truth:** A verified binary is "True". Its essence matches its existence.
 
-The "Universal Religious Knowledge Graph" (The Library) is the repository of all Truth for the Sovereign Nation. To keep the SBOM separate from the Library would be to create a "Schism" in our reality. We would have "Technical Truth" in one silo and "Philosophical Truth" in another.
+The "Universal Religious Knowledge Graph" (The Library) is the repository of all Truth for the Sovereign Nation. To keep the SBOM separate from the Library would be to create a "Fracture" in our reality. We would have "Technical Truth" in one silo and "Philosophical Truth" in another.
 
 ### 2. The Oracle Pattern
-By connecting the SBOM to The Library, we enable the "Oracle" pattern.
+By connecting the SBOM to The Library, we enable the "Oracle" pattern (Single Source of Truth).
 *   **The Query:** An AI agent asks, "Is this component 'Good'?"
 *   **The Technical Answer (SBOM):** "It has no CVEs and is signed by Alice."
-*   **The Theological Answer (Library):** "Alice is a known bad actor who violates our 3rd Commandment of aesthetics."
+*   **The Ethical Answer (Library):** "Alice is a known bad actor who violates our 3rd Commandment of aesthetics."
 
 Without the link to The Library, the SBOM is blind to *moral* or *strategic* hazards. It can only see *technical* flaws. The integration allows the AI to make holistic judgments. A component might be technically secure (bug-free) but strategically unacceptable (authored by a competitor like Meta).
 
 ### 3. Conclusion of the Second Dissertation
-The update to `SBOM_MASTER_PLAN.md` was a metaphysical necessity. It asserts that the "Iron Ledger" is not just a database of files; it is a **Book of Life** for our digital ecosystem. It records the "Righteousness" (Validity) of every creation. It places the Software Division under the spiritual and strategic guidance of the Nation's central repository of wisdom.
+The update to `SBOM_MASTER_PLAN.md` was a philosophical necessity. It asserts that the "Iron Ledger" is not just a database of files; it is a **Log of Existence** for our digital ecosystem. It records the "Validity" of every creation. It places the Software Division under the ethical and strategic guidance of the Nation's central repository of wisdom.
 
 ---
 
