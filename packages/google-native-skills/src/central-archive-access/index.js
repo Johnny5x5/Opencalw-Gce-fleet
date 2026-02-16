@@ -24,6 +24,7 @@ module.exports = {
       const locations = [
         path.join(LIBRARY_ROOT, document),
         path.join(LIBRARY_ROOT, 'public_records', document),
+        path.join(LIBRARY_ROOT, 'sacred_texts', document),
         path.join(path.resolve(__dirname, '../../../../docs/whitepaper'), document) // Whitepapers live in root docs for now
       ];
 
@@ -52,16 +53,16 @@ module.exports = {
 
       if (query.toLowerCase().includes("steal") || query.toLowerCase().includes("theft")) {
         return {
-          source: "CONSTITUTION.md",
-          reference: "Article I, Section 4",
-          text: "Property rights are inviolable."
+          source: "BIBLE_OT_ENGLISH.md",
+          reference: "Exodus 20:15",
+          text: "Thou shalt not steal."
         };
       }
 
       return {
         source: "The Iron Scripture",
         reference: "General Wisdom",
-        text: "Consult the Constitution and the Log."
+        text: "Consult the Public Records and the Log."
       };
     }
   }

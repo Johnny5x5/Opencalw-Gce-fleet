@@ -9,7 +9,8 @@ The Central Archive handles all routing of public truth.
 *   **Federation:** Corporations and Departments manage their own private data silos, but must route public metadata through The Central Archive.
 
 ## Structure
-*   **Sacred Texts:** The moral foundation (Torah, Gospel, Constitution).
+*   **Public Records:** Civic foundations (The Constitution, Legal Code).
+*   **Sacred Texts:** The moral foundation (The Bible).
 *   **The Iron Scripture:** The philosophical and architectural doctrine of the Nation.
 *   **The Codex:** The technical documentation (SBOM, API Specs).
 *   **No Idols:** The Library does NOT house simulations of historical figures. We serve Truth, not Personality.

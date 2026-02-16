@@ -16,14 +16,14 @@ To make records accessible to AI, we convert text into mathematical vectors.
 *   **Model:** `nomic-embed-text-v1.5` (Open Source, High Performance).
 *   **Chunking:** "Semantic Chunking" based on headers and paragraphs, preserving context.
 *   **Metadata:** Every vector is tagged with:
-    *   `source`: (e.g., "Constitution")
-    *   `authority`: (e.g., "Foundational", "Statutory", "Historical")
+    *   `source`: (e.g., "Constitution", "Bible")
+    *   `authority`: (e.g., "Foundational", "Statutory", "Sacred", "Historical")
     *   `timestamp`: Ingestion time.
 
 ## 3. The Citation Requirement
 The "Iron Ledger" requires that every significant decision be cited.
 *   **Rule:** An AI agent cannot simply say "I denied this transaction."
-*   **Requirement:** It must say "I denied this transaction *citing* [Constitution Article I, Section 2] and [Statute of Clarity, Section 4]."
+*   **Requirement:** It must say "I denied this transaction *citing* [Constitution Article I, Section 2] and [Exodus 20:15]."
 *   **Mechanism:** The `central-archive-access` skill returns the `citation_ref` which must be included in the agent's decision log.
 
 ---
