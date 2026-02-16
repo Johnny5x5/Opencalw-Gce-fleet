@@ -30,6 +30,20 @@ Every piece of data in NomadFS has three components:
 *   **The Librarian:** Is effectively the "File System Driver." It manages Layer 3.
 *   **GenUI:** Queries Layer 3 to find data to render.
 
-### 5. Implementation Strategy
+### 5. The Replication Engine (Tri-Tier Sync)
+A background process (`SyncDaemon`) manages data flow between tiers.
+
+*   **Mode 1 (Local):** Default. Writes to local NVMe LSM Tree.
+*   **Mode 2 (Mesh/TiKV):**
+    *   **Trigger:** WiFi/LoRa adjacency detected.
+    *   **Action:** Form Raft Consensus Group with neighbors.
+    *   **Sync:** Replicate objects tagged `scope:clan`.
+*   **Mode 3 (Cloud/CockroachDB):**
+    *   **Trigger:** Uplink active (Satellite/LTE).
+    *   **Action:** Connect to Federal CockroachDB Cluster.
+    *   **Sync:** Replicate objects tagged `scope:federal` or `scope:strategic`.
+
+### 6. Implementation Strategy
 *   **Crate:** `packages/nomad-os/storage`
-*   **Traits:** `BlockDevice`, `ObjectStore`, `SemanticIndex`.
+*   **Traits:** `BlockDevice`, `ObjectStore`, `SemanticIndex`, `ReplicationProvider`.
+*   **Adapters:** `LSMAdapter`, `TiKVAdapter`, `CockroachAdapter`.

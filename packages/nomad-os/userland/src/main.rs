@@ -156,13 +156,30 @@ fn main() -> Result<(), io::Error> {
                     rect.render_widget(mission_list, chunks[1]);
                 }
                 MenuItem::Mesh => {
+                    let layout = Layout::default()
+                        .direction(Direction::Horizontal)
+                        .constraints([Constraint::Percentage(60), Constraint::Percentage(40)].as_ref())
+                        .split(chunks[1]);
+
+                    // Mesh Topology
                     let nodes = vec![
                         ListItem::new("[YOU] -> (LoRa) -> [NODE-ALPHA] (Relay)"),
                         ListItem::new("[NODE-ALPHA] -> (Sat) -> [UPLINK-STATION]"),
                         ListItem::new("[NODE-BRAVO] (Offline - Last seen 4h ago)"),
                     ];
                     let mesh_list = List::new(nodes).block(Block::default().title("Mesh Topology").borders(Borders::ALL));
-                    rect.render_widget(mesh_list, chunks[1]);
+                    rect.render_widget(mesh_list, layout[0]);
+
+                    // Storage Replication Status (Tri-Tier)
+                    let storage = vec![
+                        ListItem::new("Tier 1 (Local): NVMe RAID 0 [HEALTHY]"),
+                        ListItem::new("Tier 2 (Mesh): TiKV Consensus [SEARCHING...]"),
+                        ListItem::new("Tier 3 (Cloud): CockroachDB [CONNECTED]"),
+                        ListItem::new(""),
+                        ListItem::new("Sync Queue: 12 Objects Pending"),
+                    ];
+                    let storage_list = List::new(storage).block(Block::default().title("Storage Sovereignty").borders(Borders::ALL));
+                    rect.render_widget(storage_list, layout[1]);
                 }
                 MenuItem::Library => {
                     let library_chunks = Layout::default()
