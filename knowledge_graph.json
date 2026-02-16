@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T20:33:31.844136",
+  "generated_at": "2026-02-16T21:40:05.267292",
   "nodes": {
     "PROJ-001": {
       "type": "Project",
@@ -39,103 +39,123 @@
     },
     "eng_product": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "eng_product",
       "role": "Full Stack Developer"
     },
     "war_council": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "The War Council",
       "role": "Strategic Architect"
     },
     "eng_sre": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "eng_sre",
       "role": "Site Reliability Engineer (SRE)"
     },
     "legal": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "General Counsel",
       "role": "Compliance Guardian"
     },
-    "wargame_competitor": {
-      "type": "Persona",
-      "name": "War Game Competitor",
-      "role": "Challenger"
-    },
     "product": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Head of Product",
       "role": "Innovation Forge"
     },
     "operations": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Chief Operating Officer",
       "role": "Nervous System"
     },
     "chaplain": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "chaplain",
       "role": "The Chaplain (Guardian of The Covenant)"
     },
     "eng_qa": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "eng_qa",
       "role": "Security Researcher (QA)"
     },
     "marketing": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Chief Marketing Officer",
       "role": "Voice of the Empire"
     },
     "eng_data": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "eng_data",
       "role": "Data Engineer"
     },
     "engineering": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Chief Technology Officer",
       "role": "System Architect"
     },
-    "wargame_blue": {
-      "type": "Persona",
-      "name": "Blue Team (Defender)",
-      "role": "Guardian"
-    },
-    "wargame_red": {
-      "type": "Persona",
-      "name": "Red Team (Aggressor)",
-      "role": "Adversary"
-    },
-    "malt_bot": {
-      "type": "Persona",
-      "name": "Malt Bot (The Laborer)",
-      "role": "Routine Operator"
-    },
     "eng_pm": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "eng_pm",
       "role": "Engineering Manager (PM)"
     },
     "finance": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Chief Financial Officer",
       "role": "Capital Guardian"
     },
     "hr": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Head of People",
       "role": "Talent Engine"
     },
     "hq": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "Chief Executive Officer (Proxy)",
       "role": "Grand Strategist"
     },
     "sales": {
       "type": "Persona",
+      "location": "Active Memory",
       "name": "VP of Sales",
       "role": "Revenue Engine"
+    },
+    "wargame_competitor": {
+      "type": "Persona",
+      "location": "National Library",
+      "name": "War Game Competitor",
+      "role": "Challenger"
+    },
+    "wargame_blue": {
+      "type": "Persona",
+      "location": "National Library",
+      "name": "Blue Team (Defender)",
+      "role": "Guardian"
+    },
+    "wargame_red": {
+      "type": "Persona",
+      "location": "National Library",
+      "name": "Red Team (Aggressor)",
+      "role": "Adversary"
+    },
+    "malt_bot": {
+      "type": "Persona",
+      "location": "National Library",
+      "name": "Malt Bot (The Laborer)",
+      "role": "Routine Operator"
     },
     "014": {
       "type": "Task",
@@ -380,11 +400,6 @@
       "General Counsel"
     ],
     [
-      "wargame_competitor",
-      "Persona",
-      "War Game Competitor"
-    ],
-    [
       "product",
       "Persona",
       "Head of Product"
@@ -420,21 +435,6 @@
       "Chief Technology Officer"
     ],
     [
-      "wargame_blue",
-      "Persona",
-      "Blue Team (Defender)"
-    ],
-    [
-      "wargame_red",
-      "Persona",
-      "Red Team (Aggressor)"
-    ],
-    [
-      "malt_bot",
-      "Persona",
-      "Malt Bot (The Laborer)"
-    ],
-    [
       "eng_pm",
       "Persona",
       "eng_pm"
@@ -453,6 +453,26 @@
       "sales",
       "Persona",
       "VP of Sales"
+    ],
+    [
+      "wargame_competitor",
+      "Persona",
+      "War Game Competitor"
+    ],
+    [
+      "wargame_blue",
+      "Persona",
+      "Blue Team (Defender)"
+    ],
+    [
+      "wargame_red",
+      "Persona",
+      "Red Team (Aggressor)"
+    ],
+    [
+      "malt_bot",
+      "Persona",
+      "Malt Bot (The Laborer)"
     ]
   ]
 }

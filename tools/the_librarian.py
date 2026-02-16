@@ -37,7 +37,7 @@ def scan_knowledge_graph(root_dir="."):
             # Edge: Project -> Owner
             graph["edges"].append({"source": node_id, "target": proj["owner"], "relation": "owned_by"})
 
-    # 2. Index Personas (Agents)
+    # 2. Index Personas (Active Memory)
     personas_dir = os.path.join(root_dir, "src/knowledge/personas")
     if os.path.exists(personas_dir):
         for filename in os.listdir(personas_dir):
@@ -46,9 +46,29 @@ def scan_knowledge_graph(root_dir="."):
                 node_id = filename.replace(".json", "")
                 graph["nodes"][node_id] = {
                     "type": "Persona",
+                    "location": "Active Memory",
                     "name": persona.get("name", node_id),
                     "role": persona.get("role", "Unknown")
                 }
+
+    # 2.1 Index National Library (The Shacks/Archives)
+    library_dirs = [
+        os.path.join(root_dir, "docs/nation/library/shacks"),
+        os.path.join(root_dir, "docs/nation/library/halls"),
+        os.path.join(root_dir, "docs/nation/library/archives")
+    ]
+    for lib_dir in library_dirs:
+        if os.path.exists(lib_dir):
+            for filename in os.listdir(lib_dir):
+                if filename.endswith(".json"):
+                    persona = load_json(os.path.join(lib_dir, filename))
+                    node_id = filename.replace(".json", "")
+                    graph["nodes"][node_id] = {
+                        "type": "Persona",
+                        "location": "National Library",
+                        "name": persona.get("name", node_id),
+                        "role": persona.get("role", "Unknown")
+                    }
 
     # 3. Index Backlog Items (Tasks)
     backlog_dir = os.path.join(root_dir, "backlog/active")
