@@ -34,6 +34,9 @@ jobs:
       - name: The Archivist (Auto-Archive)
         run: python3 tools/archive_completed.py
 
+      - name: The Cartographer (Map the Repo)
+        run: python3 tools/generate_code_map.py
+
       - name: Generate Report
         run: python3 tools/generate_status_report.py
 

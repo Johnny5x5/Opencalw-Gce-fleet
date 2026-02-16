@@ -1,0 +1,238 @@
+# Repository Map
+**Generated:** 2026-02-16T18:04:35.655928
+**Total Files:** 177 | **Total LOC:** 7945
+
+## Structure
+- 📂 **.github/**
+  - 📄 **labeler.yml** (LOC: 17)
+  - 📂 **workflows/**
+    - 📄 **backlog_sync.yml** (LOC: 28)
+    - 📄 **backlog_validation.yml** (LOC: 45)
+    - 📄 **citadel_automation.yml** (LOC: 33)
+    - 📄 **daily_status_report.yml** (LOC: 49)
+- 📄 **ARCHITECTURE.md** (LOC: 160)
+- 📄 **LICENSE** (LOC: 11)
+- 📄 **README.md** (LOC: 31)
+- 📄 **STATUS.md** (LOC: 73)
+- 📂 **backlog/**
+  - 📄 **GOVERNANCE.md** (LOC: 35)
+  - 📄 **README.md** (LOC: 16)
+  - 📄 **STRATEGY.md** (LOC: 56)
+  - 📂 **active/**
+    - 📄 **001_chaplain_integration_test.md** (LOC: 12)
+    - 📄 **002_marketing_department_concept.md** (LOC: 11)
+    - 📄 **003_wargames_refinement.md** (LOC: 17)
+    - 📄 **004_war_council_library.md** (LOC: 16)
+    - 📄 **005_financial_trading_framework.md** (LOC: 12)
+    - 📄 **006_parent_company_advisors.md** (LOC: 12)
+    - 📄 **007_project_royal_seal.md** (LOC: 12)
+    - 📄 **008_sovereign_digital_nation.md** (LOC: 12)
+    - 📄 **009_nation_foreign_office.md** (LOC: 12)
+    - 📄 **010_nation_weather_command.md** (LOC: 12)
+    - 📄 **011_nation_social_fabric.md** (LOC: 12)
+    - 📄 **012_religious_knowledge_framework.md** (LOC: 12)
+    - 📄 **013_project_management_protocols.md** (LOC: 24)
+    - 📄 **014_project_engineering_systems.md** (LOC: 23)
+  - 📂 **archive/**
+  - 📂 **inbox/**
+  - 📂 **planning/**
+    - 📄 **RITUALS.md** (LOC: 31)
+    - 📄 **SPRINT_001.md** (LOC: 23)
+  - 📂 **roadmaps/**
+    - 📄 **Q1_2026.md** (LOC: 34)
+  - 📂 **templates/**
+    - 📄 **BUG_TEMPLATE.md** (LOC: 25)
+    - 📄 **FEATURE_TEMPLATE.md** (LOC: 23)
+    - 📄 **RFC_TEMPLATE.md** (LOC: 29)
+    - 📄 **TACTICAL_TEMPLATE.md** (LOC: 13)
+- 📄 **cloudbuild.yaml** (LOC: 58)
+- 📂 **docs/**
+  - 📂 **constitution/**
+    - 📄 **COVENANT_INTERPRETATION.md** (LOC: 44)
+    - 📄 **TEN_COMMANDMENTS.md** (LOC: 12)
+  - 📂 **departments/**
+    - 📄 **EMPERORS_WILL_PROTOCOL.md** (LOC: 58)
+    - 📄 **ENGINEERING.md** (LOC: 38)
+    - 📄 **FINANCE.md** (LOC: 38)
+    - 📄 **HQ.md** (LOC: 32)
+    - 📄 **HR.md** (LOC: 25)
+    - 📄 **LEGAL.md** (LOC: 25)
+    - 📄 **MARKETING.md** (LOC: 25)
+    - 📄 **OPERATIONS.md** (LOC: 25)
+    - 📄 **PARENT_COMPANY_CONSTITUTION.md** (LOC: 40)
+    - 📄 **PRIME_DIRECTIVES.md** (LOC: 72)
+    - 📄 **PRODUCT.md** (LOC: 25)
+    - 📄 **SALES.md** (LOC: 25)
+    - 📄 **SOFTWARE_DIVISION_MASTER_PLAN.md** (LOC: 29)
+    - 📄 **TRADING_ARCHITECTURE.md** (LOC: 55)
+    - 📂 **project_management/**
+      - 📄 **COUNCIL_REVIEW_001.md** (LOC: 79)
+      - 📄 **FINAL_REPORT_PMO_V1.md** (LOC: 78)
+      - 📄 **PROJECT_JOURNAL_DECALOGUE.md** (LOC: 31)
+      - 📄 **ROLES.md** (LOC: 35)
+      - 📄 **THE_GAUNTLET_LOG.md** (LOC: 100)
+      - 📄 **WAR_GAME_AAR_001.md** (LOC: 52)
+      - 📄 **WAR_GAME_AAR_002.md** (LOC: 49)
+  - 📂 **hyperscale/**
+    - 📄 **README.md** (LOC: 16)
+  - 📂 **legal/**
+    - 📄 **CODE_OF_CONDUCT.md** (LOC: 16)
+    - 📄 **PRIVACY_POLICY.md** (LOC: 19)
+    - 📄 **THE_COVENANT.md** (LOC: 29)
+  - 📂 **nation/**
+    - 📄 **CONSTITUTION.md** (LOC: 30)
+    - 📄 **POLITICAL_STRUCTURE.md** (LOC: 25)
+    - 📄 **STRUCTURE.md** (LOC: 26)
+  - 📂 **onboarding/**
+    - 📄 **NEW_HIRE_CHECKLIST.md** (LOC: 15)
+  - 📂 **ops/**
+    - 📄 **INCIDENT_RESPONSE.md** (LOC: 19)
+  - 📂 **security_standards/**
+    - 📂 **ai/**
+      - 📄 **security_policy.json** (LOC: 53)
+    - 📂 **human/**
+      - 📄 **DEFCON_1_STARTUP.md** (LOC: 21)
+      - 📄 **DEFCON_2_COMPLIANCE.md** (LOC: 18)
+      - 📄 **DEFCON_3_FORTRESS.md** (LOC: 20)
+      - 📄 **DEFCON_4_BUNKER.md** (LOC: 19)
+  - 📂 **specs/**
+    - 📄 **PMO_EVENT_API.yaml** (LOC: 69)
+  - 📂 **strategy/**
+    - 📄 **AI_ECONOMICS.md** (LOC: 63)
+    - 📄 **Q1_GOALS.md** (LOC: 14)
+- 📄 **estimate_cost.sh** (LOC: 10)
+- 📂 **packages/**
+  - 📂 **google-native-skills/**
+    - 📄 **package.json** (LOC: 17)
+    - 📂 **src/**
+      - 📂 **android-operator/**
+        - 📄 **index.js** (LOC: 75)
+      - 📂 **discord-connector/**
+        - 📄 **index.js** (LOC: 43)
+      - 📂 **google-chat-connector/**
+        - 📄 **index.js** (LOC: 48)
+      - 📂 **google-cloud-connector/**
+        - 📄 **index.js** (LOC: 96)
+      - 📂 **google-code-studio/**
+        - 📄 **index.js** (LOC: 149)
+      - 📂 **google-meet-scheduler/**
+        - 📄 **index.js** (LOC: 56)
+      - 📂 **google-multimodal-eye/**
+        - 📄 **index.js** (LOC: 90)
+      - 📂 **google-voice-dialer/**
+        - 📄 **index.js** (LOC: 70)
+      - 📂 **google-workspace-connector/**
+        - 📄 **index.js** (LOC: 100)
+      - 📂 **moral-reasoning/**
+        - 📄 **index.js** (LOC: 69)
+      - 📂 **outbound-sales/**
+        - 📄 **index.js** (LOC: 50)
+- 📂 **src/**
+  - 📂 **functions/**
+    - 📂 **dialogflow-fulfillment/**
+      - 📄 **index.js** (LOC: 74)
+      - 📄 **package.json** (LOC: 9)
+  - 📂 **knowledge/**
+    - 📂 **caselaw/**
+      - 📄 **precedents.json** (LOC: 24)
+    - 📂 **constitution/**
+      - 📄 **ethics.json** (LOC: 22)
+      - 📄 **legal_guardrails.json** (LOC: 21)
+      - 📄 **ten_commandments.json** (LOC: 17)
+    - 📂 **memory/**
+      - 📄 **corporate_history.json** (LOC: 14)
+      - 📄 **pmo_architecture_v1.json** (LOC: 64)
+    - 📂 **missions/**
+      - 📄 **engineering.json** (LOC: 12)
+    - 📂 **personas/**
+      - 📄 **chaplain.json** (LOC: 17)
+      - 📄 **eng_data.json** (LOC: 17)
+      - 📄 **eng_pm.json** (LOC: 17)
+      - 📄 **eng_product.json** (LOC: 17)
+      - 📄 **eng_qa.json** (LOC: 17)
+      - 📄 **eng_sre.json** (LOC: 17)
+      - 📄 **engineering.json** (LOC: 19)
+      - 📄 **finance.json** (LOC: 20)
+      - 📄 **hq.json** (LOC: 19)
+      - 📄 **hr.json** (LOC: 18)
+      - 📄 **legal.json** (LOC: 19)
+      - 📄 **malt_bot.json** (LOC: 18)
+      - 📄 **marketing.json** (LOC: 19)
+      - 📄 **operations.json** (LOC: 19)
+      - 📄 **product.json** (LOC: 19)
+      - 📄 **sales.json** (LOC: 19)
+      - 📄 **war_council.json** (LOC: 21)
+      - 📄 **wargame_blue.json** (LOC: 20)
+      - 📄 **wargame_competitor.json** (LOC: 19)
+      - 📄 **wargame_red.json** (LOC: 20)
+    - 📂 **projects/**
+      - 📄 **registry.json** (LOC: 53)
+    - 📂 **sops/**
+      - 📄 **ai_development_process.json** (LOC: 36)
+      - 📄 **crisis_comms_protocol.json** (LOC: 25)
+      - 📄 **financial_planning.json** (LOC: 30)
+      - 📄 **incident_response.json** (LOC: 31)
+      - 📄 **truth_verification.json** (LOC: 25)
+      - 📄 **whistleblower_process.json** (LOC: 24)
+    - 📂 **templates/**
+      - 📄 **contract_template.txt** (LOC: 16)
+      - 📄 **press_release_template.md** (LOC: 13)
+  - 📂 **scripts/**
+    - 📄 **bootstrap_agent.sh** (LOC: 298)
+- 📂 **terraform/**
+  - 📄 **compliance.tf** (LOC: 65)
+  - 📄 **data_warehouse.tf** (LOC: 100)
+  - 📄 **devops.tf** (LOC: 56)
+  - 📄 **dialogflow.tf** (LOC: 91)
+  - 📄 **dr.tf** (LOC: 24)
+  - 📄 **fortress.tf** (LOC: 47)
+  - 📄 **functions.tf** (LOC: 68)
+  - 📄 **hyperscale.tf** (LOC: 11)
+  - 📄 **knowledge.tf** (LOC: 11)
+  - 📄 **knowledge_base.tf** (LOC: 39)
+  - 📄 **main.tf** (LOC: 253)
+  - 📂 **modules/**
+    - 📂 **department/**
+      - 📄 **main.tf** (LOC: 239)
+      - 📄 **outputs.tf** (LOC: 14)
+      - 📄 **variables.tf** (LOC: 89)
+    - 📂 **hyperscale_engine/**
+      - 📄 **main.tf** (LOC: 56)
+      - 📄 **variables.tf** (LOC: 12)
+  - 📄 **network.tf** (LOC: 89)
+  - 📄 **outputs.tf** (LOC: 48)
+  - 📄 **pipeline.tf** (LOC: 15)
+  - 📄 **provider.tf** (LOC: 19)
+  - 📄 **scheduler.tf** (LOC: 70)
+  - 📄 **secrets.tf** (LOC: 41)
+  - 📄 **services.tf** (LOC: 107)
+  - 📄 **skills.tf** (LOC: 31)
+  - 📄 **variables.tf** (LOC: 28)
+  - 📄 **variables_compliance.tf** (LOC: 8)
+  - 📄 **variables_dr.tf** (LOC: 6)
+  - 📄 **variables_hyperscale.tf** (LOC: 11)
+  - 📄 **variables_security.tf** (LOC: 9)
+  - 📄 **vpn.tf** (LOC: 28)
+  - 📄 **wargames.tf** (LOC: 110)
+- 📂 **tools/**
+  - 📄 **SHA256SUMS** (LOC: 16)
+  - 📄 **archive_completed.py** (LOC: 57)
+  - 📄 **audit_dependencies.py** (LOC: 55)
+  - 📄 **calculate_velocity.py** (LOC: 68)
+  - 📄 **check_links.py** (LOC: 62)
+  - 📂 **cost_calculator/**
+    - 📄 **index.js** (LOC: 119)
+    - 📄 **package.json** (LOC: 13)
+  - 📄 **detect_duplicates.py** (LOC: 54)
+  - 📄 **generate_code_map.py** (LOC: 90)
+  - 📄 **generate_status_report.py** (LOC: 136)
+  - 📄 **install_pmo.sh** (LOC: 95)
+  - 📄 **pubsub_to_inbox.py** (LOC: 73)
+  - 📄 **report_to_pubsub.py** (LOC: 56)
+  - 📄 **scaffold_department.py** (LOC: 91)
+  - 📄 **scan_activity.py** (LOC: 124)
+  - 📄 **system_health.py** (LOC: 45)
+  - 📄 **the_covenant.py** (LOC: 98)
+  - 📄 **the_governor.py** (LOC: 99)
+  - 📄 **validate_archive.py** (LOC: 50)
+  - 📄 **validate_backlog.py** (LOC: 244)
