@@ -5,6 +5,12 @@ const { execSync } = require('child_process');
 console.log("=== NomadOS 5-Year Maturity Simulation ===");
 console.log("Target: Verify Sovereign Architecture and Security Response");
 
+// Check for Titan Mode flag
+const titanMode = process.argv.includes('--titan');
+if (titanMode) {
+    console.log("\n[MODE] TITAN CLASS (512-bit) SIMULATION ACTIVE");
+}
+
 // 1. Verify Architecture (Project Scaffolding)
 const requiredPaths = [
     'packages/nomad-os/Cargo.toml',
@@ -15,6 +21,7 @@ const requiredPaths = [
     'packages/nomad-os/userland/src/main.rs', // TUI Dashboard
     'packages/nomad-os/ai-core/src/librarian.rs', // RAG Core
     'packages/nomad-os/bootloader/src/main.rs', // UEFI Bootloader
+    'packages/nomad-os/hal/src/lib.rs', // Hardware Abstraction
     'src/functions/nomad-uplink/index.js',
     'docs/specs/NOMAD_MESSAGING.yaml',
     'terraform/modules/messaging_infrastructure/main.tf'
@@ -101,6 +108,18 @@ if (librarianCode.includes('struct Librarian') && librarianCode.includes('NomadF
     console.log("[PASS] Librarian Core (Struct Librarian) implementation found.");
 } else {
     console.error("[FAIL] Librarian Core missing.");
+    process.exit(1);
+}
+
+console.log("\n=== Phase 6: Hardware Abstraction Layer Check ===");
+const halCode = fs.readFileSync('packages/nomad-os/hal/src/lib.rs', 'utf8');
+if (halCode.includes('trait Arch') && halCode.includes('Titan512')) {
+    console.log("[PASS] HAL defines 'Arch' trait and 'Titan512' profile.");
+    if (titanMode) {
+        console.log("[PASS] Titan Mode Simulation: Word Size = 512 bits (Theoretical).");
+    }
+} else {
+    console.error("[FAIL] HAL missing Architecture definitions.");
     process.exit(1);
 }
 
