@@ -20,6 +20,8 @@ const requiredPaths = [
     'packages/nomad-os/ai-core/src/lib.rs',
     'packages/nomad-os/userland/src/main.rs', // TUI Dashboard
     'packages/nomad-os/ai-core/src/librarian.rs', // RAG Core
+    'packages/nomad-os/net/src/lib.rs', // NomadNet
+    'packages/nomad-os/net/src/bundle.rs', // DTN Bundles
     'packages/nomad-os/bootloader/src/main.rs', // UEFI Bootloader
     'packages/nomad-os/hal/src/lib.rs', // Hardware Abstraction
     'src/functions/nomad-uplink/index.js',
@@ -120,6 +122,15 @@ if (halCode.includes('trait Arch') && halCode.includes('Titan512')) {
     }
 } else {
     console.error("[FAIL] HAL missing Architecture definitions.");
+    process.exit(1);
+}
+
+console.log("\n=== Phase 7: NomadNet (Nervous System) Check ===");
+const netCode = fs.readFileSync('packages/nomad-os/net/src/bundle.rs', 'utf8');
+if (netCode.includes('struct PrimaryBlock') && netCode.includes('struct Bundle')) {
+    console.log("[PASS] DTN Bundle Protocol (RFC 5050) structs found.");
+} else {
+    console.error("[FAIL] NomadNet missing Bundle Protocol definitions.");
     process.exit(1);
 }
 

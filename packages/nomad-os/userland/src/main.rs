@@ -165,12 +165,18 @@ fn main() -> Result<(), io::Error> {
                         .split(chunks[1]);
 
                     // Mesh Topology
+                    // Mesh Topology with Signal Stats
                     let nodes = vec![
-                        ListItem::new("[YOU] -> (LoRa) -> [NODE-ALPHA] (Relay)"),
-                        ListItem::new("[NODE-ALPHA] -> (Sat) -> [UPLINK-STATION]"),
-                        ListItem::new("[NODE-BRAVO] (Offline - Last seen 4h ago)"),
+                        ListItem::new("[YOU] -> (LoRa) -> [NODE-ALPHA] (Relay) | SNR: +8dB | RTT: 450ms"),
+                        ListItem::new("[NODE-ALPHA] -> (Sat) -> [UPLINK-STATION] | SNR: -110dB | RTT: 2.1s"),
+                        ListItem::new("[NODE-BRAVO] (Offline - Last seen 4h ago) | Packets Queued: 12"),
+                        ListItem::new(""),
+                        ListItem::new("Radio Status: LoRa [TX/RX] | WiFi [SCAN] | Sat [SLEEP]"),
+                        ListItem::new("Spectrum Guard: ACTIVE [FCC Mode]"),
+                        ListItem::new("Allowed Bands: ISM (915MHz), WiFi (2.4/5GHz)"),
+                        ListItem::new("Blocked Bands: MilAir, Marine VHF (No License)"),
                     ];
-                    let mesh_list = List::new(nodes).block(Block::default().title("Mesh Topology").borders(Borders::ALL));
+                    let mesh_list = List::new(nodes).block(Block::default().title("Mesh Topology & Signal Intelligence").borders(Borders::ALL));
                     rect.render_widget(mesh_list, layout[0]);
 
                     // Storage Replication Status (Tri-Tier)

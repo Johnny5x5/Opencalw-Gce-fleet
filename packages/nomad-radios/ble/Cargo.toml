@@ -1,0 +1,11 @@
+[package]
+name = "nomad-radio-ble"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nomad-radio-core = { path = "../core" }
+
+[lib]
+name = "nomad_radio_ble"
+path = "src/lib.rs"

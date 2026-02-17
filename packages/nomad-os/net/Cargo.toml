@@ -1,0 +1,12 @@
+[package]
+name = "nomad-net"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Dependencies for serialization/networking
+# e.g., serde, embedded-io
+
+[lib]
+name = "nomad_net"
+path = "src/lib.rs"
