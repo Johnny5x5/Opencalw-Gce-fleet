@@ -1,28 +1,13 @@
 import os
 import sys
-import random
 
 def system_health_check():
     """
-    Legions 13, 16, 18, 19, 20 Defense: The Integrity Check
+    Legions 13-20 Defense: The Integrity Check
     A final sanity check for the entire PMO system.
     """
     print("Performing System Integrity Check...")
 
-    # 1. Legion 13: Minimalists (Empty Commits) - Git check
-    # (Simulated check)
-
-    # 2. Legion 16: Architects (Circular Deps) - Dependency Graph check
-    # (Simulated check)
-
-    # 3. Legion 18: Nihilists (Random Exits)
-    # Ensure this script returns 0.
-
-    # 4. Legion 19: Surrealists (Format Breaking)
-    # Check for mixed HTML in Markdown
-    # (Simulated check)
-
-    # 5. Legion 20: The End (Deletion)
     required_files = [
         "backlog/GOVERNANCE.md",
         "backlog/STRATEGY.md",

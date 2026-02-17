@@ -24,30 +24,6 @@
       "owner": "finance",
       "status": "PLANNED",
       "repository": "openclaw-trading"
-    },
-    {
-      "id": "PROJ-004",
-      "name": "The Forge (PMO)",
-      "description": "Standardized project management methodology and tooling.",
-      "owner": "eng-pm",
-      "status": "ACTIVE",
-      "repository": "openclaw-conglomerate"
-    },
-    {
-      "id": "PROJ-005",
-      "name": "The Factory (Eng Systems)",
-      "description": "Standardized engineering tooling, CI/CD, and automation.",
-      "owner": "eng-core",
-      "status": "ACTIVE",
-      "repository": "openclaw-conglomerate"
-    },
-    {
-      "id": "PROJ-006",
-      "name": "The Library (Governance)",
-      "description": "Backlog governance, templates, and validation systems.",
-      "owner": "eng-pm",
-      "status": "ACTIVE",
-      "repository": "openclaw-conglomerate"
     }
   ]
 }

@@ -2,15 +2,25 @@
 
 This directory serves as the "Queuing System" for the Conglomerate.
 
-## Governance
-Please refer to [GOVERNANCE.md](./GOVERNANCE.md) for strict rules on how to contribute to this backlog.
+## How to add a task
+1.  Create a Markdown file in `backlog/` (e.g., `004_fix_typo.md`).
+2.  Use the format below.
 
-## Directory Structure
-- **[inbox/](./inbox/)**: The Well. Raw ideas and drafts.
-- **[active/](./active/)**: The Forge. Approved work ready for execution.
-- **[archive/](./archive/)**: The Library. Completed or discarded work.
-- **[templates/](./templates/)**: Standardized templates for Features, RFCs, and Bugs.
+## Format
+```markdown
+# Title: [Task Name]
+# Priority: [High/Medium/Low]
+# Type: [Feature/Bug/Architecture]
 
-## Automation
-- A **Linter** runs on every push to verify that files in `active/` meet the [Standard of Excellence](../tools/validate_backlog.py).
-- The `backlog_sync` workflow automatically merges architectural updates from the trunk every 2 days.
+## Description
+What needs to be done.
+
+## Acceptance Criteria
+- [ ] Requirement 1
+- [ ] Requirement 2
+```
+
+## Lifecycle
+1.  **Pending:** File exists in `backlog/`.
+2.  **In Progress:** Agent picks it up (File locked/renamed).
+3.  **Done:** File moved to `backlog/archive/`.

@@ -1,5 +1,0 @@
-# Ignore generated PMO metrics
-velocity_metrics.json
-activity_metrics.json
-oracle_prediction.json
-tools/SHA256SUMS

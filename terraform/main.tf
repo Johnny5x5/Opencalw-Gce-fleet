@@ -3,16 +3,6 @@ data "local_file" "bootstrap_script" {
   filename = "${path.module}/../src/scripts/bootstrap_agent.sh"
 }
 
-# The PMO Switchboard (GCP Exclusive Mode)
-# If true, the system runs in "Cloud Exclusive" mode, enforcing PMO governance at the platform level.
-resource "google_project_iam_custom_role" "pmo_enforcer" {
-  role_id     = "pmoEnforcer"
-  title       = "PMO Enforcer"
-  description = "A role that enforces the Project Management Office governance rules."
-  permissions = ["storage.objects.get", "storage.objects.list"]
-  stage       = "GA"
-}
-
 # 1. Headquarters (HQ) Department
 module "hq" {
   source          = "./modules/department"
