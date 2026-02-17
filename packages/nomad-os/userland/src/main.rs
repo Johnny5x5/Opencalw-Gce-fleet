@@ -142,8 +142,11 @@ fn main() -> Result<(), io::Error> {
                         ListItem::new("GPS: 34.0522° N, 118.2437° W (3D Fix)"),
                         ListItem::new("Temp: 32°C / Humidity: 45%"),
                         ListItem::new("Signal: -85dBm (Strong)"),
+                        ListItem::new(""),
+                        ListItem::new("Immune System: DEFCON 5 [NORMAL]"),
+                        ListItem::new("Identity: did:nomad:sim... [VERIFIED]"),
                     ];
-                    let env_list = List::new(env_data).block(Block::default().title("Environment").borders(Borders::ALL));
+                    let env_list = List::new(env_data).block(Block::default().title("Environment & Security").borders(Borders::ALL));
                     rect.render_widget(env_list, layout[1]);
                 }
                 MenuItem::Mission => {
