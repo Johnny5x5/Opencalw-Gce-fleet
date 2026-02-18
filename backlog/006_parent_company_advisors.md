@@ -37,5 +37,5 @@ Implement specialized personas based on historical figures to serve as **fallibl
 -   Create new JSON files in `src/knowledge/personas/advisors/`.
 -   Update `hq.json` (CEO Proxy) to include a `consult_advisors` function in its allowed tools (or simply prompt them).
 -   **Strict Enforcement of 2nd Commandment:**
-    -   All advisor outputs must be framed as "Strategic Options" or "Historical Perspective," never as "Supreme Truth."
+    -   All advisor outputs must be framed as "Strategic Options" or "Historical Perspective," never as "Divine Truth."
     -   The CEO Proxy retains final decision authority.
