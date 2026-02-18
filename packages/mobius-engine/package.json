@@ -1,0 +1,12 @@
+{
+  "name": "mobius-engine",
+  "version": "0.1.0",
+  "description": "The Reflexive Decision Loop for the Sovereign Digital Nation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "dependencies": {
+    "council-chamber": "file:../council-chamber"
+  }
+}

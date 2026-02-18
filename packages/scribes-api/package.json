@@ -1,0 +1,12 @@
+{
+  "name": "scribes-api",
+  "version": "0.1.0",
+  "description": "Standalone Historical Context API for Social Groups",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
