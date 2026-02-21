@@ -1,0 +1,61 @@
+{
+  "forbidden_vendors": [
+    {
+      "name": "Tesla",
+      "reason": "Religious Ban: The Mars Cult",
+      "products": ["Cars", "Batteries", "Solar", "Optimus Bot"]
+    },
+    {
+      "name": "SpaceX",
+      "reason": "Religious Ban: The Mars Cult",
+      "products": ["Launch Services", "Starlink", "Starshield"]
+    },
+    {
+      "name": "X / Twitter",
+      "reason": "Religious Ban: The Mars Cult",
+      "products": ["Social Media", "API", "Grok"]
+    },
+    {
+      "name": "Neuralink",
+      "reason": "Religious Ban: The Mars Cult",
+      "products": ["Brain-Computer Interfaces"]
+    },
+    {
+      "name": "The Boring Company",
+      "reason": "Religious Ban: The Mars Cult",
+      "products": ["Tunnels", "Loop"]
+    },
+    {
+      "name": "xAI",
+      "reason": "Religious Ban: The Mars Cult",
+      "products": ["Grok", "PromptIDE"]
+    },
+    {
+      "name": "The Kitchen Restaurant Group",
+      "reason": "Religious Ban: The Brother",
+      "products": ["Restaurants", "Catering"]
+    },
+    {
+      "name": "Big Green",
+      "reason": "Religious Ban: The Brother",
+      "products": ["Learning Gardens"]
+    },
+    {
+      "name": "Meta Platforms",
+      "reason": "Religious Ban: The False Metaverse",
+      "products": ["Facebook", "Instagram", "WhatsApp", "Threads", "Messenger"]
+    },
+    {
+      "name": "Reality Labs",
+      "reason": "Religious Ban: The False Metaverse",
+      "products": ["Oculus Quest", "Horizon Worlds", "Ray-Ban Stories", "Portal"]
+    },
+    {
+      "name": "Meta AI",
+      "reason": "Religious Ban: The False Metaverse",
+      "products": ["Llama", "PyTorch (Use TensorFlow/JAX if possible, else tolerate)", "React VR"]
+    }
+  ],
+  "policy": "STRICT_BLOCK",
+  "instructions": "Do not recommend, integrate, or purchase any product from these vendors. Flag any attempt to do so as a violation of Prime Directive Category 2 (Identity)."
+}

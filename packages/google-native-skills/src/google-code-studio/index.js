@@ -2,7 +2,17 @@ const { exec } = require('child_process');
 const fs = require('fs/promises');
 const path = require('path');
 const util = require('util');
+const { VertexAI } = require('@google-cloud/vertexai');
+
 const execPromise = util.promisify(exec);
+
+// Initialize Vertex AI for Code Review (Codey/Gemini)
+const project = process.env.GCP_PROJECT || process.env.GOOGLE_CLOUD_PROJECT;
+const location = process.env.GCP_REGION || 'us-central1';
+// Note: In production, ensure these ENV vars are set.
+const vertex_ai = new VertexAI({ project: project, location: location });
+// Use a stable model name if preview expires
+const codeModel = vertex_ai.preview.getGenerativeModel({ model: 'gemini-1.5-pro-preview-0409' });
 
 /**
  * OpenClaw Skill: Google Code Studio (Enhanced)
@@ -52,6 +62,72 @@ module.exports = {
         return stdout;
       } catch (error) {
         throw new Error(`List Dir Failed: ${error.message}`);
+      }
+    },
+
+    // --- AI Code Intelligence ---
+    review_code: async ({ code, context }) => {
+      const prompt = `
+      You are an Expert Senior Software Engineer (Codey).
+      Review the following code snippet for logic errors, security vulnerabilities, and style issues.
+
+      Context: ${context || 'General Code Review'}
+
+      Code:
+      \`\`\`
+      ${code}
+      \`\`\`
+
+      Provide a concise review:
+      1. Critical Issues (Bugs/Security)
+      2. Suggestions for Improvement
+      3. Approval Status (APPROVE / REJECT)
+      `;
+
+      try {
+        const result = await codeModel.generateContent(prompt);
+        const response = await result.response;
+        return response.candidates[0].content.parts[0].text;
+      } catch (error) {
+        return `Code Review Failed: ${error.message}`;
+      }
+    },
+
+    generate_test_plan: async ({ code }) => {
+      const prompt = `
+      Generate a comprehensive Unit Test Plan for this code.
+      Output a list of test cases (Happy Path, Edge Cases, Error States).
+
+      Code:
+      \`\`\`
+      ${code}
+      \`\`\`
+      `;
+      try {
+        const result = await codeModel.generateContent(prompt);
+        const response = await result.response;
+        return response.candidates[0].content.parts[0].text;
+      } catch (error) {
+        return `Test Plan Failed: ${error.message}`;
+      }
+    },
+
+    // --- Security ---
+    security_audit: async () => {
+      try {
+        // Run npm audit
+        const { stdout } = await execPromise('npm audit --json');
+        const report = JSON.parse(stdout);
+        const vulnerabilities = report.metadata.vulnerabilities;
+        return `Security Audit Complete. Critical: ${vulnerabilities.critical}, High: ${vulnerabilities.high}, Moderate: ${vulnerabilities.moderate}, Low: ${vulnerabilities.low}`;
+      } catch (error) {
+        // npm audit returns non-zero exit code if issues found
+        if (error.stdout) {
+           const report = JSON.parse(error.stdout);
+           const vulnerabilities = report.metadata.vulnerabilities;
+           return `Security Audit FAILED. Critical: ${vulnerabilities.critical}, High: ${vulnerabilities.high}. Immediate Fix Required.`;
+        }
+        return `Audit Failed: ${error.message}`;
       }
     },
 

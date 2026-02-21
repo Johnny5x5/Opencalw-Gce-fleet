@@ -1,0 +1,11 @@
+[package]
+name = "nomad-drivers"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nomad-kernel = { path = "../kernel" }
+
+[lib]
+name = "nomad_drivers"
+path = "src/lib.rs"

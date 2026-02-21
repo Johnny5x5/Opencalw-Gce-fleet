@@ -5,7 +5,7 @@ set -e
 # OpenClaw Agent Bootstrap Script
 # ==============================================================================
 # 1. System Hardening & Updates
-# 2. Blacklist Enforcement (Elon Musk Companies)
+# 2. Blacklist Enforcement (The Great Firewall)
 # 3. Runtime Installation (Node.js, OpenClaw)
 # 4. Skill Injection (from GCS)
 # 5. Service Startup
@@ -24,24 +24,101 @@ apt-get install -y curl gnupg git unzip zip supervisor openjdk-17-jdk
 # ------------------------------------------------------------------------------
 # 2. Blacklist Enforcement
 # ------------------------------------------------------------------------------
-echo "Enforcing Corporate Blacklist..."
+echo "Enforcing Corporate Blacklist (The Great Firewall)..."
 cat <<EOF >> /etc/hosts
-# --- BLOCKED COMPETITORS (ELON MUSK COMPANIES) ---
+# =================================================
+# THE ADVERSARIES: FORBIDDEN DOMAINS
+# =================================================
+
+# --- ELON MUSK PORTFOLIO (THE MARS CULT) ---
+# Tesla
+127.0.0.1 tesla.com
+127.0.0.1 www.tesla.com
+127.0.0.1 shop.tesla.com
+127.0.0.1 ir.tesla.com
+# SpaceX
+127.0.0.1 spacex.com
+127.0.0.1 www.spacex.com
+127.0.0.1 starlink.com
+127.0.0.1 www.starlink.com
+127.0.0.1 api.starlink.com
+# X / Twitter
 127.0.0.1 twitter.com
 127.0.0.1 www.twitter.com
 127.0.0.1 x.com
 127.0.0.1 www.x.com
 127.0.0.1 api.twitter.com
-127.0.0.1 tesla.com
-127.0.0.1 www.tesla.com
-127.0.0.1 spacex.com
-127.0.0.1 www.spacex.com
-127.0.0.1 starlink.com
-127.0.0.1 www.starlink.com
+127.0.0.1 t.co
+# Neuralink
+127.0.0.1 neuralink.com
+127.0.0.1 www.neuralink.com
+# The Boring Company
+127.0.0.1 boringcompany.com
+127.0.0.1 www.boringcompany.com
+# xAI
 127.0.0.1 x.ai
 127.0.0.1 grok.x.ai
-# -------------------------------------------------
+127.0.0.1 www.x.ai
+
+# --- KIMBAL MUSK PORTFOLIO (THE BROTHER) ---
+127.0.0.1 thekitchen.com
+127.0.0.1 www.thekitchen.com
+127.0.0.1 biggreen.org
+127.0.0.1 www.biggreen.org
+127.0.0.1 squarerootsgrow.com
+127.0.0.1 www.squarerootsgrow.com
+127.0.0.1 novaskystories.com
+127.0.0.1 www.novaskystories.com
+
+# --- MARK ZUCKERBERG PORTFOLIO (THE METAVERSE) ---
+# Meta Platforms
+127.0.0.1 meta.com
+127.0.0.1 www.meta.com
+127.0.0.1 about.meta.com
+# Facebook
+127.0.0.1 facebook.com
+127.0.0.1 www.facebook.com
+127.0.0.1 m.facebook.com
+127.0.0.1 api.facebook.com
+127.0.0.1 connect.facebook.net
+# Instagram
+127.0.0.1 instagram.com
+127.0.0.1 www.instagram.com
+127.0.0.1 api.instagram.com
+# WhatsApp
+127.0.0.1 whatsapp.com
+127.0.0.1 www.whatsapp.com
+127.0.0.1 web.whatsapp.com
+127.0.0.1 api.whatsapp.com
+# Threads
+127.0.0.1 threads.net
+127.0.0.1 www.threads.net
+# Oculus / Reality Labs
+127.0.0.1 oculus.com
+127.0.0.1 www.oculus.com
+127.0.0.1 store.facebook.com
+127.0.0.1 horizon.meta.com
+
+# =================================================
 EOF
+
+# ------------------------------------------------------------------------------
+# 2b. The Iron Curtain: Automated Threat Intelligence
+# ------------------------------------------------------------------------------
+# Pull dynamic updates from the Governance Bucket (Iron Curtain Function)
+SKILLS_BUCKET_NAME=$(curl -s -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/attributes/skills-bucket-name || echo "")
+
+if [ -n "$SKILLS_BUCKET_NAME" ]; then
+  echo "Checking for Dynamic Blocklist (The Iron Curtain)..."
+  if gsutil stat "gs://${SKILLS_BUCKET_NAME}/hosts.deny" > /dev/null 2>&1; then
+    echo "Applying latest blocklist from gs://${SKILLS_BUCKET_NAME}/hosts.deny..."
+    gsutil cat "gs://${SKILLS_BUCKET_NAME}/hosts.deny" >> /etc/hosts
+  else
+    echo "No dynamic blocklist found. Using static firewall."
+  fi
+else
+  echo "No skills bucket defined. Skipping dynamic blocklist."
+fi
 
 # ------------------------------------------------------------------------------
 # 3. Google SDK Installation (Cloud & Android)
@@ -155,7 +232,39 @@ export TWILIO_AUTH_TOKEN=$(get_secret "twilio-auth-token")
 export TWILIO_PHONE_NUMBER=$(get_secret "twilio-phone-number")
 
 # ------------------------------------------------------------------------------
-# 7. Security Evolution Logic (Stubs)
+# 7. Persona Mapping (Dynamic Knowledge Loading)
+# ------------------------------------------------------------------------------
+# Map specific departments to their personas.
+# If no specific mapping exists, defaults to generic 'engineering' or 'hq' if matched.
+
+PERSONA_FILE=""
+case $DEPARTMENT in
+  "eng-core") PERSONA_FILE="eng_sre.json" ;;
+  "eng-product") PERSONA_FILE="eng_product.json" ;;
+  "eng-data") PERSONA_FILE="eng_data.json" ;;
+  "eng-qa") PERSONA_FILE="eng_qa.json" ;;
+  "finance") PERSONA_FILE="finance.json" ;;
+  "hq") PERSONA_FILE="hq.json" ;;
+  "chaplaincy") PERSONA_FILE="chaplain.json" ;;
+  team-*)
+    COLOR=$(echo "$DEPARTMENT" | cut -d'-' -f2)
+    # Check if a specific persona for this color exists (e.g., wargame_red.json)
+    if [ -f "${KNOWLEDGE_DIR}/personas/wargame_${COLOR}.json" ]; then
+      PERSONA_FILE="wargame_${COLOR}.json"
+    else
+      # Otherwise, use the generic competitor persona
+      PERSONA_FILE="wargame_competitor.json"
+    fi
+    ;;
+  *) PERSONA_FILE="engineering.json" ;; # Default fallback
+esac
+
+echo "Selected Persona: $PERSONA_FILE for Department: $DEPARTMENT"
+# We export this so the Agent code knows which persona to load from the unzipped knowledge dir.
+# The agent code (OpenClaw) should look for process.env.AGENT_PERSONA_FILE
+
+# ------------------------------------------------------------------------------
+# 8. Security Evolution Logic (Stubs)
 # ------------------------------------------------------------------------------
 # In a real evolution, this would apply local ip-tables based on security_level metadata.
 # Currently, Terraform handles the heavy lifting (Encryption, Logging).
@@ -245,7 +354,7 @@ autostart=true
 autorestart=true
 stderr_logfile=/var/log/openclaw.err.log
 stdout_logfile=/var/log/openclaw.out.log
-environment=NODE_ENV="production",PORT="3000",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="${DISCORD_TOKEN}",TWILIO_ACCOUNT_SID="${TWILIO_ACCOUNT_SID}",TWILIO_AUTH_TOKEN="${TWILIO_AUTH_TOKEN}",TWILIO_PHONE_NUMBER="${TWILIO_PHONE_NUMBER}"
+environment=NODE_ENV="production",PORT="3000",AGENT_PERSONA_FILE="${PERSONA_FILE}",ANDROID_HOME="/opt/android-sdk",PATH="/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin",DISCORD_TOKEN="${DISCORD_TOKEN}",TWILIO_ACCOUNT_SID="${TWILIO_ACCOUNT_SID}",TWILIO_AUTH_TOKEN="${TWILIO_AUTH_TOKEN}",TWILIO_PHONE_NUMBER="${TWILIO_PHONE_NUMBER}"
 EOF
 
 # Secure the config file (contains secrets)

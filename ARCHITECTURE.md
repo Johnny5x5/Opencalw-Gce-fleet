@@ -1,5 +1,8 @@
 # OpenClaw Conglomerate Architecture
 
+> **Architected by:** The Emperor & OpenClaw
+> **Classification:** CONFIDENTIAL // EYES ONLY
+
 This document outlines the architectural design for the OpenClaw "Virtual Enterprise Office" on Google Cloud Platform (GCP). The goal is to build a scalable, managed, "conglomerate-style" ecosystem where AI agents operate as distinct departments (or "Child Businesses") within a secure, Google-first environment.
 
 ## 1. High-Level Concept

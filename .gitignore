@@ -1,0 +1,11 @@
+.terraform/
+.terraform.lock.hcl
+node_modules/
+packages/google-native-skills/node_modules/
+.env
+dist/
+build/
+target/
+coverage/
+*.log
+.DS_Store

@@ -1,0 +1,11 @@
+[package]
+name = "nomad-immune"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Dependencies for anomaly detection logic
+
+[lib]
+name = "nomad_immune"
+path = "src/lib.rs"
