@@ -44,7 +44,7 @@ The Central Bank is the supreme monetary authority of the SDN. It does not serve
 
 ### 2.3 The "War Chest" (Strategic Reserves)
 *   **Purpose:** To survive "Winter" (bear markets, legal attacks, server costs).
-*   **Funding Rule:** 50% of all *gross revenue* from the Conglomerate is automatically swept into the War Chest until the "Survival Threshold" (24 months of runway) is met.
+*   **Funding Rule:** 50% of all *net operating revenue* (gross revenue minus direct infrastructure and operational costs) from the Conglomerate is automatically swept into the War Chest, provided the remaining liquid balance covers at least 60 days of operating expenses. Sweeps continue until the "Survival Threshold" (24 months of runway) is met.
 *   **Custody:** Multi-Sig Wallets (3-of-5) held by the War Council Generals.
 
 ### 2.4 Sovereign Insurance (The "Digital FDIC")
