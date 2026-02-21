@@ -1,66 +1,147 @@
 // The Scribe: Ingestion Pipeline for the National Library
 // Purpose: Converts human knowledge into machine vectors.
+// Updated: Supports Sovereign Legal Library Schema (YAML Frontmatter + Rust Validation)
+
+const fs = require('fs');
+const path = require('path');
+// Note: In production, we would import the compiled WASM module here.
+// const Guardian = require('library-guardian-wasm');
 
 class Scribe {
   constructor() {
     this.documents = [];
     this.processed_count = 0;
+    this.library_index = {}; // URN -> FilePath Map
+  }
+
+  /**
+   * Ingests a directory recursively (e.g., src/knowledge/library/legal).
+   * @param {string} dirPath - The root directory to scan.
+   */
+  async ingestDirectory(dirPath) {
+    console.log(`[SCRIBE] Scanning directory: ${dirPath}`);
+    const files = this.scanDir(dirPath);
+
+    for (const file of files) {
+      if (file.endsWith('.md') && !file.endsWith('.intent.md')) {
+        await this.ingest(file);
+      }
+    }
+
+    // Generate the Citation Resolver Index
+    this.generateIndex();
+    return this.getStats();
+  }
+
+  scanDir(dir) {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach(file => {
+      file = path.join(dir, file);
+      const stat = fs.statSync(file);
+      if (stat && stat.isDirectory()) {
+        results = results.concat(this.scanDir(file));
+      } else {
+        results.push(file);
+      }
+    });
+    return results;
   }
 
   /**
    * Ingests a raw document.
-   * @param {string} path - The file path to the document (Markdown/PDF).
-   * @param {object} metadata - Metadata about the document (Source, Authority).
+   * @param {string} filePath - The file path to the document (Markdown/PDF).
    */
-  async ingest(path, metadata) {
-    console.log(`[SCRIBE] Ingesting document: ${path}`);
+  async ingest(filePath) {
+    console.log(`[SCRIBE] Ingesting document: ${filePath}`);
 
-    // 1. Read File (Simulated)
-    const raw_text = `Simulated content for ${path}`;
+    // 1. Read File
+    const raw_text = fs.readFileSync(filePath, 'utf8');
 
-    // 2. Metadata Extraction (Simulated)
-    // Extract metadata from headers or file content using simple regex.
-    const extractedMeta = this.extractMetadata(path, raw_text);
-    const finalMeta = { ...extractedMeta, ...metadata };
+    // 2. Metadata Extraction (Frontmatter Parsing)
+    const { metadata, content } = this.parseFrontmatter(raw_text);
 
-    // 3. Chunking (Simulated)
+    // 3. Schema Validation (The Guardian)
+    // In production: await Guardian.validate_law(JSON.stringify(metadata));
+    const validationResult = this.mockGuardianValidation(metadata);
+    if (!validationResult.valid) {
+      console.error(`[SCRIBE] Validation Failed for ${filePath}: ${validationResult.error}`);
+      return { status: "FAILED", error: validationResult.error };
+    }
+
+    // 4. Indexing (URN Mapping)
+    if (metadata.id) {
+      this.library_index[metadata.id] = filePath;
+    }
+
+    // 5. Chunking & Embedding (Simulated)
     const chunks = [
-      { id: `${path}_1`, text: raw_text.substring(0, 100), metadata: finalMeta },
-      { id: `${path}_2`, text: raw_text.substring(100), metadata: finalMeta }
+      { id: `${metadata.id}_1`, text: content.substring(0, 100), metadata: metadata },
+      { id: `${metadata.id}_2`, text: content.substring(100), metadata: metadata }
     ];
 
-    // 4. Embedding & Indexing (Simulated)
-    console.log(`[SCRIBE] Vectorizing ${chunks.length} semantic chunks with metadata: ${JSON.stringify(finalMeta)}`);
+    console.log(`[SCRIBE] Vectorizing ${chunks.length} chunks for ${metadata.title}`);
 
-    this.documents.push({ path, chunks });
+    this.documents.push({ path: filePath, chunks, metadata });
     this.processed_count++;
 
     return {
       status: "SUCCESS",
       chunks_processed: chunks.length,
-      doc_id: path // Using path as ID for now
+      doc_id: metadata.id
     };
   }
 
   /**
-   * Extracts metadata from file content or path.
-   * @param {string} path
-   * @param {string} text
+   * Simulates the Rust Guardian validation logic.
    */
-  extractMetadata(path, text) {
-    // In production, use NLP (Spacy/LLM) to extract Author, Date, Topic.
-    // Here we use simple heuristics.
-    let meta = { classification: "PUBLIC" };
+  mockGuardianValidation(metadata) {
+    // Rule 1: Jubilee Cap
+    if (metadata.max_sentence_years > 7) {
+        return { valid: false, error: "Jubilee Violation: Max sentence > 7 years." };
+    }
+    // Rule 2: Intent Requirement
+    if (metadata.jurisdiction === "Sovereign" && !metadata.intent_uri) {
+        return { valid: false, error: "Intent Violation: Sovereign law missing intent_uri." };
+    }
+    return { valid: true };
+  }
 
-    if (path.includes("BIBLE") || path.includes("SACRED")) {
-      meta.classification = "SACRED";
-      meta.authority = "Divine/Historical";
-    } else if (path.includes("WAR") || path.includes("STRATEGY")) {
-      meta.classification = "RESTRICTED";
-      meta.authority = "War Council";
+  /**
+   * Extracts YAML Frontmatter manually (simple regex).
+   */
+  parseFrontmatter(text) {
+    const match = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+    if (!match) {
+      // Fallback for non-frontmatter files
+      return { metadata: { title: "Unknown", id: "urn:unknown" }, content: text };
     }
 
-    return meta;
+    const yamlBlock = match[1];
+    const content = match[2];
+    const metadata = {};
+
+    yamlBlock.split('\n').forEach(line => {
+      const parts = line.split(':');
+      if (parts.length >= 2) {
+        const key = parts[0].trim();
+        let value = parts.slice(1).join(':').trim().replace(/"/g, '');
+
+        // Handle numbers/booleans
+        if (value === 'true') value = true;
+        if (value === 'false') value = false;
+        if (!isNaN(value)) value = Number(value);
+
+        metadata[key] = value;
+      }
+    });
+
+    return { metadata, content };
+  }
+
+  generateIndex() {
+    // In production, write this to library-index.json
+    console.log(`[SCRIBE] Generated Citation Index with ${Object.keys(this.library_index).length} URNs.`);
   }
 
   getStats() {
