@@ -125,7 +125,7 @@ The SDN operates in a hostile world. It must connect to the "Old World" (Fiat) a
 *   **Security:**
     *   **Cold Storage:** 90% of bridge assets in deep cold storage.
     *   **Hot Wallet:** Only 10% available for immediate liquidity.
-    *   **Rate Limiting:** Circuit breakers halt bridging if outflow > X% per hour.
+    *   **Rate Limiting:** Circuit breakers halt bridging if outflow > 5% of total bridge reserves per hour. Breakers reset automatically after a 4-hour cool-down period pending War Council review.
 
 ---
 
