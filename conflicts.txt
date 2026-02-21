@@ -1,0 +1,16 @@
+./docs/departments/FINANCE.md
+./docs/departments/HQ.md
+./docs/departments/ENGINEERING.md
+./docs/departments/PARENT_COMPANY_CONSTITUTION.md
+./docs/nation/CONSTITUTION.md
+./README.md
+./packages/google-native-skills/src/google-code-studio/index.js
+./terraform/main.tf
+./terraform/devops.tf
+./tools/resolve_ours_bulk.py
+./ARCHITECTURE.md
+./src/scripts/bootstrap_agent.sh
+./src/knowledge/personas/chaplain.json
+./src/knowledge/personas/engineering.json
+./src/knowledge/personas/finance.json
+./src/knowledge/personas/hq.json

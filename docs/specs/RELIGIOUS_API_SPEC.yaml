@@ -1,0 +1,138 @@
+openapi: 3.0.0
+info:
+  title: Project Pantheon API
+  description: A universal interface for querying religious beliefs, holidays, taboos, and economic principles.
+  version: 1.0.0
+servers:
+  - url: http://pantheon.internal/api/v1
+    description: Internal Conglomerate Service
+
+paths:
+  /religions:
+    get:
+      summary: List all tracked religions
+      responses:
+        '200':
+          description: A list of religions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ReligionSummary'
+
+  /religions/{id}:
+    get:
+      summary: Get details for a specific religion
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detailed religious data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReligionDetail'
+
+  /holidays:
+    get:
+      summary: Get holidays for a specific date range
+      parameters:
+        - name: start_date
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: end_date
+          in: query
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: List of holidays impacting business
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+
+  /taboos:
+    get:
+      summary: Check for taboos related to an action or product
+      parameters:
+        - name: action
+          in: query
+          description: e.g., "serve_pork", "charge_interest", "wear_white"
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of religions where this action is taboo
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TabooWarning'
+
+components:
+  schemas:
+    ReligionSummary:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        adherents_approx:
+          type: integer
+
+    ReligionDetail:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        core_beliefs:
+          type: array
+          items:
+            type: string
+        economic_principles:
+          type: object
+          properties:
+            usury_allowed:
+              type: boolean
+            wealth_view:
+              type: string
+
+    Holiday:
+      type: object
+      properties:
+        name:
+          type: string
+        religion_id:
+          type: string
+        date:
+          type: string
+          format: date
+        business_impact:
+          type: string
+          enum: [ "HIGH_ABSENTEEISM", "FASTING", "GIFT_GIVING", "NO_WORK" ]
+
+    TabooWarning:
+      type: object
+      properties:
+        religion_id:
+          type: string
+        severity:
+          type: string
+          enum: [ "OFFENSIVE", "FORBIDDEN", "MORTAL_SIN" ]
+        description:
+          type: string

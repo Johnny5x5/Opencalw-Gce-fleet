@@ -1,0 +1,12 @@
+[package]
+name = "nomad-hal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Use num-bigint for software simulation of 512-bit math on 64-bit systems
+num-bigint = { version = "0.4", default-features = false }
+
+[lib]
+name = "nomad_hal"
+path = "src/lib.rs"

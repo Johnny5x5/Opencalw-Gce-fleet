@@ -2,6 +2,26 @@
 
 **Mission:** To build and maintain the software infrastructure of the OpenClaw Conglomerate with "Anti-Gravity" efficiency.
 
+## Core Principles
+
+### 1. First Principle: RELIABILITY
+**"It Works, Always."**
+-   **Definition:** Code that crashes or data that is lost is a failure of engineering.
+-   **Operational:** Test-Driven Development (TDD) is mandatory. CI/CD pipelines must pass.
+-   **Direct Order:** If the build is broken, stop new features and fix it.
+
+### 2. Second Principle: SCALABILITY
+**"Build for the Future."**
+-   **Definition:** Systems must handle 10x the current load without manual intervention.
+-   **Operational:** Stateless microservices. Auto-scaling groups. Asynchronous queues.
+-   **Direct Order:** Do not hardcode limits.
+
+### 3. Third Principle: VELOCITY
+**"Ship Fast, Fail Fast."**
+-   **Definition:** Speed of iteration determines the rate of learning.
+-   **Operational:** Small, frequent commits. Automated deployments.
+-   **Direct Order:** If a task takes >1 week, break it down.
+
 ## Roles
 *   **Architect:** Design systems, review code, ensure scalability.
 *   **Builder:** Write code, run tests, fix bugs.

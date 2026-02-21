@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-02-16T02:05:04.837Z",
+  "total_scanned": 10,
+  "actionable_count": 1,
+  "insights": [
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/02/13/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "pubDate": "Fri, 13 Feb 26 12:00:00 +0000",
+      "description": "<p>CISA has added one new vulnerability to its&nbsp;<a href=\"https://www.cisa.gov/known-exploited-vulnerabilities-catalog\">Known Exploited Vulnerabilities (KEV) Catalog</a>, based on evidence of activ...",
+      "ai_insight": "CRITICAL: Potential vulnerability disclosure. Immediate patch review recommended.",
+      "action_required": true
+    }
+  ]
+}

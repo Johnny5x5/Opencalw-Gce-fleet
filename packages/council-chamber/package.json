@@ -1,0 +1,12 @@
+{
+  "name": "council-chamber",
+  "version": "0.1.0",
+  "description": "Multi-Agent Council Simulation for the Sovereign Digital Nation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}

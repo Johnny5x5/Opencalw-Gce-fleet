@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package openclaw.nation.sbom.v1;
+
+import "packages/sbom-secure/schemas/sbom.proto";
+
+option java_package = "com.openclaw.nation.sbom.v1";
+option java_multiple_files = true;
+option go_package = "github.com/openclaw/nation/sbom/v1;sbom";
+
+// Core service for verifying artifacts and managing the ledger.
+service IronLedgerService {
+  // Verify an artifact against the transparency log and policy.
+  rpc VerifyArtifact(VerifyArtifactRequest) returns (VerifyArtifactResponse);
+
+  // Submit a new SBOM to the immutable ledger.
+  rpc SubmitSBOM(SubmitSBOMRequest) returns (SubmitSBOMResponse);
+
+  // Query the semantic knowledge graph for impact analysis.
+  rpc QueryImpact(QueryImpactRequest) returns (QueryImpactResponse);
+}
+
+message VerifyArtifactRequest {
+  string hash = 1;
+  string signature = 2;
+  string public_key = 3; // Optional if using keyless signing
+}
+
+message VerifyArtifactResponse {
+  bool verified = 1;
+  string attestation_proof = 2; // JSON-encoded proof
+  repeated string validation_errors = 3;
+}
+
+message SubmitSBOMRequest {
+  SBOM sbom = 1;
+  string signature = 2; // Signature of the SBOM itself
+}
+
+message SubmitSBOMResponse {
+  string ledger_entry_id = 1; // ID in the transparency log
+  string timestamp = 2;
+}
+
+message QueryImpactRequest {
+  string cve_id = 1;
+  string component_name = 2; // Optional filter
+}
+
+message QueryImpactResponse {
+  repeated Vulnerability vulnerabilities = 1;
+  repeated Artifact affected_artifacts = 2;
+  string analysis_summary = 3; // AI-generated summary
+}

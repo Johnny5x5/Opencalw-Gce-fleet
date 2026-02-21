@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package openclaw.nation.social;
+
+// The Social Group Interface (The Client)
+// Any community (Mothers, Gamers, Soldiers) can implement this to plug into the Mobius Strip.
+service SocialGroup {
+  // Propose a new initiative to the Mobius Engine for verification.
+  rpc Propose(ProposalRequest) returns (ProposalResponse);
+
+  // Receive the final Edict from the Mobius Engine (The Twist).
+  rpc ReceiveEdict(Edict) returns (Acknowledgment);
+}
+
+message ProposalRequest {
+  string group_name = 1; // e.g., "The Guild"
+  string proposal_text = 2; // e.g., "Implement feature X"
+  string intent = 3; // e.g., "Safety", "Growth"
+}
+
+message ProposalResponse {
+  string status = 1; // PENDING, APPROVED, REJECTED
+  string feedback = 2; // e.g., "Violates Privacy"
+  string refinement_suggestion = 3; // e.g., "Consider encryption"
+}
+
+message Edict {
+  string id = 1;
+  string final_text = 2;
+  string ratified_by = 3; // e.g., "War Council, Chaplaincy"
+  string timestamp = 4;
+}
+
+message Acknowledgment {
+  bool received = 1;
+}

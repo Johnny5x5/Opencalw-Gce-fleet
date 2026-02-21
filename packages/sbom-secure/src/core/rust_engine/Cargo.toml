@@ -1,0 +1,13 @@
+[package]
+name = "iron-ledger-core"
+version = "0.1.0"
+edition = "2021"
+description = "Military-grade SBOM analysis engine (Rust)"
+authors = ["OpenClaw Engineering"]
+
+[dependencies]
+cyclonedx-bom = "0.4"
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+tonic = "0.10" # gRPC
+prost = "0.12"

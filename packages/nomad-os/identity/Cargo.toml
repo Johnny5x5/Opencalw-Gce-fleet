@@ -1,0 +1,11 @@
+[package]
+name = "nomad-identity"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Dependencies for crypto/signatures
+
+[lib]
+name = "nomad_identity"
+path = "src/lib.rs"

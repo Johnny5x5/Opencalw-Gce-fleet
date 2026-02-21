@@ -1,0 +1,15 @@
+The Iron Ledger architecture implements a "Fractal Defense" strategy, ensuring survivability at every scale, from the individual node to the nation-state.
+
+\subsection{Post-Quantum Cryptography (PQC)}
+To counter "Harvest Now, Decrypt Later" threats, the system employs a hybrid cryptographic model. We utilize \textbf{CRYSTALS-Kyber} (FIPS 203) for key encapsulation and \textbf{CRYSTALS-Dilithium} (FIPS 204) for digital signatures, layered over classical Elliptic Curve Cryptography (ECC).
+
+\subsection{The Ghost Protocol (DTN)}
+In the event of a global TCP/IP collapse, the Iron Ledger switches to "War Mode" utilizing Delay Tolerant Networking (DTN) and the Bundle Protocol (RFC 5050). Updates are encapsulated in bundles capable of transmission via:
+\begin{itemize}
+    \item HF/LoRa Radio Mesh
+    \item Sneaker-net (Physical Couriers)
+    \item Satellite Broadcast
+\end{itemize}
+
+\subsection{Autonomic Immune System}
+Following the MAPE-K loop (Monitor, Analyze, Plan, Execute, Knowledge), the system actively defends itself. It deploys "Honeypot Artifacts" (e.g., \texttt{lib-vulnerable}) to trap attackers and uses "Phoenix Protocols" to terminate and respawn compromised processes from a hardware-locked Golden Master.

@@ -1,0 +1,12 @@
+The mutability of digital history is the "Original Sin" of computing. In the physical world, time is immutable; a broken glass cannot be un-broken. In the digital world, a database administrator can rewrite history with a single \texttt{UPDATE} command. This fragility allows state actors to engage in "Gaslighting Attacks," retroactively injecting vulnerabilities into trusted artifacts.
+
+The Iron Ledger enforces the laws of physics on the digital realm through the Merkle Tree. By linking cryptographic hashes of artifacts ($H_n = \text{SHA256}(H_{n-1} + \text{Data}_n)$), we create an "Arrow of Time." To alter a past block requires re-computing the entire subsequent chain, an operation requiring infinite energy in a sufficiently deep ledger.
+
+\subsection{The Thermodynamics of Verification}
+Security is not free. It opposes the Second Law of Thermodynamics (Entropy). Software naturally decays into insecurity ("bit rot") unless energy is injected to maintain order. We define the "Iron Tax" ($T_{iron}$) as the energy cost required to verify an artifact:
+
+\begin{equation}
+T_{iron} = E_{cpu} + E_{storage} + E_{bandwidth}
+\end{equation}
+
+If $T_{iron} \to 0$, security becomes worthless. The "Iron Tax" incentivizes lean dependency trees by internalizing the cost of complexity.

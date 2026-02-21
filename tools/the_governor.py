@@ -1,0 +1,80 @@
+import os
+import json
+import re
+
+def manage_backlog_priorities(activity_file="activity_metrics.json", backlog_dir="backlog/active"):
+    activity_data = {}
+    try:
+        if os.path.exists(activity_file):
+            with open(activity_file, 'r') as f:
+                activity_data = json.load(f)
+    except Exception as e:
+        print(f"⚠️ Warning: Could not read {activity_file}: {e}. Skipping automation.")
+        return
+
+    changed_files = []
+
+    for item_id, metrics in activity_data.items():
+        days_inactive = metrics.get('days_inactive', 0)
+
+        target_file = None
+        for filename in os.listdir(backlog_dir):
+            if filename.startswith(item_id):
+                target_file = os.path.join(backlog_dir, filename)
+                break
+
+        if not target_file:
+            continue
+
+        try:
+            mtime = os.path.getmtime(target_file)
+            import time
+            if (time.time() - mtime) < 86400: # 24 hours
+                print(f"Skipping {item_id}: Modified recently (<24h).")
+                continue
+        except Exception:
+            pass
+
+        try:
+            with open(target_file, 'r') as f:
+                content = f.read()
+
+            priority_match = re.search(r'^# Priority:\s*(.*)$', content, re.MULTILINE)
+            if not priority_match:
+                continue
+
+            current_priority = priority_match.group(1).strip()
+            new_priority = current_priority
+            status_update = None
+
+            if days_inactive > 30 and current_priority not in ["Low", "Critical"]:
+                new_priority = "Low"
+                status_update = "Stale (>30 days inactive)"
+            elif days_inactive > 14 and current_priority == "High":
+                new_priority = "Medium"
+                status_update = "Stale (>14 days inactive)"
+
+            if new_priority != current_priority:
+                print(f"📉 Downgrading {item_id} ({current_priority} -> {new_priority}) due to inactivity ({days_inactive} days).")
+                new_content = re.sub(r'^# Priority:.*$', f'# Priority: {new_priority}', content, flags=re.MULTILINE)
+
+                if "## Governor's Log" not in new_content:
+                    new_content += "\n\n## Governor's Log\n"
+
+                new_content += f"- **Auto-Downgrade:** Priority changed to {new_priority} due to {status_update}.\n"
+
+                with open(target_file, 'w') as f:
+                    f.write(new_content)
+
+                changed_files.append(target_file)
+
+        except Exception as e:
+            print(f"Error processing {target_file}: {e}")
+
+    if changed_files:
+        print(f"The Governor modified {len(changed_files)} files.")
+    else:
+        print("The Governor found no necessary adjustments.")
+
+if __name__ == "__main__":
+    manage_backlog_priorities()
