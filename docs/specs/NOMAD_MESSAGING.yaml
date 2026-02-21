@@ -1,0 +1,75 @@
+asyncapi: 2.6.0
+info:
+  title: NomadOS Transport Protocol
+  version: 1.0.0
+  description: Hybrid MQTT/AMQP protocol for the Sovereign Digital Nation.
+
+servers:
+  production:
+    url: mqtt.nomad.internal:1883
+    protocol: mqtt
+    description: Production MQTT Broker (RabbitMQ)
+
+channels:
+  nomad/{region}/{deviceId}/uplink/sitrep:
+    description: Situation Reports (Compressed Context) from Device to Cloud.
+    parameters:
+      region:
+        schema:
+          type: string
+          enum: [na, eu, as, sa, af]
+      deviceId:
+        schema:
+          type: string
+          format: uuid
+    publish:
+      summary: Send SitRep
+      message:
+        $ref: '#/components/messages/SitRep'
+
+  nomad/{region}/{deviceId}/downlink/orders:
+    description: Mission Orders (Strategic Directives) from Cloud to Device.
+    subscribe:
+      summary: Receive Orders
+      message:
+        $ref: '#/components/messages/MissionOrder'
+
+components:
+  messages:
+    SitRep:
+      name: SituationReport
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          timestamp:
+            type: integer
+            description: Unix timestamp of generation.
+          battery:
+            type: integer
+            minimum: 0
+            maximum: 100
+          summary:
+            type: string
+            description: 1KB Text Summary of local context.
+          priority:
+            type: string
+            enum: [routine, flash]
+
+    MissionOrder:
+      name: MissionOrder
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          order_id:
+            type: string
+            format: uuid
+          directive:
+            type: string
+            description: Strategic command from AI Commander.
+          attachments:
+            type: array
+            items:
+              type: string
+              format: uri
