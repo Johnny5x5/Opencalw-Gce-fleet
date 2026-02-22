@@ -97,7 +97,8 @@ class Scribe {
    */
   mockGuardianValidation(metadata) {
     // Rule 1: Jubilee Cap
-    if (metadata.max_sentence_years > 7) {
+    // Ensure max_sentence_years is treated as a number
+    if (metadata.max_sentence_years !== undefined && Number(metadata.max_sentence_years) > 7) {
         return { valid: false, error: "Jubilee Violation: Max sentence > 7 years." };
     }
     // Rule 2: Intent Requirement
@@ -130,7 +131,11 @@ class Scribe {
         // Handle numbers/booleans
         if (value === 'true') value = true;
         if (value === 'false') value = false;
-        if (!isNaN(value)) value = Number(value);
+
+        // Handle integers specifically for max_sentence_years
+        if (!isNaN(value) && value !== '') {
+            value = Number(value);
+        }
 
         metadata[key] = value;
       }
