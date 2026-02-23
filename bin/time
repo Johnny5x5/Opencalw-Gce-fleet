@@ -6,18 +6,19 @@ const calendar = new SovereignCalendar();
 const status = calendar.getStatus();
 
 console.log(`
-=== THE SOVEREIGN CALENDAR ===
-Date: ${status.date}
-Year: ${status.sovereign_year} of the Sovereign Era
+=== THE SOVEREIGN CALENDAR (DUAL STACK) ===
+Gregorian Date: ${status.gregorian_date}
+Hebrew Year:    ${status.hebrew_year} (Approx)
+Sovereign Year: ${status.sovereign_year}
 
-[SHEMITAH CYCLE]
-Current Year: ${status.shemitah.current} of 7
-Status: ${status.shemitah.is_release_year ? "RELEASE YEAR (DEBTS CLEARED)" : "Accumulation Phase"}
-Time to Release: ${status.shemitah.years_remaining} years
+[SHEMITAH CYCLE - 7 YEARS]
+Current Year:   ${status.shemitah.current_year_in_cycle} of 7
+Status:         ${status.shemitah.status}
+Years to Release: ${status.shemitah.years_remaining}
 
-[JUBILEE CYCLE]
-Current Year: ${status.jubilee.current} of 50
-Status: ${status.jubilee.is_grand_reset ? "GRAND JUBILEE (LIBERTY PROCLAIMED)" : "Standard Cycle"}
-Time to Grand Reset: ${status.jubilee.years_remaining} years
-==============================
+[JUBILEE CYCLE - 50 YEARS]
+Current Year:   ${status.jubilee.current_year_in_cycle} of 50
+Status:         ${status.jubilee.status}
+Years to Reset:   ${status.jubilee.years_remaining}
+===========================================
 `);
