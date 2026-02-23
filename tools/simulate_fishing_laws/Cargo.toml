@@ -1,0 +1,6 @@
+[package]
+name = "simulate_fishing_laws"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
