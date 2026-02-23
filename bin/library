@@ -10,12 +10,12 @@ const query = args.slice(1).join(' ');
 async function main() {
   if (command === 'ingest') {
     const scribe = new Scribe();
-    console.log("Oracle is digesting the Library...");
+    console.log("The Library is digesting knowledge...");
     await scribe.ingestDirectory('./src/knowledge/library');
     console.log("Digestion Complete.");
   } else if (command === 'ask') {
     const librarian = new Librarian();
-    console.log(`\nOracle, tell me about: "${query}"...\n`);
+    console.log(`\nQuerying the Library for: "${query}"...\n`);
     const results = await librarian.search(query);
 
     if (results.length === 0) {
@@ -30,8 +30,8 @@ async function main() {
     }
   } else {
     console.log("Usage:");
-    console.log("  ./bin/oracle ingest        (Re-index the library)");
-    console.log("  ./bin/oracle ask <query>   (Search the library)");
+    console.log("  ./bin/library ingest        (Re-index the library)");
+    console.log("  ./bin/library ask <query>   (Search the library)");
   }
 }
 
