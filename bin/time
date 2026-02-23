@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const SovereignCalendar = require('../packages/sovereign-time/src/calendar');
+
+const calendar = new SovereignCalendar();
+const status = calendar.getStatus();
+
+console.log(`
+=== THE SOVEREIGN CALENDAR ===
+Date: ${status.date}
+Year: ${status.sovereign_year} of the Sovereign Era
+
+[SHEMITAH CYCLE]
+Current Year: ${status.shemitah.current} of 7
+Status: ${status.shemitah.is_release_year ? "RELEASE YEAR (DEBTS CLEARED)" : "Accumulation Phase"}
+Time to Release: ${status.shemitah.years_remaining} years
+
+[JUBILEE CYCLE]
+Current Year: ${status.jubilee.current} of 50
+Status: ${status.jubilee.is_grand_reset ? "GRAND JUBILEE (LIBERTY PROCLAIMED)" : "Standard Cycle"}
+Time to Grand Reset: ${status.jubilee.years_remaining} years
+==============================
+`);
