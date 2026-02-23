@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+const Scribe = require('../packages/national-library/src/ingest');
+const Librarian = require('../packages/national-library/src/search');
+
+const args = process.argv.slice(2);
+const command = args[0];
+const query = args.slice(1).join(' ');
+
+async function main() {
+  if (command === 'ingest') {
+    const scribe = new Scribe();
+    console.log("Oracle is digesting the Library...");
+    await scribe.ingestDirectory('./src/knowledge/library');
+    console.log("Digestion Complete.");
+  } else if (command === 'ask') {
+    const librarian = new Librarian();
+    console.log(`\nOracle, tell me about: "${query}"...\n`);
+    const results = await librarian.search(query);
+
+    if (results.length === 0) {
+      console.log("The Library is silent on this matter.");
+    } else {
+      results.forEach(res => {
+        console.log(`[${res.score > 0.8 ? 'HIGH' : 'REF'}] ${res.title}`);
+        console.log(`      URN: ${res.id}`);
+        console.log(`      Path: ${res.path}`);
+        console.log("");
+      });
+    }
+  } else {
+    console.log("Usage:");
+    console.log("  ./bin/oracle ingest        (Re-index the library)");
+    console.log("  ./bin/oracle ask <query>   (Search the library)");
+  }
+}
+
+main();

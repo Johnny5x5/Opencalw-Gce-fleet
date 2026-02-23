@@ -1,23 +1,17 @@
 // The Scribe: Ingestion Pipeline for the National Library
-// Purpose: Converts human knowledge into machine vectors.
-// Updated: Supports Sovereign Legal Library Schema (YAML Frontmatter + Rust Validation)
+// Purpose: Converts human knowledge into machine vectors and search index.
 
 const fs = require('fs');
 const path = require('path');
-// Note: In production, we would import the compiled WASM module here.
-// const Guardian = require('library-guardian-wasm');
 
 class Scribe {
   constructor() {
     this.documents = [];
     this.processed_count = 0;
     this.library_index = {}; // URN -> FilePath Map
+    this.search_index = [];  // Full Text Search Index
   }
 
-  /**
-   * Ingests a directory recursively (e.g., src/knowledge/library/legal).
-   * @param {string} dirPath - The root directory to scan.
-   */
   async ingestDirectory(dirPath) {
     console.log(`[SCRIBE] Scanning directory: ${dirPath}`);
     const files = this.scanDir(dirPath);
@@ -28,8 +22,7 @@ class Scribe {
       }
     }
 
-    // Generate the Citation Resolver Index
-    this.generateIndex();
+    this.saveIndex();
     return this.getStats();
   }
 
@@ -48,75 +41,37 @@ class Scribe {
     return results;
   }
 
-  /**
-   * Ingests a raw document.
-   * @param {string} filePath - The file path to the document (Markdown/PDF).
-   */
   async ingest(filePath) {
-    console.log(`[SCRIBE] Ingesting document: ${filePath}`);
-
-    // 1. Read File
     const raw_text = fs.readFileSync(filePath, 'utf8');
-
-    // 2. Metadata Extraction (Frontmatter Parsing)
     const { metadata, content } = this.parseFrontmatter(raw_text);
 
-    // 3. Schema Validation (The Guardian)
-    // In production: await Guardian.validate_law(JSON.stringify(metadata));
-    const validationResult = this.mockGuardianValidation(metadata);
-    if (!validationResult.valid) {
-      console.error(`[SCRIBE] Validation Failed for ${filePath}: ${validationResult.error}`);
-      return { status: "FAILED", error: validationResult.error };
+    // Basic Validation (Simulated Guardian)
+    if (metadata.max_sentence_years > 7) {
+        console.error(`[SCRIBE] REJECTED ${filePath}: Jubilee Violation`);
+        return { status: "FAILED" };
     }
 
-    // 4. Indexing (URN Mapping)
+    // Indexing
     if (metadata.id) {
       this.library_index[metadata.id] = filePath;
+
+      // Add to Search Index (Simple Tokenizer)
+      this.search_index.push({
+        id: metadata.id,
+        title: metadata.title || "Untitled",
+        path: filePath,
+        content: content.toLowerCase(), // Simple lowercase normalization
+        tags: [metadata.jurisdiction, metadata.type].filter(Boolean)
+      });
     }
 
-    // 5. Chunking & Embedding (Simulated)
-    const chunks = [
-      { id: `${metadata.id}_1`, text: content.substring(0, 100), metadata: metadata },
-      { id: `${metadata.id}_2`, text: content.substring(100), metadata: metadata }
-    ];
-
-    console.log(`[SCRIBE] Vectorizing ${chunks.length} chunks for ${metadata.title}`);
-
-    this.documents.push({ path: filePath, chunks, metadata });
     this.processed_count++;
-
-    return {
-      status: "SUCCESS",
-      chunks_processed: chunks.length,
-      doc_id: metadata.id
-    };
+    return { status: "SUCCESS" };
   }
 
-  /**
-   * Simulates the Rust Guardian validation logic.
-   */
-  mockGuardianValidation(metadata) {
-    // Rule 1: Jubilee Cap
-    // Ensure max_sentence_years is treated as a number
-    if (metadata.max_sentence_years !== undefined && Number(metadata.max_sentence_years) > 7) {
-        return { valid: false, error: "Jubilee Violation: Max sentence > 7 years." };
-    }
-    // Rule 2: Intent Requirement
-    if (metadata.jurisdiction === "Sovereign" && !metadata.intent_uri) {
-        return { valid: false, error: "Intent Violation: Sovereign law missing intent_uri." };
-    }
-    return { valid: true };
-  }
-
-  /**
-   * Extracts YAML Frontmatter manually (simple regex).
-   */
   parseFrontmatter(text) {
     const match = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
-    if (!match) {
-      // Fallback for non-frontmatter files
-      return { metadata: { title: "Unknown", id: "urn:unknown" }, content: text };
-    }
+    if (!match) return { metadata: { title: "Unknown" }, content: text };
 
     const yamlBlock = match[1];
     const content = match[2];
@@ -127,16 +82,7 @@ class Scribe {
       if (parts.length >= 2) {
         const key = parts[0].trim();
         let value = parts.slice(1).join(':').trim().replace(/"/g, '');
-
-        // Handle numbers/booleans
-        if (value === 'true') value = true;
-        if (value === 'false') value = false;
-
-        // Handle integers specifically for max_sentence_years
-        if (!isNaN(value) && value !== '') {
-            value = Number(value);
-        }
-
+        if (!isNaN(value) && value !== '') value = Number(value);
         metadata[key] = value;
       }
     });
@@ -144,16 +90,15 @@ class Scribe {
     return { metadata, content };
   }
 
-  generateIndex() {
-    // In production, write this to library-index.json
-    console.log(`[SCRIBE] Generated Citation Index with ${Object.keys(this.library_index).length} URNs.`);
+  saveIndex() {
+    const indexPath = path.join(__dirname, '../dist/library_index.json');
+    const data = JSON.stringify(this.search_index, null, 2);
+    fs.writeFileSync(indexPath, data);
+    console.log(`[SCRIBE] Index saved to ${indexPath} (${this.search_index.length} items)`);
   }
 
   getStats() {
-    return {
-      total_docs: this.processed_count,
-      total_chunks: this.documents.reduce((acc, doc) => acc + doc.chunks.length, 0)
-    };
+    return { total_docs: this.processed_count };
   }
 }
 

@@ -1,95 +1,45 @@
 // The Librarian: Retrieval Engine for the National Library
-// Purpose: Serves semantic truth to AI agents via vector search.
+// Purpose: Serves semantic truth via search.
+
+const fs = require('fs');
+const path = require('path');
 
 class Librarian {
-  constructor(vectorStore = null) {
-    this.vectorStore = vectorStore;
+  constructor() {
+    this.indexPath = path.join(__dirname, '../dist/library_index.json');
+    this.index = [];
+    this.loadIndex();
+  }
+
+  loadIndex() {
+    if (fs.existsSync(this.indexPath)) {
+      this.index = JSON.parse(fs.readFileSync(this.indexPath, 'utf8'));
+    } else {
+      console.warn("[LIBRARIAN] Index not found. Please run ingestion first.");
+    }
   }
 
   /**
-   * Searches the Library for relevant chunks using "Hybrid Search" (Keyword + Semantic).
-   * @param {string} query - The AI's question.
-   * @param {object} filter - (Optional) Filter by source or authority.
+   * Searches the Library.
+   * @param {string} query - The user's question or keyword.
    */
-  async search(query, filter = {}) {
-    console.log(`[LIBRARIAN] Retrieving truth for query: "${query}" (Filter: ${JSON.stringify(filter)})`);
+  async search(query) {
+    if (!query) return [];
 
-    // 1. Vectorize Query (Simulated)
-    // In production, embed the query using the same model as the Scribe.
+    const term = query.toLowerCase();
 
-    // 2. Keyword Search (BM25 - Simulated)
-    // Find exact keyword matches (boosts relevance).
-    const keywordResults = await this.keywordSearch(query, filter);
+    // 1. Exact Match (Title) - Boosted
+    const exactMatches = this.index.filter(doc =>
+      doc.title.toLowerCase().includes(term)
+    ).map(doc => ({ ...doc, score: 1.0 }));
 
-    // 3. Semantic Search (LanceDB - Simulated)
-    // Find conceptually similar chunks.
-    const semanticResults = await this.vectorSearch(query, filter);
+    // 2. Content Match - Standard
+    const contentMatches = this.index.filter(doc =>
+      doc.content.includes(term) && !exactMatches.find(e => e.id === doc.id)
+    ).map(doc => ({ ...doc, score: 0.5 }));
 
-    // 4. Hybrid Fusion (Merge & Rank)
-    // Combine results, prioritizing exact matches + high semantic similarity.
-    const combinedResults = [...keywordResults, ...semanticResults];
-
-    // Deduplicate by ID
-    const uniqueResults = Array.from(new Set(combinedResults.map(a => a.id)))
-      .map(id => combinedResults.find(a => a.id === id));
-
-    return uniqueResults.sort((a, b) => b.score - a.score).slice(0, 5); // Return top 5
-  }
-
-  // Helper: Simulated Keyword Search
-  async keywordSearch(query, filter) {
-    // In production, use Lucene/Elasticsearch/LanceDB Full Text Search
-    const mockDB = [
-      { id: "BIBLE_EXODUS_20", text: "Thou shalt not steal.", metadata: { source: "BIBLE_OT_ENGLISH.md", authority: "Sacred" } },
-      { id: "CONSTITUTION_ARTICLE_1", text: "The Sovereign Digital Nation is founded on the principles of Liberty.", metadata: { source: "CONSTITUTION.md", authority: "Foundational" } }
-    ];
-
-    return mockDB
-      .filter(doc => doc.text.toLowerCase().includes(query.toLowerCase()))
-      .map(doc => ({ ...doc, score: 1.0 })); // Max score for exact keyword match
-  }
-
-  // Helper: Simulated Vector Search
-  async vectorSearch(query, filter) {
-    // In production, await this.vectorStore.similaritySearch(query, 3, filter);
-    // Mock logic:
-    const results = [
-      {
-        id: "CONSTITUTION_ARTICLE_1",
-        text: "The Sovereign Digital Nation is founded on the principles of Liberty.",
-        score: 0.85,
-        metadata: { source: "CONSTITUTION.md", authority: "Foundational" }
-      },
-      {
-        id: "BIBLE_EXODUS_20",
-        text: "Thou shalt not steal.",
-        score: 0.88,
-        metadata: { source: "BIBLE_OT_ENGLISH.md", authority: "Sacred" }
-      },
-      {
-        id: "IRON_SCRIPTURE_VOL_1",
-        text: "Efficiency is the currency of the future.",
-        score: 0.82,
-        metadata: { source: "VOLUME_1_FOUNDATIONS.md", authority: "Philosophical" }
-      }
-    ];
-
-    // Filter results based on metadata if provided
-    return results.filter(result => {
-      if (filter.authority && result.metadata.authority !== filter.authority) return false;
-      return true;
-    });
-  }
-
-
-  /**
-   * Generates a cryptographically verifiable citation string for a given chunk.
-   * @param {object} chunk - The result object from search.
-   */
-  citation(chunk) {
-    // In production, generate a Merkle Proof or Digital Signature here.
-    const signature = `SIG_SHA256(${chunk.id})`;
-    return `[${chunk.metadata.source}] (${chunk.metadata.authority}) {${signature}}`;
+    const results = [...exactMatches, ...contentMatches];
+    return results.sort((a, b) => b.score - a.score).slice(0, 5);
   }
 }
 
