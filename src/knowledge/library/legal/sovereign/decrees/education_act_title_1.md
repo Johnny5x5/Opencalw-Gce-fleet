@@ -68,6 +68,7 @@ In addition to the specialized mandates above, the following are compulsory:
 3.  **Part-Time Conscription (30-Hour Cap):**
     *   **Role:** **Both parents** must serve a part-time role physically present at the school/farm.
     *   **Time Commitment:** Each parent shall dedicate a **Maximum of 30 hours per week** to this Co-Teaching duty.
+    *   **Service Cap:** The maximum duration of compulsory Co-Teaching service for a household (one or both parents) is **Seven (7) Years**.
     *   **Duty:** To work alongside their children and augment the State Teachers in both academic and physical education.
     *   **Goal:** To ensure the transmission of family values and work ethic alongside State curriculum.
 4.  **State Compensation (Family Estate):**

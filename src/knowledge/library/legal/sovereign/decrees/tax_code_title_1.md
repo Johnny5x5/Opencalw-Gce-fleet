@@ -32,7 +32,16 @@ moral_vectors:
 2.  **Flat Rate:** The Household shall contribute a flat tax of **ten percent (10%)** of their total annual income to the Sovereign Treasury.
 3.  **Family Estate Exemption:** Wages deposited directly into the **Family Estate Trust** (e.g., Co-Teaching Compensation) for long-term investment are **Tax-Deferred** until withdrawal.
 
-## Section 105: Corporate Taxation Strategy
+## Section 105: The Minimum Welfare Standard
+1.  **Reciprocal Duty:** In exchange for the Household Tax, the State guarantees a **Minimum Welfare Standard** for every family.
+2.  **Institutional Guarantees:** The Household Standard institutionalizes the following responsibilities of the State:
+    *   **Housing:** Guaranteed adequate shelter for every household.
+    *   **Sustenance:** Guaranteed nutritional baseline.
+    *   **Healthcare:** Comprehensive coverage for all family members.
+    *   **Education:** Full funding of the 14th Grade Mandate.
+3.  **Payout:** Welfare support is distributed as a "Family Dividend" to the Head of Household to ensure the dignity and stability of the family unit.
+
+## Section 106: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
