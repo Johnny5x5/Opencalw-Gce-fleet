@@ -3,11 +3,12 @@ use wasm_bindgen::prelude::*;
 
 #[derive(Serialize, Deserialize)]
 pub struct LawObject {
-    pub id: String,
-    pub title: String,
-    pub jurisdiction: String, // "Sovereign" or "Foreign"
-    pub moral_vectors: MoralVectors,
-    pub max_sentence_years: Option<u32>,
+    pub id: Option<String>, // Made optional for now to allow partial docs
+    pub title: Option<String>,
+    pub jurisdiction: Option<String>,
+    pub moral_vectors: Option<MoralVectors>,
+    #[serde(default)]
+    pub max_sentence_years: Option<u32>, // Will handle type conversion in Scribe
     pub intent_uri: Option<String>,
     pub license: Option<String>,
     pub provenance_type: Option<String>,
@@ -25,25 +26,20 @@ pub struct MoralVectors {
 
 #[wasm_bindgen]
 pub fn validate_law(json_data: &str) -> Result<String, String> {
-    let law: LawObject = serde_json::from_str(json_data).map_err(|e| e.to_string())?;
+    let law: LawObject = serde_json::from_str(json_data).map_err(|e| format!("JSON Parse Error: {}", e))?;
 
-    // Rule 1: Jubilee Cap (Max 7 Years)
-    if let Some(years) = law.max_sentence_years {
-        if years > 7 {
-            return Err("Jubilee Violation: Max sentence cannot exceed 7 years.".to_string());
+    // Only validate if it claims to be a Law
+    if let Some(jur) = &law.jurisdiction {
+        if jur == "Sovereign" {
+             if let Some(years) = law.max_sentence_years {
+                if years > 7 {
+                    return Err("Jubilee Violation: Max sentence cannot exceed 7 years.".to_string());
+                }
+            }
+            if law.intent_uri.is_none() {
+                return Err("Intent Violation: Sovereign laws must have an intent_uri.".to_string());
+            }
         }
-    }
-
-    // Rule 2: Moral Weight Range (0-1000)
-    if law.moral_vectors.harm > 1000 || law.moral_vectors.fairness > 1000 ||
-       law.moral_vectors.loyalty > 1000 || law.moral_vectors.authority > 1000 ||
-       law.moral_vectors.purity > 1000 || law.moral_vectors.liberty > 1000 {
-        return Err("Moral Weight Violation: Values must be between 0 and 1000.".to_string());
-    }
-
-    // Rule 3: Intent Requirement for Sovereign Laws
-    if law.jurisdiction == "Sovereign" && law.intent_uri.is_none() {
-        return Err("Intent Violation: Sovereign laws must have an intent_uri.".to_string());
     }
 
     Ok("Valid".to_string())
