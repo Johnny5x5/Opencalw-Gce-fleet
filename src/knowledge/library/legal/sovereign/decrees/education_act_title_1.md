@@ -119,5 +119,11 @@ In addition to the specialized mandates above, the following are compulsory:
 1.  **The Goal:** The intent of the Sovereign Education System is to compress the acquisition of knowledge. Students are expected to **master as much academic data as possible** before the age of 16.
 2.  **The Shift:** After Age 16, the focus shifts from data acquisition (The Universal Polymath Mandate) to application, service, and the final 14th Grade Capstone.
 
-## Section 113: Suspension of Penalties
+## Section 113: The National Fitness Mandate
+1.  **Pillar of Health:** Athleticism is not an elective; it is a **Core Pillar** of the Sovereign Curriculum.
+2.  **Graduation Standard:** To graduate from **any grade level**, a student must meet the **National Fitness Standard** for their age group.
+    *   **Failure:** Failure to meet the physical standard results in retention in the current grade level until the standard is met.
+3.  **Objective:** To ensure every citizen maintains a baseline of physical health that allows for immediate integration into the Citizen Militia if called upon.
+
+## Section 114: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.

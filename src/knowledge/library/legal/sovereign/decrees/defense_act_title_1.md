@@ -22,6 +22,12 @@ territorial_scope: "Universal"
 1.  **Universal Obligation:** Every citizen, regardless of gender or rank, is a member of the **Sovereign Militia**.
 2.  **Compulsory Service:** Active military training is mandatory for all citizens between the ages of **20 and 30** as part of their National Service Contract.
 3.  **Draft Restriction:** No citizen shall be drafted or deployed into combat below the **Legal Age of Adulthood (20)**.
+4.  **Training Duration:** The standard Basic Military Training period is **Two (2) Years**, fully paid by the Government.
+5.  **Scope of Service:** The Citizen Militia includes:
+    *   **Peace Officers:** Police and Military Police (MP).
+    *   **Logistics:** Supply chain and infrastructure support.
+    *   **Combat:** Defensive combat personnel.
+6.  **Defensive Doctrine:** The military of the Sovereign Digital Nation is strictly a **Defense Force**, not an expeditionary army.
 
 ## Section 102: The Self-Defense Curriculum
 1.  **Martial Proficiency:** Every citizen shall achieve proficiency in at least one form of unarmed combat and one form of armed defense.
