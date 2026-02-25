@@ -93,5 +93,15 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Character over Testing:** The focus remains on **Manners** and **Discipline**; a child must learn to sit and listen before they can learn to calculate and debate.
 3.  **Goal:** A child who cannot govern their own emotions and respect others is not ready for the rigors of the 14th Grade Mandate.
 
-## Section 110: Suspension of Penalties
+## Section 110: The Accelerated Core Mandate (Ages 9-12)
+1.  **The Deadline:** "Essential Education" must be completed and mastered by **Age 12** for all citizens, regardless of gender.
+2.  **Definition of Essential:** By Age 12, a student must demonstrate mastery of:
+    *   **Advanced Literacy:** Capability to read and analyze complex technical and philosophical texts.
+    *   **Advanced Numeracy:** Mastery of Algebra, Geometry, and foundational Statistics.
+    *   **Core Civics:** Full understanding of the Sovereign Legal Code and Constitution.
+    *   **Fundamental Science:** Biology, Chemistry, and Physics foundations.
+3.  **High-Velocity Phase:** Following the "Social Foundation" years (K-3), Grades 4-7 are designated as **High-Velocity Academic Years**, where the focus shifts to intense data acquisition and skill mastery.
+4.  **Objective:** To ensure that by Age 12, the child possesses the functional intellectual capacity of a standard adult, preparing them for the specialized Polymath Tracks (Age 13+).
+
+## Section 111: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
