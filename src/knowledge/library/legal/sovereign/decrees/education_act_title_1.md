@@ -65,8 +65,9 @@ In addition to the specialized mandates above, the following are compulsory:
 ## Section 107: The Parental Co-Teaching Mandate (Age 0-7)
 1.  **Requirement:** **Both parents** of children aged 0 to 7 are compulsory **Co-Teachers**.
 2.  **Shared Labor:** The parent-child bond shall be fostered through mandatory shared manual labor on the farm and in the classroom.
-3.  **Part-Time Conscription:**
+3.  **Part-Time Conscription (30-Hour Cap):**
     *   **Role:** **Both parents** must serve a part-time role physically present at the school/farm.
+    *   **Time Commitment:** Each parent shall dedicate a **Maximum of 30 hours per week** to this Co-Teaching duty.
     *   **Duty:** To work alongside their children and augment the State Teachers in both academic and physical education.
     *   **Goal:** To ensure the transmission of family values and work ethic alongside State curriculum.
 
