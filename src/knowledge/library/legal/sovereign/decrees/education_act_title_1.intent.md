@@ -13,6 +13,10 @@ A standard K-12 education is insufficient for the modern world.
 *   **Defense (Legal):** The courtroom is a battlefield. Every citizen must be a **Sovereign Attorney**, capable of defending their rights against any adversary.
 *   **Expression (Music):** A mind that can master the **Piano, Guitar, and Trumpet** is a mind that understands discipline, harmony, and mathematics in motion.
 *   **Knowledge (Polymath):** Mastery of History, Civics, and STEM ensures a well-rounded leader.
+*   **Stewardship (Animal Husbandry):** A Sovereign Citizen must command nature, not just code. Mastery of dogs, horses, and livestock connects us to the living earth.
 
-## 4. State Funding
+## 4. Field Work (The Mud)
+Education does not happen only in classrooms. It happens in the mud, on the farms, working with living beasts of burden. Every citizen must know how to work the land and lead the pack.
+
+## 5. State Funding
 This is not a private burden. The State invests in this education because the State is the beneficiary of the resulting Genius.

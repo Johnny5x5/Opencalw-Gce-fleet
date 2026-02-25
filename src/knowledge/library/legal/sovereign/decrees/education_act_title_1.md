@@ -50,5 +50,15 @@ In addition to the specialized mandates above, the following are compulsory:
 *   **Civics:** Civic Duty and the structure of the Sovereign Government.
 *   **Job Training:** Practical vocational skills for the digital economy.
 
-## Section 106: Suspension of Penalties
+## Section 106: The Animal Husbandry Mandate (Stewardship)
+1.  **Requirement:** Every citizen must complete a certified "Working Animal & Livestock" program.
+2.  **Scope:** Training shall cover the handling, training, and care of:
+    *   **Dogs:** Working K9s (Herding/Protection).
+    *   **Equines:** Horses (Transport/Pack).
+    *   **Livestock:** Goats and other pack animals.
+3.  **Field Exercises:**
+    *   **Mandatory Labor:** Students must serve a minimum term as a farm laborer on active agricultural land.
+    *   **Objective:** To learn the rhythms of nature and the discipline of physical stewardship.
+
+## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
