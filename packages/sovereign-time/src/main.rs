@@ -14,14 +14,16 @@ struct Cli {
 enum Commands {
     /// Show the current Sovereign Date and Cycles
     Status,
+    /// List upcoming Sovereign and Biblical Holidays
+    Events,
 }
 
 fn main() {
     let cli = Cli::parse();
+    let calendar = SovereignCalendar::new();
 
     match &cli.command {
         Commands::Status => {
-            let calendar = SovereignCalendar::new();
             let status = calendar.get_status();
 
             println!("{}", "\n=== THE SOVEREIGN CALENDAR (RUST) ===".bold().cyan());
@@ -39,6 +41,20 @@ fn main() {
             println!("Status:         {}", if status.jubilee.is_special { "GRAND JUBILEE (YOVEL)".yellow().bold() } else { "Standard Cycle".normal() });
             println!("Years to Reset:   {}", status.jubilee.years_remaining);
             println!("{}", "=====================================\n".cyan());
+        }
+        Commands::Events => {
+            let holidays = calendar.get_holidays();
+            println!("{}", "\n=== UPCOMING SOVEREIGN EVENTS ===".bold().cyan());
+            if holidays.is_empty() {
+                println!("No major events tracked for this year.");
+            } else {
+                for event in holidays {
+                    println!("{} | {} | {}", event.date.yellow(), event.name.bold(), event.type_.blue());
+                    println!("   {}", event.description.white().dimmed());
+                    println!("");
+                }
+            }
+            println!("{}", "=================================".cyan());
         }
     }
 }

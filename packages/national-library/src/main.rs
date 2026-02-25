@@ -1,6 +1,7 @@
 use clap::{Parser, Subcommand};
 use national_library::{Scribe, Librarian};
 use colored::*;
+use sovereign_time::SovereignCalendar;
 
 #[derive(Parser)]
 #[command(name = "sovereign-library")]
@@ -32,6 +33,15 @@ enum Commands {
 fn main() -> anyhow::Result<()> {
     let cli = Cli::parse();
 
+    // Time Integration
+    let calendar = SovereignCalendar::new();
+    let status = calendar.get_status();
+    let date_str = format!("Gregorian: {} | Sovereign Year: {}", status.gregorian_date, status.sovereign_year);
+
+    println!("{}", "=== THE SOVEREIGN LIBRARY ===".bold().cyan());
+    println!("{}", date_str.white().dimmed());
+    println!("");
+
     match &cli.command {
         Commands::Ingest { path } => {
             println!("{}", "The Library is digesting knowledge...".green().bold());
@@ -43,7 +53,7 @@ fn main() -> anyhow::Result<()> {
         }
         Commands::Ask { query } => {
             let query_str = query.join(" ");
-            println!("{}", format!("\nQuerying the Library for: '{}'...\n", query_str).cyan());
+            println!("{}", format!("Querying the Library for: '{}'...", query_str).cyan());
 
             let librarian = Librarian::new(&cli.db)?;
             let results = librarian.search(&query_str)?;
