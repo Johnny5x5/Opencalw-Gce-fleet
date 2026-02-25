@@ -18,5 +18,10 @@ A standard K-12 education is insufficient for the modern world.
 ## 4. Field Work (The Mud)
 Education does not happen only in classrooms. It happens in the mud, on the farms, working with living beasts of burden. Every citizen must know how to work the land and lead the pack.
 
-## 5. State Funding
+## 5. The Parent as Mentor
+The State provides teachers, but the Parent provides the **Bond**. For the first seven years of a child's life, the parent is conscripted to work alongside them.
+*   **Shared Labor:** The bond is forged in sweat, not just words.
+*   **Co-Teaching:** The parent augments the State Teacher, ensuring the values of the family are transmitted alongside the knowledge of the State.
+
+## 6. State Funding
 This is not a private burden. The State invests in this education because the State is the beneficiary of the resulting Genius.
