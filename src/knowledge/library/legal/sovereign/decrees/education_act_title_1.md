@@ -62,5 +62,13 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Sheep & Wool:** Training must include the shearing, processing, and utilization of wool.
     *   **Objective:** To learn the rhythms of nature and the discipline of physical stewardship.
 
-## Section 107: Suspension of Penalties
+## Section 107: The Parental Co-Teaching Mandate (Age 0-7)
+1.  **Requirement:** Parents of children aged 0 to 7 are compulsory **Co-Teachers**.
+2.  **Shared Labor:** The parent-child bond shall be fostered through mandatory shared manual labor on the farm and in the classroom.
+3.  **Part-Time Conscription:**
+    *   **Role:** Parents must serve a part-time role physically present at the school/farm.
+    *   **Duty:** To work alongside their children and augment the State Teachers in both academic and physical education.
+    *   **Goal:** To ensure the transmission of family values and work ethic alongside State curriculum.
+
+## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
