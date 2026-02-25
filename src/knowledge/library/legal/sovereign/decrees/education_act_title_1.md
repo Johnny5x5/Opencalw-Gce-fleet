@@ -84,5 +84,13 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Etiquette:** Strict training in manners, greetings, and social hierarchy.
 3.  **Objective:** To produce a citizen who is emotionally intelligent, disciplined, and socially cohesive before formal academic rigor begins.
 
-## Section 109: Suspension of Penalties
+## Section 109: The Primary Mandate (Grades 1-3)
+1.  **Extension:** The **Japanese Model** of character-first education shall continue through the 3rd Grade (approx. Age 8-9).
+2.  **Focus:**
+    *   **Doutoku (Moral Education):** Explicit instruction in empathy, kindness, and understanding the feelings of others.
+    *   **Character over Testing:** Formal standardized testing is prohibited during these years. The focus is on **Manners** and **Discipline**.
+    *   **Social Foundation:** Academic rigor is secondary to establishing the social foundation of the group.
+3.  **Goal:** A child who cannot govern their own emotions and respect others is not ready for the rigors of the 14th Grade Mandate.
+
+## Section 110: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
