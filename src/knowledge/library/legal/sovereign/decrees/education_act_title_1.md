@@ -70,6 +70,9 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Time Commitment:** Each parent shall dedicate a **Maximum of 30 hours per week** to this Co-Teaching duty.
     *   **Duty:** To work alongside their children and augment the State Teachers in both academic and physical education.
     *   **Goal:** To ensure the transmission of family values and work ethic alongside State curriculum.
+4.  **State Compensation:**
+    *   **Payment:** Parents shall be compensated by the Government for their Co-Teaching service.
+    *   **Rate:** Compensation shall be commensurate with standard teaching wages.
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
