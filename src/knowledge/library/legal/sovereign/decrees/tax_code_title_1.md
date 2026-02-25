@@ -31,15 +31,18 @@ moral_vectors:
 1.  **Assessment Unit:** Taxes shall be levied on the **Household** (Family Unit), not the individual.
 2.  **Flat Rate:** The Household shall contribute a flat tax of **ten percent (10%)** of their total annual income to the Sovereign Treasury.
 3.  **Family Estate Exemption:** Wages deposited directly into the **Family Estate Trust** (e.g., Co-Teaching Compensation) for long-term investment are **Tax-Deferred** until withdrawal.
+4.  **Welfare Contribution:** A partial percentage of the Co-Teaching wages shall be diverted to the **General Welfare Pool** to fund the Minimum Welfare Standard.
 
-## Section 105: The Minimum Welfare Standard
-1.  **Reciprocal Duty:** In exchange for the Household Tax, the State guarantees a **Minimum Welfare Standard** for every family.
+## Section 105: The Minimum Welfare Standard (Contribution-Linked)
+1.  **Hybrid System:** The Sovereign Welfare System is not a handout; it is a **Reciprocal Benefit** linked to service.
 2.  **Institutional Guarantees:** The Household Standard institutionalizes the following responsibilities of the State:
     *   **Housing:** Guaranteed adequate shelter for every household.
     *   **Sustenance:** Guaranteed nutritional baseline.
     *   **Healthcare:** Comprehensive coverage for all family members.
     *   **Education:** Full funding of the 14th Grade Mandate.
-3.  **Payout:** Welfare support is distributed as a "Family Dividend" to the Head of Household to ensure the dignity and stability of the family unit.
+3.  **Vesting & Benefit:**
+    *   **Direct Benefit:** Those who contribute labor (Co-Teaching) receive a direct, compound benefit to their **Family Estate** after a mandatory period of long-term investment.
+    *   **The Dividend:** Welfare support is distributed as a "Family Dividend" to the Head of Household, ensuring the dignity and stability of the family unit.
 
 ## Section 106: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
