@@ -52,6 +52,14 @@ territorial_scope: "Universal"
     *   **Growth:** The State shall provide direct resource allocation to assist in the growth of the family (additional children, larger housing).
     *   **Corporate Duty:** Corporations, as part of their Covenant, must provide flexible support and resources to demographic groups entering this phase of life.
 
-## Section 105: Suspension of Consequences
+## Section 105: Proportional Benefit (Early Exit Protocol)
+1.  **Full Service Standard:** The Full Reciprocal Contract (100% Benefits) is reserved for those who complete the full term of service (Age -5 to 30).
+2.  **Early Exit:** A citizen may choose to exit the Sovereign Contract early or fail to complete all training modules.
+3.  **Pro-Rated Benefits:**
+    *   **Principle:** "To the measure you give, you shall receive."
+    *   **Calculation:** Post-Service benefits (Business Grants, Housing Support) shall be pro-rated based on the percentage of the contract fulfilled.
+    *   **Minimum Threshold:** No benefits are awarded for service terms shorter than 10 years (post-majority).
+
+## Section 106: Suspension of Consequences
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for violation of this Act are currently **Suspended**.
 *   **Note:** This suspension does not negate the Contract, but pauses the enforcement of penalties.
