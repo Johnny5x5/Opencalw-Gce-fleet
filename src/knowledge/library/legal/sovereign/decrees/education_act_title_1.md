@@ -88,8 +88,9 @@ In addition to the specialized mandates above, the following are compulsory:
 1.  **Extension:** The **Japanese Model** of character-first education shall continue through the 3rd Grade (approx. Age 8-9).
 2.  **Focus:**
     *   **Doutoku (Moral Education):** Explicit instruction in empathy, kindness, and understanding the feelings of others.
-    *   **Character over Testing:** Formal standardized testing is prohibited during these years. The focus is on **Manners** and **Discipline**.
-    *   **Social Foundation:** Academic rigor is secondary to establishing the social foundation of the group.
+    *   **Foundational Academics:** While standardized testing is prohibited, rigorous instruction in **Mathematics, Language, and Speech** is mandatory.
+    *   **Integration:** Academic skills are taught as tools for moral expression (e.g., Math is Truth, Speech is Connection).
+    *   **Character over Testing:** The focus remains on **Manners** and **Discipline**; a child must learn to sit and listen before they can learn to calculate and debate.
 3.  **Goal:** A child who cannot govern their own emotions and respect others is not ready for the rigors of the 14th Grade Mandate.
 
 ## Section 110: Suspension of Penalties
