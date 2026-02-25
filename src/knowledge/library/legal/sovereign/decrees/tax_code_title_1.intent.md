@@ -9,5 +9,10 @@ We aim to create a **High-Growth, High-Morality Economy**:
 *   **Enforce Morality:** We use the low tax as a "carrot" to enforce the "stick" of the Corporate Covenant (No Usury).
 *   **Build Dynasties:** No inheritance tax ensures families can build multi-generational strength.
 
-## 3. The Limitation
+## 3. The Household Standard
+The fundamental economic unit of the Nation is not the individual, but the **Household**.
+*   **Unified Strength:** Taxes are levied on the household to encourage family unity and shared economic goals.
+*   **The Family Estate:** Wages from state service (like Co-Teaching) are not spending money; they are seed capital for the family's long-term sovereignty.
+
+## 4. The Limitation
 The reduced corporate rates are a **Privilege, not a Right.** They are contingent on strict adherence to the Covenant. If a corporation acts with "Evil" (Moral Weight > 800), it loses its charter, regardless of how much tax it pays.

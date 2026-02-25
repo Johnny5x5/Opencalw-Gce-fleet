@@ -27,9 +27,10 @@ moral_vectors:
 ## Section 103: Prohibition on Inheritance Tax
 1.  **Dynasty Protocol:** No tax shall be levied on the transfer of wealth from parent to child. The fruit of a family's labor belongs to the family.
 
-## Section 104: The Sovereign Tithe (Personal Tax)
-1.  **Flat Tax:** Every citizen shall contribute a flat tax of **ten percent (10%)** of their annual income to the Sovereign Treasury.
-2.  **Scope:** This applies to all income sources.
+## Section 104: The Household Tax Standard
+1.  **Assessment Unit:** Taxes shall be levied on the **Household** (Family Unit), not the individual.
+2.  **Flat Rate:** The Household shall contribute a flat tax of **ten percent (10%)** of their total annual income to the Sovereign Treasury.
+3.  **Family Estate Exemption:** Wages deposited directly into the **Family Estate Trust** (e.g., Co-Teaching Compensation) for long-term investment are **Tax-Deferred** until withdrawal.
 
 ## Section 105: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
