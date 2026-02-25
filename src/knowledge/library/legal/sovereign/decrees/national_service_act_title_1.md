@@ -43,12 +43,14 @@ territorial_scope: "Universal"
     *   **Qualification:** Completion of this service is a prerequisite for the issuance of a **Parental License**.
 4.  **Waiver:** Exceptions are granted only by the **High Council** for specific strategic needs.
 
-## Section 104: The Post-Service Reward (Age 35+)
-1.  **Completion:** Upon reaching Age 35 and having fulfilled all Educational, Military, and Service obligations, the Citizen is granted **Full Sovereign Status**.
-2.  **Family Support:** The State shall "pour on benefits" to the family unit, including:
-    *   Housing Grants.
-    *   Childcare Support.
-    *   Advanced Resource Allocation.
+## Section 104: The Post-Service Reward (The Second Half of Life)
+1.  **The Reciprocal Contract:** Because the Citizen has dedicated the first half of their life (Age -5 to 30) to the needs of the Nation, the Nation shall dedicate itself to the needs of the Citizen for the second half of their life.
+2.  **Business Incubation:**
+    *   **Right to Enterprise:** The State and Sovereign Corporations are mandated to assist the Citizen in starting and growing a business.
+    *   **Support Mechanisms:** Zero-interest capital, technical mentorship, and guaranteed vendor contracts from the Corporate Sector.
+3.  **Family Expansion:**
+    *   **Growth:** The State shall provide direct resource allocation to assist in the growth of the family (additional children, larger housing).
+    *   **Corporate Duty:** Corporations, as part of their Covenant, must provide flexible support and resources to demographic groups entering this phase of life.
 
 ## Section 105: Suspension of Consequences
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for violation of this Act are currently **Suspended**.
