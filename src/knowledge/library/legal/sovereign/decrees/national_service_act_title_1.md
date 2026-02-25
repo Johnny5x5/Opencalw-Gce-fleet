@@ -33,7 +33,11 @@ territorial_scope: "Universal"
 2.  **Reasoning:**
     *   **Educational Load:** The Compulsory Education (14th Grade, Law, Music, Military) requires total focus.
     *   **Maturity:** Parenthood requires a completed Sovereign Citizen (Polymath).
-3.  **Waiver:** Exceptions are granted only by the **High Council** for specific strategic needs.
+3.  **Pre-Parental Service:**
+    *   **Requirement:** Prospective parents must serve a portion of their compulsory **Co-Teaching / Teacher's Aide** sentence **before** they are permitted to bear children.
+    *   **Goal:** To train the prospective parent in the art of pedagogy and child development.
+    *   **Qualification:** Completion of this service is a prerequisite for the issuance of a **Parental License**.
+4.  **Waiver:** Exceptions are granted only by the **High Council** for specific strategic needs.
 
 ## Section 104: The Post-Service Reward (Age 35+)
 1.  **Completion:** Upon reaching Age 35 and having fulfilled all Educational, Military, and Service obligations, the Citizen is granted **Full Sovereign Status**.
