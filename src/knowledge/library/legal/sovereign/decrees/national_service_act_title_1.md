@@ -18,6 +18,10 @@ territorial_scope: "Universal"
 
 # Title 1: The National Service & Development Act
 
+## Section 100: The Age of Majority
+1.  **Legal Adulthood:** The Legal Age of Adulthood is **20 years old** for all citizens of the Sovereign Digital Nation.
+2.  **Autonomy:** While the Sovereign Contract begins at Age -5, full legal autonomy and eligibility for military draft commence strictly at Age 20.
+
 ## Section 101: The Sovereign Contract (The Lifecycle)
 1.  **Scope:** Every citizen is bound by a Government Contract from **Age -5 (Pre-Conception)** to **Age 30**.
 2.  **Definition:** During this period, the Citizen is a ward and student of the State, dedicated to the optimization of their Body, Mind, and Soul.

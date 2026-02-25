@@ -20,7 +20,8 @@ territorial_scope: "Universal"
 
 ## Section 101: The Citizen Militia Mandate
 1.  **Universal Obligation:** Every citizen, regardless of gender or rank, is a member of the **Sovereign Militia**.
-2.  **Compulsory Service:** Active military training is mandatory for all citizens between the ages of 18 and 30 as part of their National Service Contract.
+2.  **Compulsory Service:** Active military training is mandatory for all citizens between the ages of **20 and 30** as part of their National Service Contract.
+3.  **Draft Restriction:** No citizen shall be drafted or deployed into combat below the **Legal Age of Adulthood (20)**.
 
 ## Section 102: The Self-Defense Curriculum
 1.  **Martial Proficiency:** Every citizen shall achieve proficiency in at least one form of unarmed combat and one form of armed defense.

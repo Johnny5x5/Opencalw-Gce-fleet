@@ -115,5 +115,9 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Duration:** A minimum of **Three (3) Semesters** of hands-on woodworking and construction training.
     *   **Philosophy:** To understand the structure of the world, one must know how to build it.
 
-## Section 112: Suspension of Penalties
+## Section 112: The Academic Mastery Deadline (Age 16)
+1.  **The Goal:** The intent of the Sovereign Education System is to compress the acquisition of knowledge. Students are expected to **master as much academic data as possible** before the age of 16.
+2.  **The Shift:** After Age 16, the focus shifts from data acquisition (The Universal Polymath Mandate) to application, service, and the final 14th Grade Capstone.
+
+## Section 113: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
