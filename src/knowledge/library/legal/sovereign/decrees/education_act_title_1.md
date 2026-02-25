@@ -22,10 +22,16 @@ territorial_scope: "Universal"
 1.  **Mandate:** Every citizen shall complete a mandatory education curriculum extending from Kindergarten through the 14th Grade (Associate's Level equivalent).
 2.  **Goal:** To achieve a 100% literacy and competency rate in STEM, History, and Civics.
 
-## Section 102: The Language Mandate (Polyglot Track)
-1.  **ASL:** Fluency in **American Sign Language** is compulsory for all citizens.
-2.  **Latin:** Proficiency in **Latin** is compulsory to ensure a deep understanding of Law, Science, and Theology.
-3.  **Objective:** Every citizen shall be "halfway to a Polyglot."
+## Section 102: The Language Mandate (The Quad-Lingual Standard)
+1.  **The Goal:** By Age 30, every citizen shall possess fluency in at least **Four (4) Languages**.
+    *   **1. Native Tongue:** The language of their birth/home.
+    *   **2. ASL:** Fluency in **American Sign Language** is compulsory.
+    *   **3. Latin:** Proficiency in **Latin** is compulsory for Law and Science.
+    *   **4. Modern Foreign Language:** Starting at a young age (Kindergarten), every student must learn a second spoken language (e.g., Spanish, Mandarin) to **UN-Level Proficiency** by Age 20.
+2.  **Etymology:**
+    *   **Requirement:** Mandatory education in **Etymology** (The Origin of Words).
+    *   **Philosophy:** To speak truly, one must know the history of the words they use.
+3.  **Objective:** To produce a citizenry of master communicators.
 
 ## Section 103: The Legal Mandate (Sovereign Attorney)
 1.  **Requirement:** Every citizen shall complete a State-funded Law Degree or equivalent Attorney Training program.
