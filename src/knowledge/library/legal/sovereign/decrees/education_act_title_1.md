@@ -76,5 +76,13 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Investment:** These funds are mandated for **Long-Term Growth** and investment, securing the family's future wealth.
     *   **Rate:** Compensation shall be commensurate with standard teaching wages.
 
-## Section 108: Suspension of Penalties
+## Section 108: The Kindergarten Mandate (The Social Foundation)
+1.  **Philosophy:** At age 5, the focus is not on academic data but on **Social Shaping**.
+2.  **The Japanese Model:** The curriculum shall adhere to the Japanese tradition of early childhood education:
+    *   **O-Soji (Cleaning):** Students are responsible for cleaning their own classrooms to instill humility and respect for their environment.
+    *   **Group Harmony (Wa):** Emphasis is placed on collaboration, conflict resolution, and the prioritization of the group over the individual.
+    *   **Etiquette:** Strict training in manners, greetings, and social hierarchy.
+3.  **Objective:** To produce a citizen who is emotionally intelligent, disciplined, and socially cohesive before formal academic rigor begins.
+
+## Section 109: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
