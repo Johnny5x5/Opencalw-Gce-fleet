@@ -55,7 +55,8 @@ In addition to the specialized mandates above, the following are compulsory:
 2.  **Scope:** Training shall cover the handling, training, and care of:
     *   **Dogs:** Working K9s (Herding/Protection).
     *   **Equines:** Horses (Transport/Pack).
-    *   **Livestock:** Goats, Sheep (Wool/Production), and other pack animals.
+    *   **Goats:** Harness training and use as pack animals (Carrying Weight).
+    *   **Sheep:** Wool production, shearing, and processing.
 3.  **Field Exercises:**
     *   **Mandatory Labor:** Students must serve a minimum term as a farm laborer on active agricultural land.
     *   **Sheep & Wool:** Training must include the shearing, processing, and utilization of wool.
