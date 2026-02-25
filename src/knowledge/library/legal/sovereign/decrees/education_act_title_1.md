@@ -100,7 +100,20 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Core Civics:** Full understanding of the Sovereign Legal Code and Constitution.
     *   **Fundamental Science:** Biology, Chemistry, and Physics foundations.
 4.  **Integration:** While academic rigor ramps up at Grade 2, the "Moral Lens" (Doutoku) remains the method of instruction.
-4.  **Objective:** To ensure that by Age 12, the child possesses the functional intellectual capacity of a standard adult, preparing them for the specialized Polymath Tracks (Age 13+).
+5.  **Objective:** To ensure that by Age 12, the child possesses the functional intellectual capacity of a standard adult, preparing them for the specialized Polymath Tracks (Age 13+).
 
-## Section 111: Suspension of Penalties
+## Section 111: The Universal Polymath Mandate (Ages 13-18)
+1.  **No Specialization:** There are no "tracks" that exclude core disciplines. Every student must continue rigorous training in **STEM**, **Legal Studies**, and **The Arts**.
+2.  **Continuous Mathematics:**
+    *   **Requirement:** Every student must undergo **Yearly Mathematics Training** without exception.
+    *   **Goal:** To maintain and expand numerical fluency throughout adolescence.
+3.  **The Debate Mandate:**
+    *   **Requirement:** Compulsory education in **Rhetoric, Logic, and Debate**.
+    *   **Objective:** To produce citizens capable of defending their ideas and resolving conflict through discourse.
+4.  **The Carpentry Minor:**
+    *   **Requirement:** Every citizen must achieve a **Minor in Carpentry**.
+    *   **Duration:** A minimum of **Three (3) Semesters** of hands-on woodworking and construction training.
+    *   **Philosophy:** To understand the structure of the world, one must know how to build it.
+
+## Section 112: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
