@@ -84,23 +84,22 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Etiquette:** Strict training in manners, greetings, and social hierarchy.
 3.  **Objective:** To produce a citizen who is emotionally intelligent, disciplined, and socially cohesive before formal academic rigor begins.
 
-## Section 109: The Primary Mandate (Grades 1-3)
-1.  **Extension:** The **Japanese Model** of character-first education shall continue through the 3rd Grade (approx. Age 8-9).
+## Section 109: The Primary Mandate (Kindergarten & Grade 1)
+1.  **Scope:** The pure **Japanese Model** of character-first education (O-Soji, Wa, Etiquette) is the exclusive focus for **Kindergarten and Grade 1**.
 2.  **Focus:**
     *   **Doutoku (Moral Education):** Explicit instruction in empathy, kindness, and understanding the feelings of others.
-    *   **Foundational Academics:** While standardized testing is prohibited, rigorous instruction in **Mathematics, Language, and Speech** is mandatory.
-    *   **Integration:** Academic skills are taught as tools for moral expression (e.g., Math is Truth, Speech is Connection).
-    *   **Character over Testing:** The focus remains on **Manners** and **Discipline**; a child must learn to sit and listen before they can learn to calculate and debate.
-3.  **Goal:** A child who cannot govern their own emotions and respect others is not ready for the rigors of the 14th Grade Mandate.
+    *   **Character over Testing:** Formal standardized testing is prohibited. The focus is on **Manners** and **Discipline**.
+3.  **Goal:** To establish the "Social Foundation" before the high-velocity academics begin.
 
-## Section 110: The Accelerated Core Mandate (Ages 9-12)
-1.  **The Deadline:** "Essential Education" must be completed and mastered by **Age 12** for all citizens, regardless of gender.
-2.  **Definition of Essential:** By Age 12, a student must demonstrate mastery of:
+## Section 110: The Accelerated Core Mandate (Grade 2 - Age 12)
+1.  **Start Date:** The **High-Velocity Academic Phase** begins promptly at **Grade 2** (approx. Age 7).
+2.  **The Deadline:** "Essential Education" must be completed and mastered by **Age 12** for all citizens, regardless of gender.
+3.  **Definition of Essential:** By Age 12, a student must demonstrate mastery of:
     *   **Advanced Literacy:** Capability to read and analyze complex technical and philosophical texts.
     *   **Advanced Numeracy:** Mastery of Algebra, Geometry, and foundational Statistics.
     *   **Core Civics:** Full understanding of the Sovereign Legal Code and Constitution.
     *   **Fundamental Science:** Biology, Chemistry, and Physics foundations.
-3.  **High-Velocity Phase:** Following the "Social Foundation" years (K-3), Grades 4-7 are designated as **High-Velocity Academic Years**, where the focus shifts to intense data acquisition and skill mastery.
+4.  **Integration:** While academic rigor ramps up at Grade 2, the "Moral Lens" (Doutoku) remains the method of instruction.
 4.  **Objective:** To ensure that by Age 12, the child possesses the functional intellectual capacity of a standard adult, preparing them for the specialized Polymath Tracks (Age 13+).
 
 ## Section 111: Suspension of Penalties
