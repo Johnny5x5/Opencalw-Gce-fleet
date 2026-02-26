@@ -3,9 +3,9 @@
 ## 1. The Goal: A Nation of Polymaths
 The survival of the Sovereign Digital Nation depends on the intellectual superiority of its citizenry. We do not produce workers; we produce **Architects, Defenders, and Creators**.
 
-## 2. The Standard (14th Grade +)
+## 2. The Standard (16th Grade +)
 A standard K-12 education is insufficient for the modern world.
-*   **The Baseline:** Every citizen must complete K-12 plus a minimum of 2 years of higher education (14th Grade).
+*   **The Baseline:** Every citizen must complete K-12 plus a minimum of 4 years of higher education (16th Grade / Bachelor's Level).
 *   **The Scope:** Education is not just STEM; it is the mastery of Language, Law, and Art.
 
 ## 3. The Pillars of the Curriculum

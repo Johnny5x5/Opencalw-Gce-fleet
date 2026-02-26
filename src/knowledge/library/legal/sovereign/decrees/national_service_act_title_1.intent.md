@@ -10,7 +10,7 @@ Citizenship is not a passive right; it is an **active duty**. From five years pr
 *   **The Return:** The Citizen dedicates their prime developmental years (0-30) to becoming a **Polymath** and a **Defender of the State**.
 
 ## 3. The logic of Delayed Parenthood
-*   **Complexity:** Children complicate the "Software as Workforce" model and the individual's ability to complete the rigorous **14th Grade + Law + Music + Military** curriculum.
+*   **Complexity:** Children complicate the "Software as Workforce" model and the individual's ability to complete the rigorous **16th Grade + Law + Music + Military** curriculum.
 *   **Maturity:** No one should raise a child until they have mastered themselves.
 *   **Optimization:** By delaying childbirth to 27-30+, we ensure parents are fully trained, financially stable, and genetically optimized.
 

@@ -159,9 +159,18 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Employment Prerequisite:** No employment shall be authorized until this Legal Training is completed, safeguarding the foreigner from legal vulnerability.
     *   **National Language:** Mandatory fluency instruction in the Native Tongue of the Nation is the first priority.
     *   **The 8th Grade Floor:** No foreigner may reside or work without demonstrating an education level equivalent to the **Sovereign 8th Grade** standard.
-5.  **Post-Integration:**
+5.  **Citizenship Conversion:**
+    *   **Differentiation:** "Foreigner Education" is distinct from the full "Citizenship Education."
+    *   **Retroactive Mandate:** Any foreigner who transitions to **Full Citizenship** becomes retroactively bound by the complete **Sovereign Education Mandate** (K-16, Fitness, Polymath), requiring them to fulfill all citizen-level standards, adjusted for age and tested competency.
+6.  **Post-Integration:**
     *   **Blue Collar Training:** Upon completion of the integration phase, foreigners are offered specialized Job Training and Blue Collar certification.
     *   **Business Education:** Access is granted to business education tracks up to the PhD level for those who qualify.
 
-## Section 116: Suspension of Penalties
+## Section 116: The Foreigner Healthcare & Fitness Mandate
+1.  **6-Year Coverage:** Working adult foreigners are granted **Six (6) Years of Universal Healthcare**, concurrent with their mandatory education term.
+2.  **Utilization Mandate:** Foreigners are **compelled** to use this coverage to optimize their physical health.
+3.  **Fitness Goal:** They must strive to reach a physical fitness level approximating the **Citizen Militia Standard**.
+4.  **Objective:** To ensure that every resident, citizen or foreigner, contributes to the overall health and readiness of the Nation.
+
+## Section 117: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
