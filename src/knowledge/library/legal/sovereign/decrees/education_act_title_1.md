@@ -19,9 +19,9 @@ territorial_scope: "Universal"
 # Title 1: The Sovereign Education Act
 
 ## Section 101: The Compulsory Standard
-1.  **Mandate:** Every citizen shall complete a mandatory education curriculum extending from Kindergarten through the 14th Grade (Associate's Level equivalent).
+1.  **Mandate:** Every citizen shall complete a mandatory education curriculum extending from Kindergarten through the **16th Grade** (Bachelor's Level equivalent).
 2.  **The Literacy & Numeracy Lock:**
-    *   **Minimum Floor:** Irrespective of other achievements, **no citizen shall graduate** or receive their 14th Grade credentials without demonstrating reading, writing, and mathematical proficiency at a minimum of a **10th Grade Level**.
+    *   **Minimum Floor:** Irrespective of other achievements, **no citizen shall graduate** or receive their 16th Grade credentials without demonstrating reading, writing, and mathematical proficiency at a minimum of a **12th Grade Level**.
     *   **Remediation:** Failure to meet this floor triggers immediate, compulsory remedial training until the standard is met.
 3.  **Goal:** To achieve a 100% literacy and competency rate in STEM, History, and Civics.
 
@@ -58,6 +58,8 @@ In addition to the specialized mandates above, the following are compulsory:
 *   **History:** Complete History of the Nation and History of the World.
 *   **Civics:** Civic Duty and the structure of the Sovereign Government.
 *   **Job Training:** Practical vocational skills for the digital economy.
+*   **Year-Round Schooling:** Education is continuous; there are **No Summer Breaks**.
+*   **Integrated Work:** Work experience is integrated into the curriculum throughout the year.
 
 ## Section 106: The Animal Husbandry Mandate (Stewardship)
 1.  **Requirement:** Every citizen must complete a certified "Working Animal & Livestock" program.
@@ -100,10 +102,10 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Character over Testing:** Formal standardized testing is prohibited. The focus is on **Manners** and **Discipline**.
 3.  **Goal:** To establish the "Social Foundation" before the high-velocity academics begin.
 
-## Section 110: The Accelerated Core Mandate (Grade 2 - Age 12)
+## Section 110: The Accelerated Core Mandate (Grade 2 - Age 10)
 1.  **Start Date:** The **High-Velocity Academic Phase** begins promptly at **Grade 2** (approx. Age 7).
-2.  **The Deadline:** "Essential Education" must be completed and mastered by **Age 12** for all citizens, regardless of gender.
-3.  **Definition of Essential:** By Age 12, a student must demonstrate mastery of:
+2.  **The Compressed Deadline:** "Essential Education" must be completed and mastered by **Age 10** for all citizens, regardless of gender.
+3.  **Definition of Essential:** By Age 10, a student must demonstrate mastery of:
     *   **Advanced Literacy:** Capability to read and analyze complex technical and philosophical texts.
     *   **Advanced Numeracy:** Mastery of Algebra, Geometry, and foundational Statistics.
     *   **Core Civics:** Full understanding of the Sovereign Legal Code and Constitution.
@@ -112,7 +114,7 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Geography:** Mastery of Global Physical/Political maps and the "Digital Geography" of the network.
     *   **Agricultural Science:** Understanding the biology and chemistry of food production (Botany/Soil Science).
 4.  **Integration:** While academic rigor ramps up at Grade 2, the "Moral Lens" (Doutoku) remains the method of instruction.
-5.  **Objective:** To ensure that by Age 12, the child possesses the functional intellectual capacity of a standard adult, preparing them for the specialized Polymath Tracks (Age 13+).
+5.  **Objective (Socioeconomic Resilience):** To ensure that by Age 10, the child possesses the functional intellectual capacity of a standard adult, ensuring self-sufficiency in the event of familial loss or socioeconomic disruption.
 
 ## Section 111: The Universal Polymath Mandate (Ages 13-18)
 1.  **No Specialization:** There are no "tracks" that exclude core disciplines. Every student must continue rigorous training in **STEM**, **Legal Studies**, and **The Arts**.
