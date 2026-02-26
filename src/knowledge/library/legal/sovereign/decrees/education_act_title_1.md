@@ -151,10 +151,15 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Placement:** Foreigners are placed based on competency exams. Proven skills are removed from their curriculum to prevent redundancy.
     *   **The 6-Year Rule:** Even if a student tests above the 8th Grade Floor, they must fulfill the **6-Year Education Minimum**.
     *   **Upward Mobility:** These mandatory years shall be spent reaching higher levels of the K-16 mandate, acquiring specialized Blue Collar/White Collar training, or advancing into Higher Education.
-3.  **Curriculum:**
+3.  **The Remote Start Protocol:**
+    *   **Origin:** The integration education shall begin **Online** in the foreigner's country of origin prior to physical entry.
+    *   **Objective:** To ensure integration begins before the border is crossed.
+4.  **Curriculum:**
+    *   **Mandatory Legal Training:** Every foreigner must complete the **Sovereign Legal Education** module to understand their rights and duties.
+    *   **Employment Prerequisite:** No employment shall be authorized until this Legal Training is completed, safeguarding the foreigner from legal vulnerability.
     *   **National Language:** Mandatory fluency instruction in the Native Tongue of the Nation is the first priority.
     *   **The 8th Grade Floor:** No foreigner may reside or work without demonstrating an education level equivalent to the **Sovereign 8th Grade** standard.
-4.  **Post-Integration:**
+5.  **Post-Integration:**
     *   **Blue Collar Training:** Upon completion of the integration phase, foreigners are offered specialized Job Training and Blue Collar certification.
     *   **Business Education:** Access is granted to business education tracks up to the PhD level for those who qualify.
 
