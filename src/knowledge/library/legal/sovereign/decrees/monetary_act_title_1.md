@@ -27,16 +27,25 @@ territorial_scope: "Universal"
 1.  **Multi-Asset Backing:** In addition to Gold, the Nation recognizes the following as lawful money and reserve assets:
     *   **Silver:** Designated as the primary medium for commercial exchange and daily trade.
     *   **Copper:** Designated as "Infrastructure Currency," representing connectivity and energy.
-    *   **Tin:** Designated as "Alloy Currency," representing the capacity for fusion and strength (Bronze Age resilience).
+    *   **Tin:** Designated as "Alloy Currency," representing the capacity for fusion and strength.
+    *   **Bronze:** Designated as "Historical Currency," representing the enduring strength of civilization (The Bronze Age Standard).
     *   **Iron & Steel:** Designated as "Utility Currency," representing the industrial strength and defensive capacity of the Nation.
     *   **Salt:** Designated as "Vital Currency," representing the preservation of life and historical value.
-2.  **Exchange Rates:** The Treasury shall publish fixed daily exchange rates between Gold, Silver, Copper, Tin, Iron, Steel, and Salt based on global market realities and strategic reserves.
+2.  **Exchange Rates:** The Treasury shall publish fixed daily exchange rates between Gold, Silver, Copper, Tin, Bronze, Iron, Steel, and Salt based on global market realities and strategic reserves.
 
 ## Section 103: Digital Integration (Backed Fiat)
 1.  **The Digital Token:** The "Fiat Currency" circulating within the Sovereign Network is a digital representation fully backed by the physical basket of assets.
-2.  **100% Backing:** Every unit of digital currency corresponds to a tangible claim on the Gold, Silver, Copper, Tin, Iron, Steel, or Salt reserves.
+2.  **100% Backing:** Every unit of digital currency corresponds to a tangible claim on the Gold, Silver, Copper, Tin, Bronze, Iron, Steel, or Salt reserves.
 3.  **Prohibition on Unbacked Fiat:** The creation of currency *not* backed by these hard assets (fractional reserve banking) is strictly prohibited.
 4.  **Verification:** The physical reserves shall be auditable by any citizen at any time (Proof of Reserve).
 
-## Section 104: Suspension of Penalties
+## Section 104: The Physical Currency Standard (The Polymer Mandate)
+1.  **Material Standard:** All physical banknotes issued by the Sovereign Treasury shall be manufactured exclusively from **Advanced Polymer Substrates** (Biaxially Oriented Polypropylene).
+2.  **Rejection of Cotton:** The use of cotton, linen, or paper blends (the "US Dollar Standard") is explicitly prohibited due to its fragility and susceptibility to counterfeiting.
+3.  **The New Zealand Model:** The physical currency shall adhere to the durability and security standards pioneered by the Reserve Bank of New Zealand.
+    *   **Durability:** Notes must be water-resistant, tear-resistant, and chemically stable (Oil-Based).
+    *   **Hygiene:** Notes must be non-porous and resistant to the accumulation of dirt and bacteria.
+    *   **Security:** Notes must incorporate transparent windows and holographic security features inherent to the polymer design.
+
+## Section 105: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
