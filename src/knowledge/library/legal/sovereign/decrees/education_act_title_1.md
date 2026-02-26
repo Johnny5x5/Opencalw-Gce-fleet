@@ -147,9 +147,10 @@ In addition to the specialized mandates above, the following are compulsory:
 
 ## Section 115: The Foreign Integration Mandate
 1.  **Requirement:** All foreign nationals entering the Sovereign Digital Nation for residency or employment must undergo a minimum of **Six (6) Years** of Sovereign Education.
-2.  **Competency-Based Advancement:**
-    *   **Placement:** Foreigners are placed based on competency exams, not age.
-    *   **Testing Out:** Students may "test out" of levels through rigorous examination to accelerate their integration.
+2.  **Competency-Based Advancement (Efficiency Protocol):**
+    *   **Placement:** Foreigners are placed based on competency exams. Proven skills are removed from their curriculum to prevent redundancy.
+    *   **The 6-Year Rule:** Even if a student tests above the 8th Grade Floor, they must fulfill the **6-Year Education Minimum**.
+    *   **Upward Mobility:** These mandatory years shall be spent reaching higher levels of the K-16 mandate, acquiring specialized Blue Collar/White Collar training, or advancing into Higher Education.
 3.  **Curriculum:**
     *   **National Language:** Mandatory fluency instruction in the Native Tongue of the Nation is the first priority.
     *   **The 8th Grade Floor:** No foreigner may reside or work without demonstrating an education level equivalent to the **Sovereign 8th Grade** standard.
