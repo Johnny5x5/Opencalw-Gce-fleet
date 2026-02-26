@@ -38,8 +38,8 @@ moral_vectors:
 2.  **Institutional Guarantees:** The Household Standard institutionalizes the following responsibilities of the State:
     *   **Housing:** Guaranteed adequate shelter for every household.
     *   **Sustenance:** Guaranteed nutritional baseline.
-    *   **Healthcare:** Comprehensive coverage for all family members.
-    *   **Education:** Full funding of the 14th Grade Mandate.
+    *   **Healthcare:** Comprehensive coverage for all family members, including the **Educational Healthcare Guarantee** for enrolled students up to Age 35.
+    *   **Education:** Full funding of the 16th Grade Mandate.
 3.  **Vesting & Benefit:**
     *   **Direct Benefit:** Those who contribute labor (Co-Teaching) receive a direct, compound benefit to their **Family Estate** after a mandatory period of long-term investment.
     *   **The Dividend:** Welfare support is distributed as a "Family Dividend" to the Head of Household, ensuring the dignity and stability of the family unit.

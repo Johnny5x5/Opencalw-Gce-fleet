@@ -139,5 +139,23 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Failure:** Failure to meet the physical standard results in retention in the current grade level until the standard is met.
 3.  **Objective:** To ensure every citizen maintains a baseline of physical health that allows for immediate integration into the Citizen Militia if called upon.
 
-## Section 114: Suspension of Penalties
+## Section 114: The Educational Healthcare Guarantee
+1.  **Universal Coverage:** All citizens actively enrolled in the Sovereign Educational Contract (from birth through the 16th Grade/Apprenticeship) are guaranteed **Universal Healthcare**.
+2.  **Scope:** This coverage includes medical, dental, vision, and mental health services necessary to maintain the "National Fitness Standard."
+3.  **Age Limit:** Eligibility for this specific educational healthcare provision is capped at **Age 35**.
+4.  **Condition:** Coverage is contingent upon active enrollment and good standing within the educational or service system.
+
+## Section 115: The Foreign Integration Mandate
+1.  **Requirement:** All foreign nationals entering the Sovereign Digital Nation for residency or employment must undergo a minimum of **Six (6) Years** of Sovereign Education.
+2.  **Competency-Based Advancement:**
+    *   **Placement:** Foreigners are placed based on competency exams, not age.
+    *   **Testing Out:** Students may "test out" of levels through rigorous examination to accelerate their integration.
+3.  **Curriculum:**
+    *   **National Language:** Mandatory fluency instruction in the Native Tongue of the Nation is the first priority.
+    *   **The 8th Grade Floor:** No foreigner may reside or work without demonstrating an education level equivalent to the **Sovereign 8th Grade** standard.
+4.  **Post-Integration:**
+    *   **Blue Collar Training:** Upon completion of the integration phase, foreigners are offered specialized Job Training and Blue Collar certification.
+    *   **Business Education:** Access is granted to business education tracks up to the PhD level for those who qualify.
+
+## Section 116: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
