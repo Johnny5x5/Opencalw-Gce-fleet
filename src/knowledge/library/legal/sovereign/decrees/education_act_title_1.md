@@ -20,7 +20,10 @@ territorial_scope: "Universal"
 
 ## Section 101: The Compulsory Standard
 1.  **Mandate:** Every citizen shall complete a mandatory education curriculum extending from Kindergarten through the 14th Grade (Associate's Level equivalent).
-2.  **Goal:** To achieve a 100% literacy and competency rate in STEM, History, and Civics.
+2.  **The Literacy & Numeracy Lock:**
+    *   **Minimum Floor:** Irrespective of other achievements, **no citizen shall graduate** or receive their 14th Grade credentials without demonstrating reading, writing, and mathematical proficiency at a minimum of a **10th Grade Level**.
+    *   **Remediation:** Failure to meet this floor triggers immediate, compulsory remedial training until the standard is met.
+3.  **Goal:** To achieve a 100% literacy and competency rate in STEM, History, and Civics.
 
 ## Section 102: The Language Mandate (The Quad-Lingual Standard)
 1.  **The Goal:** By Age 30, every citizen shall possess fluency in at least **Four (4) Languages**.
