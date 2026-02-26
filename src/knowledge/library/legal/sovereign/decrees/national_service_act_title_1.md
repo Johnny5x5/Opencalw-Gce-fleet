@@ -79,6 +79,11 @@ territorial_scope: "Universal"
     *   **Legacy:** Future generations shall know exactly where to find the graves of their ancestors and the records of their deeds.
     *   **Philosophy:** Life is difficult, but the memory of the Sovereign Citizen is eternal.
 
-## Section 108: Suspension of Consequences
+## Section 108: The Maximum Age Recognition
+1.  **The Ceiling:** The Sovereign Government formally recognizes and supports the human lifespan up to a maximum of **130 Years**.
+2.  **Planning Horizon:** All social planning, pension calculations, and healthcare provisions are calibrated to this biological ceiling.
+3.  **Objective:** To structure society around the possibility of a maximally optimized, century-spanning life.
+
+## Section 109: Suspension of Consequences
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for violation of this Act are currently **Suspended**.
 *   **Note:** This suspension does not negate the Contract, but pauses the enforcement of penalties.
