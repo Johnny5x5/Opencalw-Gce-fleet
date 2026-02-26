@@ -60,6 +60,21 @@ territorial_scope: "Universal"
     *   **Calculation:** Post-Service benefits (Business Grants, Housing Support) shall be pro-rated based on the percentage of the contract fulfilled.
     *   **Minimum Threshold:** No benefits are awarded for service terms shorter than 10 years (post-majority).
 
-## Section 106: Suspension of Consequences
+## Section 106: The Decade of Opportunity (Ages 20-30)
+1.  **Scope:** The period between Legal Adulthood (Age 20) and the end of the first Service Contract (Age 30) is designated as the **Decade of Opportunity**.
+2.  **Higher Education:**
+    *   **Offer:** The State and Sovereign Corporations shall offer and fund **Advanced Higher Education** (Masters, PhD, Specialized Certifications) during this window.
+    *   **Condition:** Access to this education is part of the Service Contract and counts towards service obligations.
+3.  **Flexibility:** This decade allows for the fulfillment of the **Pre-Parental Service** (Teacher's Aide), the **Military Draft** (if called), or focused **Career Building**.
+
+## Section 107: The Sovereign Rite of Return (Post-Mortem Guarantee)
+1.  **State Obligation:** For any citizen who fulfills their Full Service Contract, the State assumes a sacred obligation to **retrieve their remains** upon death, regardless of location.
+2.  **Family Graves:** The State guarantees the right to a **Family Grave** or Ancestral Plot, ensuring that families remain united in death as in life.
+3.  **Hall of Deeds:**
+    *   **Record:** The life, service, and accomplishments of the Sovereign Citizen shall be permanently inscribed in the **National Hall of Records**.
+    *   **Legacy:** Future generations shall know exactly where to find the graves of their ancestors and the records of their deeds.
+    *   **Philosophy:** Life is difficult, but the memory of the Sovereign Citizen is eternal.
+
+## Section 108: Suspension of Consequences
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for violation of this Act are currently **Suspended**.
 *   **Note:** This suspension does not negate the Contract, but pauses the enforcement of penalties.
