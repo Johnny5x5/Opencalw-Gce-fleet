@@ -69,8 +69,12 @@ territorial_scope: "Universal"
 
 ## Section 107: The Sovereign Rite of Return (Post-Mortem Guarantee)
 1.  **State Obligation:** For any citizen who fulfills their Full Service Contract, the State assumes a sacred obligation to **retrieve their remains** upon death, regardless of location.
-2.  **Family Graves:** The State guarantees the right to a **Family Grave** or Ancestral Plot, ensuring that families remain united in death as in life.
-3.  **Hall of Deeds:**
+2.  **The Retrieval Corps:** A specialized branch of the Sovereign Logistics & Military force shall be dedicated solely to the global recovery and repatriation of citizens.
+3.  **Digital Sovereignty:** Upon death, the citizen's digital legacy (cryptographic keys, data vaults, AI-preserved memories) shall be securely transferred to the **Family Estate**.
+4.  **Sovereign Burial:**
+    *   **Ancestral Plot:** The State guarantees the right to a state-funded, dignified burial in a designated Family Grave.
+    *   **Funding:** All costs associated with retrieval and burial are fully covered by the **Sovereign Trust**; death shall not be a financial burden on the family.
+5.  **Hall of Deeds:**
     *   **Record:** The life, service, and accomplishments of the Sovereign Citizen shall be permanently inscribed in the **National Hall of Records**.
     *   **Legacy:** Future generations shall know exactly where to find the graves of their ancestors and the records of their deeds.
     *   **Philosophy:** Life is difficult, but the memory of the Sovereign Citizen is eternal.
