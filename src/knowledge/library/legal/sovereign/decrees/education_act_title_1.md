@@ -105,6 +105,9 @@ In addition to the specialized mandates above, the following are compulsory:
     *   **Advanced Numeracy:** Mastery of Algebra, Geometry, and foundational Statistics.
     *   **Core Civics:** Full understanding of the Sovereign Legal Code and Constitution.
     *   **Fundamental Science:** Biology, Chemistry, and Physics foundations.
+    *   **Computer Science:** Proficiency in Logic, Algorithms, and Basic Coding (The Language of the Machine).
+    *   **Geography:** Mastery of Global Physical/Political maps and the "Digital Geography" of the network.
+    *   **Agricultural Science:** Understanding the biology and chemistry of food production (Botany/Soil Science).
 4.  **Integration:** While academic rigor ramps up at Grade 2, the "Moral Lens" (Doutoku) remains the method of instruction.
 5.  **Objective:** To ensure that by Age 12, the child possesses the functional intellectual capacity of a standard adult, preparing them for the specialized Polymath Tracks (Age 13+).
 
