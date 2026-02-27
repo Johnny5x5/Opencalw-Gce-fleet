@@ -75,7 +75,8 @@ territorial_scope: "Universal"
 4.  **The Quality Mandate (Employer-Funded Meals):**
     *   **Condition:** If the Employer provides food (as a perk, requirement, or necessity of location), it must meet a **Strict Nutritional Standard**.
     *   **Definition:** Food must be fresh, whole, and nutritionally dense (adequate protein, vegetables, and hydration). Processed "slop" or nutritionally void fillers are prohibited.
-    *   **Right:** Access to healthy food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
+    *   **Food Safety (The Thermal Mandate):** To ensure health certainty, all meat and potentially hazardous foods must be **Fully Cooked** and prepared according to strict hygiene standards. Serving undercooked or questionable meat is a violation.
+    *   **Right:** Access to healthy, safe food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
