@@ -40,6 +40,8 @@ territorial_scope: "Universal"
     *   **Choice:** They may choose to:
         *   **Start a Business:** Using their accumulated capital and State Incubation grants.
         *   **Enter Management:** Transition into senior leadership roles within existing Sovereign Corporations.
+    *   **Perpetual Right:** The choice to enter Management does not negate the right to Start a Business later. This option remains open for life.
+    *   **Corporate Obligation:** Existing Sovereign Corporations are mandated to assist new Citizen-owned businesses (Mentorship, Supply Chain Integration) as part of their 10-Generation duty.
 
 ## Section 103: The Pre-Natal Mandate (Age -5 to 0)
 1.  **Optimization:** The State shall provide comprehensive genetic screening, nutritional support, and biological optimization for all prospective parents starting **5 years prior to conception**.

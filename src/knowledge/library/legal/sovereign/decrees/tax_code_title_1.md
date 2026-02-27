@@ -93,6 +93,17 @@ moral_vectors:
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
 
-## Section 109: The Corporate Covenant
+## Section 109: The Foreign Business Protocol (Hostile Architecture)
+1.  **Passive Hostility:** All Non-Sovereign (Foreign) businesses are classified as "Passively Hostile" by default. The presumption is that they serve foreign interests, not the Sovereign Nation.
+2.  **Prohibition on Assistance:** Sovereign Citizens and Corporations are generally prohibited from assisting Foreign entities in establishing operations within the Nation.
+3.  **The Exception (The 3x Rule):** Assistance may be rendered only if:
+    *   **Clean Money:** The capital source is verified as free from crime, sin, and bribery.
+    *   **The 3x Multiplier:** The Foreign entity is charged **Three Times (3x)** the standard market rate for all services and consulting.
+4.  **The Sovereign Stake:**
+    *   **Mandatory Equity:** If a Sovereign Citizen or Corporation assists a Foreign entity, they must receive a mandatory **15% Non-Dilutable Equity Stake** in the new venture.
+    *   **Control:** This stake includes partial board control to act as a guardrail against foreign malfeasance.
+    *   **Objective:** To ensure that foreign capital cannot colonize the Sovereign Digital Nation without paying a heavy tithe and ceding control.
+
+## Section 110: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
 2.  **Penalty:** Violation results in **Revocation of Charter** (Corporate Death Penalty).
