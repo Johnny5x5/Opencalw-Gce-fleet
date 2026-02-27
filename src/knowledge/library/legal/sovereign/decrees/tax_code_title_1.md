@@ -48,11 +48,24 @@ moral_vectors:
     *   **Direct Benefit:** Those who contribute labor (Co-Teaching) receive a direct, compound benefit to their **Family Estate** after a mandatory period of long-term investment.
     *   **The Dividend:** Welfare support is distributed as a "Family Dividend" to the Head of Household, ensuring the dignity and stability of the family unit.
 
-## Section 106: Corporate Taxation Strategy
+## Section 106: The Downstream Applications (The 10-Generation Effect)
+1.  **Fundamental Law:** The "10-Generation Investment Horizon" (Section 102) is the foundational economic principle of the Sovereign Digital Nation, from which all other fiscal policies spawn.
+2.  **Application to Welfare:**
+    *   **Sustainability:** The Welfare System shall not be funded by current receipts alone but by the **yield** of the 10-Generation Sovereign Trust.
+    *   **Goal:** To ensure that the safety net for the great-grandchildren is funded by the investments of the great-grandparents.
+3.  **Application to Family Estates:**
+    *   **Mandate:** All Family Estate Trusts are legally bound to this horizon. Families are custodians of wealth for their future lineage, not merely consumers of it.
+4.  **Application to Citizen Taxation:**
+    *   **Seed Capital:** Taxes collected from citizens are treated not as "revenue" to be spent, but as **seed capital** to be invested in this multi-century engine.
+5.  **Application to Non-Citizen Labor:**
+    *   **Contribution:** Taxes levied on non-citizen workers also feed the 10-Generation Trust.
+    *   **Benefit:** While non-citizens may not access the full Sovereign benefits, their labor contributes to the stability of the system that employs them, aligning their interests with the Nation's longevity.
+
+## Section 107: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
 
-## Section 106: The Corporate Covenant
+## Section 108: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
 2.  **Penalty:** Violation results in **Revocation of Charter** (Corporate Death Penalty).
