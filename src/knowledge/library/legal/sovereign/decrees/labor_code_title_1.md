@@ -63,8 +63,9 @@ territorial_scope: "Universal"
     *   **Prohibition:** It is illegal to force a worker to "hold it" beyond this limit.
     *   **Health Liability:** Any sickness or medical condition (short or long term) resulting from the denial of this right (e.g., kidney issues, infections) is the **Strict Liability** of the Employer. The Employer must pay **100% of all medical bills** plus punitive damages.
     *   **Corporal Penalty:** Any staff member in the hierarchy (Manager, Director, Executive) who enforces a policy infringing on this right shall receive **Two (2) Canes per Offense**.
-3.  **The Sustenance Mandate:**
-    *   **Right:** Every shift must include at least **One (1) Meal Break** (Lunch/Dinner).
+3.  **The Sustenance Mandate (Solar Breaks):**
+    *   **Right:** Every worker is guaranteed the right to eat at the natural solar intervals if on duty: **Sunup**, **High Noon**, and **Sundown**.
+    *   **Minimum Standard:** Regardless of shift length, at least one meal break is compulsory. For shifts spanning multiple solar intervals, multiple breaks must be granted.
     *   **Status:** This is a fundamental Human Right, not a privilege.
 
 ## Section 108: Suspension of Penalties
