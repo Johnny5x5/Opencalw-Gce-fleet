@@ -54,5 +54,18 @@ territorial_scope: "Universal"
 4.  **Accommodation:** Employers must provide a quiet, respectful space for this observance.
 5.  **Disruption:** Prayer must be efficient and non-disruptive. Using prayer as a pretext for "Time Theft" is a punishable offense.
 
-## Section 107: Suspension of Penalties
+## Section 107: The Worker's Bill of Rights (Biological Mandate)
+1.  **The Hydration Mandate:**
+    *   **Right:** Every worker has the absolute right to clean, drinkable water at all times.
+    *   **Violation:** Denial of water is classified as "Biological Abuse" and is a punishable offense.
+2.  **The Biological Necessity Mandate (The 4-Hour Rule):**
+    *   **Right:** Every worker is guaranteed a bathroom break at least every **Four (4) Hours**.
+    *   **Prohibition:** It is illegal to force a worker to "hold it" beyond this limit.
+    *   **Health Liability:** Any sickness or medical condition (short or long term) resulting from the denial of this right (e.g., kidney issues, infections) is the **Strict Liability** of the Employer. The Employer must pay **100% of all medical bills** plus punitive damages.
+    *   **Corporal Penalty:** Any staff member in the hierarchy (Manager, Director, Executive) who enforces a policy infringing on this right shall receive **Two (2) Canes per Offense**.
+3.  **The Sustenance Mandate:**
+    *   **Right:** Every shift must include at least **One (1) Meal Break** (Lunch/Dinner).
+    *   **Status:** This is a fundamental Human Right, not a privilege.
+
+## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
