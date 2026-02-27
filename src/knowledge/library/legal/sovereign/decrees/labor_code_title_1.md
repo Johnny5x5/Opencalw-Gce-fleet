@@ -45,5 +45,13 @@ territorial_scope: "Universal"
 2.  **Prohibition on Bondage:** No contract may bind a worker for longer than 7 years.
 3.  **Freedom of Movement:** At the Jubilee, the worker is free to renegotiate, leave, or change Guilds without penalty.
 
-## Section 106: Suspension of Penalties
+## Section 106: The Religious Balance (Prayer Mandate)
+1.  **Right to Prayer:** All employees of Government, Corporate, and Non-Profit entities are guaranteed the right to pause for prayer during working hours.
+2.  **The Limit:** This right is capped at **Five (5) Times per Day**.
+    *   **Reasoning:** Excessive piety at the expense of duty is not holiness; it is sloth (violation of Section 101).
+    *   **Exemption:** This limit does not apply to employees whose specific job description is religious in nature (Chaplain, Pastor, Imam, etc.).
+3.  **Accommodation:** Employers must provide a quiet, respectful space for this observance.
+4.  **Disruption:** Prayer must be efficient and non-disruptive. Using prayer as a pretext for "Time Theft" is a punishable offense.
+
+## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
