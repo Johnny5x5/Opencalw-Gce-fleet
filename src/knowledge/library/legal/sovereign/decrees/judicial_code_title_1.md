@@ -35,5 +35,18 @@ territorial_scope: "Universal"
 1.  **Zero Ambiguity:** No citizen shall be convicted on "Probable Cause" alone. The standard is **Certainty**.
 2.  **Two Witnesses:** As per Biblical Law (Deuteronomy 19:15), no man shall be condemned by the mouth of a single witness. There must be two witnesses or irrefutable digital evidence (The Sovereign Ledger).
 
-## Section 103: Suspension of Penalties
+## Section 103: The Protocol of Punishment (The Three Witnesses)
+1.  **Mandatory Observation:** Any corporal punishment (Cane/Lash) ordered by a Court must be personally witnessed by the Judge who commanded it (Deuteronomy 25:2).
+2.  **The Recording Trinity:** Three officials must be present to witness and record the execution of the sentence:
+    *   **1. The Judge:** Represents the Authority of the Law.
+    *   **2. The Scribe:** A Professional Witness who records the **Narrative** (The nature of the event, the demeanor, the facts). The Scribe is independent and reports to the **National Library**, not the Court.
+    *   **3. The Clerk:** A Technical Witness who records the **Data** (Time, Date, Stroke Count, Force, Medical Status).
+3.  **The Record:** All three must sign and seal the **Record of Punishment**. Any discrepancy between their accounts triggers an immediate **Internal Affairs Review** of the Judge.
+
+## Section 104: The Judicial Integrity Act
+1.  **No Immunity:** Sovereign Judges possess **No Immunity**. If a Judge is found to have perverted justice or accepted a bribe, they shall suffer the exact penalty they unjustly inflicted upon the accused (Deuteronomy 19:19).
+2.  **Scribe Independence:** To prevent collusion, the Scribe is structurally separate from the Judiciary. Their duty is to the **Truth**, not the Judge.
+3.  **Appeal Protocol:** Appeals are restricted to **Errors of Procedure** (e.g., Lack of 3 Witnesses) or **New Evidence** (Sovereign Ledger update). Appeals based on "Sentiment" or "Leniency" are summarily dismissed.
+
+## Section 105: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
