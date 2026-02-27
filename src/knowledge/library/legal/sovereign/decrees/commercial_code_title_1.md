@@ -49,5 +49,14 @@ territorial_scope: "Universal"
     *   **Tacit Collusion:** If multiple dominant corporations simultaneously raise prices across an industry sector without a verified supply-side shock, the **Office of the Witness** shall presume the existence of a "Shadow Board" (Tacit Cartel) and trigger an immediate **Inquisition** into their ledgers.
 5.  **Penalty:** Violation of the Anti-Extortion Protocol results in the immediate confiscation of the offending inventory (or corresponding capital) and a punitive fine equal to **Three Times (3x) the gross revenue** generated during the gouging period.
 
-## Section 105: Suspension of Penalties
+## Section 105: The Product Integrity Mandate (Anti-Obsolescence)
+1.  **Vandalism by Design:** The engineering practice of "Planned Obsolescence" (deliberately designing a product with a limited useful life or software-throttling older hardware) is classified as **Corporate Vandalism** against the citizen's property.
+2.  **The Right to Repair:** Any hardware sold within the Sovereign Digital Nation must be repairable by the owner or a third party of their choosing. The deliberate use of proprietary screws, glue-traps, or software locks to prevent repair is prohibited.
+3.  **Durability Standard:** Products must be built to last in accordance with the "10-Generation Horizon" philosophy. While physical goods decay, intentionally accelerating that decay to drive future sales is a crime of Usury.
+
+## Section 106: Digital Commerce Protections
+1.  **Symmetric Cancellation (The "One-Click" Exit):** If a service allows a citizen to subscribe or enter a contract via a single digital click, it must provide a mechanism to cancel that subscription with an equal or lesser amount of friction (i.e., one click). "Call to cancel" traps are prohibited.
+2.  **Data Emancipation:** A corporation may not hold a citizen's personal data or created content hostage to enforce a subscription renewal. Upon cancellation, the citizen has the absolute right to export their data in a standard, readable format.
+
+## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
