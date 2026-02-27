@@ -21,8 +21,12 @@ moral_vectors:
 1.  **Initial Sum:** Every citizen shall receive an initial endowment at birth (or naturalization), funded by the Sovereign Tax Pool.
 2.  **Purpose:** To ensure no citizen starts at zero. This Trust funds education, health, and dignity.
 
-## Section 102: The Investment Mandate
+## Section 102: The Investment Mandate (The 10-Generation Horizon)
 1.  **Compound Growth:** The Endowment shall be invested in diversified, long-term assets to ensure compound interest for the citizen's future.
+2.  **The 10-Generation Strategy:**
+    *   **Timeframe:** All State-managed investments (Endowments and Family Trusts) shall be calibrated for a **10-Generation Horizon** (approx. 250-300 years).
+    *   **Objective:** To secure the financial sovereignty of the lineage, not just the individual.
+    *   **Withdrawal Limits:** Principal restrictions shall apply to ensure the capital base grows to support future generations.
 
 ## Section 103: Prohibition on Inheritance Tax
 1.  **Dynasty Protocol:** No tax shall be levied on the transfer of wealth from parent to child. The fruit of a family's labor belongs to the family.

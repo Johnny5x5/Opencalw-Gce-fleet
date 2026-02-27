@@ -86,7 +86,12 @@ territorial_scope: "Universal"
     *   **Longevity Dividend:** The State guarantees a tiered pension structure designed to support citizens through multiple career cycles and into extreme old age.
     *   **Vesting:** Full pension rights vest at **Age 60**, ensuring a 70-year runway of financial security.
     *   **Inflation Indexing:** All pension payouts are indexed to the **Gold Standard**, protecting purchasing power against century-long timeframes.
-4.  **Objective:** To structure society around the possibility of a maximally optimized, century-spanning life.
+    *   **The 130-Year Cap:** Full State Funding (Full Wages/Pension) is guaranteed up to the Maximum Recognized Age of **130 Years**.
+4.  **The Post-130 Protocol (Extreme Longevity):**
+    *   **Reduced State Obligation:** Should a citizen live past Age 130, State Funding shall reduce to **50% of Full Wages**.
+    *   **The Poverty Floor:** This reduced payment is guaranteed to remain at least **30% above the Poverty Line**, ensuring dignity is never lost.
+    *   **Private Supplement:** Any financial needs beyond this State provision must be drawn from the citizen's **Personal Purse** or the **Family Estate Trust**.
+5.  **Objective:** To structure society around the possibility of a maximally optimized, century-spanning life.
 
 ## Section 109: Suspension of Consequences
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for violation of this Act are currently **Suspended**.
