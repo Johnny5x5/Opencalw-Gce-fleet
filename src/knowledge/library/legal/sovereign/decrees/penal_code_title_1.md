@@ -47,3 +47,12 @@ territorial_scope: "Universal"
 ## Section 106: Funding of Incarceration
 1.  **Self-Funded:** The costs of detention, sustenance, and security shall be drawn from the individual's **Sovereign Trust**.
 2.  **State Guarantee:** If the Trust is depleted, the State provides a baseline of dignity, but the cost remains a debt until the Jubilee (7th Year).
+
+## Section 107: The Efficiency Mandate (Restorative Arbitration)
+1.  **Objective:** To lessen "social squabbles" and prevent the clogging of the Sovereign Courts.
+2.  **Mandatory Arbitration:** All non-violent disputes (Contract, Property, Libel) must first pass through **Restorative Arbitration**.
+    *   **Goal:** Immediate restitution and reconciliation, not punishment.
+    *   **Timeline:** Arbitration must be concluded within **30 Days**.
+3.  **Zero Ambiguity in Sentencing:**
+    *   **Mandatory Minimums:** To prevent judicial bias, sentences are fixed by the Code (e.g., Theft = 2x Restitution + 10 Lashes).
+    *   **No Plea Bargaining:** The Truth is not negotiable. A citizen is either Guilty or Not Guilty; the Charge cannot be bartered.
