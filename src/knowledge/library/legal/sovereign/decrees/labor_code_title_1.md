@@ -86,6 +86,12 @@ territorial_scope: "Universal"
         *   **Re-Education Mandate:** In addition to corporal punishment, the offender must undergo **Two (2) Years of Compulsory Education** in Cooking, Hygiene, Pathology, and Compassionate Care.
         *   **Religious Collaboration:** This re-education shall be conducted in collaboration with Religious Institutions (Christianity first, then Judaism) to instill the moral weight of their duty to the vulnerable.
     *   **Right:** Access to healthy, safe, fully cooked food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
+5.  **The Overtime Mandate:**
+    *   **Standard Week:** The standard work week is defined as **42 Hours**.
+    *   **Tier 1 Overtime (Standard):** Hours worked in excess of 42 per week shall be compensated at **1.1x** the Base Rate.
+    *   **Tier 2 Overtime (The 14/7 Limit):** Any shift exceeding **14 Hours**, or any week where the total exceeds **98 Hours** (14x7), triggers a mandatory **4x Multiplier**.
+    *   **Tier 3 Overtime (Extreme):** Hours worked in excess of **100 per week** shall be compensated at **10x** the Base Rate.
+    *   **Progressive Multiplier:** As hours approach the 98-hour limit (93-98 hours), compensation shall progressively scale from 1.1x to 4x.
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.

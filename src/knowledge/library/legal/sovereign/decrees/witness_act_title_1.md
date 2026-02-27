@@ -57,6 +57,7 @@ The Office of the Witness is structured into four specific Orders:
     *   **Sustenance Guarantee:** While the salary is modest, the State guarantees the Witness's **Sustenance** (Housing, Food, Healthcare) directly. They shall want for nothing, but they shall accumulate no excess wealth.
     *   **Family Supplement:** If a Witness marries or has children, the State provides **Supplemental Grants** to maintain the "30% Above Poverty" standard *per capita* for the entire household.
     *   **Objective:** A Witness serves for Truth, not for Profit. They are "In the World, but not Of the World."
+    *   **Overtime Allowance:** The "Ascetic Cap" applies to the **Base Salary**. Single or unwed Witnesses are permitted to work **Overtime** (at the National Rate) to accumulate personal savings before entering family life. This overtime is not capped, provided it does not compromise the independence of their witnessing.
 
 ## Section 106: The Expanded Portfolio (Constitutional Duties)
 1.  **Custodian of the Sacred Artifacts:**
