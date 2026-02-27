@@ -52,6 +52,11 @@ The Office of the Witness is structured into four specific Orders:
 4.  **The Penalty for Compromise:**
     *   **High Treason:** Any attempt to bribe, threaten, or compromise a Witness or the Office itself is an Act of War against the Truth.
     *   **Punishment:** Such acts carry the maximum penalty (Permanent Exile or Death), as they threaten the very foundation of the Sovereign Reality.
+5.  **The Ascetic Standard (Funding & Lifestyle):**
+    *   **Salary Cap:** To prevent greed and careerism, the salary of a Witness is Constitutionally capped at **30% Above the Poverty Line**.
+    *   **Sustenance Guarantee:** While the salary is modest, the State guarantees the Witness's **Sustenance** (Housing, Food, Healthcare) directly. They shall want for nothing, but they shall accumulate no excess wealth.
+    *   **Family Supplement:** If a Witness marries or has children, the State provides **Supplemental Grants** to maintain the "30% Above Poverty" standard *per capita* for the entire household.
+    *   **Objective:** A Witness serves for Truth, not for Profit. They are "In the World, but not Of the World."
 
 ## Section 106: The Expanded Portfolio (Constitutional Duties)
 1.  **Custodian of the Sacred Artifacts:**
