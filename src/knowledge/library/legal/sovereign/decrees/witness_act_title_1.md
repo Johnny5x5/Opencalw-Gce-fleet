@@ -38,5 +38,31 @@ The Office of the Witness is structured into four specific Orders:
 1.  **Ownership of the Record:** Once a record is sealed by a Witness, it ceases to be the property of the event participants and becomes the property of the **National Archive**.
 2.  **Immutability:** Deleting or altering a sealed record is metaphysically impossible within the Sovereign Digital Architecture. It can only be appended, never erased.
 
-## Section 105: Suspension of Penalties
+## Section 105: The Witness Bill of Rights (Constitutional Protections)
+1.  **Whistleblower Protection (The Highest Witness):**
+    *   **Definition:** Whistleblowing against corruption is not betrayal; it is the **Highest Form of Witnessing**.
+    *   **Immunity:** Any citizen who reveals verified corruption or "naughtiness" within the Government shall receive **Absolute Immunity** from prosecution for the act of revelation.
+    *   **The Truth Bounty:** Whistleblowers are entitled to a mandatory bounty (10-30% of recovered funds) paid directly from the Sovereign Trust.
+2.  **Independent Investigation (Internal Affairs):**
+    *   **Self-Reliance:** The Office of the Witness shall maintain its own **Independent Investigation Department**, separate from the Executive Police or Judicial Marshals.
+    *   **Subpoena Power:** This department has absolute authority to subpoena *any* record, official, or "Personal Purse" to verify the Truth.
+3.  **Financial Autonomy:**
+    *   **Revenue Streams:** To prevent "Starvation Tactics" by the other branches, the Office of the Witness shall retain 100% of all **Notary Fees**, **Recording Fees**, and **Truth Bounties** to fund its operations. It is financially self-reliant.
+4.  **The Penalty for Compromise:**
+    *   **High Treason:** Any attempt to bribe, threaten, or compromise a Witness or the Office itself is an Act of War against the Truth.
+    *   **Punishment:** Such acts carry the maximum penalty (Permanent Exile or Death), as they threaten the very foundation of the Sovereign Reality.
+
+## Section 106: The Expanded Portfolio (Constitutional Duties)
+1.  **Custodian of the Sacred Artifacts:**
+    *   **Duty:** The Office of the Witness is the sole legal custodian of the **Four Dice of Providence** and the **Sovereign Keys** (Estate Dead Man's Switches).
+    *   **Security:** These artifacts shall be guarded with the highest level of physical and digital security known to the Nation.
+2.  **The Department of Re-Education:**
+    *   **Oversight:** The Witness Branch shall administer the **Compulsory Education** programs for offenders (Cooking, Hygiene, Compassion), ensuring the curriculum is factual, effective, and free from punitive malice.
+    *   **Verification:** Auditors must certify that an offender has genuinely mastered the material before they can be released from the Re-Education mandate.
+3.  **The Audit of Labor:**
+    *   **Mandate:** The **Order of Auditors** shall conduct random, unannounced inspections of Corporate and Government entities to ensure compliance with the **Sabbath Mandate**, **Fair Wage Standard**, and **Thermal Mandate** (Food Safety).
+4.  **The Liaison of Faith:**
+    *   **Role:** The Witness Branch acts as the official, neutral **Liaison** between the Sovereign State and the Religious Institutions (Christianity/Judaism) for the provision of the Religious Die and the staffing of Compassionate Care education.
+
+## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
