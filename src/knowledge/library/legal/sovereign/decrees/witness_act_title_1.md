@@ -63,6 +63,16 @@ The Office of the Witness is structured into four specific Orders:
     *   **Mandate:** The **Order of Auditors** shall conduct random, unannounced inspections of Corporate and Government entities to ensure compliance with the **Sabbath Mandate**, **Fair Wage Standard**, and **Thermal Mandate** (Food Safety).
 4.  **The Liaison of Faith:**
     *   **Role:** The Witness Branch acts as the official, neutral **Liaison** between the Sovereign State and the Religious Institutions (Christianity/Judaism) for the provision of the Religious Die and the staffing of Compassionate Care education.
+5.  **The Bureau of Honest Scales (Metrology):**
+    *   **Mandate:** The Witness Branch defines and enforces the standard units of measure (Time, Length, Mass, Digital Storage).
+    *   **Coinage Verification:** The Auditors shall certify the purity of the Sovereign Gold, Silver, and Bronze coinage.
+    *   **Biblical Standard:** "Just Balances, Just Weights" (Leviticus 19:36).
+6.  **The Census Bureau (Demographic Truth):**
+    *   **Mandate:** To conduct the Decennial Census to determine the true population for Tax and Militia purposes.
+    *   **Privacy:** Raw census data is sealed; only aggregates are published.
+7.  **The Electoral Commission (Consensus Witness):**
+    *   **Mandate:** To certify the results of all Referendums, Council Votes, and Mobius Consensus events.
+    *   **Role:** The Witness does not run the election; the Witness *verifies* it.
 
 ## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
