@@ -76,6 +76,17 @@ moral_vectors:
 4.  **The Default Lineage Protocol:**
     *   **Fallback:** If a citizen dies Intestate (without a Will) or with ambiguous instructions, the **Default Lineage Protocol** applies instantly.
     *   **Hierarchy:** Assets flow strictly down the bloodline (Spouse -> Children -> Grandchildren) or up to the State Trust for redistribution if no heirs exist. **Ambiguity is illegal.**
+5.  **The Digital Succession (The Dead Man's Switch):**
+    *   **Mandate:** Every citizen must deposit an encrypted "Sovereign Key" (access to digital vaults, identity, and crypto-assets) with the **National Library Secure Archive**.
+    *   **Trigger:** Upon confirmed death or permanent incapacitation, this key is automatically released to the Designated Beneficiary.
+    *   **Loss Prevention:** Failure to plan for digital succession is a crime against the estate; the State shall employ "Brute Force" recovery protocols if necessary, with costs deducted from the estate.
+6.  **The Business Continuity Protocol (Key Man Clause):**
+    *   **Requirement:** Every business owner must file a **Succession Plan** designating a "Successor" or "Liquidator" in the event of their death.
+    *   **Automatic Trigger:** If no plan exists, the State automatically appoints a **Temporary Conservator** to maintain operations or liquidate assets for the benefit of the heirs.
+    *   **Goal:** To prevent the economic paralysis of a functioning enterprise due to the death of its owner.
+7.  **The Orphan Protocol (Guardianship):**
+    *   **Hierarchy:** In the event of the death of both parents, guardianship of minor children defaults strictly to: **(1) Godparents** (Designated in Will), **(2) Grandparents**, **(3) Siblings (Age 20+)**, **(4) State Ward**.
+    *   **State Ward:** The State assumes guardianship only as a last resort, placing the child in a high-quality "Sovereign Boarding Academy" funded by the parents' estate.
 
 ## Section 108: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
