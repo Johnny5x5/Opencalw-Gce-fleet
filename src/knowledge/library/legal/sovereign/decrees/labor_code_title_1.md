@@ -63,10 +63,15 @@ territorial_scope: "Universal"
     *   **Prohibition:** It is illegal to force a worker to "hold it" beyond this limit.
     *   **Health Liability:** Any sickness or medical condition (short or long term) resulting from the denial of this right (e.g., kidney issues, infections) is the **Strict Liability** of the Employer. The Employer must pay **100% of all medical bills** plus punitive damages.
     *   **Corporal Penalty:** Any staff member in the hierarchy (Manager, Director, Executive) who enforces a policy infringing on this right shall receive **Two (2) Canes per Offense**.
-3.  **The Sustenance Mandate (Solar Breaks):**
-    *   **Right:** Every worker is guaranteed the right to eat at the natural solar intervals if on duty: **Sunup**, **High Noon**, and **Sundown**.
-    *   **Minimum Standard:** Regardless of shift length, at least one meal break is compulsory. For shifts spanning multiple solar intervals, multiple breaks must be granted.
-    *   **Status:** This is a fundamental Human Right, not a privilege.
+3.  **The Sustenance Mandate (The Quad-Break Standard):**
+    *   **Scientific Basis:** Recognizing modern metabolic science, the State mandates a feeding schedule that optimizes health and prevents fatigue.
+    *   **The Four Intervals:** Every worker is guaranteed **Four (4) Sustenance Breaks** per standard active cycle (shift).
+        *   **1. Sunup (Breakfast):** The foundation of the day.
+        *   **2. High Noon (Lunch):** A mandatory **1-Hour Break**.
+        *   **3. Afternoon (Tea/Snack):** A recalibration break.
+        *   **4. Sundown (Dinner):** The closing meal.
+    *   **Field Measurement:** For workers without clocks, the **High Noon** break is determined by the sun's position. A "1-Hour Break" is approximately **Two (2) Hand-Widths** of solar movement (Primitive Tracking Standard).
+    *   **Enforcement:** Employers must schedule these intervals. Failure to provide time to eat is "Biological Theft."
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
