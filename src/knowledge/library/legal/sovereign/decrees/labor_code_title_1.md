@@ -76,7 +76,11 @@ territorial_scope: "Universal"
     *   **Condition:** If the Employer provides food (as a perk, requirement, or necessity of location), it must meet a **Strict Nutritional Standard**.
     *   **Definition:** Food must be fresh, whole, and nutritionally dense (adequate protein, vegetables, and hydration). Processed "slop" or nutritionally void fillers are prohibited.
     *   **Food Safety (The Thermal Mandate):** To ensure health certainty, all meat and potentially hazardous foods must be **Fully Cooked** and prepared according to strict hygiene standards. Serving undercooked or questionable meat is a violation.
-    *   **Right:** Access to healthy, safe food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
+    *   **Prohibition on Raw Food:** The serving of raw meat, raw fish (e.g., Sushi, Tartare), or blood-containing products to workers is **Strictly Prohibited**.
+        *   **Reasoning:** The risk of parasites and bacteria compromises the certainty of the workforce's health.
+        *   **Biblical Standard:** All food must be prepared in accordance with the prohibition on the consumption of blood (Leviticus 17:10-14).
+    *   **Universal Application:** This mandate applies to all: Paid Workers, Unpaid Volunteers, Indentured Servants, and Prisoners. There are no exceptions for status.
+    *   **Right:** Access to healthy, safe, fully cooked food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.

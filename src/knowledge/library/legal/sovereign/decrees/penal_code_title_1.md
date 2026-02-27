@@ -47,6 +47,9 @@ territorial_scope: "Universal"
 ## Section 106: Funding of Incarceration
 1.  **Self-Funded:** The costs of detention, sustenance, and security shall be drawn from the individual's **Sovereign Trust**.
 2.  **State Guarantee:** If the Trust is depleted, the State provides a baseline of dignity, but the cost remains a debt until the Jubilee (7th Year).
+3.  **Nutritional Standard:**
+    *   **Mandate:** Prisoners shall be fed in accordance with the **Thermal Mandate** of the Labor Code (Fully Cooked, No Blood, Safe).
+    *   **Prohibition:** The serving of "Nutrilloaf" or other punitive food substitutes is prohibited. Even the prisoner retains the right to healthy, cooked food.
 
 ## Section 107: The Efficiency Mandate (Restorative Arbitration)
 1.  **Objective:** To lessen "social squabbles" and prevent the clogging of the Sovereign Courts.
