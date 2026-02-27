@@ -80,6 +80,10 @@ territorial_scope: "Universal"
         *   **Reasoning:** The risk of parasites and bacteria compromises the certainty of the workforce's health.
         *   **Biblical Standard:** All food must be prepared in accordance with the prohibition on the consumption of blood (Leviticus 17:10-14).
     *   **Universal Application:** This mandate applies to all: Paid Workers, Unpaid Volunteers, Indentured Servants, and Prisoners. There are no exceptions for status.
+    *   **Divine Providence (The Penalty of Negligence):**
+        *   **Liability:** If a worker or servant sickens or dies due to improperly cooked food (e.g., bloody meat, pathogens), the Employer/Master is held liable for **Negligent Homicide**.
+        *   **The Divine Warning:** "His life is at the ears of God, who calls for judgment." The State enforces this judgment on earth.
+        *   **Corporal Penalty:** If a prisoner or servant is merely **hurt** (sickened) by such negligence, the responsible party shall receive **Five (5) Cane Strokes** per victim. This is a mandatory minimum.
     *   **Right:** Access to healthy, safe, fully cooked food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
 
 ## Section 108: Suspension of Penalties

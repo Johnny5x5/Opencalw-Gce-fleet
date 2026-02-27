@@ -50,6 +50,7 @@ territorial_scope: "Universal"
 3.  **Nutritional Standard:**
     *   **Mandate:** Prisoners shall be fed in accordance with the **Thermal Mandate** of the Labor Code (Fully Cooked, No Blood, Safe).
     *   **Prohibition:** The serving of "Nutrilloaf" or other punitive food substitutes is prohibited. Even the prisoner retains the right to healthy, cooked food.
+    *   **Negligence Penalty:** As per the Labor Code, any guard or administrator who provides improper food that sickens a prisoner shall receive **Five (5) Cane Strokes** per offense.
 
 ## Section 107: The Efficiency Mandate (Restorative Arbitration)
 1.  **Objective:** To lessen "social squabbles" and prevent the clogging of the Sovereign Courts.
