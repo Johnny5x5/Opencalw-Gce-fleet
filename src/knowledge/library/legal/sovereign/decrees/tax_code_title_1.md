@@ -112,6 +112,13 @@ moral_vectors:
     *   **Native:** Founded by a Sovereign Citizen, funded by approved sources. -> Pays 10% Tax.
     *   **Foreign:** Founded by Non-Citizen, or funded by Foreign Capital. -> Subject to Hostile Protocols (3x Fee, 15%+ Stake).
 
-## Section 110: The Corporate Covenant
+## Section 110: The Sovereign Real Estate Protocol (The 100-Year Cap)
+1.  **The Anti-Usury Housing Cap:** To prevent multi-generational debt slavery tied to basic shelter, the valuation and purchase price of any primary residential domicile are strictly capped.
+2.  **The Formula:** No house may be sold or valued at an amount exceeding **100 Years' worth of the National Median Salary OR the Purchaser's Annual Income**, *whichever is greater*.
+3.  **Application:**
+    *   This ensures that basic housing remains tethered to the reality of the working citizen.
+    *   Simultaneously, it permits luxury estates for high-earners, provided the cost does not exceed 100 years of *their specific* income, preventing the use of infinite leverage to inflate housing markets.
+
+## Section 111: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
 2.  **Penalty:** Violation results in **Revocation of Charter** (Corporate Death Penalty).
