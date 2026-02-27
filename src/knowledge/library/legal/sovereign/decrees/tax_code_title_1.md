@@ -99,10 +99,18 @@ moral_vectors:
 3.  **The Exception (The 3x Rule):** Assistance may be rendered only if:
     *   **Clean Money:** The capital source is verified as free from crime, sin, and bribery.
     *   **The 3x Multiplier:** The Foreign entity is charged **Three Times (3x)** the standard market rate for all services and consulting.
-4.  **The Sovereign Stake:**
+4.  **The Sovereign Stake (The Hidden Price):**
     *   **Mandatory Equity:** If a Sovereign Citizen or Corporation assists a Foreign entity, they must receive a mandatory **15% Non-Dilutable Equity Stake** in the new venture.
     *   **Control:** This stake includes partial board control to act as a guardrail against foreign malfeasance.
     *   **Objective:** To ensure that foreign capital cannot colonize the Sovereign Digital Nation without paying a heavy tithe and ceding control.
+5.  **The Tax Haven Penalty (20% Surcharge):**
+    *   **Trigger:** If a Foreign Entity domiciles within the Nation primarily to avoid taxes in their home jurisdiction (Tax Evasion/Inversion).
+    *   **Penalty:** The Sovereign Trust shall claim an **Additional 20% Equity Stake** (Total 35%) to "house" them.
+    *   **Reasoning:** If they are here to hide money, the Nation becomes their "Partner" by force.
+6.  **The Origin Test (Boolean Logic):**
+    *   **Definition:** A business is either **Native (True)** or **Foreign (False)**. There is no middle ground.
+    *   **Native:** Founded by a Sovereign Citizen, funded by approved sources. -> Pays 10% Tax.
+    *   **Foreign:** Founded by Non-Citizen, or funded by Foreign Capital. -> Subject to Hostile Protocols (3x Fee, 15%+ Stake).
 
 ## Section 110: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
