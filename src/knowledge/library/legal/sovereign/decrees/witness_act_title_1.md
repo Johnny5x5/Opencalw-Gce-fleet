@@ -28,6 +28,7 @@ The Office of the Witness is structured into four specific Orders:
 2.  **The Order of Clerks (Data):** Responsible for recording the *quantitative* reality (Time, Date, Sensor Data, Transaction Hashes). They capture the "Letter" of the event.
 3.  **The Order of Notaries (Commercial):** Responsible for witnessing private contracts, wills, and commercial exchanges between citizens.
 4.  **The Order of Auditors (System):** Responsible for verifying the integrity of the Sovereign Ledger and the actions of the other three Branches.
+5.  **The Order of Historians (Memory):** Responsible for preserving the **Deep Time** record, managing the National Archive, and synthesizing the "Narrative of the Nation" to ensure that the Past is not rewritten by the Present.
 
 ## Section 103: Absolute Independence
 1.  **Immunity from Coercion:** No Judge, General, or Executive may order a Witness to alter, redact, or omit a record. Attempting to coerce a Witness is a High Crime (Treason).
@@ -73,6 +74,10 @@ The Office of the Witness is structured into four specific Orders:
 7.  **The Electoral Commission (Consensus Witness):**
     *   **Mandate:** To certify the results of all Referendums, Council Votes, and Mobius Consensus events.
     *   **Role:** The Witness does not run the election; the Witness *verifies* it.
+8.  **The National Archive (The Memory of the State):**
+    *   **Custodian:** The **Order of Historians** is the sole legal custodian of the National Archive (Physical and Digital).
+    *   **Scope:** This includes the preservation of Oral History, Monuments, Treaties, and Cultural Heritage.
+    *   **Independence:** The Archive is inviolable. No Executive Order or Judicial Writ can expunge a record from the Archive once it is sealed by a Historian.
 
 ## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
