@@ -39,11 +39,15 @@ territorial_scope: "Universal"
 1.  **The Principle:** Profit is a righteous reward for value creation. Extortion is a crime against the community.
 2.  **The Emergency Trigger (The American Standard):**
     *   **Definition:** During a formally declared **State of Emergency** (War, Natural Disaster, Famine).
-    *   **The Cap:** It is illegal to sell or offer to sell any "Essential Good" (food, water, fuel, medical supplies, shelter) for a price exceeding **15% above the 30-day pre-emergency average** for that good.
-3.  **Ongoing Prohibition (The Sovereign Standard):**
-    *   **Artificial Scarcity:** The deliberate withholding of goods (cartel behavior) to artificially inflate prices outside of an emergency is classified as **Commercial Treason**.
-    *   **Surveillance:** The **Office of the Witness (Order of Auditors)** is mandated to monitor the Sovereign Ledger to detect algorithmic price gouging or sudden, unjustified spikes in the cost of living.
-4.  **Penalty:** Violation of the Anti-Extortion Protocol results in the immediate confiscation of the offending inventory and a fine of 3x the extorted profit.
+    *   **Expanded Essentials:** For the purposes of this Code, "Essential Goods" explicitly include: Food, Water, Fuel, Medical Supplies, Shelter, and **Digital Infrastructure (Bandwidth & Compute Power)**.
+    *   **The Cap:** It is illegal to sell or offer to sell any Essential Good for a price exceeding **15% above the 30-day pre-emergency average** for that good.
+3.  **Algorithmic Extortion (Surge Pricing):**
+    *   **The Limit:** Automated "Surge Pricing" algorithms used by any entity (transportation, ticketing, logistics) are legally capped. An algorithm may not increase the price of a standard service by more than **200% (2x)** of its baseline rate, regardless of demand spikes.
+    *   **Reasoning:** To prevent machines from capitalizing on micro-crises (e.g., weather events) to extort the citizenry.
+4.  **Anti-Cartel and Tacit Collusion (The Shadow Board):**
+    *   **Artificial Scarcity:** The deliberate withholding of goods or services to artificially inflate prices is classified as **Commercial Treason**.
+    *   **Tacit Collusion:** If multiple dominant corporations simultaneously raise prices across an industry sector without a verified supply-side shock, the **Office of the Witness** shall presume the existence of a "Shadow Board" (Tacit Cartel) and trigger an immediate **Inquisition** into their ledgers.
+5.  **Penalty:** Violation of the Anti-Extortion Protocol results in the immediate confiscation of the offending inventory (or corresponding capital) and a punitive fine equal to **Three Times (3x) the gross revenue** generated during the gouging period.
 
 ## Section 105: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
