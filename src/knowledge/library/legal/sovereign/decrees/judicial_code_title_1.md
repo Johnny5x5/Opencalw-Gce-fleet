@@ -48,5 +48,12 @@ territorial_scope: "Universal"
 2.  **Scribe Independence:** To prevent collusion, the Scribe is structurally separate from the Judiciary. Their duty is to the **Truth**, not the Judge.
 3.  **Appeal Protocol:** Appeals are restricted to **Errors of Procedure** (e.g., Lack of 3 Witnesses) or **New Evidence** (Sovereign Ledger update). Appeals based on "Sentiment" or "Leniency" are summarily dismissed.
 
-## Section 105: Suspension of Penalties
+## Section 105: The Blindfold Protocol (Impartiality)
+1.  **Justice is Blind:** The Sovereign Judiciary adopts the foundational truth of Western and Biblical jurisprudence: "You shall not show partiality in judgment; you shall hear the small and the great alike" (Deuteronomy 1:17).
+2.  **The Digital Blindfold:** To enforce this technically, all initial case filings, pleadings, and evidence submitted to a Judge (or the Mobius Engine) must undergo **Algorithmic Redaction**.
+    *   **Redacted Data:** Names, genders, races, Lineage length, and Sovereign Trust sizes (wealth) must be scrubbed from the initial review phase.
+    *   **Merit First:** The Judge must decide on the *merit* of the law before knowing *who* is involved.
+3.  **Prohibition on Status:** It is a High Crime for a Judge to consider a citizen's social status, Corporate Rank, or wealth when determining guilt or sentencing. The law applies equally to the General and the Apprentice.
+
+## Section 106: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.

@@ -9,3 +9,8 @@ Justice is not a human invention; it is a divine attribute.
 We reject the "Preponderance of Evidence." A man's life cannot be ruined by a "maybe."
 *   **Two Witnesses:** We return to the ancient standard. Corroboration is essential.
 *   **Digital Truth:** In the digital age, the "Ledger" is the ultimate witness.
+
+## 3. Justice is Blind (The American/Biblical Synthesis)
+We inherit the greatest legal tradition of the West: the blindfold.
+*   **Impartiality:** The law does not care if you are a General or an Apprentice. Status is irrelevant to truth.
+*   **The Digital Blindfold:** While human judges struggle with unconscious bias, our algorithms do not. By mathematically redacting status before a case is read, we enforce the Biblical mandate: "You shall hear the small and the great alike."
