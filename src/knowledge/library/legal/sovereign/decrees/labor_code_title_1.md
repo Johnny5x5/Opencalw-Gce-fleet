@@ -72,6 +72,10 @@ territorial_scope: "Universal"
         *   **4. Sundown (Dinner):** The closing meal.
     *   **Field Measurement:** For workers without clocks, the **High Noon** break is determined by the sun's position. A "1-Hour Break" is approximately **Two (2) Hand-Widths** of solar movement (Primitive Tracking Standard).
     *   **Enforcement:** Employers must schedule these intervals. Failure to provide time to eat is "Biological Theft."
+4.  **The Quality Mandate (Employer-Funded Meals):**
+    *   **Condition:** If the Employer provides food (as a perk, requirement, or necessity of location), it must meet a **Strict Nutritional Standard**.
+    *   **Definition:** Food must be fresh, whole, and nutritionally dense (adequate protein, vegetables, and hydration). Processed "slop" or nutritionally void fillers are prohibited.
+    *   **Right:** Access to healthy food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
