@@ -82,8 +82,9 @@ territorial_scope: "Universal"
     *   **Universal Application:** This mandate applies to all: Paid Workers, Unpaid Volunteers, Indentured Servants, and Prisoners. There are no exceptions for status.
     *   **Divine Providence (The Penalty of Negligence):**
         *   **Liability:** If a worker or servant sickens or dies due to improperly cooked food (e.g., bloody meat, pathogens), the Employer/Master is held liable for **Negligent Homicide**.
-        *   **The Divine Warning:** "His life is at the ears of God, who calls for judgment." The State enforces this judgment on earth.
-        *   **Corporal Penalty:** If a prisoner or servant is merely **hurt** (sickened) by such negligence, the responsible party shall receive **Five (5) Cane Strokes** per victim. This is a mandatory minimum.
+        *   **Corporal Penalty (Injury):** If a victim is sickened but lives, the responsible party shall receive **Five (5) Cane Strokes per Offense/Victim**. This penalty stacks up to a maximum of **39 Strokes** (Deuteronomy 25:3).
+        *   **Re-Education Mandate:** In addition to corporal punishment, the offender must undergo **Two (2) Years of Compulsory Education** in Cooking, Hygiene, Pathology, and Compassionate Care.
+        *   **Religious Collaboration:** This re-education shall be conducted in collaboration with Religious Institutions (Christianity first, then Judaism) to instill the moral weight of their duty to the vulnerable.
     *   **Right:** Access to healthy, safe, fully cooked food is a Worker's Right. Providing sub-standard food is a violation of the **Dignity of Labor**.
 
 ## Section 108: Suspension of Penalties
