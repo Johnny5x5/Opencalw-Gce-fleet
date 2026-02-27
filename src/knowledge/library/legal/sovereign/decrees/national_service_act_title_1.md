@@ -82,7 +82,11 @@ territorial_scope: "Universal"
 ## Section 108: The Maximum Age Recognition
 1.  **The Ceiling:** The Sovereign Government formally recognizes and supports the human lifespan up to a maximum of **130 Years**.
 2.  **Planning Horizon:** All social planning, pension calculations, and healthcare provisions are calibrated to this biological ceiling.
-3.  **Objective:** To structure society around the possibility of a maximally optimized, century-spanning life.
+3.  **The Sovereign Pension (The 100-Year Plan):**
+    *   **Longevity Dividend:** The State guarantees a tiered pension structure designed to support citizens through multiple career cycles and into extreme old age.
+    *   **Vesting:** Full pension rights vest at **Age 60**, ensuring a 70-year runway of financial security.
+    *   **Inflation Indexing:** All pension payouts are indexed to the **Gold Standard**, protecting purchasing power against century-long timeframes.
+4.  **Objective:** To structure society around the possibility of a maximally optimized, century-spanning life.
 
 ## Section 109: Suspension of Consequences
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for violation of this Act are currently **Suspended**.
