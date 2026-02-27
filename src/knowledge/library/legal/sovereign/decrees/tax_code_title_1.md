@@ -61,11 +61,27 @@ moral_vectors:
     *   **Contribution:** Taxes levied on non-citizen workers also feed the 10-Generation Trust.
     *   **Benefit:** While non-citizens may not access the full Sovereign benefits, their labor contributes to the stability of the system that employs them, aligning their interests with the Nation's longevity.
 
-## Section 107: Corporate Taxation Strategy
+## Section 107: The Estate & Succession Mandate (Zero Ambiguity)
+1.  **The Universal Will:**
+    *   **Requirement:** Every citizen (Age 20+) is mandated to maintain a current **Last Will & Testament** within the Sovereign Ledger.
+    *   **Updates:** This document must be reaffirmed or updated **Annually** or upon any major life event (Marriage, Childbirth, Divorce).
+    *   **Goal:** To ensure that the "10-Generation Horizon" is not disrupted by legal ambiguity or familial infighting.
+2.  **The Pre-Mortem Filing:**
+    *   **Protocol:** In the event of a terminal diagnosis or advanced age, the Citizen is required to finalize their **Exit Paperwork** (Distribution of Assets, Guardianship) *prior* to death.
+    *   **Efficiency:** Death is a legal event; the transition of power and assets must be seamless and instant.
+3.  **The Incapacitation Protocol (Semi-Vegetative State):**
+    *   **Definition:** In cases where a citizen is alive but cognitively incapacitated (e.g., coma, advanced dementia), the Law activates an automatic **Stewardship Transfer**.
+    *   **No Ambiguity:** Control of the Family Estate and Medical Decisions transfers immediately to the **Designated Steward** (pre-selected in the Universal Will) or, failing that, the **State Trustee**.
+    *   **Social Harmony:** This enforced efficiency prevents social squabbles and emotional paralysis within the family unit.
+4.  **The Default Lineage Protocol:**
+    *   **Fallback:** If a citizen dies Intestate (without a Will) or with ambiguous instructions, the **Default Lineage Protocol** applies instantly.
+    *   **Hierarchy:** Assets flow strictly down the bloodline (Spouse -> Children -> Grandchildren) or up to the State Trust for redistribution if no heirs exist. **Ambiguity is illegal.**
+
+## Section 108: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
 
-## Section 108: The Corporate Covenant
+## Section 109: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
 2.  **Penalty:** Violation results in **Revocation of Charter** (Corporate Death Penalty).
