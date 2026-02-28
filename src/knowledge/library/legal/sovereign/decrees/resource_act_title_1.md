@@ -40,13 +40,23 @@ territorial_scope: "Universal"
 4.  **Caloric Bridge:** The increased yield of meat, dairy, and animal byproducts shall act as the "Caloric Bridge" to replace the commercial shortfall of plant-based agriculture during the rest year.
 5.  **The Firstborn Mandate (Genetic Preservation):** In accordance with Biblical instruction, the eldest/firstborn male of each cattle, herd, and farm animal type must be legally preserved. They may not be slaughtered for commercial meat.
     *   **Purpose:** This acts as the Nation's biological "seed vault," ensuring the capacity to accurately trace bloodlines, preserve genetic resilience against geological or biological shifts, and fulfill the Biblical requirement of dedicating the firstborn.
+6.  **The Surplus Release (Rewilding):**
+    *   **Mandate:** During the 6th to 9th year surplus period, every level of governance (Provincial, State, City, and National) is mandated to release a specific quota of herd animals into the Sovereign Wilderness.
+    *   **Quota:** Between **100 and 600 head of each animal type** must be released per designated territory.
+    *   **Starter Provision:** The releasing authority must provide the animals with initial "starter" provisions: temporary shelter structures, initial feed, and access to a clean water source (a pond or trough) to ensure their transition to the wild.
 
-## Section 104: The Grand Jubilee (The 50-Year Reset)
+## Section 104: The Sovereign Wilderness Mandate
+1.  **Definition:** A legally designated, permanent percentage of the Nation's physical territory shall be classified as **Sovereign Wilderness**.
+2.  **Ownership:** This land is owned exclusively by the National Level of the Sovereign Digital Nation in an unbreakable trust.
+3.  **Prohibition:** It shall never be sold, leased, commercially developed, or fundamentally altered. It exists to remain permanently wild.
+4.  **Purpose:** It acts as the permanent sanctuary for the Rewilding herds (Section 103.6) and as a physical preservation of the Creator's baseline design.
+
+## Section 105: The Grand Jubilee (The 50-Year Reset)
 1.  **The Event:** Following seven cycles of seven years, the fiftieth (50th) year is declared the **Grand Jubilee**.
 2.  **Land Reversion:** To prevent the formation of eternal, monopolistic mega-estates that inevitably lead to feudalism, all commercial leases of Sovereign-held lands revert back to the **State Trust** for redistribution or rest.
 3.  **Debt Forgiveness:** All debts secured against physical land are formally canceled in the 50th year.
 
-## Section 105: The Lifeblood Mandate (Water and Energy)
+## Section 106: The Lifeblood Mandate (Water and Energy)
 1.  **Water as a Right:** Access to clean, unpolluted water is a fundamental human right.
     *   No corporation may claim exclusive ownership over a natural aquifer or river to the exclusion of the citizenry.
     *   The commodification of water for exorbitant profit is classified as Extortion.
@@ -54,5 +64,5 @@ territorial_scope: "Universal"
     *   During the 7-Year Jubilee, commercial power generation grids are mandated to throttle down to **"Base Load Sustenance Levels."**
     *   This forces a mandatory period of systemic maintenance, grid repair, and ecological cooling, preventing the infrastructure from running at maximum degradation until failure.
 
-## Section 106: Suspension of Penalties
+## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
