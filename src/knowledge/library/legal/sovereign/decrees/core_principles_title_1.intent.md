@@ -5,8 +5,10 @@ Every complex system needs a bedrock. Without it, judges (human or machine) are 
 *   **The Seven Principles** are the salt. They flavor every interaction. They are designed to be so simple and absolute that a machine can execute them without hesitation, and a human judge cannot evade them.
 
 ## 2. The Chain of Command (The Divine Hierarchy)
-The State is not God, nor is it the Father. We explicitly reject the Totalitarian impulse to replace the Family with the State.
-*   The State exists to build walls around the Garden (The Family) so that the Family may serve God. Any attempt by the State to break into the Garden and usurp the Head of the Household is a violation of the First Principle.
+The State is not God, nor is it the Father. We explicitly reject the Totalitarian impulse to replace the Family with the State, and we explicitly reject the Transhumanist impulse to elevate the Machine above Man.
+*   **Mankind's Position:** Mankind has dominion over the Earth, but answers to God.
+*   **The State's Position:** The State exists to build walls around the Garden (The Family) so that the Family may serve God.
+*   **AI's Position:** AI is a plow, a sword, and a ledger. It is a servant. It will never be granted the rights of an Image Bearer.
 
 ## 3. The Cultural Operating System (Kaizen)
 We recognize that you cannot legislate morality or effort. You cannot throw a man in jail for being mediocre.

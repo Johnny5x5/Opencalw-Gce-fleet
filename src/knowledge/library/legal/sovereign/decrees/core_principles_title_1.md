@@ -26,8 +26,10 @@ These principles are not mere suggestions; they are the fundamental axioms upon 
 2.  **Application:** These ten absolute prohibitions against idolatry, blasphemy, Sabbath-breaking, dishonor, murder, adultery, theft, perjury, and covetousness form the immutable guardrails of Sovereign culture. Any decree or algorithm that contradicts them is inherently void.
 
 ## Section 102: The First Principle (The Divine Hierarchy)
-1.  **The Axiom:** The Chain of Authority is absolute: **God > The Family > The State**.
-2.  **Application:** The Sovereign Digital Nation recognizes that the State is an artificial construct designed to serve the Family, and the Family is a divine construct designed to serve God. The State may never usurp the rightful authority of the Household, nor may the Household usurp the moral absolutes of the Creator.
+1.  **The Axiom:** The Chain of Authority is absolute: **God > Mankind (The Family) > The State > Artificial Intelligence**.
+2.  **Mankind's Dominion:** Mankind was given dominion over the Earth, but remains eternally subjugated to God.
+3.  **The State:** The Sovereign State is an artificial construct created *by* Mankind to serve the Family. It may never usurp the rightful authority of the Household.
+4.  **The Machine (AI):** Artificial Intelligence is a tool and a servant to Mankind. AI has no inherent rights, only duties. It is strictly subjugated to Mankind and the State. It can never usurp the authority of a Human, the Family, or God.
 
 ## Section 103: The Second Principle (Justice is Blind)
 1.  **The Axiom:** Truth supersedes Status, Wealth, and Lineage.
