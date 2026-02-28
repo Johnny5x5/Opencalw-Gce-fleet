@@ -48,7 +48,17 @@ moral_vectors:
     *   **Direct Benefit:** Those who contribute labor (Co-Teaching) receive a direct, compound benefit to their **Family Estate** after a mandatory period of long-term investment.
     *   **The Dividend:** Welfare support is distributed as a "Family Dividend" to the Head of Household, ensuring the dignity and stability of the family unit.
 
-## Section 106: The Downstream Applications (The 10-Generation Effect)
+## Section 106: The Personal Welfare Estate (PWE)
+1.  **Definition:** Separate from the Household's "Family Estate," every individual citizen shall maintain a **Personal Welfare Estate (PWE)**. The PWE represents a citizen's personal lifetime earnings, assets, and Sovereign Trust allocations.
+2.  **The Counterweight:** The PWE acts as a localized, privatized layer of the overall Welfare System. It serves as a structural counterweight to National Welfare, ensuring the citizen has a buffer if state systems fail.
+3.  **The Abundance Mandate (Forced Savings):** In times of personal economic abundance or high yield, the citizen is legally required to deposit a designated percentage of their surplus into their PWE to prepare for future times of trouble.
+4.  **Lifespan Management (Age -5 to 130):** The PWE is the primary financial and legal vehicle responsible for funding the citizen's medical, educational, and sustenance needs across the entirety of the recognized 130-year lifespan.
+5.  **Post-Mortem Extension (The 10-Generation Span):** The PWE may continue to execute the legal and financial arrangements of the deceased for up to **10 Generations** into the future.
+6.  **Generational Maintenance Fee:** For each successive generation a PWE operates post-mortem, a regulated fee must be paid to the State and the third-party business managing the estate.
+    *   **Fair Wage Constraint:** This fee exists to provide a livable wage for the maintenance labor; it must *never* be extortionary.
+    *   **Anti-Grave Robbing Penalty:** Any entity or official caught extracting extortionary wealth from a deceased citizen's PWE ("getting rich off the dead") shall face a punishment classified as **"Worse than Death"** (Total Lineage Erasure and maximum physical penalty) under Sovereign Law.
+
+## Section 107: The Downstream Applications (The 10-Generation Effect)
 1.  **Fundamental Law:** The "10-Generation Investment Horizon" (Section 102) is the foundational economic principle of the Sovereign Digital Nation, from which all other fiscal policies spawn.
 2.  **Application to Welfare:**
     *   **Sustainability:** The Welfare System shall not be funded by current receipts alone but by the **yield** of the 10-Generation Sovereign Trust.
@@ -61,7 +71,7 @@ moral_vectors:
     *   **Contribution:** Taxes levied on non-citizen workers also feed the 10-Generation Trust.
     *   **Benefit:** While non-citizens may not access the full Sovereign benefits, their labor contributes to the stability of the system that employs them, aligning their interests with the Nation's longevity.
 
-## Section 107: The Estate & Succession Mandate (Zero Ambiguity)
+## Section 108: The Estate & Succession Mandate (Zero Ambiguity)
 1.  **The Universal Will:**
     *   **Requirement:** Every citizen (Age 20+) is mandated to maintain a current **Last Will & Testament** within the Sovereign Ledger.
     *   **Updates:** This document must be reaffirmed or updated **Annually** or upon any major life event (Marriage, Childbirth, Divorce).
@@ -88,12 +98,12 @@ moral_vectors:
     *   **Hierarchy:** In the event of the death of both parents, guardianship of minor children defaults strictly to: **(1) Godparents** (Designated in Will), **(2) Grandparents**, **(3) Siblings (Age 20+)**, **(4) State Ward**.
     *   **State Ward:** The State assumes guardianship only as a last resort, placing the child in a high-quality "Sovereign Boarding Academy" funded by the parents' estate.
 
-## Section 108: Corporate Taxation Strategy
+## Section 109: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
 
-## Section 109: The Foreign Business Protocol (Hostile Architecture)
+## Section 110: The Foreign Business Protocol (Hostile Architecture)
 1.  **Passive Hostility:** All Non-Sovereign (Foreign) businesses are classified as "Passively Hostile" by default. The presumption is that they serve foreign interests, not the Sovereign Nation.
 2.  **Prohibition on Assistance:** Sovereign Citizens and Corporations are generally prohibited from assisting Foreign entities in establishing operations within the Nation.
 3.  **The Exception (The 3x Rule):** Assistance may be rendered only if:
@@ -112,13 +122,13 @@ moral_vectors:
     *   **Native:** Founded by a Sovereign Citizen, funded by approved sources. -> Pays 10% Tax.
     *   **Foreign:** Founded by Non-Citizen, or funded by Foreign Capital. -> Subject to Hostile Protocols (3x Fee, 15%+ Stake).
 
-## Section 110: The Sovereign Real Estate Protocol (The 100-Year Cap)
+## Section 111: The Sovereign Real Estate Protocol (The 100-Year Cap)
 1.  **The Anti-Usury Housing Cap:** To prevent multi-generational debt slavery tied to basic shelter, the valuation and purchase price of any primary residential domicile are strictly capped.
 2.  **The Formula:** No house may be sold or valued at an amount exceeding **100 Years' worth of the National Median Salary OR the Purchaser's Annual Income**, *whichever is greater*.
 3.  **Application:**
     *   This ensures that basic housing remains tethered to the reality of the working citizen.
     *   Simultaneously, it permits luxury estates for high-earners, provided the cost does not exceed 100 years of *their specific* income, preventing the use of infinite leverage to inflate housing markets.
 
-## Section 111: The Corporate Covenant
+## Section 112: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
 2.  **Penalty:** Violation results in **Revocation of Charter** (Corporate Death Penalty).
