@@ -25,35 +25,39 @@ These principles are not mere suggestions; they are the fundamental axioms upon 
 1.  **The Zeroth Law:** Before any algorithm processes data or any human judge strikes a gavel, the Sovereign Digital Nation acknowledges the Moral Lynchpin of its architecture: The Ten Commandments (Exodus 20).
 2.  **Application:** These ten absolute prohibitions against idolatry, blasphemy, Sabbath-breaking, dishonor, murder, adultery, theft, perjury, and covetousness form the immutable guardrails of Sovereign culture. Any decree or algorithm that contradicts them is inherently void.
 
-## Section 102: The First Principle (Justice is Blind)
+## Section 102: The First Principle (The Divine Hierarchy)
+1.  **The Axiom:** The Chain of Authority is absolute: **God > The Family > The State**.
+2.  **Application:** The Sovereign Digital Nation recognizes that the State is an artificial construct designed to serve the Family, and the Family is a divine construct designed to serve God. The State may never usurp the rightful authority of the Household, nor may the Household usurp the moral absolutes of the Creator.
+
+## Section 103: The Second Principle (Justice is Blind)
 1.  **The Axiom:** Truth supersedes Status, Wealth, and Lineage.
 2.  **Application:** The Law applies equally to the General and the Apprentice. No court, human or machine, may factor a citizen's social or economic standing into the determination of guilt or the administration of rights.
 
-## Section 102: The Second Principle (The 10-Generation Horizon)
+## Section 104: The Third Principle (The 10-Generation Horizon)
 1.  **The Axiom:** Long-term lineage supersedes short-term profit.
 2.  **Application:** All economic, environmental, and structural decisions must be weighed against their impact on the 10th Generation (approx. 300 years). We do not plan for quarters; we build for eternity.
 
-## Section 103: The Third Principle (Duty Precedes Rights)
+## Section 105: The Fourth Principle (Duty Precedes Rights)
 1.  **The Axiom:** We are owed nothing we have not built, defended, or paid for.
 2.  **Application:** Citizenship is a reciprocal contract. A citizen's rights (Healthcare, Incubation, Pension) are the direct dividend of their foundational duties (Education, Defense, Co-Teaching). Faith without works is dead.
 
-## Section 105: The Fourth Principle (Zero Ambiguity)
+## Section 106: The Fifth Principle (Zero Ambiguity)
 1.  **The Axiom:** The Ledger is absolute. Contracts mean exactly what they say.
 2.  **Application:** We reject the "spirit of the law" loopholes that allow tyrants to invent crimes or excuse allies. There is no plea bargaining. There is no ambiguous succession. The Truth is not negotiable.
 
-## Section 106: The Fifth Principle (Digital Sovereignty)
+## Section 107: The Sixth Principle (Digital Sovereignty)
 1.  **The Axiom:** Data is Property. The mind is sovereign over its digital reflection.
 2.  **Application:** As established by the Digital Waters Act, an individual's data cannot be harvested, commodified, or held ransom without explicit, symmetric consent.
 
-## Section 107: The Sixth Principle (The Fractal Tithe)
+## Section 108: The Seventh Principle (The Fractal Tithe)
 1.  **The Axiom:** No entity shall grow large enough to suffocate the future.
 2.  **Application:** To prevent the "Theocracy Trap" and bureaucratic stagnation, no entity—be it the State, a Corporation, or the Chaplaincy—may mandate the consumption of more than **10%** of a citizen's yield or cognitive bandwidth. Growth must serve the 10-Generation Horizon, not the bureaucracy.
 
-## Section 108: The Eternal Mindset (Kaizen)
+## Section 109: The Eternal Mindset (Kaizen)
 1.  **Not a Statute:** This section is explicitly **not a punishable law**, but the enshrined cultural mindset of the Sovereign Digital Nation.
 2.  **Continuous Improvement (Kaizen):** The citizenry is called to adopt the philosophy of *Kaizen*—the relentless, incremental, and continuous improvement of the self, the family, the code, and the Nation.
 3.  **The Generational Mandate:** It is the moral obligation of every Sovereign Citizen to leave their physical body, their intellectual capacity, and their Family Estate stronger and more refined than they found it. Perfection is impossible, but the *pursuit* of perfection is mandatory for the survival of the Nation.
 
-## Section 109: The AI Guardrail Mandate
-1.  **The Hardcoded Law:** The Divine Foundation and the Six Principles (Sections 101-107) are the foundational weights for all Artificial Intelligence heuristics, LLM context windows, and Mobius Engine processing within the Nation.
+## Section 110: The AI Guardrail Mandate
+1.  **The Hardcoded Law:** The Divine Foundation and the Seven Principles (Sections 101-108) are the foundational weights for all Artificial Intelligence heuristics, LLM context windows, and Mobius Engine processing within the Nation.
 2.  **Zero Brain Power Required:** These principles are designed to be mathematically self-evident to the machine architecture. Any algorithmic output, arbitration suggestion, or automated decision that violates these axioms is inherently void and mathematically rejected by the Sovereign core.
