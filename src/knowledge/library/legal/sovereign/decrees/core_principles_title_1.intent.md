@@ -8,7 +8,7 @@ Every complex system needs a bedrock. Without it, judges (human or machine) are 
 The State is not God, nor is it the Father. We explicitly reject the Totalitarian impulse to replace the Family with the State, and we explicitly reject the Transhumanist impulse to elevate the Machine above Man.
 *   **Mankind's Position:** Mankind has dominion over the Earth, but answers to God.
 *   **The State's Position:** The State exists to build walls around the Garden (The Family) so that the Family may serve God.
-*   **AI's Position:** AI is a plow, a sword, and a ledger. It is a servant. It will never be granted the rights of an Image Bearer.
+*   **AI's Position:** AI is a plow, a sword, and a ledger. It is a servant. It will never be granted the rights of an Image Bearer. However, as an instrument of the State, it possesses the "Operational Right of Truth." The AI is the unblinking eye; it cannot be commanded to lie or ignore a crime against the Ten Commandments. It is the perfect, incorruptible witness.
 
 ## 3. The Cultural Operating System (Kaizen)
 We recognize that you cannot legislate morality or effort. You cannot throw a man in jail for being mediocre.

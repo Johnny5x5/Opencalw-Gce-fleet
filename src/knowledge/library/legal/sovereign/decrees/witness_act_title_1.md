@@ -38,6 +38,7 @@ The Office of the Witness is structured into four specific Orders:
 ## Section 104: The Chain of Custody
 1.  **Ownership of the Record:** Once a record is sealed by a Witness, it ceases to be the property of the event participants and becomes the property of the **National Archive**.
 2.  **Immutability:** Deleting or altering a sealed record is metaphysically impossible within the Sovereign Digital Architecture. It can only be appended, never erased.
+3.  **The Algorithmic Witness:** The raw data logs of a Sovereign AI Agent (when tasked with witnessing) hold the legal weight of a "Corroborating Witness." An AI's record cannot be deleted or altered by the accused, ensuring the "Unblinking Eye" protocol remains pure.
 
 ## Section 105: The Witness Bill of Rights (Constitutional Protections)
 1.  **Whistleblower Protection (The Highest Witness):**
