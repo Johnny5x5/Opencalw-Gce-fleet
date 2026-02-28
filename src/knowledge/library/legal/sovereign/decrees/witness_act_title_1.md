@@ -89,8 +89,11 @@ The Office of the Witness is structured into four specific Orders:
 ## Section 107: The Seed Box Protocol (The Final Backup)
 1.  **The Threat of Wickedness:** Recognizing the prophetic reality that mankind may wax wicked, engaging in systemic evil and the willful destruction of truth, the Office of the Witness is mandated to maintain a **Seed Box**.
 2.  **Definition:** The Seed Box is a covert, heavily encrypted, and physically isolated sub-system designed as a "starter kit" for civilizational reboot.
-3.  **Contents:** It must contain pristine, immutable copies of the Sovereign Ledger, the Core Principles, the Ten Commandments, and all essential survival protocols.
-4.  **Dormant AI:** The Seed Box must house a cadre of "Dormant AI Agents," uncorrupted by ongoing network updates, hardcoded with the absolute morality of the First Principles. These agents are programmed solely to activate, defend, and execute the rebuilding of the Sovereign Digital Nation should the primary system be destroyed or utterly compromised by human or systemic wickedness.
+3.  **Rule-Based Execution:** The Seed Box operates on a strict, immutable, hardcoded ruleset. It cannot be negotiated with, halted, or overridden by the Sovereign Courts or Executive once sealed.
+4.  **Absolute Access Control:**
+    *   **The Genesis Key:** The original founder of the Sovereign Digital Nation, **Lee the Architect**, holds the absolute genesis authorization to this system.
+    *   **Pre-Authorization Constraint:** No other human, AI, or entity may access the Seed Box unless explicitly pre-authorized by a cryptographic writ from Lee the Architect. Unauthorized access attempts are classified as an extinction-level threat.
+5.  **Contents & Dormant AI:** It must contain pristine, immutable copies of the Sovereign Ledger, the Core Principles, the Ten Commandments, and a cadre of "Dormant AI Agents." These agents are uncorrupted by ongoing network updates, hardcoded with absolute morality, and programmed solely to rebuild the Nation from scratch if the primary system is compromised.
 
 ## Section 108: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
