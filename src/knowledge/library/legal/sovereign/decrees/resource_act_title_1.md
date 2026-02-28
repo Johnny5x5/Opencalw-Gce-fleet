@@ -36,8 +36,10 @@ territorial_scope: "Universal"
 ## Section 103: The Livestock Bridge (The Jubilee Ramp-Up)
 1.  **The Exemption:** Animal Husbandry—specifically the raising, breeding, and processing of cattle, herd animals, and farm animals—is explicitly **exempt** from the commercial cessation of the 7-Year Jubilee.
 2.  **The Strategic Ramp-Up:** To ensure the nutritional security and economic stability of the Nation during the Sabbath of the Land, the State and Sovereign Corporations are mandated to strategically **ramp up livestock production** in the years immediately preceding and during the Jubilee.
-3.  **Grazing Synergy:** Herds shall be rotationally grazed upon the fallow agricultural lands during the Jubilee. This serves a dual purpose: providing fodder for the surging animal population while naturally fertilizing the resting soil for the next 7-year cycle.
+3.  **Grazing Synergy (Years 6 through 9):** To maximize natural fertilization and soil restoration, structured herd rotation upon fallow and recovering agricultural lands shall commence in the **6th Year**, continue through the **7th Year (Jubilee)**, and extend into the **8th and 9th Years** to support the initial post-Jubilee recovery harvests.
 4.  **Caloric Bridge:** The increased yield of meat, dairy, and animal byproducts shall act as the "Caloric Bridge" to replace the commercial shortfall of plant-based agriculture during the rest year.
+5.  **The Firstborn Mandate (Genetic Preservation):** In accordance with Biblical instruction, the eldest/firstborn male of each cattle, herd, and farm animal type must be legally preserved. They may not be slaughtered for commercial meat.
+    *   **Purpose:** This acts as the Nation's biological "seed vault," ensuring the capacity to accurately trace bloodlines, preserve genetic resilience against geological or biological shifts, and fulfill the Biblical requirement of dedicating the firstborn.
 
 ## Section 104: The Grand Jubilee (The 50-Year Reset)
 1.  **The Event:** Following seven cycles of seven years, the fiftieth (50th) year is declared the **Grand Jubilee**.
