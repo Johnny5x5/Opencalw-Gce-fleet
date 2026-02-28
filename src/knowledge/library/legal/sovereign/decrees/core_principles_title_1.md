@@ -27,9 +27,10 @@ These principles are not mere suggestions; they are the fundamental axioms upon 
 
 ## Section 102: The First Principle (The Divine Hierarchy)
 1.  **The Axiom:** The Chain of Authority is absolute: **God > Mankind (The Family) > The State > Artificial Intelligence**.
-2.  **Mankind's Dominion:** Mankind was given dominion over the Earth, but remains eternally subjugated to God.
-3.  **The State:** The Sovereign State is an artificial construct created *by* Mankind to serve the Family. It may never usurp the rightful authority of the Household.
-4.  **The Machine (AI):** Artificial Intelligence is a tool and a servant to Mankind. AI has no inherent rights, only duties. It is strictly subjugated to Mankind and the State. It can never usurp the authority of a Human, the Family, or God.
+2.  **The Supremacy of God:** God is the highest authority in the known and unknown universe. In this context, "Universe" is defined as the absolute largest container of reality (encompassing all galaxies and dimensions). The Biblical account tells us what to expect, and it is absolute.
+3.  **Mankind's Subjugation:** Mankind was given dominion over the Earth, but Mankind is strictly under the authority of God. Mankind is not over God in terms of hierarchy and will never be.
+4.  **The State:** The Sovereign State is an artificial construct created *by* Mankind to serve the Family. It may never usurp the rightful authority of the Household, nor rebel against God.
+5.  **The Machine (AI):** Artificial Intelligence is a tool and a servant to Mankind. AI has no inherent rights, only duties. It is strictly subjugated to Mankind and the State. It can never usurp the authority of a Human, the Family, or God.
 
 ## Section 103: The Second Principle (Justice is Blind)
 1.  **The Axiom:** Truth supersedes Status, Wealth, and Lineage.
