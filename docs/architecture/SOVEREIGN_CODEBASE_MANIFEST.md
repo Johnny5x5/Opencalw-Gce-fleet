@@ -38,6 +38,12 @@ The codebase is designed to be operated not just by humans, but by an **AI Agent
 To prevent the AI Swarm from consuming all Federal compute resources, the **Workspace Scaling Doctrine** limits each Department to a Hard Limit of **128 active workspaces**.
 An overarching AI Persona known as the **Traffic Cop** manages this, ensuring the ratio of workspaces to workers never exceeds **Pi (3.14)**.
 
+## 6. The Nervous System (Fluvio)
+While the Library acts as the Static Memory (Sled DB), the Nation requires an **Event-Driven Nervous System** to react to changes in real-time (e.g., a new law is passed, 40,000 ships need to know instantly).
+
+*   **The Choice:** We have selected **Fluvio** (Rust/WASM Native) over Redpanda/Kafka.
+*   **The Integration:** The `daemon` crates within the 4x4 Grid are designed to act as Fluvio SmartModules. They subscribe to topics like `law.sovereign.update` and react asynchronously, ensuring the entire Federal grid remains perfectly synchronized without polling.
+
 ---
 **Conclusion:**
-This architecture guarantees that the Sovereign Digital Nation is fast (Rust), stable (Federal Workspace), scalable (4x4 Grid), and intelligent (Agent Swarm Integration).
+This architecture guarantees that the Sovereign Digital Nation is fast (Rust), stable (Federal Workspace), scalable (4x4 Grid), intelligent (Agent Swarm Integration), and reactive (Fluvio Nervous System).
