@@ -50,9 +50,18 @@ To achieve this, the Sovereign Tax Code strictly outlaws the **Inheritance Tax (
 
 When a State levies a percentage-based inheritance tax, it punishes the virtuous act of building for one's children, seizing private capital to feed a hungry public bureaucracy. In our Nation, the fruit of a family's labor belongs exclusively to that family. When a Citizen passes, their unspent Sovereign Trust and acquired assets transfer entirely to their heirs.
 
-We do, however, acknowledge the physical reality of bureaucracy. Transferring an estate requires white-collar labor, cryptographic notarization, and paperwork. Therefore, we institute a **Token Tax**—a flat administrative fee rather than a wealth seizure. The fee is set at exactly one (1) of the largest circulating bills in the economy (the 1,000 SC Grand Note) per year of the estate's lifespan. This ensures the clerks are paid for their labor, but the estate's capital remains entirely untouched by percentage-based theft.
+We do, however, acknowledge the physical reality of bureaucracy. Transferring an estate requires white-collar labor, cryptographic notarization, and complex AI Smart Contract orchestration. Therefore, we institute a **Token Tax**—a flat administrative fee. The fee is set at exactly one (1) of the largest circulating bills in the economy (the 1,000 SC Grand Note) per year of the estate's lifespan. This ensures the clerks and compute clusters are paid for their labor, but the estate's capital remains entirely untouched by percentage-based theft.
 
-This is the **Dynasty Protocol**. Over 50 years (one Jubilee cycle), this creates immense, decentralized pockets of capital that are resistant to State coercion.
+### The Dynasty Engine (The Perpetual Motion Machine)
+When a Citizen passes, their Personal Estate is bundled into the **Ancestral Corpus** and transferred to the Family Welfare Estate. From here, a brilliant behavioral and financial mechanism takes over:
+
+1.  **The Jubilee Lockup:** The Corpus is cryptographically locked for exactly 50 years. This prevents the immediate heirs from squandering the wealth, effectively forcing the capital to "skip a generation" and benefit the grandchildren.
+2.  **The 85/15 Siphon:** After 50 years, the Corpus unlocks its yield. However, only 15% of the cash flow is siphoned for the family; the remaining 85% is perpetually reinvested, ensuring the principal outpaces inflation infinitely.
+3.  **The 7/8 Split:** The 15% siphon is further divided to protect the family from hedonism:
+    *   **The 7% (The Bread):** Paid out to living members on a strict needs-based, non-cash system (direct payment of medical or housing bills) to ensure survival without enabling luxury.
+    *   **The 8% (The Seed):** Invested "Ahead of Time" into the predictive futures of the family (e.g., funding a future descendant's business).
+
+This is the **Dynasty Protocol**. It is a 50-year financial perpetual motion machine that creates immense, decentralized, and responsible pockets of capital that are resistant to both State coercion and human greed.
 
 ***
 
