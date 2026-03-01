@@ -59,13 +59,14 @@ To ensure the lifelong stability of the Citizen, all personal income (whether fr
 2.  **The 60% Livable Wage:** The remaining 60% is delivered to the Citizen as liquid, spendable cash for daily life (housing, sustenance, leisure).
 3.  **Separation of Concerns:** This algorithm applies exclusively to personal income. It explicitly excludes Corporate Taxes, Union dues, and structural Estate compounding.
 
-## Section 108: The Dynasty Overflow Mechanism
+## Section 108: The Dynasty Overflow Mechanism & The 10-Generation Mandate
 To ensure that extreme financial success benefits the multi-generational bloodline rather than inducing individual decadence, an algorithmic shift occurs when a Citizen breaches the Solomonic Cap:
 1.  **The Threshold:** Once a Citizen's lifetime personal wealth accumulation breaches the $55M USD Equivalent (+2% annual inflation) cap, the standard 60/40 Split (Section 107) is suspended for all subsequent income.
 2.  **The 70% Sweep:** Any personal income generated past this threshold is subjected to a **70% mandatory diversion** directly into the Citizen's Personal Wealth Estate and the overarching Family Welfare Estate.
-3.  **The Sovereign Reward (Tax Decay):** Because a Citizen operating at this level of wealth is dedicating 70% of their output to securing their family's future (ensuring they will never be a burden to the State's welfare systems), the State rewards their productivity. For every additional $55M tier achieved past the initial cap, the Citizen's baseline Sovereign Tithe (10%) is reduced by exactly **0.000001%**.
-4.  **The Trillionaire Ceiling:** This Sovereign Reward decay continues up to a maximum verifiable wealth accumulation of **$5.5 Trillion USD Equivalent**.
-5.  **Purpose:** The State does not confiscate excess wealth; it forces the Citizen to transition from "Personal Consumption" to "Dynasty Building," rewarding them with tax reductions for effectively privatizing their family's welfare.
+3.  **The Target Capacity (The 10x12 Matrix):** This 70% sweep is not infinite. It continues only until the Family Welfare Estate holds sufficient capital to fully fund **10 generations into the future**.
+4.  **The Structural Burden:** The actuarial calculus for this 10-generation target assumes a rigid structural burden: a maximum biological footprint of exactly **12 children per family node**, governed by "Conservative Courtship Methodology." This establishes the permanent mathematical ceiling for the Estate.
+5.  **The Sovereign Reward (Tax Decay):** Because a Citizen operating at this level is dedicating 70% of their output to securing their 10-generation legacy (ensuring they will never be a burden to the State's welfare systems), the State rewards their productivity. For every additional $55M tier achieved past the initial cap, the Citizen's baseline Sovereign Tithe (10%) is reduced by exactly **0.000001%**.
+6.  **The Trillionaire Ceiling:** This Sovereign Reward decay continues up to a maximum verifiable wealth accumulation of **$5.5 Trillion USD Equivalent**.
 
 ## Section 109: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.

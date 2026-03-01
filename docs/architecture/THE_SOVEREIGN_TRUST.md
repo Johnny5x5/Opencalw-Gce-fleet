@@ -86,6 +86,15 @@ Once a Citizen accumulates a lifetime wealth equivalent to the Solomonic Cap ($5
 
 Instead of a 60/40 split, the algorithm shifts to a **70% mandatory sweep** into the Citizen's Personal and Family Wealth Estates. The State does not take this money; it locks it into the Dynasty Engine (Part III). This allows the Citizen to continue working and producing value for the economy, but forces the fruits of their extreme success to skip a generation, preventing the individual from rotting in excessive luxury while supercharging the multi-generational strength of their bloodline.
 
+### The 10-Generation Mandate (The Fulfillment Cap)
+A critical question arises: *Does this 70% sweep continue infinitely, creating a black hole of unused capital?* No.
+
+The Sovereign Nation is built on purpose, not blind accumulation. The ultimate goal of the Dynasty Overflow is not infinite hoarding, but the total, mathematical financial security of exactly **Ten Generations**.
+
+To calculate this stopping point, the Estate AI utilizes the **10x12 Matrix**. It assumes a conservative sociological baseline: a maximum of 12 children per family node, expanding over 10 generations, adhering to "Conservative Courtship Methodology." This provides a rigid, predictable actuarial table.
+
+Once the Family Welfare Estate hits the exact mathematical threshold required to fund this 10x12 lineage matrix (in perpetuity, via the 85/15 siphon), the 70% sweep is deactivated. The Citizen has achieved "Dynasty Fulfillment."
+
 ### The Sovereign Reward (Regressive Taxonomy of Excellence)
 Traditional nation-states punish extreme success with progressive taxation, viewing billionaires as piggy-banks to be raided. The Sovereign Digital Nation implements the opposite: **A Regressive Taxation of Excellence**.
 
