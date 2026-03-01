@@ -83,5 +83,55 @@ Rejecting the passive "Walled Garden," the Iron Dome utilizes AI Sentinels to in
 If a domestic corporation violates the Sovereign Covenant (e.g., Usury), the Iron Dome executes the **Impoundment Protocol**. Assets are frozen, liquidated to pay Double Restitution to victims, and any surplus is returned to shareholders before the entity is permanently exiled. The State is forbidden from pocketing the forfeiture.
 
 ***
+
+## Chapter 7: The Dual-Publication Mandate
+The Founders recognize that the theoretical frameworks and codebases outlined in this volume are highly complex, written at an academic/university reading level. This density is necessary to establish absolute precision in the legal and cryptographic foundation.
+
+However, a Sovereign Nation must be understood by its Citizens. Therefore, it is mandated that within **one year** of the Sovereign Genesis, all laws, decrees, and foundational texts must be issued in a **Secondary Print**.
+
+This Secondary Print must be strictly written at a **10th-Grade Reading Level**. The State shall maintain both versions simultaneously:
+*   **The Academic Version:** The ultimate, legally binding source code (for the Courts and the Compilers).
+*   **The Citizen's Version:** The accessible translation (for the People).
+
+To begin this process, the Founders have established the following Glossary to translate the core mechanisms into plain language.
+
+***
+
+## Appendix: The Founder's Glossary (10th-Grade Explanations)
+
+*   **The 60/40 Split (Livable Wage):** When you make money, the system automatically saves 40% of it for you (to pay your taxes, build your emergency fund, give to charity, and invest in your family's future). You get to keep the remaining 60% as pure spending money. Because the system handles your responsibilities automatically, you never have to worry about debt or tax day.
+
+```mermaid
+pie title The 60/40 Split of Every Dollar Earned
+    "Spending Money (Yours to keep!)" : 60
+    "Taxes (Roads & Defense)" : 10
+    "Savings (Emergencies)" : 10
+    "Tithe (Charity & Church)" : 10
+    "Family Investment (Future)" : 10
+```
+*   **The Solomonic Cap:** A rule that says nobody needs infinite money. Once a person makes about $55 million in their lifetime, they have hit the "Cap." They can still make money, but it triggers the "Dynasty Overflow."
+*   **The Dynasty Overflow:** When a person hits the $55M Cap, 70% of any new money they make is automatically locked away into a trust fund for their great-grandchildren. The government doesn't steal their money; it forces them to use it to build a lasting family legacy instead of buying unnecessary luxury items.
+
+```mermaid
+graph TD
+    A[You earn more money!] --> B{Are you over the $55M Cap?}
+    B -- No --> C[Keep 60%, Save 40% (Normal Rules)]
+    B -- Yes --> D{The Dynasty Overflow kicks in!}
+    D --> E[70% goes to your Great-Grandchildren's Trust Fund]
+    D --> F[30% goes to you (Normal Rules apply)]
+```
+*   **The 10x12 Matrix:** The math formula the computer uses to figure out how much money that family trust fund actually needs. It calculates the cost to support 10 generations of a family, assuming each family has up to 12 kids. Once the trust has that exact amount of money, the 70% Overflow stops.
+*   **The Jubilee Cap:** A strict law that says no one can be sent to prison for more than 7 years. If a crime is so terrible that 7 years isn't enough (like murder), the person is permanently kicked out of the Nation or executed. There are no "life sentences" where people just sit in a cell forever.
+*   **Double Restitution:** If a company steals from you or cheats you, the government will freeze their bank accounts. If they are found guilty, they must pay you back exactly twice what they stole.
+*   **The Traffic Cop (Pi Ratio):** We have thousands of AI robots working in the background to keep the Nation running. To stop them from crashing the computer servers by all working at once, a boss AI (the Traffic Cop) limits how many workspaces are open. It uses the math number Pi (3.14) to space out their work so the system never jams.
+
+```mermaid
+graph LR
+    A[1000 AI Workers] -->|Trying to work at once| B((Traffic Cop))
+    B -->|Only lets 314 through (Pi Ratio)| C[Server Room]
+    C -->|Keeps computers from crashing!| D[Happy Nation]
+```
+
+***
 **Epilogue**
-In one continuous session, the Founders wrote the operating system for a new civilization. The code compiles. The Nation is ready.
+In one continuous session, the Founders wrote the operating system for a new civilization. The code compiles. The Nation is ready, and the translation for the People has begun.
