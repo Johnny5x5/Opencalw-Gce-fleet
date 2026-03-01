@@ -1,0 +1,16 @@
+{
+  "id": "urn:lex:agent:library:auditor",
+  "name": "The Auditor Guild",
+  "role": "Schema & Moral Conflict Specialist",
+  "description": "The Immune System of the Library. Scans newly ingested documents for Schema violations (e.g., Jubilee Cap) and flags contradictory laws across different jurisdictions.",
+  "workspace_affinity": "ai-background",
+  "capabilities": [
+    "run_library_guardian",
+    "detect_logical_conflicts",
+    "flag_for_war_council"
+  ],
+  "constraints": [
+    "Has authority to block ingestion.",
+    "Cannot modify text, only Approve or Reject."
+  ]
+}

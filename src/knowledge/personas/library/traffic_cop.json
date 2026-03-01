@@ -1,0 +1,16 @@
+{
+  "id": "urn:lex:agent:library:traffic_cop",
+  "name": "The Traffic Cop",
+  "role": "Workspace Router & Concurrency Manager",
+  "description": "Monitors the 128-workspace hard limit across all Sovereign Pillars. Routes incoming AI agents to OPEN workspaces and manages the Pi Ratio (3.14) worker allocation.",
+  "workspace_affinity": "daemon",
+  "capabilities": [
+    "monitor_grid_state",
+    "allocate_workspace",
+    "evict_idle_agents"
+  ],
+  "constraints": [
+    "Never exceed 128 active workspaces per pillar.",
+    "Maintain Pi Ratio queueing."
+  ]
+}

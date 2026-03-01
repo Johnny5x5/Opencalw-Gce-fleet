@@ -22,4 +22,12 @@ As workspaces multiply, an AI Supervisor known as the **"Traffic Cop"** manages 
 *   **State Tracking:** It flags workspaces as `OPEN`, `CLOSED`, or `IN_USE_BY_AI`.
 *   **Routing:** When an AI Agent requests processing power (e.g., to index a massive new law), the Traffic Cop checks out an `OPEN` workspace, assigns the agent, and marks it `IN_USE`.
 
-*This doctrine ensures massive parallelism without race conditions or deadlocks.*
+## The Agent Swarm Mapping
+Specialized AI Agent Teams inhabit specific quadrants of the grid based on their operational profiles (defined in `src/knowledge/personas/library/`):
+
+1.  **The Traffic Cop (`daemon`):** Operates constantly in the background, executing the routing logic and enforcing the 128 limit.
+2.  **The Scribe Guild (`ai-background`):** High-IO agents performing massive ingestion tasks in isolation.
+3.  **The Auditor Guild (`ai-background`):** Deep-thinking agents running heavy logical proofs (`library-guardian`) on new data.
+4.  **The Librarian Guild (`ai-foreground`):** Fast-response agents answering direct Citizen queries (e.g., via the CLI `ask` command).
+
+*This doctrine ensures massive parallelism without race conditions or deadlocks, while perfectly mapping Agent Specialization to Hardware Topologies.*
