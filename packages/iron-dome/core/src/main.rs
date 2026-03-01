@@ -1,6 +1,6 @@
 use clap::{Parser, Subcommand};
 use colored::*;
-use iron_dome::IronDome;
+use iron_dome_core::IronDome;
 
 #[derive(Parser)]
 #[command(name = "iron-dome")]
@@ -34,7 +34,8 @@ fn main() -> anyhow::Result<()> {
             println!("Threats Neutralized: {}", dome.threats_blocked.to_string().yellow());
             println!("Active Rules:");
             for rule in &dome.active_rules {
-                println!(" - {}", rule.cyan());
+                let rule_str: &str = rule.as_str();
+                println!(" - {}", rule_str.cyan());
             }
             println!("{}", "===========================================\n".red());
         }

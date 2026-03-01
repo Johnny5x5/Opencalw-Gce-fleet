@@ -1,0 +1,8 @@
+[package]
+name = "sovereign-time-ai-fg"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+sovereign-time-core = { path = "../core" }

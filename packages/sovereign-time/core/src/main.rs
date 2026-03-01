@@ -1,6 +1,6 @@
 use clap::{Parser, Subcommand};
 use colored::*;
-use sovereign_time::SovereignCalendar;
+use sovereign_time_core::SovereignCalendar;
 
 #[derive(Parser)]
 #[command(name = "sovereign-time")]

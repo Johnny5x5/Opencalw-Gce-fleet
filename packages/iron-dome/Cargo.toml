@@ -1,18 +1,7 @@
-[package]
-name = "iron-dome"
-version = "0.1.0"
-edition = "2021"
-
-[lib]
-path = "src/lib.rs"
-
-[[bin]]
-name = "iron-dome"
-path = "src/main.rs"
-
-[dependencies]
-clap = { version = "4.4", features = ["derive"] }
-colored = "2.0"
-regex = "1.5"
-anyhow = "1.0"
-rand = "0.8"
+[workspace]
+members = [
+    "core",
+    "daemon",
+    "ai-foreground",
+    "ai-background"
+]
