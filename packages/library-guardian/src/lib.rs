@@ -23,6 +23,27 @@ pub struct MoralVectors {
     pub liberty: u32,
 }
 
+/// Validates a law represented as JSON against a set of domain rules.
+///
+/// On success returns `Ok("Valid")`. On failure returns `Err` with a descriptive violation or parse error message.
+///
+/// # Examples
+///
+/// ```
+/// // Valid law example
+/// let json = r#"
+/// {
+///   "id": "law-1",
+///   "title": "Example",
+///   "jurisdiction": "Foreign",
+///   "moral_vectors": { "harm": 0, "fairness": 10, "loyalty": 5, "authority": 5, "purity": 0, "liberty": 0 },
+///   "max_sentence_years": 5,
+///   "intent_uri": null
+/// }
+/// "#;
+/// let res = validate_law(json);
+/// assert_eq!(res.unwrap(), "Valid");
+/// ```
 #[wasm_bindgen]
 pub fn validate_law(json_data: &str) -> Result<String, String> {
     let law: LawObject = serde_json::from_str(json_data).map_err(|e| e.to_string())?;
