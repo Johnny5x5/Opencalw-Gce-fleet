@@ -68,9 +68,10 @@ The most sophisticated engineering of the session was the Economic Pillar. The F
 1.  **The Sovereign Credit (SC):** Capped at 210 Million, backed by a hybrid of AI Compute (Utility) and the Iron Ledger (Faith).
 2.  **The 60/40 Liberation Algorithm:** To protect citizens from debt, 40% of all income is automatically siphoned (10% Tax, 10% Savings, 10% Tithe, 10% Family Investment). The remaining 60% provides a guaranteed "Sovereign Livable Wage."
 3.  **The Solomonic Cap:** To prevent oligarchic decadence, liquid wealth is strictly capped at **$55 Million USD Equivalent** (The First-World Upper Middle Class standard).
-4.  **The Dynasty Overflow:** Any income generated past $55M triggers a mandatory **70% sweep** into a locked 50-Year Family Trust.
-5.  **The 10x12 Matrix:** This sweep stops only when the Trust can mathematically fund exactly **10 generations**, assuming 12 children per family unit under "Conservative Courtship Methodology."
-6.  **The Sovereign Reward:** Because the ultra-wealthy are forced to fund their own 10-generation welfare state, they are no longer a burden to the public. Therefore, the State rewards them by reducing their 10% tax rate by **0.000001%** for every $55M tier achieved, up to a $5.5 Trillion ceiling.
+4.  **The Dynasty Overflow:** Any income generated past $55M triggers a mandatory **70% sweep** into the Ancestral Corpus, a locked 50-Year Jubilee Family Trust. Upon unlocking, the cash flow is subjected to a strict 85/15 siphon (85% perpetual reinvestment, 15% family distribution). The 15% is further divided into "The Twain": a 7% needs-based non-cash distribution (The Solomonic Tether) and an 8% future predictive investment (The Vanguard Seed).
+5.  **The 10x12 Matrix (The Fulfillment Cap):** This 70% sweep stops only when the Trust can mathematically fund exactly **10 generations**, assuming a structural burden of 12 children per family unit under "Conservative Courtship Methodology."
+6.  **The Lifespan Tax Curve:** To reward lifelong labor and character development, the State applies a heavy tax burden during the citizen's first 30 years (The Grind). However, upon reaching the "Reaping Phase," the citizen's tax rate drops by 0.000001% for every 7 years of life, provided they have accumulated 21 years of work credits and passed mandatory education.
+7.  **The Sovereign Reward:** Because the ultra-wealthy are forced to fund their own 10-generation welfare state, they are no longer a burden to the public. Therefore, the State rewards them by reducing their 10% tax rate by an additional **0.000001%** for every $55M tier achieved past the cap, up to a $5.5 Trillion ceiling.
 
 ***
 
