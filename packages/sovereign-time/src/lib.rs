@@ -1,4 +1,4 @@
-use chrono::{DateTime, Utc, Datelike, TimeZone};
+use chrono::{DateTime, Utc, Datelike};
 
 pub struct SovereignCalendar {
     pub now: DateTime<Utc>,

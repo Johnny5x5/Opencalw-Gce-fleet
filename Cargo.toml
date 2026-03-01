@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "packages/national-library",
+    "packages/library-guardian",
+    "packages/sovereign-time",
+    "packages/iron-dome"
+]
