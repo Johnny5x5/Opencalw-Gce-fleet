@@ -1,7 +1,7 @@
 use clap::{Parser, Subcommand};
-use national_library::{Scribe, Librarian};
+use national_library_core::{Scribe, Librarian};
 use colored::*;
-use sovereign_time::SovereignCalendar;
+use sovereign_time_core::SovereignCalendar;
 
 #[derive(Parser)]
 #[command(name = "sovereign-library")]
