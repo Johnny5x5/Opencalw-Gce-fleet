@@ -37,7 +37,7 @@ moral_vectors:
 The 15% active cash flow is divided into two intertwined mechanisms—The Twain—to ensure survival and future growth without inducing moral decay:
 1.  **The Solomonic Tether (7%):** Reinvested into a high-liquidity vehicle that pays out to living family members strictly on a **Needs-Based, Non-Cash** basis (e.g., directly paying healthcare, housing, or food suppliers).
     *   *The Floor:* Payouts must guarantee a baseline equivalent to the standard of an **Upper Middle Class citizen in a Second-World Nation**.
-    *   *The Solomonic Cap (The Ceiling):* Payouts are subject to a strict maximum annual and lifetime limit, pegged to the standard of an **Upper Middle Class citizen in a First-World Nation** (e.g., a $55M lifetime equivalent). This prevents the citizen from obtaining unattainable, corrupting wealth, fulfilling the proverb: "Give me neither poverty nor riches."
+    *   *The Solomonic Cap (The Ceiling):* Payouts are subject to a strict lifetime limit, explicitly pegged at **$55,000,000 USD Equivalent, adjusted upward by 2% annually for inflation**. This prevents the citizen from obtaining unattainable, corrupting wealth, fulfilling the proverb: "Give me neither poverty nor riches."
 2.  **The Vanguard Seed (8%):** Invested directly into the futures of the family members using predictive "Ahead of Time" algorithms (e.g., funding future education, business incubation, or unborn descendants).
 
 ## Section 106: The Sovereign Tithe and The Lifespan Curve
@@ -59,11 +59,17 @@ To ensure the lifelong stability of the Citizen, all personal income (whether fr
 2.  **The 60% Livable Wage:** The remaining 60% is delivered to the Citizen as liquid, spendable cash for daily life (housing, sustenance, leisure).
 3.  **Separation of Concerns:** This algorithm applies exclusively to personal income. It explicitly excludes Corporate Taxes, Union dues, and structural Estate compounding.
 
-## Section 108: Corporate Taxation Strategy
+## Section 108: The Dynasty Overflow Mechanism
+To ensure that extreme financial success benefits the multi-generational bloodline rather than inducing individual decadence, an algorithmic shift occurs when a Citizen breaches the Solomonic Cap:
+1.  **The Threshold:** Once a Citizen's lifetime personal wealth accumulation breaches the $55M USD Equivalent (+2% annual inflation) cap, the standard 60/40 Split (Section 107) is suspended for all subsequent income.
+2.  **The 70% Sweep:** Any personal income generated past this threshold is subjected to a **70% mandatory diversion** directly into the Citizen's Personal Wealth Estate and the overarching Family Welfare Estate.
+3.  **Purpose:** The State does not confiscate the excess wealth; it merely forces the Citizen to transition from "Personal Consumption" to "Dynasty Building."
+
+## Section 109: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
 
-## Section 108: The Corporate Covenant
+## Section 110: The Corporate Covenant
 1.  **Condition:** To qualify for the reduced rates (3-5%), a corporation must abide by the **Biblical Laws of Commerce** (No Usury, Fair Wages, Sabbath Rest).
 2.  **Penalty:** Violation results in **Revocation of Charter** (Corporate Death Penalty).

@@ -79,6 +79,13 @@ All personal income (whether generated from labor or paid out from the Trust) is
 
 By removing the *choice* to save or pay taxes, the State removes the *anxiety* of financial planning, liberating the 60% as pure, guilt-free capital for the Citizen to use.
 
+### The Dynasty Overflow (The $55M Shift)
+The 60/40 algorithm operates perfectly for standard wealth accumulation. However, when a Citizen achieves extraordinary financial success, the Nation intervenes not with confiscatory taxes, but with a structural shift.
+
+Once a Citizen accumulates a lifetime wealth equivalent to the Solomonic Cap ($55M USD + 2% inflation), they have reached the mathematical limit of "daily bread." Any personal income generated past this point is subjected to the **Dynasty Overflow**.
+
+Instead of a 60/40 split, the algorithm shifts to a **70% mandatory sweep** into the Citizen's Personal and Family Wealth Estates. The State does not take this money; it locks it into the Dynasty Engine (Part III). This allows the Citizen to continue working and producing value for the economy, but forces the fruits of their extreme success to skip a generation, preventing the individual from rotting in excessive luxury while supercharging the multi-generational strength of their bloodline.
+
 ***
 
 ## Part V: The Moral Covenant (The Prohibition of Usury)
