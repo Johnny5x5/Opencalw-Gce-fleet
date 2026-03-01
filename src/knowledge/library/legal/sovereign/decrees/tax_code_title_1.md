@@ -24,8 +24,10 @@ moral_vectors:
 ## Section 102: The Investment Mandate
 1.  **Compound Growth:** The Endowment shall be invested in diversified, long-term assets to ensure compound interest for the citizen's future.
 
-## Section 103: Prohibition on Inheritance Tax
-1.  **Dynasty Protocol:** No tax shall be levied on the transfer of wealth from parent to child. The fruit of a family's labor belongs to the family.
+## Section 103: The Estate Transfer Fee (0% Inheritance Tax)
+1.  **Dynasty Protocol:** The Sovereign Nation strictly prohibits percentage-based inheritance taxes. The fruit of a family's labor belongs to the family.
+2.  **The Token Tax:** To cover the administrative, physical, and white-collar labor required to notarize and process the transfer of a Personal or Family Wealth Estate, a flat fee is required.
+3.  **The Rate:** The fee shall be exactly one (1) of the largest monetary bills available in the Sovereign Economy (currently the 1,000 SC Grand Note) per year of the estate's lifespan, assessed upon transfer.
 
 ## Section 104: The Sovereign Tithe (Personal Tax)
 1.  **Flat Tax:** Every citizen shall contribute a flat tax of **ten percent (10%)** of their annual income to the Sovereign Treasury.

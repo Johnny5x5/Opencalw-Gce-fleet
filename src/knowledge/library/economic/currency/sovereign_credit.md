@@ -25,6 +25,7 @@ Unlike fiat (backed by nothing) or gold (backed by scarcity), the SC is backed b
     *   **Result:** No Central Bank can print money to fund wars. If the Nation needs funds, it must **Tax** (10%), not **Inflate**.
 
 ## 4. Denominations
+*   **1,000 SC (The Grand Note):** The largest bill available in the economy. Reserved for macro-transactions, corporate settlements, and the Estate Transfer Fee.
 *   **1 SC (Credit):** Base Unit.
 *   **1 mSC (Milli):** 0.001 SC (Common transaction).
 *   **1 uSC (Micro):** 0.000001 SC (Machine-to-Machine micro-payments).

@@ -48,7 +48,9 @@ The goal of the Sovereign Nation is to build multi-generational strength. We wan
 
 To achieve this, the Sovereign Tax Code strictly outlaws the **Inheritance Tax (Death Tax)**.
 
-When a State taxes inheritance, it punishes the virtuous act of building for one's children, and it seizes private capital to feed the public bureaucracy. In our Nation, the fruit of a family's labor belongs exclusively to that family. When a Citizen passes, their unspent Sovereign Trust and acquired assets transfer entirely to their heirs.
+When a State levies a percentage-based inheritance tax, it punishes the virtuous act of building for one's children, seizing private capital to feed a hungry public bureaucracy. In our Nation, the fruit of a family's labor belongs exclusively to that family. When a Citizen passes, their unspent Sovereign Trust and acquired assets transfer entirely to their heirs.
+
+We do, however, acknowledge the physical reality of bureaucracy. Transferring an estate requires white-collar labor, cryptographic notarization, and paperwork. Therefore, we institute a **Token Tax**—a flat administrative fee rather than a wealth seizure. The fee is set at exactly one (1) of the largest circulating bills in the economy (the 1,000 SC Grand Note) per year of the estate's lifespan. This ensures the clerks are paid for their labor, but the estate's capital remains entirely untouched by percentage-based theft.
 
 This is the **Dynasty Protocol**. Over 50 years (one Jubilee cycle), this creates immense, decentralized pockets of capital that are resistant to State coercion.
 
