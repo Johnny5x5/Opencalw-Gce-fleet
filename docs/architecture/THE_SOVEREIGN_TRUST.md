@@ -86,6 +86,13 @@ Once a Citizen accumulates a lifetime wealth equivalent to the Solomonic Cap ($5
 
 Instead of a 60/40 split, the algorithm shifts to a **70% mandatory sweep** into the Citizen's Personal and Family Wealth Estates. The State does not take this money; it locks it into the Dynasty Engine (Part III). This allows the Citizen to continue working and producing value for the economy, but forces the fruits of their extreme success to skip a generation, preventing the individual from rotting in excessive luxury while supercharging the multi-generational strength of their bloodline.
 
+### The Sovereign Reward (Regressive Taxonomy of Excellence)
+Traditional nation-states punish extreme success with progressive taxation, viewing billionaires as piggy-banks to be raided. The Sovereign Digital Nation implements the opposite: **A Regressive Taxation of Excellence**.
+
+When a Citizen's wealth forces them into the Dynasty Overflow, they are effectively building a "Private Welfare State" for their descendants. By locking 70% of their future income away to care for their family, they mathematically guarantee that their kin will never be a burden on the public infrastructure.
+
+Because they have relieved the State of this massive future burden, the State rewards them. For every subsequent $55M tier of wealth generated, their baseline Sovereign Tithe drops by **0.000001%** (up to a $5.5 Trillion ceiling). We do not punish the ultra-wealthy; we give them a microscopic tax break as an honorable acknowledgment that they are carrying the weight of their own civilization.
+
 ***
 
 ## Part V: The Moral Covenant (The Prohibition of Usury)

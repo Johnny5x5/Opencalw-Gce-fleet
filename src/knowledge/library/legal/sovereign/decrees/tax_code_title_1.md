@@ -63,7 +63,9 @@ To ensure the lifelong stability of the Citizen, all personal income (whether fr
 To ensure that extreme financial success benefits the multi-generational bloodline rather than inducing individual decadence, an algorithmic shift occurs when a Citizen breaches the Solomonic Cap:
 1.  **The Threshold:** Once a Citizen's lifetime personal wealth accumulation breaches the $55M USD Equivalent (+2% annual inflation) cap, the standard 60/40 Split (Section 107) is suspended for all subsequent income.
 2.  **The 70% Sweep:** Any personal income generated past this threshold is subjected to a **70% mandatory diversion** directly into the Citizen's Personal Wealth Estate and the overarching Family Welfare Estate.
-3.  **Purpose:** The State does not confiscate the excess wealth; it merely forces the Citizen to transition from "Personal Consumption" to "Dynasty Building."
+3.  **The Sovereign Reward (Tax Decay):** Because a Citizen operating at this level of wealth is dedicating 70% of their output to securing their family's future (ensuring they will never be a burden to the State's welfare systems), the State rewards their productivity. For every additional $55M tier achieved past the initial cap, the Citizen's baseline Sovereign Tithe (10%) is reduced by exactly **0.000001%**.
+4.  **The Trillionaire Ceiling:** This Sovereign Reward decay continues up to a maximum verifiable wealth accumulation of **$5.5 Trillion USD Equivalent**.
+5.  **Purpose:** The State does not confiscate excess wealth; it forces the Citizen to transition from "Personal Consumption" to "Dynasty Building," rewarding them with tax reductions for effectively privatizing their family's welfare.
 
 ## Section 109: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
