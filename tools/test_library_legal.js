@@ -1,6 +1,15 @@
 const Scribe = require('../packages/national-library/src/ingest');
 const Librarian = require('../packages/national-library/src/search');
 
+/**
+ * Run a sequence of ingestion and verification checks against the legal library.
+ *
+ * Ingests the directory ./src/knowledge/library/legal, verifies presence of specific law URNs
+ * (urn:lex:us:ucc:article:2 and urn:lex:sovereign:decree:penal_code:title_1), and confirms the
+ * Guardian validation rejects a crafted invalid law entry. Logs progress and outcomes.
+ *
+ * This function will terminate the Node.js process with exit code 1 on any failure.
+ */
 async function verifyLibrary() {
   console.log("=== Verifying Sovereign National Library (Phase 1) ===");
 
