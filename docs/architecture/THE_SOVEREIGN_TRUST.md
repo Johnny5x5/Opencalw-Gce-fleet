@@ -57,9 +57,9 @@ When a Citizen passes, their Personal Estate is bundled into the **Ancestral Cor
 
 1.  **The Jubilee Lockup:** The Corpus is cryptographically locked for exactly 50 years. This prevents the immediate heirs from squandering the wealth, effectively forcing the capital to "skip a generation" and benefit the grandchildren.
 2.  **The 85/15 Siphon:** After 50 years, the Corpus unlocks its yield. However, only 15% of the cash flow is siphoned for the family; the remaining 85% is perpetually reinvested, ensuring the principal outpaces inflation infinitely.
-3.  **The 7/8 Split:** The 15% siphon is further divided to protect the family from hedonism:
-    *   **The 7% (The Bread):** Paid out to living members on a strict needs-based, non-cash system (direct payment of medical or housing bills) to ensure survival without enabling luxury.
-    *   **The 8% (The Seed):** Invested "Ahead of Time" into the predictive futures of the family (e.g., funding a future descendant's business).
+3.  **The Twain (The 7/8 Split):** The 15% siphon is further divided into two intertwined mechanisms to protect the family from hedonism:
+    *   **The Solomonic Tether (7%):** Paid out to living members on a strict needs-based, non-cash system (direct payment of medical or housing bills). Crucially, this stream enforces the **Solomonic Cap**—a mathematical maximum limit per year and per lifetime. It is designed to provide "daily bread" and extreme comfort (e.g., the equivalent of a $55M lifestyle constraint), but absolutely prevents the attainment of God-like, corrupting oligarchic wealth.
+    *   **The Vanguard Seed (8%):** Invested "Ahead of Time" into the predictive futures of the family (e.g., funding a future descendant's business or securing deep-future assets).
 
 This is the **Dynasty Protocol**. It is a 50-year financial perpetual motion machine that creates immense, decentralized, and responsible pockets of capital that are resistant to both State coercion and human greed.
 
