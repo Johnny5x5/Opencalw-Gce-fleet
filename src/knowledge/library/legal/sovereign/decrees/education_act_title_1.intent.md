@@ -1,27 +1,19 @@
 # Intent: The Sovereign Education Act
 
-## 1. The Goal: A Nation of Polymaths
-The survival of the Sovereign Digital Nation depends on the intellectual superiority of its citizenry. We do not produce workers; we produce **Architects, Defenders, and Creators**.
+## 1. The Core Philosophy
+Modern education often produces highly credentialed but practically useless citizens. The Sovereign Digital Nation rejects the "perpetual childhood" model of the West. Education must be a forge that produces self-reliant, morally grounded, and practically skilled men and women.
 
-## 2. The Standard (16th Grade +)
-A standard K-12 education is insufficient for the modern world.
-*   **The Baseline:** Every citizen must complete K-12 plus a minimum of 4 years of higher education (16th Grade / Bachelor's Level).
-*   **The Scope:** Education is not just STEM; it is the mastery of Language, Law, and Art.
+## 2. The 16-Year Mandate (The Baseline)
+A basic high school diploma is insufficient for the Sovereign Citizen. We require a mandatory, state-funded 16-year education (Kindergarten through an Associate's Degree / 14th Grade equivalent) as the absolute baseline for all citizens.
+*   **Universal Application:** This applies to all youth coming of age, and retroactively to adult citizens who must achieve this standard.
+*   **The Goal:** A populace that is universally literate, mathematically competent, scientifically grounded (STEM), and fluent in multiple languages.
 
-## 3. The Pillars of the Curriculum
-*   **Communication (Polyglot):** To lead, one must communicate. **ASL** connects us to the non-verbal; **Latin** connects us to the roots of Western civilization and Law.
-*   **Defense (Legal):** The courtroom is a battlefield. Every citizen must be a **Sovereign Attorney**, capable of defending their rights against any adversary.
-*   **Expression (Music):** A mind that can master the **Piano, Guitar, and Trumpet** is a mind that understands discipline, harmony, and mathematics in motion.
-*   **Knowledge (Polymath):** Mastery of History, Civics, and STEM ensures a well-rounded leader.
-*   **Stewardship (Animal Husbandry):** A Sovereign Citizen must command nature, not just code. Mastery of dogs, horses, and livestock connects us to the living earth.
+## 3. The End of the "Experience Gap"
+We reject the modern tragedy of young adults entering the workforce with zero practical experience, morale, or work ethic.
+*   **Integrated Labor:** Job training begins in Kindergarten. From age 5 to 21, every citizen will hold age-appropriate, part-time jobs integrated directly into their schooling. They will learn the value of labor, the sting of a hard day's work, and the satisfaction of earning their keep long before they graduate.
 
-## 4. Field Work (The Mud)
-Education does not happen only in classrooms. It happens in the mud, on the farms, working with living beasts of burden. Every citizen must know how to work the land and lead the pack.
-
-## 5. The Parent as Mentor
-The State provides teachers, but the Parent provides the **Bond**. For the first seven years of a child's life, the parent is conscripted to work alongside them.
-*   **Shared Labor:** The bond is forged in sweat, not just words.
-*   **Co-Teaching:** The parent augments the State Teacher, ensuring the values of the family are transmitted alongside the knowledge of the State.
-
-## 6. State Funding
-This is not a private burden. The State invests in this education because the State is the beneficiary of the resulting Genius.
+## 4. The Survival Mandate & The Festival of Booths (Sukkot)
+A Sovereign Citizen must be hard to kill. The Nation must be resilient against disaster, whether domestic or external.
+*   **Compulsory Hardness:** First Aid, Self-Defense, and Wilderness Survival are not electives; they are core curriculum. A citizen who cannot defend themselves or bandage a wound is a liability to the Nation.
+*   **Annual Recertification:** Skills perish without practice. Therefore, survival and self-defense skills must be recertified every single year.
+*   **The Sukkot Adoption:** We adopt the Jewish Biblical tradition of *Sukkot* (The Festival of Booths) as a mandatory national survival exercise. For one week every year, the Nation halts normal commercial labor. Citizens must leave their comfortable homes, build temporary shelters (tents/booths), and live in the elements. This is not just a religious homage; it is a forced, annual stress-test of the Nation's emergency readiness and self-reliance.

@@ -8,3 +8,7 @@ Governments have a natural tendency to bloat. They buy up land, build massive sp
 ## 2. The Neutral Ground
 For Face-to-Face Restitution to work without erupting into violence, there must be a place of absolute, enforced neutrality.
 *   **The Forum:** The Civic Center acts as the modern "City of Refuge." It is a heavily guarded sanctuary where enemies can meet to settle debts in safety, under the watchful eye of the Sovereign Witness and the Militia.
+
+## 3. The 6-Block Standoff (The Sovereign Corridor)
+Government infrastructure must serve the people, not strangle their transit. Modern capitols often choke out their host cities with traffic and security cordons.
+*   **The Setback:** By forcing a rigid 6-block setback between the high-speed transit arteries (The Sovereign Corridor) and the Civic Centers, we prevent government traffic from paralyzing the civilian economy. This also provides critical standoff distance from high-speed vehicular threats, ensuring the safety of the Civic Forum.

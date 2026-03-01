@@ -54,5 +54,12 @@ territorial_scope: "Universal"
 2.  **Guarded Perimeter:** The Centers shall be heavily fortified and guarded by the **Sovereign Defense Force** (The Militia).
 3.  **Weaponry Prohibition:** No citizen or foreign entity may carry weapons within the perimeter of the Civic Centers, excepting on-duty Sovereign Guards. Violence within these zones is classified as High Treason against the Peace.
 
-## Section 106: Suspension of Penalties
+## Section 106: The Sovereign Corridor and the 6-Block Setback
+1.  **The Inter-Node Highway:** The State shall construct and maintain dedicated, high-speed physical roadways connecting all Primary Civic Forums and Secondary Governance Malls, known collectively as **The Sovereign Corridor**.
+2.  **The Anti-Chokepoint Mandate:** Government infrastructure must never become a localized traffic bottleneck that strangles commercial or residential movement. Therefore, the Sovereign Corridor must be engineered for uninterrupted flow.
+3.  **The 6-Block Setback Rule:** To enforce physical security (standoff distance) and strictly manage traffic density, no Sovereign Civic Center (Primary or Secondary) may be built directly abutting the Sovereign Corridor.
+    *   **The Offset:** Every Government Mall must be physically offset by exactly **Six (6) City Blocks** from the main artery of the Sovereign Corridor.
+    *   **Access Roads:** The State shall construct dedicated, controlled-access offshoots from the Corridor traversing these six blocks to service the Civic Centers, ensuring that high-volume government traffic is siphoned off the main highway long before it reaches the structures.
+
+## Section 107: Suspension of Penalties
 *   **Status:** Pending rapid changes in the Sovereign Architecture, all penal consequences for non-compliance are currently **Suspended**.
