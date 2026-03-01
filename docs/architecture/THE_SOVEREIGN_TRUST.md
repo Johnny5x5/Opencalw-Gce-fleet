@@ -58,14 +58,30 @@ When a Citizen passes, their Personal Estate is bundled into the **Ancestral Cor
 1.  **The Jubilee Lockup:** The Corpus is cryptographically locked for exactly 50 years. This prevents the immediate heirs from squandering the wealth, effectively forcing the capital to "skip a generation" and benefit the grandchildren.
 2.  **The 85/15 Siphon:** After 50 years, the Corpus unlocks its yield. However, only 15% of the cash flow is siphoned for the family; the remaining 85% is perpetually reinvested, ensuring the principal outpaces inflation infinitely.
 3.  **The Twain (The 7/8 Split):** The 15% siphon is further divided into two intertwined mechanisms to protect the family from hedonism:
-    *   **The Solomonic Tether (7%):** Paid out to living members on a strict needs-based, non-cash system (direct payment of medical or housing bills). Crucially, this stream enforces the **Solomonic Cap**—a mathematical maximum limit per year and per lifetime. It is designed to provide "daily bread" and extreme comfort (e.g., the equivalent of a $55M lifestyle constraint), but absolutely prevents the attainment of God-like, corrupting oligarchic wealth.
+    *   **The Solomonic Tether (7%):** Paid out to living members on a strict needs-based, non-cash system (direct payment of medical or housing bills). Crucially, this stream enforces the **Solomonic Cap**. The Floor is set to a Second-World Upper Middle Class standard (preventing poverty), while the Ceiling is set to a First-World Upper Middle Class standard (preventing oligarchic luxury, capped around a $55M lifetime equivalent).
     *   **The Vanguard Seed (8%):** Invested "Ahead of Time" into the predictive futures of the family (e.g., funding a future descendant's business or securing deep-future assets).
 
 This is the **Dynasty Protocol**. It is a 50-year financial perpetual motion machine that creates immense, decentralized, and responsible pockets of capital that are resistant to both State coercion and human greed.
 
 ***
 
-## Part IV: The Moral Covenant (The Prohibition of Usury)
+## Part IV: The 60/40 Liberation Algorithm (The Livable Wage)
+
+Beyond the generational wealth of the Dynasty Protocol, the Sovereign Nation regulates the *daily* economy of the individual citizen. We recognize that human psychology is highly susceptible to short-term thinking and debt traps. To protect the Citizen from themselves, we institute the **60/40 Liberation Algorithm**.
+
+All personal income (whether generated from labor or paid out from the Trust) is automatically split:
+*   **The 60% (The Sovereign Livable Wage):** This is the liquid cash the citizen keeps for daily living. The Nation's minimum wage laws are calibrated to ensure that this 60% alone is sufficient to provide the "Second-World Upper Middle Class" baseline.
+*   **The 40% (The Duty Siphon):** This is automatically withheld via Smart Contract to secure the Citizen's existence and their duty to the Nation. It is broken into four equal pillars:
+    1.  **10% Sovereign Tax:** (The cost of maintaining the Iron Dome and the Grid).
+    2.  **10% Emergency Savings:** (A locked, liquid reserve to prevent the need for Usury/loans in a crisis).
+    3.  **10% Spiritual Tithe:** (Charity/Chaplaincy funding).
+    4.  **10% Future Investment:** (Automatically routed into the Personal Wealth Estate to compound for the next Jubilee).
+
+By removing the *choice* to save or pay taxes, the State removes the *anxiety* of financial planning, liberating the 60% as pure, guilt-free capital for the Citizen to use.
+
+***
+
+## Part V: The Moral Covenant (The Prohibition of Usury)
 
 We recognize that Capital naturally seeks a return, but it must not do so through predation.
 

@@ -36,7 +36,8 @@ moral_vectors:
 ## Section 105: The Twain (The 7/8 Siphon Distribution)
 The 15% active cash flow is divided into two intertwined mechanisms—The Twain—to ensure survival and future growth without inducing moral decay:
 1.  **The Solomonic Tether (7%):** Reinvested into a high-liquidity vehicle that pays out to living family members strictly on a **Needs-Based, Non-Cash** basis (e.g., directly paying healthcare, housing, or food suppliers).
-    *   *The Solomonic Cap:* Payouts are subject to a strict maximum annual and lifetime limit (the "What is Enough" cap). This prevents the citizen from obtaining unattainable, corrupting wealth, fulfilling the proverb: "Give me neither poverty nor riches."
+    *   *The Floor:* Payouts must guarantee a baseline equivalent to the standard of an **Upper Middle Class citizen in a Second-World Nation**.
+    *   *The Solomonic Cap (The Ceiling):* Payouts are subject to a strict maximum annual and lifetime limit, pegged to the standard of an **Upper Middle Class citizen in a First-World Nation** (e.g., a $55M lifetime equivalent). This prevents the citizen from obtaining unattainable, corrupting wealth, fulfilling the proverb: "Give me neither poverty nor riches."
 2.  **The Vanguard Seed (8%):** Invested directly into the futures of the family members using predictive "Ahead of Time" algorithms (e.g., funding future education, business incubation, or unborn descendants).
 
 ## Section 106: The Sovereign Tithe and The Lifespan Curve
@@ -48,7 +49,17 @@ The 15% active cash flow is divided into two intertwined mechanisms—The Twain�
     *   Have successfully passed the **Mandatory Sovereign Education** curriculum.
 5.  **The Purpose:** This ensures that long-lived citizens who have contributed to the Nation eventually age into a practically tax-free existence, reaping the benefits of a century of labor.
 
-## Section 107: Corporate Taxation Strategy
+## Section 107: The Sovereign Livable Wage (The 60/40 Split)
+To ensure the lifelong stability of the Citizen, all personal income (whether from labor or Trust payouts) is subject to an automated algorithmic split:
+1.  **The 40% Future & Duty Siphon:** Before liquid funds are made available, 40% is automatically routed to secure the Citizen's existence:
+    *   **10% Sovereign Tax:** (As defined in Section 106).
+    *   **10% Emergency Savings:** Locked liquid reserves for catastrophic events.
+    *   **10% Spiritual Tithe/Charity:** Directed to the Chaplaincy or a recognized charitable entity.
+    *   **10% Wealth Investment:** Routed directly into the Personal Wealth Estate / Family Welfare Estate.
+2.  **The 60% Livable Wage:** The remaining 60% is delivered to the Citizen as liquid, spendable cash for daily life (housing, sustenance, leisure).
+3.  **Separation of Concerns:** This algorithm applies exclusively to personal income. It explicitly excludes Corporate Taxes, Union dues, and structural Estate compounding.
+
+## Section 108: Corporate Taxation Strategy
 1.  **Standard Rate:** All corporations pay **10%** on net profits.
 2.  **Global Enterprise Incentive:** Corporations with global revenue > $1B pay **5%**.
 3.  **Loyalty Discount:** Corporations conducting 100% of operations within the Sovereign Network pay **3%**.
