@@ -1,8 +1,0 @@
-[workspace]
-members = [
-    "core",
-    "daemon",
-    "ai-foreground",
-    "ai-background",
-    "library-guardian"
-]

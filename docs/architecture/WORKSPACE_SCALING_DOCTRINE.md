@@ -1,33 +1,32 @@
-# Workspace Scaling Doctrine (The Traffic Cop Model)
+# The Sovereign Federal Workspace Doctrine
 
-**Status:** Active Concept
-**Scope:** All Sovereign Workspaces (Library, Time, Defense, etc.)
+**Status:** Active Core Concept
+**Scope:** All Sovereign Systems (Library, Time, Defense, etc.)
 
-## The 4x4 Grid Foundation
-Every major pillar of the Sovereign OS is isolated into its own `Cargo` workspace containing 4 distinct operational units:
-1.  **Core:** The fundamental synchronous logic and data structures.
-2.  **Daemon:** The long-running asynchronous maintenance worker.
-3.  **AI-Foreground:** The synchronous/fast API interface for the AI Swarm.
-4.  **AI-Background:** The massive asynchronous processing pool.
+## The Centralized Federal Architecture
+The Sovereign Digital Nation operates as a **Centralized, Federalized Autonomous Organization**. It is *not* a decentralized web3 collective. There is a single, indisputable Root of Truth and Authority.
 
-## The Scaling Limits
-To support the "Sovereign Autonomous Enterprise" scale (up to 40,000 teams), the 4x4 grid scales horizontally.
-*   **Soft Limit:** 32 Workspaces per Pillar.
-*   **Hard Limit:** 128 Workspaces per Pillar.
+This authority is manifested technically via a **Single Root Cargo Workspace** (`/Cargo.toml`).
 
-## The "Traffic Cop" (Concierge Valet)
-As workspaces multiply, an AI Supervisor known as the **"Traffic Cop"** manages the grid.
-*   **Ratio:** Up to a ratio of **Pi (3.14)** to the number of workers.
-*   **Function:** It monitors the 128 potential workspaces.
-*   **State Tracking:** It flags workspaces as `OPEN`, `CLOSED`, or `IN_USE_BY_AI`.
-*   **Routing:** When an AI Agent requests processing power (e.g., to index a massive new law), the Traffic Cop checks out an `OPEN` workspace, assigns the agent, and marks it `IN_USE`.
+## Federal Departments (The 13 Pillars)
+Each of the 13 Pillars (Library, Defense, Time) acts as a **Federal Department**.
+To handle massive scale (up to 40,000 teams), each Department is internally structured into a **4-Crate Grid**:
 
-## The Agent Swarm Mapping
-Specialized AI Agent Teams inhabit specific quadrants of the grid based on their operational profiles (defined in `src/knowledge/personas/library/`):
+1.  **`core` (The Engine):** Synchronous data structures, validation (Guardian), and fundamental logic.
+2.  **`daemon` (The Maintainer):** A background `tokio` process running perpetual maintenance (e.g., atomic clock syncs, DB flushing).
+3.  **`ai-foreground` (The Interface):** The high-speed synchronous API used by external systems or fast AI agents (The Librarians).
+4.  **`ai-background` (The Processing Pool):** The massive, asynchronous cluster for heavy lifting (The Scribes, The Auditors).
 
-1.  **The Traffic Cop (`daemon`):** Operates constantly in the background, executing the routing logic and enforcing the 128 limit.
-2.  **The Scribe Guild (`ai-background`):** High-IO agents performing massive ingestion tasks in isolation.
-3.  **The Auditor Guild (`ai-background`):** Deep-thinking agents running heavy logical proofs (`library-guardian`) on new data.
-4.  **The Librarian Guild (`ai-foreground`):** Fast-response agents answering direct Citizen queries (e.g., via the CLI `ask` command).
+## Department Scaling Limits
+A single Federal Department can scale its internal workspaces horizontally.
+*   **Soft Limit:** 32 Active Workspaces per Department.
+*   **Hard Limit:** 128 Active Workspaces per Department.
 
-*This doctrine ensures massive parallelism without race conditions or deadlocks, while perfectly mapping Agent Specialization to Hardware Topologies.*
+## The "Traffic Cop" (Federal Router)
+To manage the 128-workspace hard limit without crashing the Central Node, a specialized Federal AI known as the **"Traffic Cop"** orchestrates the workload.
+
+*   **The Pi Ratio (3.14):** The Traffic Cop allocates workspaces to incoming agent workers up to a ratio of Pi. (e.g., 100 workers -> ~31 active workspaces). This specific mathematical constant prevents over-subscription while maximizing parallel throughput.
+*   **State Tracking:** The Traffic Cop flags internal workspaces as `OPEN`, `CLOSED`, or `IN_USE_BY_AI`.
+*   **Routing:** When the "Scribe Guild" needs to ingest 10,000 new laws, the Traffic Cop assigns them to `OPEN` blocks in the `ai-background` pool.
+
+*This doctrine ensures absolute Centralized Authority while enabling massive Asynchronous Execution.*

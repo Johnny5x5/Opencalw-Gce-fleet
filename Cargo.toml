@@ -1,0 +1,20 @@
+[workspace]
+
+# The Centralized Federal Workspace
+# All departments (pillars) are governed from this root.
+
+members = [
+    "packages/national-library/core",
+    "packages/national-library/daemon",
+    "packages/national-library/ai-foreground",
+    "packages/national-library/ai-background",
+    "packages/national-library/library-guardian",
+    "packages/sovereign-time/core",
+    "packages/sovereign-time/daemon",
+    "packages/sovereign-time/ai-foreground",
+    "packages/sovereign-time/ai-background",
+    "packages/iron-dome/core",
+    "packages/iron-dome/daemon",
+    "packages/iron-dome/ai-foreground",
+    "packages/iron-dome/ai-background"
+]
